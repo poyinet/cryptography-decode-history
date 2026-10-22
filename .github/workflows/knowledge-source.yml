@@ -1,0 +1,84 @@
+name: knowledge-source
+
+# 知识源仓 CI：生成 → 门禁 → 构建分站 → 自动发布到 poyinet/crypto
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write        # 提交构建产物到本仓
+  pages: write
+  id-token: write
+
+concurrency:
+  group: knowledge-source
+  cancel-in-progress: true
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 安装依赖
+        run: npm ci || npm install --no-audit --no-fund
+
+      # ---------- 1. 生成：既有 19 个生成器（内容层） ----------
+      - name: 生成全部内容
+        run: node tools/mdgen/gen-all.js
+
+      # ---------- 2. 门禁：知识源 ----------
+      - name: parity 门禁（源 ↔ 产物逐字段等价）
+        run: node tools/mdgen/check-mdgen-parity.js
+
+      - name: 知识总目录门禁
+        run: node tools/check/check-inventory.js
+
+      - name: frontmatter 门禁
+        run: node tools/check/check-frontmatter.js
+
+      - name: 别名门禁
+        run: node tools/check/check-alias.js
+
+      - name: 中英同步门禁
+        run: node tools/check/check-i18n-sync.js
+
+      - name: 出处门禁
+        run: node tools/check/check-sources.js
+
+      # ---------- 3. 构建：分站产物 ----------
+      - name: 构建分站
+        run: node tools/site/build.js
+
+      # ---------- 4. 门禁：分站 ----------
+      - name: 分站门禁（死链 / 口径 / 无 JS 可读 / 体积）
+        run: node tools/check/check-site.js
+
+      - name: 覆盖矩阵（不阻断，仅报告）
+        run: node tools/check/check-coverage.js
+        continue-on-error: true
+
+      # ---------- 5. 发布 ----------
+      - name: 提交构建产物
+        run: |
+          git config user.name "poyinet-bot"
+          git config user.email "poyinet-bot@users.noreply.github.com"
+          git add build/ docs/coverage-matrix.md
+          git diff --staged --quiet || git commit -m "chore(build): 重新生成内容与覆盖矩阵 [skip ci]"
+          git push origin HEAD:main
+
+      - name: 发布到 poyinet/crypto
+        env:
+          PUBLISH_TOKEN: ${{ secrets.CRYPTO_PUBLISH_TOKEN }}
+        run: node tools/oneoff/publish-crypto-repo.js
+
+      - name: 上传 Pages 构件（兜底：直发 GitHub Pages）
+        if: always()
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: build/site

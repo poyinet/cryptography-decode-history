@@ -50,7 +50,7 @@ The irony: Bacon's two fonts saw little real use in the 1600s, while Vigenère w
 
 ## 关联游戏
 
-- bacon, vigenere, morse, starflag, wordsearch, tictactoe, fruitmerge, autokey, acrostic, stepping-switch, cardan-grille, fanqie
+- bacon, vigenere, morse, starflag, autokey, acrostic, stepping-switch, cardan-grille, fanqie
 
 ## 关联密件
 

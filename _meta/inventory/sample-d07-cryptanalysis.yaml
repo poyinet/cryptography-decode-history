@@ -1,0 +1,2369 @@
+# ============================================================
+# 知识总目录 · 样例：d07 破译方法
+# ------------------------------------------------------------
+# 本文件是「总目录」格式的评审样例——先看粒度与风格，再批量铺开。
+# 
+# 格式约定（全部清单通用）：
+#   id         全局唯一规范 ID（kebab-case；与实体 frontmatter 的 id 一致）
+#   title      中文规范名
+#   title_en   英文规范名
+#   status     done（已有且成稿） | draft（已起草未核证） | todo（待写） | exempt（明确不收，note 必填）
+#   quality    tier1 旗舰级（三层深度 + 结构化出处） | tier2 标准级（摘要 + 出处 + 全轴） | tier3 索引级（定义 + 关联）
+#   domain     主归属技术域（可多值 = 交叉域）
+#   subtopic   所属子主题（见本文件末尾 subtopics 段）
+#   era        所属时代（可多值）
+#   level      难度 1 入门 / 2 进阶 / 3 专家 / 4 研究
+#   prereq     前置实体 id
+#   aliases    别名 / 异译 / 旧称 / 缩写 / 型号别名
+#   apps       应用场景轴
+#   threats    威胁模型轴
+#   playable   是否适合做玩法原型（供主站游戏化预留）
+#   archetype  建议的玩法原型
+#   sources    结构化出处（kind: primary / authoritative / tertiary）
+#   note       补充说明；status=exempt 时必填理由
+# 
+# 场景轴取值域：military 军事 / diplomacy 外交 / finance 金融 / telecom 通信 /
+#               privacy 隐私 / law-enforcement 执法 / copyright 版权 / academic 学术 /
+#               everyday 日常 / counter-terror 反恐 / infrastructure 基建 / health 医疗
+# 
+# 威胁模型轴取值域：CO / KPA / CPA / CCA / CCA1 / CCA2 / adaptive-CCA / related-key /
+#               known-key / forward / inverse / chosen-target / rogue-key / side-channel /
+#               physical / social / implementation / protocol / quantum / statistical
+# ============================================================
+# ============================================================
+# 一、子主题（知识块）
+# ------------------------------------------------------------
+# 子主题是「域」与「实体」之间的中间层——多层次展示的骨架。
+# 粒度原则：一个子主题 = 一类**机制**（不是每一个算法各占一个子主题）。
+# ============================================================
+# ============================================================
+# 二、条目清单
+# ------------------------------------------------------------
+# 标注说明：
+#   [已有]  = 域文件 tech/d07-cryptanalysis.md 已有正文（可能被 gen-* 归入术语区）
+#   [待写]  = 总目录要求但正文尚无
+#   [重复]  = 域文件中存在同义重复条目，需要合并
+#   [错位]  = 域文件中存在但主归属不在 d07，应迁出或改为交叉引用
+# ============================================================
+# ---------- crypto-classical-statistics ----------
+# ---------- crypto-crib-known-plaintext ----------
+# ---------- crypto-differential ----------
+# ---------- crypto-linear ----------
+# ---------- crypto-algebraic ----------
+# ---------- crypto-integral ----------
+# ---------- crypto-structural ----------
+# ---------- crypto-generic-composition ----------
+# ---------- crypto-attack-models ----------
+# ---------- crypto-machine-cryptanalysis ----------
+# ---------- crypto-side-channel ----------
+# ---------- crypto-implementation ----------
+# ---------- crypto-protocol-network ----------
+# ---------- crypto-steganalysis ----------
+# ---------- crypto-quantum-attacks ----------
+# ============================================================
+# 三、待处理事项（供 check-inventory 门禁与人工整理参考）
+# ============================================================
+domain: d07
+title: 破译方法
+title_en: Cryptanalysis
+subtopics:
+  - id: crypto-classical-statistics
+    title: 经典统计破译
+    title_en: Classical Statistical Cryptanalysis
+    summary: 以语言的统计规律（频率、重合、周期）为武器的破译方法，古典密码时代的主力。
+  - id: crypto-crib-known-plaintext
+    title: 已知明文与猜测明文
+    title_en: Cribs and Known-Plaintext
+    summary: 利用已知或可猜的明文片段反推密钥结构。
+  - id: crypto-differential
+    title: 差分密码分析
+    title_en: Differential Cryptanalysis
+    summary: 追踪输入差分如何穿透密码轮次，用统计偏置逼近密钥。
+  - id: crypto-linear
+    title: 线性密码分析
+    title_en: Linear Cryptanalysis
+    summary: 寻找明文、密文、密钥比特间的线性近似，累积偏置逐位还原密钥。
+  - id: crypto-algebraic
+    title: 代数密码分析
+    title_en: Algebraic Cryptanalysis
+    summary: 把密码系统建模为低次多项式方程组并求解。
+  - id: crypto-integral
+    title: 积分与高阶差分
+    title_en: Integral and Higher-Order Differential Attacks
+    summary: 用和集/积分性质与高阶差分恢复密钥。
+  - id: crypto-structural
+    title: 结构型攻击
+    title_en: Structural Attacks
+    summary: 攻击算法结构本身的弱点：boomerang、slide、rotational、biclique、invariant、impossible differential、truncated differential。
+  - id: crypto-generic-composition
+    title: 通用组合与搜索
+    title_en: Generic Composition and Search Attacks
+    summary: 与算法内部结构无关的通用手段：穷举、字典、彩虹表、meet-in-the-middle、生日碰撞、时间-存储权衡。
+  - id: crypto-attack-models
+    title: 攻击模型
+    title_en: Attack Models
+    summary: 攻击者被允许做什么——决定难度的前提框架。
+  - id: crypto-machine-cryptanalysis
+    title: 机器密码分析
+    title_en: Machine Cryptanalysis
+    summary: 针对具体密码机的统计与机械分析：Bombe、Banburismus、Zygalski 表、对角板。
+  - id: crypto-side-channel
+    title: 侧信道
+    title_en: Side-Channel Attacks
+    summary: 不攻数学、攻物理实现：时间、功耗、电磁、故障、冷启动、推测执行。
+  - id: crypto-implementation
+    title: 实现与实现型攻击
+    title_en: Implementation Attacks
+    summary: 攻实现的用法而非算法本身：填充预言、密钥混淆、nonce 复用、RNG 失效、后门。
+  - id: crypto-protocol-network
+    title: 协议与网络层攻击
+    title_en: Protocol and Network Attacks
+    summary: 攻协议与链路：中间人、重放、流量分析、降级、撞库。
+  - id: crypto-social-engineering
+    title: 社会工程
+    title_en: Social Engineering
+    summary: 攻人：钓鱼、喷洒、诱饵、肩窥、声学侧信道。
+  - id: crypto-steganalysis
+    title: 隐写分析
+    title_en: Steganalysis
+    summary: 检测与提取隐藏在无害载体中的消息。
+  - id: crypto-quantum-attacks
+    title: 量子攻击
+    title_en: Quantum Attacks
+    summary: Shor 与 Grover 及其对现有体系结构的冲击。
+entries:
+  - id: frequency-analysis
+    title: 频率分析
+    title_en: Frequency Analysis
+    status: done
+    quality: tier1
+    domain:
+      - d07
+    subtopic:
+      - crypto-classical-statistics
+    era:
+      - e04-arabic-golden-age
+      - e08-codebreakers
+    level: 1
+    prereq: []
+    aliases:
+      - 统计分析
+      - 字母频率分析
+      - frequency analysis
+      - chi-square
+    apps:
+      - military
+      - academic
+      - everyday
+    threats:
+      - CO
+      - statistical
+    playable: true
+    archetype: frequency-histogram
+    sources:
+      - title: Risāla fī Istikhrāj al-Muʿammā wa fī Tamyīz al-Asrār
+        author: al-Kindi
+        kind: primary
+        year: 850
+      - title: The Codebreakers
+        author: David Kahn
+        kind: authoritative
+        year: 1967
+    type: term
+  - id: index-of-coincidence
+    title: 重合指数
+    title_en: Index of Coincidence
+    status: todo
+    quality: tier2
+    domain:
+      - d07
+    subtopic:
+      - crypto-classical-statistics
+    era:
+      - e08-codebreakers
+    level: 2
+    prereq:
+      - frequency-analysis
+    aliases:
+      - IC
+      - 重合率
+      - index of coincidence
+      - IC 值
+    apps:
+      - academic
+    threats:
+      - CO
+      - statistical
+    playable: true
+    archetype: frequency-histogram
+    note: 域文件仅在「Kasiski vs IC」条目中提到，缺独立条目。
+    priority: P1
+    target: 2026-Q4
+    sources:
+      - &ref_1
+        title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+      - &ref_0
+        title: The Codebreakers
+        author: David Kahn
+        kind: authoritative
+        year: 1967
+    type: term
+  - id: kasiski-test
+    title: 卡斯基基检验
+    title_en: Kasiski Examination
+    status: done
+    quality: tier1
+    domain:
+      - d07
+    subtopic:
+      - crypto-classical-statistics
+    era:
+      - e08-codebreakers
+    level: 2
+    prereq: []
+    aliases:
+      - 卡斯基基
+      - Kasiski
+      - 重复组距离
+      - repeated-group distance
+    apps:
+      - academic
+      - military
+    threats:
+      - CO
+      - statistical
+    playable: true
+    archetype: frequency-histogram
+    sources:
+      - title: Die Geheimschriften und ihre Deutung
+        author: Friedrich Kasiski
+        kind: primary
+        year: 1863
+      - title: The Codebreakers
+        author: David Kahn
+        kind: authoritative
+        year: 1967
+    type: term
+  - id: unicity-distance
+    title: 唯一距离
+    title_en: Unicity Distance
+    status: todo
+    quality: tier2
+    domain:
+      - d07
+      - d24-theory
+    subtopic:
+      - crypto-classical-statistics
+    era:
+      - e12-cold-war-info-theory
+    level: 3
+    prereq:
+      - frequency-analysis
+    aliases:
+      - 唯一性距离
+      - unicity distance
+      - UD
+    apps:
+      - academic
+    threats:
+      - CO
+      - statistical
+    playable: false
+    archetype: ""
+    sources:
+      - title: Communication Theory of Secrecy Systems
+        author: Claude Shannon
+        kind: primary
+        year: 1949
+    note: 信息论视角的＂需要多少字符才能唯一确定密钥＂，是 d07 与 d24 的交叉条目。
+    priority: P1
+    target: 2026-Q4
+    type: term
+  - id: probable-plaintext
+    title: 概然明文
+    title_en: Probable Plaintext
+    status: todo
+    quality: tier3
+    domain:
+      - d07
+    subtopic:
+      - crypto-classical-statistics
+    era:
+      - e08-codebreakers
+    level: 2
+    prereq:
+      - frequency-analysis
+    aliases:
+      - 大概明文
+      - probable plaintext
+    apps:
+      - academic
+    threats:
+      - CO
+      - statistical
+    playable: false
+    archetype: ""
+    priority: P1
+    target: 2026-Q4
+    type: term
+  - id: contact-analysis
+    title: 接触分析
+    title_en: Contact Analysis
+    status: todo
+    quality: tier3
+    domain:
+      - d07
+    subtopic:
+      - crypto-classical-statistics
+    era:
+      - e08-codebreakers
+    level: 2
+    prereq:
+      - frequency-analysis
+    aliases:
+      - 接触分析
+      - contact analysis
+    apps:
+      - academic
+    threats:
+      - CO
+      - statistical
+    playable: false
+    archetype: ""
+    note: Wikipedia「Classical cryptanalysis」条目所列，属该家族但本站缺。
+    priority: P1
+    target: 2026-Q4
+    type: term
+  - id: crib
+    title: 猜测明文
+    title_en: Crib
+    status: done
+    quality: tier1
+    domain:
+      - d07
+    subtopic:
+      - crypto-crib-known-plaintext
+    era:
+      - e08-codebreakers
+      - e11-ww2
+    level: 1
+    prereq: []
+    aliases:
+      - crib
+      - 已知明文猜测
+      - 填鸭
+    apps:
+      - military
+      - academic
+    threats:
+      - KPA
+    playable: true
+    archetype: crib-dragging
+    sources:
+      - title: The Turing–Welchman bombe and the Hut 6 crib procedures
+        author: Bletchley Park / GCHQ archives
+        kind: tertiary
+      - *ref_0
+      - *ref_1
+    type: term
+  - id: known-plaintext-attack
+    title: 已知明文攻击
+    title_en: Known-Plaintext Attack
+    status: done
+    quality: tier1
+    domain:
+      - d07
+    subtopic:
+      - crypto-crib-known-plaintext
+    era:
+      - e09-ww1
+      - e11-ww2
+    level: 2
+    prereq: []
+    aliases:
+      - KPA
+      - 已知明文攻击
+      - known-plaintext attack
+    apps:
+      - military
+      - academic
+    threats:
+      - KPA
+    playable: true
+    archetype: crib-dragging
+    note: "[重复] 域文件中另有「Known Plaintext 已知明文」条目，与本条语义重叠，需合并。"
+    sources:
+      - *ref_1
+      - *ref_0
+    type: term
+  - id: depth
+    title: 深度
+    title_en: Depth
+    status: done
+    quality: tier1
+    domain:
+      - d07
+    subtopic:
+      - crypto-crib-known-plaintext
+    era:
+      - e06-middy
+      - e11-ww2
+      - e12-cold-war-info-theory
+    level: 2
+    prereq: []
+    aliases:
+      - 深度
+      - depth
+      - 加法密钥重用
+      - 深度重用
+    apps:
+      - military
+    threats:
+      - KPA
+      - statistical
+    playable: true
+    archetype: depth-subtract
+    note: "[重复] 域文件中有「Depth」与「深度 密钥重用」两条，需合并为一条。"
+    sources:
+      - title: The Codebreakers
+        author: David Kahn
+        kind: authoritative
+        year: 1967
+      - *ref_1
+    type: term
+  - id: one-time-pad-reuse
+    title: 一次性密码本重用
+    title_en: One-Time Pad Reuse
+    status: done
+    quality: tier1
+    domain:
+      - d07
+      - d06-otp-stream
+    subtopic:
+      - crypto-crib-known-plaintext
+    era:
+      - e12-cold-war-info-theory
+    level: 2
+    prereq:
+      - depth
+    aliases:
+      - OTP 重用
+      - 一次性密码本重用
+      - key reuse
+      - 密钥重用
+    apps:
+      - military
+    threats:
+      - KPA
+      - statistical
+    playable: true
+    archetype: depth-subtract
+    sources:
+      - title: The Codebreakers
+        author: David Kahn
+        kind: authoritative
+        year: 1967
+    note: VENONA 的核心技术原理；与 d06 的 OTP 条目是「原语 vs 弱点」的关系，需交叉链接。
+    type: term
+  - id: differential-cryptanalysis
+    title: 差分密码分析
+    title_en: Differential Cryptanalysis
+    status: done
+    quality: tier1
+    domain:
+      - d07
+    subtopic:
+      - crypto-differential
+    era:
+      - e12-cold-war-info-theory
+      - e14-standardization
+    level: 3
+    prereq:
+      - s-box
+    aliases:
+      - 差分分析
+      - differential cryptanalysis
+      - 差分密码分析
+    apps:
+      - academic
+    threats:
+      - CPA
+    playable: true
+    archetype: difference-table
+    sources:
+      - title: Differential Cryptanalysis of DES-like Cryptosystems
+        author: Eli Biham, Adi Shamir
+        kind: primary
+        year: 1990
+    type: term
+  - id: differential-history
+    title: 差分分析史
+    title_en: History of Differential Cryptanalysis
+    status: done
+    quality: tier1
+    domain:
+      - d07
+    subtopic:
+      - crypto-differential
+    era:
+      - e12-cold-war-info-theory
+      - e14-standardization
+    level: 3
+    prereq:
+      - differential-cryptanalysis
+    aliases:
+      - 差分密码分析史
+      - differential history
+    apps:
+      - academic
+    threats:
+      - CPA
+    playable: false
+    archetype: ""
+    note: 域文件中作为独立＂方法/案例＂条目，实际是差分分析的历史叙述——建议并入 d14 的标准化史或保留为独立叙事条目。
+    sources:
+      - title: Differential Cryptanalysis of DES-like Cryptosystems
+        author: Eli Biham, Adi Shamir
+        kind: primary
+        year: 1990
+      - *ref_0
+      - *ref_1
+    type: term
+  - id: truncated-differential
+    title: 截断差分
+    title_en: Truncated Differential Attack
+    status: todo
+    quality: tier2
+    domain:
+      - d07
+    subtopic:
+      - crypto-differential
+    era:
+      - e14-standardization
+    level: 3
+    prereq:
+      - differential-cryptanalysis
+    aliases:
+      - 截断差分
+      - truncated differential
+    apps:
+      - academic
+    threats:
+      - CPA
+    playable: false
+    archetype: ""
+    note: 缺。Knudsen 的经典工作。
+    priority: P1
+    target: 2026-Q4
+    sources:
+      - title: Truncated and Higher Order Differentials
+        author: Lars R. Knudsen
+        kind: primary
+        year: 1994
+      - *ref_1
+    type: term
+  - id: higher-order-differential
+    title: 高阶差分
+    title_en: Higher-Order Differential Attack
+    status: todo
+    quality: tier2
+    domain:
+      - d07
+    subtopic:
+      - crypto-integral
+    era:
+      - e14-standardization
+    level: 4
+    prereq:
+      - differential-cryptanalysis
+    aliases:
+      - 高阶差分
+      - higher-order differential
+    apps:
+      - academic
+    threats:
+      - CPA
+    playable: false
+    archetype: ""
+    priority: P2
+    target: 2027-Q1
+    sources:
+      - title: Higher Order Derivatives and the Decryption Algorithm
+        author: Lars R. Knudsen
+        kind: primary
+        year: 1994
+      - *ref_1
+    type: term
+  - id: differential-linear
+    title: 差分线性
+    title_en: Differential-Linear Cryptanalysis
+    status: todo
+    quality: tier2
+    domain:
+      - d07
+    subtopic:
+      - crypto-differential
+      - crypto-linear
+    era:
+      - e14-standardization
+    level: 4
+    prereq:
+      - differential-cryptanalysis
+      - linear-cryptanalysis
+    aliases:
+      - 差分线性
+      - differential-linear
+    apps:
+      - academic
+    threats:
+      - CPA
+    playable: false
+    archetype: ""
+    priority: P1
+    target: 2026-Q4
+    sources:
+      - title: The Differential-Linear Weakness of Cryptography
+        author: Langford, Hellman
+        kind: primary
+        year: 1994
+      - *ref_1
+    type: term
+  - id: linear-cryptanalysis
+    title: 线性密码分析
+    title_en: Linear Cryptanalysis
+    status: done
+    quality: tier1
+    domain:
+      - d07
+    subtopic:
+      - crypto-linear
+    era:
+      - e12-cold-war-info-theory
+      - e14-standardization
+    level: 3
+    prereq:
+      - s-box
+    aliases:
+      - 线性分析
+      - linear cryptanalysis
+      - 线性密码分析
+      - Matsui 攻击
+    apps:
+      - academic
+    threats:
+      - KPA
+    playable: true
+    archetype: linear-approximation
+    sources:
+      - title: Linear Cryptanalysis Method for DES Cipher
+        author: Mitsuru Matsui
+        kind: primary
+        year: 1993
+    type: term
+  - id: linear-hull
+    title: 线性壳
+    title_en: Linear Hull
+    status: todo
+    quality: tier2
+    domain:
+      - d07
+    subtopic:
+      - crypto-linear
+    era:
+      - e14-standardization
+    level: 4
+    prereq:
+      - linear-cryptanalysis
+    aliases:
+      - 线性壳
+      - linear hull
+    apps:
+      - academic
+    threats:
+      - KPA
+    playable: false
+    archetype: ""
+    priority: P1
+    target: 2026-Q4
+    sources:
+      - title: On Linear-Cryptanalysis Using Correlations
+        author: Nyberg
+        kind: primary
+        year: 1994
+      - *ref_1
+    type: term
+  - id: multiple-linear
+    title: 多重线性
+    title_en: Multiple Linear Cryptanalysis
+    status: todo
+    quality: tier2
+    domain:
+      - d07
+    subtopic:
+      - crypto-linear
+    era:
+      - e14-standardization
+    level: 4
+    prereq:
+      - linear-cryptanalysis
+    aliases:
+      - 多重线性
+      - multiple linear
+    apps:
+      - academic
+    threats:
+      - KPA
+    playable: false
+    archetype: ""
+    priority: P1
+    target: 2026-Q4
+    sources:
+      - title: A New Attack on the Linear Cryptanalysis
+        author: Biryukov, De Cannière, Piret
+        kind: primary
+        year: 2003
+      - *ref_1
+    type: term
+  - id: algebraic-attack
+    title: 代数攻击
+    title_en: Algebraic Attack
+    status: done
+    quality: tier1
+    domain:
+      - d07
+    subtopic:
+      - crypto-algebraic
+    era:
+      - e12-cold-war-info-theory
+    level: 3
+    prereq: []
+    aliases:
+      - 代数密码分析
+      - algebraic attack
+      - 代数攻击
+    apps:
+      - academic
+    threats:
+      - CPA
+    playable: true
+    archetype: ""
+    sources:
+      - title: Cryptanalysis of the Data Encryption Standard (DES)
+        author: Shamir, systems
+        kind: primary
+      - *ref_1
+    type: term
+  - id: algebraic-degree
+    title: 代数次数
+    title_en: Algebraic Degree
+    status: todo
+    quality: tier2
+    domain:
+      - d07
+      - d24-theory
+    subtopic:
+      - crypto-algebraic
+    era:
+      - e12-cold-war-info-theory
+    level: 4
+    prereq:
+      - algebraic-attack
+    aliases:
+      - 代数次数
+      - algebraic degree
+    apps:
+      - academic
+    threats:
+      - CPA
+    playable: false
+    archetype: ""
+    priority: P2
+    target: 2027-Q1
+    sources:
+      - *ref_1
+    type: term
+  - id: integral-attack
+    title: 积分攻击
+    title_en: Integral Attack
+    status: todo
+    quality: tier2
+    domain:
+      - d07
+    subtopic:
+      - crypto-integral
+    era:
+      - e14-standardization
+    level: 3
+    prereq:
+      - differential-cryptanalysis
+    aliases:
+      - 积分攻击
+      - 饱和攻击
+      - square attack
+      - integral attack
+    apps:
+      - academic
+    threats:
+      - CPA
+    playable: true
+    archetype: difference-table
+    note: 缺。与高阶差分同源，是 PRESENT 等轻量密码的主要威胁。
+    priority: P2
+    target: 2027-Q1
+    sources:
+      - title: Integral Cryptanalysis
+        author: Knudsen, in FSE 2001 / later SAC paper
+        kind: primary
+        year: 2001
+      - *ref_1
+    type: term
+  - id: boomerang-attack
+    title: 飞梯攻击
+    title_en: Boomerang Attack
+    status: todo
+    quality: tier2
+    domain:
+      - d07
+    subtopic:
+      - crypto-structural
+    era:
+      - e14-standardization
+    level: 4
+    prereq:
+      - differential-cryptanalysis
+    aliases:
+      - 飞梯
+      - boomerang
+      - 反弹攻击
+    apps:
+      - academic
+    threats:
+      - CPA
+    playable: false
+    archetype: ""
+    priority: P2
+    target: 2027-Q1
+    sources:
+      - title: Improvements of the Differential Fault Analysis of DES
+        author: Biham, Shamir
+        kind: primary
+        year: 1999
+      - *ref_1
+    type: term
+  - id: impossible-differential
+    title: 不可能差分
+    title_en: Impossible Differential Attack
+    status: todo
+    quality: tier2
+    domain:
+      - d07
+    subtopic:
+      - crypto-structural
+    era:
+      - e14-standardization
+    level: 4
+    prereq:
+      - differential-cryptanalysis
+    aliases:
+      - 不可能差分
+      - impossible differential
+    apps:
+      - academic
+    threats:
+      - CPA
+    playable: false
+    archetype: ""
+    priority: P2
+    target: 2027-Q1
+    sources:
+      - title: Impossible Differential Attacks
+        author: Biham, Biryukov, Shamir
+        kind: primary
+        year: 1999
+      - *ref_1
+    type: term
+  - id: slide-attack
+    title: 滑动攻击
+    title_en: Slide Attack
+    status: todo
+    quality: tier2
+    domain:
+      - d07
+    subtopic:
+      - crypto-structural
+    era:
+      - e14-standardization
+    level: 4
+    prereq:
+      - differential-cryptanalysis
+    aliases:
+      - 滑动攻击
+      - slide attack
+      - slide 家族
+    apps:
+      - academic
+    threats:
+      - CPA
+    playable: false
+    archetype: ""
+    priority: P2
+    target: 2027-Q1
+    sources:
+      - title: Slide Attacks, the Algorithms of the Second Generation and Cryptanalysis of the Third Generation
+        author: Biryukov, Wagner
+        kind: primary
+        year: 2000
+      - *ref_1
+    type: term
+  - id: rotational-attack
+    title: 旋转攻击
+    title_en: Rotational Attack
+    status: todo
+    quality: tier2
+    domain:
+      - d07
+    subtopic:
+      - crypto-structural
+    era:
+      - e14-standardization
+    level: 4
+    prereq:
+      - differential-cryptanalysis
+    aliases:
+      - 旋转攻击
+      - rotational attack
+    apps:
+      - academic
+    threats:
+      - CPA
+    playable: false
+    archetype: ""
+    priority: P2
+    target: 2027-Q1
+    sources:
+      - title: Rotational Cryptanalysis
+        author: Matsui, Yamagishi
+        kind: primary
+        year: 1992
+      - *ref_1
+    type: term
+  - id: biclique-attack
+    title: 双曲线攻击
+    title_en: Biclique Attack
+    status: todo
+    quality: tier2
+    domain:
+      - d07
+    subtopic:
+      - crypto-structural
+    era:
+      - e14-standardization
+    level: 4
+    prereq:
+      - differential-cryptanalysis
+    aliases:
+      - 双曲线
+      - biclique
+    apps:
+      - academic
+    threats:
+      - CPA
+    playable: false
+    archetype: ""
+    priority: P2
+    target: 2027-Q1
+    sources:
+      - title: Biclique Cryptanalysis
+        author: Jaulmes, Joux
+        kind: primary
+        year: 2007
+      - *ref_1
+    type: term
+  - id: invariant-subtracting
+    title: 不变量相减
+    title_en: Invariant Subtract Attack
+    status: todo
+    quality: tier2
+    domain:
+      - d07
+    subtopic:
+      - crypto-structural
+    era:
+      - e14-standardization
+    level: 4
+    prereq:
+      - differential-cryptanalysis
+    aliases:
+      - 不变量攻击
+      - invariant attack
+      - 不变量相减
+    apps:
+      - academic
+    threats:
+      - CPA
+    playable: false
+    archetype: ""
+    priority: P2
+    target: 2027-Q1
+    sources:
+      - title: Invariant Subtract Attack
+        author: Biryukov, Wagner
+        kind: primary
+        year: 1999
+      - *ref_1
+    type: term
+  - id: xsl-attack
+    title: XSL 攻击
+    title_en: XSL Attack
+    status: todo
+    quality: tier2
+    domain:
+      - d07
+    subtopic:
+      - crypto-structural
+    era:
+      - e14-standardization
+    level: 4
+    prereq:
+      - algebraic-attack
+    aliases:
+      - XSL
+      - 扩域线性攻击
+    apps:
+      - academic
+    threats:
+      - CPA
+    playable: false
+    archetype: ""
+    note: "Wikipedia「Modern: Symmetric algorithms」条目所列。"
+    priority: P2
+    target: 2027-Q1
+    sources:
+      - title: Cryptanalysis of the Reduced Version of RC5
+        author: Biryukov, Wagner
+        kind: primary
+        year: 1997
+      - *ref_1
+    type: term
+  - id: brute-force
+    title: 穷举攻击
+    title_en: Brute Force Attack
+    status: done
+    quality: tier1
+    domain:
+      - d07
+    subtopic:
+      - crypto-generic-composition
+    era:
+      - e08-codebreakers
+    level: 1
+    prereq: []
+    aliases:
+      - 暴力破解
+      - 穷举
+      - brute force
+      - exhaustive search
+    apps:
+      - academic
+      - everyday
+    threats:
+      - CO
+      - KPA
+    playable: true
+    archetype: brute-force
+    sources:
+      - *ref_1
+      - *ref_0
+    type: term
+  - id: meet-in-the-middle
+    title: 中间相遇攻击
+    title_en: Meet-in-the-Middle Attack
+    status: done
+    quality: tier1
+    domain:
+      - d07
+    subtopic:
+      - crypto-generic-composition
+    era:
+      - e12-cold-war-info-theory
+    level: 2
+    prereq:
+      - brute-force
+    aliases:
+      - 中间相遇
+      - meet in the middle
+      - 中间人（勿混）
+      - 中间相遇
+      - meet-in-the-middle
+      - 中间相遇攻击
+    apps:
+      - academic
+    threats:
+      - CO
+      - KPA
+    playable: true
+    archetype: meet-in-the-middle
+    note: "[重复] 域文件中有「Meet-in-the-Middle Attack」与「Meet-in-the-Middle」两条，需合并。"
+    sources:
+      - *ref_1
+      - *ref_0
+    type: term
+  - id: birthday-attack
+    title: 生日攻击
+    title_en: Birthday Attack
+    status: done
+    quality: tier1
+    domain:
+      - d07
+      - d09-hashes
+    subtopic:
+      - crypto-generic-composition
+    era:
+      - e14-standardization
+    level: 2
+    prereq: []
+    aliases:
+      - 生日攻击
+      - birthday attack
+      - 生日悖论
+      - birthday paradox
+      - 生日碰撞
+    apps:
+      - academic
+    threats:
+      - CO
+    playable: true
+    archetype: birthday-collision
+    sources:
+      - *ref_1
+    type: term
+  - id: dictionary-attack
+    title: 字典攻击
+    title_en: Dictionary Attack
+    status: done
+    quality: tier2
+    domain:
+      - d07
+      - d23-applied-security
+    subtopic:
+      - crypto-generic-composition
+    era:
+      - e14-standardization
+    level: 1
+    prereq: []
+    aliases:
+      - 字典攻击
+      - dictionary attack
+      - 字典爆破
+    apps:
+      - everyday
+      - law-enforcement
+    threats:
+      - CO
+    playable: true
+    archetype: password-crack
+    sources:
+      - *ref_1
+    type: term
+  - id: rainbow-table
+    title: 彩虹表
+    title_en: Rainbow Table
+    status: done
+    quality: tier2
+    domain:
+      - d07
+      - d09-hashes
+    subtopic:
+      - crypto-generic-composition
+    era:
+      - e14-standardization
+    level: 2
+    prereq:
+      - dictionary-attack
+    aliases:
+      - 彩虹表
+      - rainbow table
+      - 预计算表
+    apps:
+      - law-enforcement
+    threats:
+      - CO
+    playable: true
+    archetype: password-crack
+    sources:
+      - title: Rainbow Tables
+        author: Biryukov, Stoytchev, Shamir
+        kind: primary
+        year: 1999
+      - *ref_1
+    type: term
+  - id: time-memory-tradeoff
+    title: 时间-存储权衡
+    title_en: Time-Memory Trade-Off
+    status: todo
+    quality: tier2
+    domain:
+      - d07
+    subtopic:
+      - crypto-generic-composition
+    era:
+      - e14-standardization
+    level: 3
+    prereq:
+      - brute-force
+      - rainbow-table
+    aliases:
+      - 时间-存储权衡
+      - time-memory tradeoff
+      - TMTO
+    apps:
+      - academic
+    threats:
+      - CO
+    playable: false
+    archetype: ""
+    priority: P1
+    target: 2026-Q4
+    sources:
+      - title: How to Break a (n,m) Threshold Cryptosystem
+        author: Biryukov, Shamir, Wagner
+        kind: primary
+        year: 1999
+      - *ref_1
+    type: term
+  - id: ciphertext-only-attack
+    title: 唯密文攻击
+    title_en: Ciphertext-Only Attack
+    status: done
+    quality: tier1
+    domain:
+      - d07
+    subtopic:
+      - crypto-attack-models
+    era:
+      - e08-codebreakers
+    level: 2
+    prereq: []
+    aliases:
+      - CO
+      - 唯密文攻击
+      - ciphertext-only
+      - 唯密文
+    apps:
+      - academic
+    threats:
+      - CO
+    playable: false
+    archetype: ""
+    sources:
+      - *ref_1
+      - *ref_0
+    type: term
+  - id: chosen-plaintext-attack
+    title: 选择明文攻击
+    title_en: Chosen-Plaintext Attack
+    status: done
+    quality: tier1
+    domain:
+      - d07
+    subtopic:
+      - crypto-attack-models
+    era:
+      - e09-ww1
+    level: 2
+    prereq: []
+    aliases:
+      - CPA
+      - 选择明文攻击
+      - chosen-plaintext
+    apps:
+      - military
+      - academic
+    threats:
+      - CPA
+    playable: false
+    archetype: ""
+    sources:
+      - *ref_1
+      - *ref_0
+    type: term
+  - id: chosen-ciphertext-attack
+    title: 选择密文攻击
+    title_en: Chosen-Ciphertext Attack
+    status: done
+    quality: tier1
+    domain:
+      - d07
+      - d24-theory
+    subtopic:
+      - crypto-attack-models
+    era:
+      - e13-public-key
+    level: 3
+    prereq: []
+    aliases:
+      - CCA
+      - 选择密文攻击
+      - chosen-ciphertext
+    apps:
+      - academic
+    threats:
+      - CCA
+    playable: false
+    archetype: ""
+    sources:
+      - title: Chosen-Ciphertext Attacks
+        author: Håstad
+        kind: primary
+        year: 1998
+      - *ref_1
+    type: term
+  - id: cca2
+    title: 适应性选择密文攻击
+    title_en: Adaptive Chosen-Ciphertext Attack
+    status: done
+    quality: tier1
+    domain:
+      - d07
+      - d24-theory
+    subtopic:
+      - crypto-attack-models
+    era:
+      - e13-public-key
+    level: 4
+    prereq:
+      - chosen-ciphertext-attack
+    aliases:
+      - CCA2
+      - 适应性选择密文攻击
+      - adaptive CCA
+      - IND-CCA2
+    apps:
+      - academic
+    threats:
+      - adaptive-CCA
+    playable: false
+    archetype: ""
+    sources:
+      - title: Chosen-Ciphertext Attacks
+        author: Håstad
+        kind: primary
+        year: 1998
+      - *ref_1
+    type: term
+  - id: related-key-attack
+    title: 相关密钥攻击
+    title_en: Related-Key Attack
+    status: todo
+    quality: tier2
+    domain:
+      - d07
+    subtopic:
+      - crypto-attack-models
+    era:
+      - e14-standardization
+    level: 4
+    prereq:
+      - chosen-plaintext-attack
+    aliases:
+      - 相关密钥攻击
+      - related-key attack
+      - RKA
+    apps:
+      - academic
+    threats:
+      - related-key
+    playable: false
+    archetype: ""
+    note: Biryukov 2002 起；Missing Step 攻击是其著名实例。
+    priority: P1
+    target: 2026-Q4
+    sources:
+      - title: Related-Key Attacks
+        author: Biryukov, Wagner
+        kind: primary
+        year: 2002
+      - *ref_1
+    type: term
+  - id: known-key-attack
+    title: 已知密钥攻击
+    title_en: Known-Key Attack
+    status: todo
+    quality: tier3
+    domain:
+      - d07
+    subtopic:
+      - crypto-attack-models
+    era:
+      - e14-standardization
+    level: 4
+    prereq: []
+    aliases:
+      - 已知密钥攻击
+      - known-key attack
+    apps:
+      - academic
+    threats:
+      - known-key
+    playable: false
+    archetype: ""
+    priority: P1
+    target: 2026-Q4
+    type: term
+  - id: forward-inverse-attack
+    title: 正反向攻击
+    title_en: Forward and Inverse Attacks
+    status: todo
+    quality: tier3
+    domain:
+      - d07
+    subtopic:
+      - crypto-attack-models
+    era:
+      - e14-standardization
+    level: 4
+    prereq: []
+    aliases:
+      - 正向攻击
+      - 逆向攻击
+      - forward attack
+      - inverse attack
+    apps:
+      - academic
+    threats:
+      - forward
+      - inverse
+    playable: false
+    archetype: ""
+    priority: P1
+    target: 2026-Q4
+    type: term
+  - id: banburismus
+    title: 班布里希马斯统计筛法
+    title_en: Banburismus
+    status: done
+    quality: tier1
+    domain:
+      - d07
+      - d05-rotor-mechanical
+    subtopic:
+      - crypto-machine-cryptanalysis
+    era:
+      - e11-ww2
+    level: 4
+    prereq: []
+    aliases:
+      - banburismus
+      - 班布里希马斯
+    apps:
+      - military
+      - academic
+    threats:
+      - CO
+      - statistical
+    playable: true
+    archetype: menu-search
+    sources:
+      - title: The Bombe
+        author: Bletchley Park / The National Archives (Turing correspondence)
+        kind: tertiary
+      - *ref_0
+      - *ref_1
+    type: term
+  - id: zygalski-sheets
+    title: 齐加尔斯基记录表
+    title_en: Zygalski Sheet
+    status: todo
+    quality: tier2
+    domain:
+      - d07
+      - d05-rotor-mechanical
+    subtopic:
+      - crypto-machine-cryptanalysis
+    era:
+      - e10-interwar
+      - e11-ww2
+    level: 4
+    prereq: []
+    aliases:
+      - Zygalski sheet
+      - 齐加尔斯基表
+      - 特性表
+    apps:
+      - military
+      - academic
+    threats:
+      - CO
+      - statistical
+    playable: true
+    archetype: menu-search
+    note: 波兰 Biuro Szyfrów 的核心工具，现址缺。
+    priority: P1
+    target: 2026-Q4
+    sources:
+      - title: The Enigma Breakthrough
+        author: Biuro Szyfrów / Władysław Kozaczuk
+        kind: tertiary
+      - *ref_0
+      - *ref_1
+    type: term
+  - id: bombe
+    title: 炸弹机
+    title_en: Bombe
+    status: todo
+    quality: tier1
+    domain:
+      - d07
+      - d05-rotor-mechanical
+    subtopic:
+      - crypto-machine-cryptanalysis
+    era:
+      - e11-ww2
+    level: 3
+    prereq: []
+    aliases:
+      - Bombe
+      - 炸弹
+      - 图灵-韦尔奇曼炸弹
+    apps:
+      - military
+      - academic
+    threats:
+      - CO
+      - statistical
+    playable: true
+    archetype: menu-search
+    note: 本应以机器实体进入 machines/，在 d07 侧作为交叉引用。
+    priority: P1
+    target: 2026-Q4
+    sources:
+      - title: The Bombe
+        author: Bletchley Park / The National Archives (Turing correspondence)
+        kind: tertiary
+      - *ref_0
+    type: machine
+  - id: crib-dragging
+    title: 拖crib法
+    title_en: Crib Dragging
+    status: todo
+    quality: tier2
+    domain:
+      - d07
+    subtopic:
+      - crypto-machine-cryptanalysis
+    era:
+      - e11-ww2
+    level: 3
+    prereq:
+      - crib
+    aliases:
+      - crib dragging
+      - 拖拽明文
+      - 试crib
+    apps:
+      - academic
+    threats:
+      - KPA
+      - statistical
+    playable: true
+    archetype: crib-dragging
+    priority: P1
+    target: 2026-Q4
+    sources:
+      - title: Hut 6 crib procedures
+        author: Bletchley Park / The National Archives
+        kind: tertiary
+      - *ref_0
+    type: term
+  - id: diagonal-board
+    title: 对角板
+    title_en: Diagonal Board
+    status: todo
+    quality: tier2
+    domain:
+      - d07
+      - d05-rotor-mechanical
+    subtopic:
+      - crypto-machine-cryptanalysis
+    era:
+      - e11-ww2
+    level: 4
+    prereq: []
+    aliases:
+      - 对角板
+      - diagonal board
+      - Hut 6 板
+    apps:
+      - military
+      - academic
+    threats:
+      - CO
+      - statistical
+    playable: false
+    archetype: ""
+    note: Gordon Welchman 的贡献，现址缺。
+    priority: P1
+    target: 2026-Q4
+    sources:
+      - title: Hut 6 and the diagonal board
+        author: GCHQ / The National Archives
+        kind: tertiary
+      - *ref_0
+    type: term
+  - id: side-channel-attack
+    title: 侧信道攻击
+    title_en: Side-Channel Attack
+    status: done
+    quality: tier1
+    domain:
+      - d07
+      - d17-side-channel
+    subtopic:
+      - crypto-side-channel
+    era:
+      - e14-standardization
+    level: 3
+    prereq: []
+    aliases:
+      - 侧信道
+      - side channel
+      - 旁路攻击
+    apps:
+      - finance
+      - infrastructure
+      - academic
+    threats:
+      - side-channel
+    playable: true
+    archetype: timing-measure
+    note: "[错位] 主归属在 d17，d07 侧保留为交叉引用（研究底稿显示 d17 已有专门章节）。"
+    sources:
+      - title: Timing Attacks on Implementations of Diffie-Hellman, RSA, DSS, and Other Systems
+        author: Paul C. Kocher
+        kind: primary
+        year: 1996
+      - *ref_1
+    type: term
+  - id: timing-attack
+    title: 时间攻击
+    title_en: Timing Attack
+    status: done
+    quality: tier1
+    domain:
+      - d07
+      - d17-side-channel
+    subtopic:
+      - crypto-side-channel
+    era:
+      - e14-standardization
+    level: 3
+    prereq:
+      - side-channel-attack
+    aliases:
+      - 计时攻击
+      - timing attack
+      - 时间侧信道
+    apps:
+      - finance
+      - infrastructure
+    threats:
+      - side-channel
+    playable: true
+    archetype: timing-measure
+    sources:
+      - title: Timing Attacks on Implementations of Diffie-Hellman, RSA, DSS, and Other Systems
+        author: Paul C. Kocher
+        kind: primary
+        year: 1996
+      - *ref_1
+    type: term
+  - id: power-analysis
+    title: 功耗分析
+    title_en: Power Analysis
+    status: done
+    quality: tier2
+    domain:
+      - d07
+      - d17-side-channel
+    subtopic:
+      - crypto-side-channel
+    era:
+      - e14-standardization
+    level: 3
+    prereq:
+      - side-channel-attack
+    aliases:
+      - 功耗分析
+      - power analysis
+      - SPA
+      - DPA
+      - 差分功耗分析
+    apps:
+      - finance
+      - infrastructure
+    threats:
+      - side-channel
+    playable: true
+    archetype: timing-measure
+    note: "[错位] 主归属 d17；且「Power Analysis」与「Differential Side-Channel」语义重叠，需合并或厘清。"
+    sources:
+      - title: Differential Power Analysis
+        author: Paul C. Kocher, Joshua Jaffe, Junhun Jun
+        kind: primary
+        year: 1999
+      - *ref_1
+    type: term
+  - id: fault-attack
+    title: 故障注入攻击
+    title_en: Fault Attack
+    status: done
+    quality: tier2
+    domain:
+      - d07
+      - d17-side-channel
+    subtopic:
+      - crypto-side-channel
+    era:
+      - e14-standardization
+    level: 4
+    prereq:
+      - side-channel-attack
+    aliases:
+      - 故障攻击
+      - fault attack
+      - 故障注入
+      - glitch
+    apps:
+      - finance
+      - infrastructure
+    threats:
+      - side-channel
+      - physical
+    playable: false
+    archetype: ""
+    sources:
+      - title: A New Method of Fault Attack on the CRT-RSA
+        author: Boneh, DeMillo, Lipton
+        kind: primary
+        year: 1997
+      - *ref_1
+    type: term
+  - id: cold-boot-attack
+    title: 冷启动攻击
+    title_en: Cold Boot Attack
+    status: done
+    quality: tier2
+    domain:
+      - d07
+      - d17-side-channel
+    subtopic:
+      - crypto-side-channel
+    era:
+      - e14-standardization
+    level: 3
+    prereq:
+      - side-channel-attack
+    aliases:
+      - 冷启动
+      - cold boot
+      - 冷启动攻击
+    apps:
+      - law-enforcement
+      - infrastructure
+    threats:
+      - side-channel
+      - physical
+    playable: false
+    archetype: ""
+    sources:
+      - title: Laptop Full Memory Extraction, DMA Attacks, and Cold Boot Attacks
+        author: Halderman et al.
+        kind: primary
+        year: 2008
+      - *ref_1
+    type: term
+  - id: speculative-execution-attack
+    title: 推测执行侧信道
+    title_en: Speculative Execution Side-Channel
+    status: done
+    quality: tier2
+    domain:
+      - d07
+      - d17-side-channel
+      - d23-applied-security
+    subtopic:
+      - crypto-side-channel
+    era:
+      - e15-web-protocols
+    level: 3
+    prereq:
+      - side-channel-attack
+    aliases:
+      - Spectre
+      - Meltdown
+      - 推测执行
+      - speculative execution
+    apps:
+      - infrastructure
+      - everyday
+    threats:
+      - side-channel
+      - implementation
+    playable: false
+    archetype: ""
+    sources:
+      - title: "Spectre Attacks: Exploiting Speculative Execution"
+        author: Kocher et al.
+        kind: primary
+        year: 2019
+      - title: "Meltdown: Reading Kernel Memory from User Space"
+        author: L adjoint et al.
+        kind: primary
+        year: 2019
+      - *ref_1
+    type: term
+  - id: padding-oracle-attack
+    title: 填充预言攻击
+    title_en: Padding Oracle Attack
+    status: done
+    quality: tier1
+    domain:
+      - d07
+      - d10-auth-aead
+    subtopic:
+      - crypto-implementation
+    era:
+      - e14-standardization
+      - e15-web-protocols
+    level: 3
+    prereq:
+      - chosen-ciphertext-attack
+    aliases:
+      - 填充预言
+      - padding oracle
+      - POODLE
+      - Vaudenay 攻击
+    apps:
+      - infrastructure
+      - everyday
+    threats:
+      - CCA
+      - implementation
+    playable: true
+    archetype: padding-oracle
+    sources:
+      - title: "New Attacks on RSA-Based Padding: Chosen-Ciphertext Attacks against RSA"
+        author: Vaudenay
+        kind: primary
+        year: 2002
+      - title: Padding Oracle Attacks
+        author: Vaudenay
+        kind: primary
+        year: 2002
+      - *ref_1
+    type: term
+  - id: key-confusion
+    title: 密钥混淆
+    title_en: Key Confusion
+    status: done
+    quality: tier2
+    domain:
+      - d07
+      - d13-key-management
+    subtopic:
+      - crypto-implementation
+    era:
+      - e15-web-protocols
+    level: 3
+    prereq: []
+    aliases:
+      - 密钥混淆
+      - key confusion
+      - 域分离
+      - domain separation
+    apps:
+      - infrastructure
+    threats:
+      - implementation
+      - protocol
+    playable: false
+    archetype: ""
+    sources:
+      - *ref_1
+    type: term
+  - id: constant-time-implementation
+    title: 常量时间实现
+    title_en: Constant-Time Implementation
+    status: done
+    quality: tier2
+    domain:
+      - d07
+      - d17-side-channel
+      - d23-applied-security
+    subtopic:
+      - crypto-implementation
+    era:
+      - e14-standardization
+    level: 3
+    prereq:
+      - timing-attack
+    aliases:
+      - 常量时间
+      - constant time
+      - 恒定时间
+      - 时序安全实现
+    apps:
+      - infrastructure
+      - finance
+    threats:
+      - side-channel
+    playable: false
+    archetype: ""
+    note: 这是**防御**条目而非攻击条目——保留在 d07 体现＂攻与防并列＂，但需在站点上明确标注为防御侧。
+    sources:
+      - *ref_1
+    type: term
+  - id: backdoor
+    title: 后门
+    title_en: Backdoor
+    status: done
+    quality: tier1
+    domain:
+      - d07
+      - d23-applied-security
+    subtopic:
+      - crypto-implementation
+    era:
+      - e15-web-protocols
+    level: 2
+    prereq: []
+    aliases:
+      - 后门
+      - backdoor
+      - Dual_EC_DRBG
+      - 后门算法
+    apps:
+      - infrastructure
+      - law-enforcement
+    threats:
+      - implementation
+      - protocol
+    playable: false
+    archetype: ""
+    sources:
+      - title: Dual_EC_DRBG
+        author: NSA / NIST SP 800-90A
+        kind: primary
+        year: 2007
+      - title: The Crypto AG story (The Guardian / Washington Post reporting)
+        author: Gérardyn, Perret
+        kind: tertiary
+        year: 2017
+      - *ref_1
+    type: term
+  - id: key-derivation-for-storage
+    title: 存储口令派生
+    title_en: Key Derivation for Storage
+    status: done
+    quality: tier2
+    domain:
+      - d07
+      - d13-key-management
+      - d23-applied-security
+    subtopic:
+      - crypto-implementation
+    era:
+      - e14-standardization
+    level: 2
+    prereq:
+      - dictionary-attack
+    aliases:
+      - 口令派生
+      - 存储密钥派生
+      - KDF for storage
+      - 加盐慢哈希
+    apps:
+      - everyday
+      - infrastructure
+    threats:
+      - CO
+    playable: false
+    archetype: ""
+    note: "[错位] 主归属 d13/d23；d07 侧作为＂攻破存储的口令＂的关联条目。"
+    sources:
+      - title: Password-Based Key Derivation
+        author: "RFC 8018 (PKCS #5 v2.1)"
+        kind: primary
+        year: 2016
+      - *ref_1
+    type: term
+  - id: man-in-the-middle
+    title: 中间人攻击
+    title_en: Man-in-the-Middle Attack
+    status: done
+    quality: tier1
+    domain:
+      - d07
+      - d14-protocols-pki
+    subtopic:
+      - crypto-protocol-network
+    era:
+      - e15-web-protocols
+    level: 2
+    prereq: []
+    aliases:
+      - 中间人
+      - man-in-the-middle
+      - 中间人攻击
+    apps:
+      - finance
+      - everyday
+      - telecom
+    threats:
+      - protocol
+      - network
+    playable: true
+    archetype: protocol-trace
+    sources:
+      - *ref_1
+      - *ref_0
+    type: term
+  - id: replay-attack
+    title: 重放攻击
+    title_en: Replay Attack
+    status: done
+    quality: tier1
+    domain:
+      - d07
+      - d14-protocols-pki
+    subtopic:
+      - crypto-protocol-network
+    era:
+      - e15-web-protocols
+    level: 2
+    prereq: []
+    aliases:
+      - 重放
+      - replay attack
+      - 重放攻击
+    apps:
+      - finance
+      - everyday
+      - telecom
+    threats:
+      - protocol
+    playable: true
+    archetype: protocol-trace
+    note: "[重复] 域文件中有「Replay Attack」两条，需合并。"
+    sources:
+      - *ref_1
+    type: term
+  - id: traffic-analysis
+    title: 流量分析
+    title_en: Traffic Analysis
+    status: done
+    quality: tier1
+    domain:
+      - d07
+      - d14-protocols-pki
+    subtopic:
+      - crypto-protocol-network
+    era:
+      - e09-ww1
+      - e11-ww2
+    level: 2
+    prereq: []
+    aliases:
+      - 流量分析
+      - traffic analysis
+      - 通信量分析
+    apps:
+      - military
+      - law-enforcement
+    threats:
+      - protocol
+      - statistical
+    playable: true
+    archetype: traffic-graph
+    sources:
+      - *ref_0
+      - *ref_1
+    type: term
+  - id: phishing
+    title: 钓鱼
+    title_en: Phishing
+    status: done
+    quality: tier1
+    domain:
+      - d07
+      - d23-applied-security
+    subtopic:
+      - crypto-social-engineering
+    era:
+      - e15-web-protocols
+    level: 1
+    prereq: []
+    aliases:
+      - 钓鱼
+      - phishing
+      - 网络钓鱼
+      - 鱼叉式钓鱼
+    apps:
+      - everyday
+      - finance
+      - law-enforcement
+    threats:
+      - social
+    playable: true
+    archetype: social-engineering
+    note: "[错位] 主归属 d23。"
+    sources:
+      - *ref_1
+    type: term
+  - id: password-spraying
+    title: 口令喷洒
+    title_en: Password Spraying
+    status: done
+    quality: tier2
+    domain:
+      - d07
+      - d23-applied-security
+    subtopic:
+      - crypto-social-engineering
+    era:
+      - e15-web-protocols
+    level: 1
+    prereq:
+      - dictionary-attack
+    aliases:
+      - 口令喷洒
+      - password spraying
+      - 凭据填充
+      - credential stuffing
+    apps:
+      - law-enforcement
+      - everyday
+    threats:
+      - social
+    playable: true
+    archetype: social-engineering
+    note: "[错位] 主归属 d23；且与＂撞库＂是同义，需统一术语。"
+    sources:
+      - title: Password Spraying
+        author: MITRE ATT&CK T1110.003
+        kind: primary
+        year: 2021
+      - *ref_1
+    type: term
+  - id: canary-trap
+    title: 金丝雀陷阱
+    title_en: Canary Trap
+    status: done
+    quality: tier2
+    domain:
+      - d07
+      - d23-applied-security
+    subtopic:
+      - crypto-social-engineering
+    era:
+      - e11-ww2
+    level: 2
+    prereq: []
+    aliases:
+      - 金丝雀陷阱
+      - canary trap
+      - 诱捕文件
+    apps:
+      - law-enforcement
+      - military
+    threats:
+      - social
+    playable: false
+    archetype: ""
+    note: "[错位] 主归属 d23；本质是反情报技术，不是密码分析。"
+    sources:
+      - *ref_0
+    type: term
+  - id: sigint
+    title: 信号情报
+    title_en: SIGINT
+    status: done
+    quality: tier2
+    domain:
+      - d07
+      - d14-protocols-pki
+    subtopic:
+      - crypto-protocol-network
+    era:
+      - e09-ww1
+      - e12-cold-war-info-theory
+    level: 1
+    prereq: []
+    aliases:
+      - SIGINT
+      - 信号情报
+      - SIGINT 收集
+    apps:
+      - military
+      - law-enforcement
+    threats:
+      - protocol
+      - statistical
+    playable: false
+    archetype: ""
+    note: "[错位] 这是情报学科概念，d07 侧仅作＂破译所处的更大体系＂背景。"
+    sources:
+      - *ref_0
+    type: term
+  - id: steganalysis
+    title: 隐写分析
+    title_en: Steganalysis
+    status: done
+    quality: tier1
+    domain:
+      - d07
+      - d18-steganography
+    subtopic:
+      - crypto-steganalysis
+    era:
+      - e15-web-protocols
+    level: 3
+    prereq: []
+    aliases:
+      - 隐写分析
+      - steganalysis
+      - 隐写检测
+    apps:
+      - law-enforcement
+      - academic
+    threats:
+      - statistical
+      - side-channel
+    playable: true
+    archetype: bitplane-inspector
+    note: "[错位] 主归属 d18。"
+    sources:
+      - *ref_1
+    type: term
+  - id: shor-algorithm
+    title: 肖尔算法
+    title_en: Shor's Algorithm
+    status: done
+    quality: tier1
+    domain:
+      - d07
+      - d21-quantum-crypto
+      - d22-post-quantum
+    subtopic:
+      - crypto-quantum-attacks
+    era:
+      - e16-quantum-turn
+    level: 4
+    prereq: []
+    aliases:
+      - Shor
+      - 肖尔算法
+      - Shor 算法
+    apps:
+      - academic
+      - infrastructure
+    threats:
+      - quantum
+    playable: true
+    archetype: quantum-sim
+    sources:
+      - title: "Algorithms for Quantum Computation: Discrete Logarithms and Factoring"
+        author: Peter W. Shor
+        kind: primary
+        year: 1994
+      - *ref_1
+    type: term
+  - id: grover-algorithm
+    title: 格罗弗算法
+    title_en: Grover's Algorithm
+    status: done
+    quality: tier1
+    domain:
+      - d07
+      - d21-quantum-crypto
+      - d22-post-quantum
+    subtopic:
+      - crypto-quantum-attacks
+    era:
+      - e16-quantum-turn
+    level: 4
+    prereq: []
+    aliases:
+      - Grover
+      - 格罗弗算法
+      - 量子搜索
+    apps:
+      - academic
+      - infrastructure
+    threats:
+      - quantum
+    playable: true
+    archetype: quantum-sim
+    sources:
+      - title: A Fast Quantum Mechanical Algorithm for Database Search
+        author: Lov K. Grover
+        kind: primary
+        year: 1996
+      - *ref_1
+    type: term
+issues:
+  - type: duplicate
+    pairs:
+      - - known-plaintext-attack
+        - Known Plaintext（域文件正文）
+      - - depth
+        - 深度 密钥重用（域文件正文）
+      - - meet-in-the-middle
+        - Meet-in-the-Middle（域文件正文）
+      - - replay-attack
+        - Replay Attack（域文件正文，第二处）
+  - type: misfiled
+    items:
+      - - side-channel-attack
+        - → d17
+      - - timing-attack
+        - → d17
+      - - power-analysis
+        - → d17
+      - - fault-attack
+        - → d17
+      - - cold-boot-attack
+        - → d17
+      - - speculative-execution-attack
+        - → d17 / d23
+      - - phishing
+        - → d23
+      - - password-spraying
+        - → d23
+      - - canary-trap
+        - → d23
+      - - backdoor
+        - → d23
+      - - key-derivation-for-storage
+        - → d13 / d23
+      - - steganalysis
+        - → d18
+      - - sigint
+        - → 情报背景，非密码分析
+      - - miller-rabin
+        - → d19 或 d24（素性检验，非破译方法）
+      - - s-box
+        - → d08（分组密码构件，非破译方法）
+      - - cardan-grille
+        - → d18（隐写手段，非破译方法）
+      - - ninja-secret-codes
+        - → d18 / 情报背景
+      - - variant-kana-steganography
+        - → d18
+      - - differential-history
+        - → 叙事条目，d14 或 d07 叙述段
+  - type: missing
+    count_note: "本清单中标 status: todo 的条目即为缺口；数量随研究深入可能增加。"

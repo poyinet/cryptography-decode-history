@@ -31,7 +31,6 @@ span: "前 500–476 CE"
 **游戏**（站内可玩 · 游戏 ID）
 - `affine` · 仿射密码
 - `caesar` · 凯撒解码
-- `catapult` · 弹射打靶
 - `substitution` · 替换密码
 ## 导航
 

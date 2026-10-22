@@ -50,7 +50,7 @@ On the British side, a plainer cipher did its quiet work: Playfair enciphered le
 
 ## 关联游戏
 
-- adfgvx, playfair, polybius, nihilist, railfence, morse, morselong, morsetap, spotdiff, typecode, tank, minesweeper, bullethell, railshooter, rhythm, reaction, spaceshooter, jefferson-disk, otp-telegraph
+- adfgvx, playfair, polybius, nihilist, railfence, morse, morselong, morsetap, spotdiff, typecode, jefferson-disk, otp-telegraph
 
 ## 关联密件
 

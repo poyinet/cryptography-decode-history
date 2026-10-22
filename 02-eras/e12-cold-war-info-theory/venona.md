@@ -44,7 +44,7 @@ The deepest lesson is at the end: the unbreakable cipher fell not to an enemy ge
 
 ## 关联游戏
 
-- venona, detective, freq, sheep, diceluck, catch, roperescue, ballpop
+- venona, detective, freq
 
 ## 关联密件
 

@@ -46,7 +46,7 @@ In those same centuries the East was shaping a different answer: Zhou commanders
 
 ## 关联游戏
 
-- caesar, substitution, affine, atbash, catapult, siege, bridge, sokoban, hanoi, alberti-disc
+- caesar, substitution, affine, atbash, alberti-disc
 
 ## 关联密件
 

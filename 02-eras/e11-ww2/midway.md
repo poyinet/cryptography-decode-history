@@ -56,7 +56,7 @@ On June 4, 1942, Nimitz ambushed the Japanese carriers northeast of Midway. Four
 
 ## 关联游戏
 
-- jn25, m209, morse, sectorsiege, frogcross, bowling, billiards, twopaddle, paddle2p, curling, navajo-talker
+- jn25, m209, morse, navajo-talker
 
 ## 关联密件
 

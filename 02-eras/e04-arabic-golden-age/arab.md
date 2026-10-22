@@ -46,7 +46,7 @@ Two centuries after frequency analysis lit up Baghdad, military secrecy was quie
 
 ## 关联游戏
 
-- freq, guess, substitution, codebreak, bifid, trifid, chess, checkers, sudoku, nonogram, game24, shikaku, fillomino, slitherlink, homophonic, book-cipher
+- freq, substitution, codebreak, bifid, trifid, homophonic, book-cipher
 
 ## 关联密件
 

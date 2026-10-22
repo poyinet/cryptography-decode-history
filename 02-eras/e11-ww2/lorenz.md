@@ -46,7 +46,7 @@ After the war Colossus was dismantled, its drawings destroyed, the secret kept f
 
 ## 关联游戏
 
-- lorenz, dungeon-cipher, binary, dungeon, platformer, pixeldino, pixelbird, asteroidf, blocks, brickbash
+- lorenz, dungeon-cipher, binary
 
 ## 关联密件
 

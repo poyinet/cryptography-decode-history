@@ -1,10 +1,5 @@
-# 构建产物（由 tools/mdgen/gen-site-bundle.js 生成，非真源）
-build/
-
-# 依赖
 node_modules/
-
-# 系统杂项
-.DS_Store
-Thumbs.db
+build/
+site/
 *.log
+.DS_Store

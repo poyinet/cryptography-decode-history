@@ -67,7 +67,7 @@ Part of the price of victory was a silence that lasted decades. After the war ne
 
 ## 关联游戏
 
-- enigma, bombe, plugboard, workshop, campaign, deckbuilder, tactics, towerdefense, poker, blackjack, klondike, typex
+- enigma, bombe, plugboard, workshop, campaign, typex
 
 ## 关联密件
 

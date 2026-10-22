@@ -35,7 +35,7 @@ span: "前 500 BCE 前"
 - `campaign` · 破译战役
 - `codeguess` · 猜词破译
 - `freq` · 词频分析
-- `wordsearch` · 单词搜索
+- `wordsearch`
 ## 导航
 
 ⬅️ 时间轴起点　·　下一时代：[古典希腊罗马](../e02-classical/README.md) →

@@ -89,7 +89,7 @@ From Caesar's shift to Shannon's bit streams, and on to the screen in your hand,
 
 ## 关联游戏
 
-- xor, hill, base64, binary, maker, codeguess, circuit, lightsout, maze, pipe, puzzle15, hashi, klotski, hashlab, solitaire, rsa, shamir, sm4, phishhunt, aes-lab, password-vault, pgp-mail, blockchain-miner, totp-verify, side-channel-lab, homomorphic-lab, tor-onion, block-modes, dh-handshake, gm-gateway, millionaire, blind-sign
+- xor, hill, base64, binary, maker, codeguess, hashlab, solitaire, rsa, shamir, sm4, phishhunt, aes-lab, password-vault, pgp-mail, blockchain-miner, totp-verify, side-channel-lab, homomorphic-lab, tor-onion, block-modes, dh-handshake, gm-gateway, millionaire, blind-sign
 
 ## 关联密件
 

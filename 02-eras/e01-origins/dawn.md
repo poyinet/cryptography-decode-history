@@ -42,7 +42,7 @@ Why is this the textbook case of decoding? Because the Rosetta Stone offers one 
 
 ## 关联游戏
 
-- freq, guess, binary, snake, memory, llk, paintbynum, mazedot, match3, g2048, scytale
+- freq, binary, scytale
 
 ## 关联密件
 

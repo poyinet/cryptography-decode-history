@@ -1,0 +1,24 @@
+{
+  "name": "cryptography-decode-history",
+  "version": "1.0.0",
+  "private": true,
+  "description": "密码学知识源：三维晶格（19 时代 × 24 技术域 × 实体层）+ 生成管线 + 分站构建",
+  "license": "CC-BY-4.0",
+  "scripts": {
+    "gen": "node tools/mdgen/gen-all.js",
+    "parity": "node tools/mdgen/check-mdgen-parity.js",
+    "coverage": "node tools/check/check-coverage.js",
+    "site": "node tools/site/build.js",
+    "check": "node tools/check/run-all.js",
+    "publish": "node tools/oneoff/publish-crypto-repo.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "js-yaml": "^4.1.0",
+    "markdown-it": "^14.1.0",
+    "sanitize-html": "^2.17.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

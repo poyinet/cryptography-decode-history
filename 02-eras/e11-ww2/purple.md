@@ -44,7 +44,7 @@ Pearl Harbor's lesson was not that intelligence was lacking — it was that inte
 
 ## 关联游戏
 
-- purple, codebreak, morse, gomoku, reversi, fourline, intel-assess
+- purple, codebreak, morse, intel-assess
 
 ## 关联密件
 

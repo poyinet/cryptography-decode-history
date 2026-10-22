@@ -92,7 +92,6 @@ domain: d07
 - 为什么重要：攻击者能自选明文看密文，比已知明文更强。
 - 现实哪里用：破分组密码、CBC。
 - 怎么被破：攻击模型，选得巧则信息量更大。
-- 游戏：`catapult`
 - 章节：caesar
 
 ### Birthday Attack（生日攻击）
@@ -520,7 +519,6 @@ domain: d07
 - `bacon` · 培根密码机
 - `bb84` · BB84 量子密钥
 - `bombe` · 炸弹机
-- `catapult` · 弹射打靶
 - `codebreak` · 大师密码
 - `enigma` · 恩尼格玛
 - `freq` · 词频分析

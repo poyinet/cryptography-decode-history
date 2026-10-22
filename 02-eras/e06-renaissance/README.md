@@ -43,7 +43,7 @@ span: "1450–1600"
 - `fanqie` · 反切码军情室
 - `starflag` · 星条旗密码
 - `substitution` · 替换密码
-- `wordsearch` · 单词搜索
+- `wordsearch`
 ## 导航
 
 ⬅️ 上一时代：[中世纪欧洲](../e05-medieval-europe/README.md)　·　下一时代：[近代早期与隐写](../e07-early-modern-steganography/README.md) →
