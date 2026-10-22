@@ -14,15 +14,15 @@ sources:
 
 ## 简介
 
-**中文**：英国文艺复兴晚期的巨人：律师、政治家、散文家，也是实验归纳法的倡导者。1623 年在《学术的进展》中公布双字体密码——用两种字体在普通文本里藏信，被视为二进制思想的先声。
+**中文**：英国文艺复兴晚期的巨人：律师、政治家、散文家，也是实验归纳法的倡导者。1623 年前后他在《学术的进展》中公布了一种「双字体密码」：用两套不同的字体（或两个变体）来编码每条消息的每一位——实际上是把 26 个字母编成 6 位的二进制串，藏进一段看似普通的散文里。这是「用二进制思想藏信」的最早雏形，比现代的二进制编码早了两百多年。他本人终生痴迷「密文里藏着真相」，甚至宣称莎士比亚的戏里藏着密码——后人至今还在找那条「培根密文」。
 
-**English**: A giant of late-Renaissance England: lawyer, statesman, essayist and champion of experimental induction. In 1623 he published the biliteral cipher — hiding a message in two fonts within ordinary prose — an early glimpse of binary thinking.
+**English**: A giant of late-Renaissance England: lawyer, statesman, essayist, and champion of experimental induction. Around 1623 he published a "biliteral cipher" in The Advancement of Learning: encode every position of a message with one of two fonts (or two letter variants) — effectively a 6-bit binary string hiding the 26 letters, embedded in an ordinary-looking essay. It is the earliest seed of "binary thinking to hide a message," two centuries before modern binary encoding. Bacon himself was obsessed with "the truth hidden inside the cipher," even claiming that Shakespeare's plays contained ciphers — and people are still hunting for that "Bacon cipher" today.
 
 ## 一句话
 
-**中文**：冷知识：培根的双字体密码用「普通体 vs 加粗体」两种字形藏信——5 位 A/B 串就是二进制的先声，比莱布尼茨的二进制早了几十年。
+**中文**：培根的双字体密码把 26 个字母编成 6 位二进制串——二进制藏信思想的最早雏形。
 
-**English**: Fun fact: Bacon's biliteral hid messages in two typefaces — five A/B symbols, a precursor of binary decades before Leibniz.
+**English**: Bacon's biliteral cipher encodes the 26 letters as 6-bit binary strings — the earliest seed of "binary thinking to hide a message."
 
 ## 名言
 

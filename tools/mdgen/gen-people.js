@@ -10,6 +10,7 @@ const fs = require('fs');
 const path = require('path');
 const { load } = require('./lib/load-poyi');
 const { PEOPLE: LEDGER_PEOPLE } = require('./source-ledger');
+const { BIOS } = require('./people-bios');
 
 const OUT = path.resolve(__dirname, '..', '..', 'people');
 
@@ -51,12 +52,14 @@ function personMd(id, d) {
   const role = get(zh, id, 'role');
   const eraText = get(zh, id, 'era');
   const icon = get(zh, id, 'icon');
-  const fact = get(zh, id, 'fact');
-  const factEn = get(en, id, 'fact');
-  const bio = get(zh, id, 'bio');
-  const bioEn = get(en, id, 'bio');
-  const quote = get(zh, id, 'quote');
-  const quoteEn = get(en, id, 'quote');
+  // 仓库自有台账优先（修 undefined 硬伤 + 说人话），源数据空才回落
+  const bb = BIOS[id] || {};
+  const fact = bb.fact || get(zh, id, 'fact');
+  const factEn = bb.factEn || get(en, id, 'fact');
+  const bio = bb.bio || get(zh, id, 'bio');
+  const bioEn = bb.bioEn || get(en, id, 'bio');
+  const quote = bb.quote || get(zh, id, 'quote');
+  const quoteEn = bb.quoteEn || get(en, id, 'quote');
 
   // era 反链：章节归属优先，否则手动
   const chapters = d.STORIES.filter(s => s.people.includes(id)).map(s => s.id);

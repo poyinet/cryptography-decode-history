@@ -7,7 +7,7 @@ domain: d19
 
 # 随机数与 CSPRNG（Randomness & CSPRNG）
 
-> 技术域 d19 ·（Phase 0 占位 · 概念/算法/协议/术语待填充）
+> 技术域 d19
 
 ## 概念
 
@@ -22,7 +22,15 @@ domain: d19
 
 **English**: The foundation of cryptography is not algorithms — it is randomness. The strongest cipher with a predictable key equals zero. This demo generates a "random" key from an ordinary LCG seeded by the current second: an attacker brute-forces just 86,400 seeds per day and reproduces every output. V8's Math.random (xorshift128+) can likewise have its state recovered from outputs. Cryptography demands a CSPRNG: seeded from OS entropy, unobservable and unenumerable.
 ## 术语
-（待填）
 
+（本域在 282 术语表中无独立条目，相关概念见「概念」节与「关联人物」）
 ## 关联时代 / 人物 / 游戏
-（待填）
+
+**关联时代**（轴1 编年叙事）
+- （无）
+
+**关联人物**（人物志）
+- （无）
+
+**关联游戏**（站内可玩 · 游戏 ID）
+- （无）

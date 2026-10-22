@@ -13,15 +13,15 @@ sources:
 
 ## 简介
 
-**中文**：米兰的医生、赌徒与数学家，概率论先驱（《论掷骰游戏》）。1550 年发明的格栅隐写以极低成本实现了「密文藏于明文」，是隐写术史的分水岭。
+**中文**：米兰的医生、赌徒与数学家，概率论先驱（《论掷骰游戏》）。1550 年他发明了「卡丹诺格栅」：一块钻了方孔的板，把密文写在孔上，再转动木板，同一张纸上就叠出多层密文。这极低成本地实现了「密文藏于明文」，是隐写术史的分水岭。他还发现了格栅的隐藏用法：把一条真消息写进另一封看似普通的信里，甚至写进另一层密文里——这就是「超级加密」的雏形。他是把「纸与孔」变成密码武器的那个人，一个赌徒用数学把密信藏进了日常。
 
-**English**: Milanese physician, gambler and mathematician, a pioneer of probability (On Games of Dice). His 1550 grille hid cipher inside plain sight at almost zero cost — a watershed in steganography.
+**English**: A Milanese physician, gambler and mathematician, a pioneer of probability (On Games of Dice). In 1550 he invented the "Cardano grille": a board with square holes; write the ciphertext through the holes, rotate the board, and multiple layers of ciphertext stack onto the same sheet. At almost zero cost it realized "hiding the cipher inside plain sight," a watershed in steganography. He also found a hidden use of the grille: write one real message inside another letter that looks ordinary, or even inside another layer of ciphertext — the seed of "super-encryption." He was the man who turned paper and holes into a cryptographic weapon; a gambler who used mathematics to hide secret letters inside the everyday.
 
 ## 一句话
 
-**中文**：他写的掩码格栅只需一张挖孔卡片——无孔处填上无害闲话，有孔处拼出密信。四百年后二战双方仍在用它传递情书与军令。
+**中文**：卡丹诺格栅不只是写密文，还能把一条真信藏进一封假信——「超级加密」的思想源头。
 
-**English**: His grille is just a card with holes cut out: fill innocuous chatter through them and a hidden letter appears. Both World Wars still used grilles for love letters and military orders alike.
+**English**: The Cardano grille doesn't just write ciphertext — it can hide one real letter inside another fake one, the origin of the "super-encryption" idea.
 
 ## 名言
 

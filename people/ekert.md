@@ -13,15 +13,15 @@ sources:
 
 ## 简介
 
-**中文**：受信息论与张量纠缠双线训练；他坚持「安全来源是量子关联而非单个光子」这一视角塑造了整个纠缠 QKD 学派。
+**中文**：波兰裔英国物理学家、密码学家，量子密钥分发的开创者之一。1991 年他在 BB84 之后提出 E91 协议——用「纠缠态」做量子密钥分发，两个粒子的测量结果天然关联，窃听任何一端都会破坏纠缠、立刻被双方察觉。E91 证明了量子安全可以由「物理定律」而非「计算困难」保证，是 QKD 从「信息携带」走向「纠缠关联」的转折。他和 Bennett、Brassard 是 QKD 的三根支柱。
 
-**English**: Trained across physics and information theory, he championed the view that entanglement, not single photons, is the true source of quantum security.
+**English**: A Polish-British physicist and cryptographer, one of the founders of quantum key distribution. In 1991, after BB84, he proposed the E91 protocol — using "entangled states" for QKD, where two particles' measurement results are naturally correlated, and eavesdropping on either end breaks the entanglement and is instantly detected by both. E91 proved quantum security can rest on "physical law" rather than "computational hardness," the pivot of QKD from "information carrying" to "entanglement correlation." He, Bennett, and Brassard are the three pillars of QKD.
 
 ## 一句话
 
-**中文**：1991 年提出 E91：用贝尔不等式与量子纠缠检测窃听——只要纠缠关联被测量破坏，Eve 就留下指纹。它与 BB84 共同构成量子密钥分发的两条路线。
+**中文**：E91 协议用「纠缠」做密钥，窃听必破坏纠缠——这是 QKD 从 BB84 的「信息携带」走向「纠缠关联」的转折。
 
-**English**: In 1991 he proposed E91: detect eavesdropping through Bell inequalities and quantum entanglement — any measurement disturbs the correlations and Eve leaves fingerprints. With BB84 it defines QKD's two routes.
+**English**: The E91 protocol uses "entanglement" for the key — eavesdropping must break the entanglement, the pivot of QKD from BB84's "information carrying" to "entanglement correlation."
 
 ## 名言
 

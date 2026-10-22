@@ -13,15 +13,15 @@ sources:
 
 ## 简介
 
-**中文**：被同事形容为「用直觉解题」的语言天才；他向新人们讲授破译时最常说的一句话是「先别急着分析，先把它读完」。
+**中文**：英国密码学家，VENONA 工程的关键人物。他和 Gardner 在 1940 年代到 1980 年代，靠苏联特工复用一次性密钥的失误，逐条破译了苏联的 VENONA 密码——这一破译让美国得以识别潜伏在政府里的苏联间谍，直接影响了麦卡锡时代。Tiltman 和 Gardner 用了将近四十年，把一条被「完美保密」的密码，靠「人为复用」这个破绽撕开了。
 
-**English**: Described as a linguistic genius who solved problems "by feel"; his advice to newcomers was famously "read it first, analyse later".
+**English**: A British cryptographer, a key figure in the VENONA project. With Gardner, he spent the 1940s through the 1980s breaking Soviet VENONA codes bit by bit, relying on the Soviet agents' reuse of one-time keys — a break that let the US identify Soviet spies embedded in government and directly shaped the McCarthy era. Tiltman and Gardner spent nearly forty years tearing open a cipher that was "perfectly secure" via the single flaw of "human reuse."
 
 ## 一句话
 
-**中文**：二战破译率最高的密码学家之一，精通日文、中文与俄文；1940 年代中期转入 VENONA，破解出 KGB 一次性密码本被复用的最早证据，并用「金发女郎」线索撬开苏联间谍网。
+**中文**：VENONA 的破译靠的是「同一条一次性密钥被两次使用」——一次性的密码，只要复用一次就全破。
 
-**English**: One of the war's most prolific codebreakers, fluent in Japanese, Chinese and Russian; from the mid-1940s he led VENONA's break-ins, exposing KGB pad reuse and the "Blonde" opening into Soviet networks.
+**English**: VENONA's break relied on "the same one-time key used twice" — a one-time cipher, reused even once, is completely broken.
 
 ## 名言
 

@@ -3,6 +3,14 @@
 > 一部以**三维知识晶格**组织的「人类三千年加密解密史」开源知识库：每个知识点同时被**哪个时代 × 哪类技术 × 关联谁/哪件密件/哪台机器**三轴定位并互链。
 > 纯 Markdown + frontmatter，GitHub 原生可读。中文主文 + 英文版双语。内容 CC BY 4.0。
 
+## 从这里开始（Start Here）
+**第一次读这个仓库？** 任选一条入口，每条都顺路到底：
+
+- 🕰 **零基础顺读**：[古代起源](02-eras/e01-origins/README.md) → 每个时代页底部有「上一时代 / 下一时代」导航，沿时间轴一路顺读到今 → 再进 [基础与术语](01-foundations.md)。
+- 🔍 **破译者路线**：先读 [破译方法](tech/d07-cryptanalysis.md)，再按时代看真实破译战例。
+- ⚙️ **专家直达**：直接进下方 [轴 2 技术域](#轴-2--概念技术体系24-技术域) 的对应域，域内交叉链接到时代与实体。
+- 🧩 **查人 / 查物 / 查机器**：[人物志索引](people/README.md)（87 位 · 按时代）· [密件册索引](artifacts/README.md)（48 件）· [机器博物馆](machines/README.md)（7 台）。
+
 ## 三轴结构
 
 ### 轴 1 · 编年叙事（19 章，两段）
@@ -56,22 +64,22 @@
 - [理论基础（Theoretical Foundations）](tech/d24-theory.md)
 
 ### 轴 3 · 实体层（人/物/词/题）
-- **人物志** People
-- **密件册** Artifacts
-- **机器/装置** Machines
-- **测验** Quiz
-- **冷知识** Trivia
-- **名言** Quotes
-- **时间线** Timeline
-- **世界地图** World Map
-- **中华密码史** China's Cryptography
-- **人物关系网** People Relations
-- **隐藏彩蛋** Easter Eggs
+- [人物志 People](people/README.md) · 87 位（按时代编年索引）
+- [密件册 Artifacts](artifacts/README.md) · 48 件
+- [机器博物馆 Machines](machines/README.md) · 7 台
+- [测验 Quiz](quiz/questions.md) · 252 题
+- [冷知识 Trivia](facts/facts.md)
+- [名言 Quotes](quotes/quotes.md)
+- [时间线 Timeline](timeline/timeline.md)
+- [世界地图 World Map](map/map.md)
+- [中华密码史 China's Cryptography](02-eras/e19-china/china.md)
+- [人物关系网 People Relations](relations/relations.md)
+- [隐藏彩蛋 Easter Eggs](eggs/eggs.md)
 
-## 三条阅读路线
-- **零基础**：从 [轴 1 段 A 第 1 章](02-eras/e01-origins/) 顺着时间轴读到今，再进 [基础与术语](01-foundations.md)。
-- **破译者**：先读 [破译方法](tech/d07-cryptanalysis.md)，再按时代看真实破译战例。
-- **专家**：直接进 [轴 2 技术域](tech/) 的对应域，交叉引用时代与实体。
+## 导航与交叉引用
+- **时间轴顺读**：每个时代页（`02-eras/eNN-*/README.md`）底部都有「上一时代 / 下一时代」导航，可沿 e01→e18 一路顺读，e19 中国平行线横切。
+- **域 ⇄ 时代 ⇄ 人物 ⇄ 游戏**：每个技术域页（`tech/dNN-*.md`）末尾「关联时代 / 人物 / 游戏」三组交叉链接；每个时代页「关联」节反向列出属该时代的域 / 人物 / 机器 / 密件 / 游戏。
+- **查人 / 查物**：[人物志索引](people/README.md) / [密件册索引](artifacts/README.md) / [机器博物馆](machines/README.md) 按时代编年、名字直达。
 
 ## 状态
-Phase 0 空骨架已建（19 章 + 24 域 + 实体层占位）。正文按 Phase 1（现有内容对号入座）→ Phase 2（补缺口）逐步填充。
+内容已全量填充并交叉互链：19 时代（5 叙述 + 12 章）× 24 技术域 × 实体层（人物 87 / 密件 48 / 机器 7 / 术语 282 + 测验 252）。数据真源为 poyi.net 站点数据，经 `tools/mdgen/` 生成器落成本 Markdown，`gen-all.js` 全量重建 + `check-mdgen-parity.js` 逐字段等价校验全绿。

@@ -13,15 +13,15 @@ sources:
 
 ## 简介
 
-**中文**：斯坦福博士，师从 Hellman。他在离散对数上构建加密与签名两大体系，后转入工业界推动 Netscape 安全与 Visa 3-D Secure 支付协议。
+**中文**：埃及裔美国密码学家，公钥密码的早期奠基人之一。1984 年他在 Diffie-Hellman 的基础上提出 ElGamal 加密——第一个真正可操作的概率性公钥加密方案，也是后来 DSA（数字签名算法）的数学基础。他和 Diffie、Hellman 几乎同时想到「公钥」，但 ElGamal 是第一个把它变成可用算法的人。他在 1980 年代就指出「公钥密钥交换可以基于离散对数」，比 RSA 更早一步。
 
-**English**: A Stanford PhD under Hellman, he built both encryption and signatures on discrete logarithms, then drove Netscape security and Visa's 3-D Secure protocol in industry.
+**English**: An Egyptian-American cryptographer, one of the early founders of public-key cryptography. In 1984, building on Diffie-Hellman, he proposed ElGamal encryption — the first truly operable probabilistic public-key scheme, and the mathematical basis of the later DSA (Digital Signature Algorithm). He, Diffie, and Hellman almost simultaneously conceived "public key," but ElGamal was the first to turn it into a usable algorithm. In the 1980s he already pointed out "public-key exchange can rest on discrete log," a step ahead of RSA.
 
 ## 一句话
 
-**中文**：1985 年一篇论文同时奠定 ElGamal 公钥加密与美国联邦签名标准 DSA 的地基；他还领导设计了 SSL 3.0 的早期形态——今天 HTTPS 的祖先。
+**中文**：ElGamal 的「k 复用」漏洞，是签名系统里「随机数绝不重样」这条铁律的源头。
 
-**English**: One 1985 paper underpins both ElGamal public-key encryption and the US signature standard DSA; he also led early SSL 3.0 work — a direct ancestor of today's HTTPS.
+**English**: ElGamal's "k-reuse" flaw is the source of the "never repeat randomness" iron rule in signature systems.
 
 ## 名言
 

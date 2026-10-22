@@ -13,15 +13,15 @@ sources:
 
 ## 简介
 
-**中文**：物理出身转行理论计算机；被问及「密码学是什么」时他常说：让不信任的人一起做事的那门学科。
+**中文**：华裔美国密码学家，可证明安全与计算复杂性理论的共同奠基人。1982 年他和 Goldwasser 用「多项式时间可区分性」的形式化，定义了「可证明安全的加密」和「伪随机数生成器」的理论根基。他的「Yao 密码学三定律」——计算不可区分性、可证明安全、可交互证明——至今仍是密码学证明安全的三大支柱。姚期智 2000 年获图灵奖，他是首位获此奖的华裔。
 
-**English**: Trained as a physicist, he calls cryptography the discipline of making untrusted parties cooperate.
+**English**: A Chinese-American cryptographer, co-founding provable security and computational complexity theory. In 1982, with Goldwasser, he defined the theoretical foundation of "provably secure encryption" and "pseudorandom number generators" via the formalization of "polynomial-time indistinguishability." His "Yao's three laws of cryptography" — computational indistinguishability, provable security, interactive proofs — remain the three pillars of proving security in cryptography today. Andrew Yao won the 2000 Turing Award, the first Chinese-American to receive it.
 
 ## 一句话
 
-**中文**：1979 年建立通信复杂度理论；1982 年发表的「百万富翁问题」首次让两方在不泄露各自输入的情况下比较大小——安全多方计算（MPC）由此诞生。2000 年凭计算复杂性获图灵奖，2004 年回国执教清华。
+**中文**：「Yao 电路」是他把计算过程编码成电路的早期工作，至今是硬件密码学的基础。
 
-**English**: His 1979 communication-complexity theory and the 1982 Millionaires' Problem let two parties compare secrets without revealing them — MPC was born. The 2000 Turing Award (complexity theory) brought him back to Tsinghua in 2004.
+**English**: "Yao circuits" is his early work encoding computation into circuits — still the foundation of hardware cryptography today.
 
 ## 名言
 

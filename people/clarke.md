@@ -13,15 +13,15 @@ sources:
 
 ## 简介
 
-**中文**：剑桥数学双星毕业（Wrangler），1940 年加入布莱切利园 8 号木屋。她改良了 Banburismus 概率分析法，为护航船团对抗大西洋狼群争取了关键时间；战后继续在 GCHQ 工作至退休。
+**中文**：剑桥数学双星毕业（Wrangler），1940 年加入布莱切利园 8 号木屋，与图灵、Welchman 同室。她是最早用数学直接攻破 Enigma 的女性之一——全园只有极少数女性做到这一点。她改良了 Banburismus（一种用概率统计推断 Enigma 转子设置的数学法），为护航船团对抗大西洋狼群争得关键时间。她与图灵既是同僚也是挚友，二人对 Enigma 的联合破译是那段历史的核心。战后她继续在 GCHQ 工作到退休，把一生都留给了密码。
 
-**English**: A Cambridge mathematics Wrangler who joined Hut 8 at Bletchley Park in 1940, she advanced the Banburismus probabilistic method that bought convoy-critical time against Atlantic wolfpacks; she served at GCHQ until retirement.
+**English**: A Cambridge mathematics Wrangler who joined Hut 8 at Bletchley Park in 1940, sharing the hut with Turing and Welchman. She was one of the very first women to break Enigma by pure mathematics — only a handful of women in the whole park managed it. She advanced Banburismus, the probabilistic method for deducing Enigma's rotor settings, buying convoy-critical time against the Atlantic wolfpacks. She was both a colleague and a close friend of Turing, and their joint work on Enigma is the core of that history. After the war she kept working at GCHQ until retirement, leaving her whole life to cryptography.
 
 ## 一句话
 
-**中文**：因女性身份长期只拿「语言学级」薪水、无法挂主管头衔——但图灵亲口说她是他最信任的同行。凯拉·奈特莉在《模仿游戏》中饰演了她。
+**中文**：她是布莱切利园极少数用数学直接破译 Enigma 的女性之一，与图灵同室同案。
 
-**English**: Barred by her gender from a full "linguist-grade" career grade and official titles, she was nonetheless — by Turing's own account — the colleague he trusted most. Keira Knightley played her in The Imitation Game.
+**English**: She was one of the very few women in the whole park who broke Enigma by pure mathematics, working in the same hut and on the same case as Turing.
 
 ## 名言
 

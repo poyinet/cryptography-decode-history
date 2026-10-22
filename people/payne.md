@@ -14,15 +14,15 @@ sources:
 
 ## 简介
 
-**中文**：本行是地质学与古生物学的学者，一战时应征入伍，在法军密码处破译德军电报。1918 年 6 月 3 日破开德军最新密码 ADFGVX，为守住巴黎赢得了时间。
+**中文**：一战末期的密码分析家。1918 年 6 月 3 日，他破开了德军最新、自以为无懈可击的密码 ADFGVX——这曾是让协约国情报机构绝望的「不可破」密码。ADF GVX 的狠在于它把「替换」和「换位」叠在一起：先用一个 5×5 方阵（Polybius 方格）做替换，再做列换位，两层套在一起，暴力穷举根本无从下手。Payne 看出这套结构里藏着可利用的统计规律，硬把它一层层剥开。这一破译在德军 1918 年夏季大反攻前攥住了关键情报，为守住巴黎赢得了时间。
 
-**English**: A geologist and paleontologist by training, he was drafted in 1914 and ended up in the French Army's cipher section. On 3 June 1918 he broke the Germans' newest cipher, ADFGVX — buying the time that kept Paris safe.
+**English**: A late-WWI codebreaking analyst. On 3 June 1918 he cracked the Germans' newest, supposedly unbreakable cipher, ADFGVX — the one that had left the Allied intelligence agencies despairing. ADFGVX's danger lay in stacking "substitution" over "transposition": it first did a substitution via a 5x5 Polybius square, then a columnar transposition, the two layers nested so that brute force had no foothold. Payne spotted exploitable statistical regularity inside that structure and peeled it apart layer by layer. This break captured crucial intelligence just before the German summer offensive of 1918, buying the time that kept Paris safe.
 
 ## 一句话
 
-**中文**：冷知识：佩恩万本职是地质学与古生物学家，一战应征入伍才转入密码处；他用两条开头相同的电报破解了 ADFGVX。
+**中文**：ADF GVX 把替换与换位双层嵌套，Payne 靠统计规律把它一层层剥开——一战中「最不可破」密码的终结。
 
-**English**: Fun fact: Painvin was a geologist and paleontologist, drafted into the cipher section; two telegrams with identical openings let him break ADFGVX.
+**English**: ADF GVX nested substitution over transposition; Payne peeled it apart layer by layer with statistical regularity — the end of WWI's "most unbreakable" cipher.
 
 ## 名言
 

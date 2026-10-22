@@ -13,15 +13,15 @@ sources:
 
 ## 简介
 
-**中文**：数学家出身，业余痴迷棋类；生前从未公开讲述破译经历——直到 1978 年去世，作品才被历史学家重新发现。
+**中文**：波兰密码局数学家，波兰三杰之一。1932–1939 年间他和 Rejewski、Różycki 在波兰密码局破译德军 Enigma——人类第一次用数学打败机器。Zygalski 发明了「齐加利斯克卡」——一种用穿孔卡片（类似穿孔纸带的反向逻辑）穷举 Enigma 转子设置的筛选工具，把破译时间从数周缩到数小时。他和 Rejewski、Różycki 在 1939 年把 Enigma 破译方法交给英国，为后来的 Bombe 奠定了数学基础。
 
-**English**: A mathematician by training and a chess enthusiast, he never spoke publicly about his codebreaking until his death in 1978.
+**English**: A mathematician at the Polish Cipher Bureau, one of the Polish trio. Between 1932 and 1939, with Rejewski and Różycki, he broke the German Wehrmacht Enigma at the Polish Cipher Bureau — the first time humanity beat a machine with mathematics. Zygalski invented the "Zygalski sheets" — a perforated-card device (the reverse logic of punched paper tape) that sieved Enigma rotor settings, shrinking breaking time from weeks to hours. He, Rejewski, and Różycki handed the Enigma-breaking method to Britain in 1939, laying the mathematical foundation for the later Bombe.
 
 ## 一句话
 
-**中文**：1938 年发明「齐加尔斯基打孔片」，把 Enigma 轮序筛选从手工变成机械比对；战前与雷耶夫斯基、鲁日茨基重构出德军 Enigma。战后因《官方机密法》隐姓埋名在英国教书，身份到 1970 年代才被承认。
+**中文**：齐加利斯克卡用穿孔纸带的「反向逻辑」筛选转子，是图灵 Bombe 的直接前身。
 
-**English**: His 1938 perforated Zygalski sheets mechanised the rotor-elimination sieve; with Rejewski and Różycki he rebuilt German Enigma before the war. Post-war secrecy kept him teaching anonymously in Britain until the 1970s.
+**English**: The Zygalski sheets sieve rotors with the "reverse logic" of punched paper tape — the direct predecessor of Turing's Bombe.
 
 ## 名言
 

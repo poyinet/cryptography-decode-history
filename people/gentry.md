@@ -14,15 +14,15 @@ sources:
 
 ## 简介
 
-**中文**：斯坦福博士，IBM 研究员：2009 年交出全同态加密的首个实现，把云端计算带入密文时代。
+**中文**：美国密码学家，全同态加密（FHE）的发明者。2009 年他宣布了一种能在密文上直接计算、解密前不出结果的方法——这是密码学一个三十年的难题：加密后只能解密再算，能不能「在密文上算」？他的答案靠「自举」技术把错误传播控制下来。Gentry 的论文发表后，全同态加密从不可能变成了一门活跃的研究方向，隐私计算、联邦学习的理论天花板被抬高了一整层。
 
-**English**: Stanford PhD, IBM researcher: his 2009 fully homomorphic encryption brought cloud computing into the ciphertext era.
+**English**: An American cryptographer, the inventor of fully homomorphic encryption (FHE). In 2009 he announced a method that computes directly on ciphertext without decrypting — a thirty-year open problem in cryptography: normally you must decrypt then compute. Can you "compute on the ciphertext"? His answer used "bootstrapping" to control error propagation. After his paper, FHE went from impossible to a live research field, raising the theoretical ceiling of privacy computing and federated learning by a full layer.
 
 ## 一句话
 
-**中文**：2009 年在斯坦福博士论文中首次提供了在任何计算上不需要解密的加密方案——当年被《泰晤士报》称为「密码学圣杯」。9 年后 Google 同态云面世。
+**中文**：全同态加密的「自举」（bootstrapping）技术，是 Gentry 把加密噪声「重新加密」自己、从而无限计算的关键。
 
-**English**: His 2009 PhD dissertation gave the first encryption that allows arbitrary computation without decryption, hailed as the cryptographic holy grail.
+**English**: The "bootstrapping" of fully homomorphic encryption is Gentry's key — re-encrypting the noise "on itself" so computation can go on indefinitely.
 
 ## 名言
 

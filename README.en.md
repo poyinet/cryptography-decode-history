@@ -3,6 +3,14 @@
 > An open-source knowledge base of the 3,000-year history of human cryptography, organized as a **three-axis lattice**: every topic is located by **which era × which technical domain × which people/artifacts/machines** and cross-linked.
 > Pure Markdown + frontmatter, readable natively on GitHub. Chinese-primary with an English section. Content CC BY 4.0.
 
+## Start Here
+**Reading this repo for the first time?** Pick any entry point — each one leads you all the way through:
+
+- 🕰 **Beginner, in order**: [Ancient Origins](02-eras/e01-origins/README.md) → every era page has a "previous / next era" footer, so you can follow the timeline to today → then read [Foundations & Terminology](01-foundations.md).
+- 🔍 **Codebreaker route**: read [Cryptanalysis](tech/d07-cryptanalysis.md) first, then study real breaking cases era by era.
+- ⚙️ **Expert, direct**: jump to the matching domain under [Axis 2](#axis-2--technical-taxonomy-24-domains) below; each domain cross-links eras and entities.
+- 🧩 **Look up a person / artifact / machine**: [People index](people/README.md) (87) · [Artifacts index](artifacts/README.md) (48) · [Machines](machines/README.md) (7), each grouped by era.
+
 ## The three axes
 
 ### Axis 1 · Chronology (19 chapters, two segments)
@@ -56,17 +64,22 @@ Segment B — the age of algorithms (computer era, by revolution):
 - [Theoretical Foundations](tech/d24-theory.md)
 
 ### Axis 3 · Entities (people / artifacts / machines / terms / quizzes)
-- **People**
-- **Artifacts**
-- **Machines**
-- **Quiz**
-- **Trivia**
-- **Quotes**
-- **Timeline**
-- **World Map**
-- **China's Cryptography**
-- **People Relations**
-- **Easter Eggs**
+- [People](people/README.md) · 87 (chronological index)
+- [Artifacts](artifacts/README.md) · 48
+- [Machines](machines/README.md) · 7
+- [Quiz](quiz/questions.md) · 252 questions
+- [Trivia](facts/facts.md)
+- [Quotes](quotes/quotes.md)
+- [Timeline](timeline/timeline.md)
+- [World Map](map/map.md)
+- [China's Cryptography](02-eras/e19-china/china.md)
+- [People Relations](relations/relations.md)
+- [Easter Eggs](eggs/eggs.md)
+
+## Navigation & cross-references
+- **Read the timeline in order**: every era page (`02-eras/eNN-*/README.md`) has a "previous / next era" footer, so you can walk e01→e18 in order; e19 (China's parallel line) is a cross-cut.
+- **Domain ⇄ era ⇄ people ⇄ games**: the bottom of each domain page (`tech/dNN-*.md`) has a "related eras / people / games" cross-link block; each era page's "related" section lists in reverse the domains / people / machines / artifacts / games of that era.
+- **Look up people / artifacts**: [People index](people/README.md) / [Artifacts index](artifacts/README.md) / [Machines](machines/README.md), grouped by era, with direct name links.
 
 ## Status
-Phase 0 skeleton in place (19 eras + 24 domains + entity layers, placeholders). Content is filled in Phase 1 (map existing content) → Phase 2 (fill the gaps).
+All content is filled and cross-linked: 19 eras (5 narratives + 12 chapters) × 24 technical domains × entity layers (87 people / 48 artifacts / 7 machines / 282 terms + 252 quiz questions). The data source is poyi.net site data, rendered into this Markdown by the `tools/mdgen/` generators; `gen-all.js` rebuilds everything and `check-mdgen-parity.js` field-by-field equivalence checks all pass.

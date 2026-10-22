@@ -13,15 +13,15 @@ sources:
 
 ## 简介
 
-**中文**：习惯在散步时思考，自称成果大半来自漫无边际的散步；他的素性测试直接服务了后来 RSA 的密钥生成。
+**中文**：美籍以色列密码学家，RSA 的三位作者之一，也是独立提出公钥密码的人之一。1977 年和 Rivest、Shamir 一起发表 RSA 之前，他 1975 年就独立设计了一个公钥加密系统（Rabin 加密），只是没发表。他还提出「Rabin 密码系统」，用二次剩余而非大数分解做公钥——这是公钥密码的另一个独立方向。他 1985 年因「密码学的计算复杂性理论」获图灵奖相关荣誉，是「把计算复杂性引入密码学」的先驱。
 
-**English**: A famously peripatetic thinker, he attributes much of his work to long walks; his primality test became the engine of RSA key generation.
+**English**: An American-Israeli cryptographer, one of the three authors of RSA, and one who independently conceived public-key crypto. Before publishing RSA with Rivest and Shamir in 1977, he had independently designed a public-key scheme (Rabin encryption) in 1975, just unpublished. He also proposed the "Rabin cryptosystem," using quadratic residues rather than integer factorization for public keys — another independent direction in public-key crypto. He received Turing-Award-related honors in 1985 for "computational complexity theory of cryptography," a pioneer in "bringing computational complexity into cryptography."
 
 ## 一句话
 
-**中文**：1976 年以非确定性机获图灵奖；1977 年提出基于二次剩余的 Rabin 密码系统（破解它等价于大数分解）；1979 年概率素性测试；1981 年不经意传输（OT）——安全计算最基础的原语之一。
+**中文**：Rabin 加密用「判断一个数是不是二次剩余」做公钥，比 RSA 的分解更早被想到。
 
-**English**: Turing Award 1976 for nondeterministic machines; the 1977 Rabin encryption (breaking it ≡ factoring); 1979 probabilistic primality; and 1981 oblivious transfer — a foundational primitive of secure computing.
+**English**: Rabin encryption uses "determining whether a number is a quadratic residue" for its public key — conceived earlier than RSA's factorization.
 
 ## 名言
 

@@ -7,7 +7,7 @@ domain: d16
 
 # 秘密共享与 MPC（Secret Sharing & MPC）
 
-> 技术域 d16 ·（Phase 0 占位 · 概念/算法/协议/术语待填充）
+> 技术域 d16
 
 ## 概念
 
@@ -15,14 +15,25 @@ domain: d16
 
 **English**: Secret sharing & MPC: split a secret into n shares so any t < n recover it and t−1 reveal nothing (Shamir threshold). Multi-party computation (MPC) lets several parties **jointly compute** without revealing their inputs — threshold decryption, threshold signatures, and federated learning are downstream.
 ## 算法 / 协议
-（待填）
 
+（本域暂无独立工坊算法 / 协议演示，可玩实现见下方「关联游戏」）
 ## 术语
 
 ### Shamir's Secret Sharing（Shamir 秘密共享）
 - 中文：1979 年 Shamir 的巧思：把一份秘密拆成 n 份，凑齐任意 k 份才能复原、少一份都不行；数学依据是「k 个点唯一确定一条 k-1 次多项式」，密码保险库和多签系统都在用。
 - English: Shamir's 1979 scheme splits a secret into n shares such that any k of them reconstruct it while fewer reveal nothing—thanks to the fact that k points define a unique degree k-1 polynomial. Used in vaults and multi-signature systems.
+- 为什么重要：把密钥拆成若干份，凑够门限数才能还原，少于门限毫无信息。
+- 现实哪里用：比特币多重签名、托管、密钥管理。
+- 怎么被破：门限被凑齐即破；门限人数被算出可联合破。
 - 游戏：`shamir`
 - 章节：modern
 ## 关联时代 / 人物 / 游戏
-（待填）
+
+**关联时代**（轴1 编年叙事）
+- [公钥革命](../02-eras/e13-public-key/README.md)
+
+**关联人物**（人物志）
+- [阿迪·萨莫尔](../people/shamir.md)
+
+**关联游戏**（站内可玩 · 游戏 ID）
+- `shamir` · Shamir 分钥密约

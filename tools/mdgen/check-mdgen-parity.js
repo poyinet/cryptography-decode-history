@@ -7,10 +7,12 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
-const { load } = require('./lib/load-poyi');
-const { CHAPTER_ERA } = require('./gen-people');
-const { route, domainFile } = require('./gen-glossary');
-const { PEOPLE: LEDGER_PEOPLE, MACHINES: LEDGER_MACHINES } = require('./source-ledger');
+  const { load } = require('./lib/load-poyi');
+  const { CHAPTER_ERA } = require('./gen-people');
+  const { route, domainFile } = require('./gen-glossary');
+  const { PEOPLE: LEDGER_PEOPLE, MACHINES: LEDGER_MACHINES } = require('./source-ledger');
+  const { BIOS } = require('./people-bios');
+  const clean = v => (v && v !== 'undefined' ? v : ''); // 源数据里的 "undefined" 字符串视为空
 
 const ROOT = path.resolve(__dirname, '..', '..');
 let pass = 0, fail = 0;
@@ -37,10 +39,11 @@ function main() {
     if (!existsAnd(fp)) continue;
     contains(fp, zh[`stp.${id}.name`], 'name');
     contains(fp, en[`stp.${id}.name`], 'name_en');
-    const bio = zh[`stp.${id}.bio`]; if (bio) contains(fp, bio.slice(0, 40), 'bio');
-    const bioEn = en[`stp.${id}.bio`]; if (bioEn) contains(fp, bioEn.slice(0, 40), 'bio_en');
+    const bb = BIOS[id] || {};
+    const bio = bb.bio || clean(zh[`stp.${id}.bio`]); if (bio) contains(fp, bio.slice(0, 40), 'bio');
+    const bioEn = bb.bioEn || clean(en[`stp.${id}.bio`]); if (bioEn) contains(fp, bioEn.slice(0, 40), 'bio_en');
     const role = zh[`stp.${id}.role`]; if (role) contains(fp, role, 'role');
-    const quote = zh[`stp.${id}.quote`]; if (quote) contains(fp, quote.slice(0, 20), 'quote');
+    const quote = bb.quote || clean(zh[`stp.${id}.quote`]); if (quote) contains(fp, quote.slice(0, 20), 'quote');
     // 来源台账保护：有台账引文者，主引必须写进 .md
     if (LEDGER_PEOPLE[id] && LEDGER_PEOPLE[id].length) contains(fp, LEDGER_PEOPLE[id][0], '台账主引文');
   }

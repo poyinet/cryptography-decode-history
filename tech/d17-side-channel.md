@@ -7,7 +7,7 @@ domain: d17
 
 # 侧信道与物理攻击（Side-Channel & Physical Attacks）
 
-> 技术域 d17 ·（Phase 0 占位 · 概念/算法/协议/术语待填充）
+> 技术域 d17
 
 ## 概念
 
@@ -15,10 +15,19 @@ domain: d17
 
 **English**: Side-channel & physical attacks: the algorithm is fine, the **implementation** leaks — timing (differential execution time), power (DPA/SPA), EM, cache, fault injection. Modern implementations must be **constant-time**, masked, randomized; this is the classic "algorithm right, deployment wrong" failure.
 ## 算法 / 协议
-（待填）
 
+（本域暂无独立工坊算法 / 协议演示，可玩实现见下方「关联游戏」）
 ## 术语
-（待填）
 
+（本域在 282 术语表中无独立条目，相关概念见「概念」节与「关联人物」）
 ## 关联时代 / 人物 / 游戏
-（待填）
+
+**关联时代**（轴1 编年叙事）
+- [公钥革命](../02-eras/e13-public-key/README.md)
+
+**关联人物**（人物志）
+- [保罗·科赫尔](../people/kocher.md)
+- [丹尼尔·伯恩斯坦](../people/bernstein.md)
+
+**关联游戏**（站内可玩 · 游戏 ID）
+- （无）

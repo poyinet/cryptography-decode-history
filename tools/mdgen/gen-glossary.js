@@ -8,6 +8,7 @@
 const fs = require('fs');
 const path = require('path');
 const { load } = require('./lib/load-poyi');
+const { NOTES } = require('./term-notes');
 
 const ROOT = path.resolve(__dirname, '..', '..');
 
@@ -83,6 +84,12 @@ function termEntry(g) {
   const parts = [`### ${g.term}${wrap}`];
   if (g.zhDef) parts.push(`- 中文：${g.zhDef}`);
   if (g.enDef) parts.push(`- English: ${g.enDef}`);
+  const n = NOTES[g.term];
+  if (n) {
+    if (n.why) parts.push(`- 为什么重要：${n.why}`);
+    if (n.used) parts.push(`- 现实哪里用：${n.used}`);
+    if (n.broken) parts.push(`- 怎么被破：${n.broken}`);
+  }
   if (g.game) parts.push(`- 游戏：\`${g.game}\``);
   if (g.chapters && g.chapters.length) parts.push(`- 章节：${g.chapters.join(', ')}`);
   return parts.join('\n');

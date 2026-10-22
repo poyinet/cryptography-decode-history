@@ -13,15 +13,15 @@ sources:
 
 ## 简介
 
-**中文**：加州大学伯克利博士：盲签名、混币器、DC-Net、电子现金——匿名学术线的源头。
+**中文**：荷兰密码学家，匿名通信的奠基人。1983 年他提出「盲签名」——签名者对密文签名、不知道明文内容，接收者再「摊开」获得签名，这是电子支票、电子现金的理论基石。他还提出密码学的「不可追溯性」与电子投票方案。Chaum 一生都在问一个问题：加密能保证「只有我能读」，那怎么保证「别人知道我读过但不知道我是谁」？他的盲签名就是那个答案，至今仍是匿名支付与零知识身份认证的地基。
 
-**English**: UC Berkeley PhD: blind signatures, mixnets, DC-Net and e-cash — the source of the anonymity research line.
+**English**: A Dutch cryptographer, founding anonymous communication. In 1983 he proposed the "blind signature" — the signer signs a ciphertext without knowing the plaintext, and the recipient later "unblinds" it to obtain the signature — the theoretical bedrock of electronic cheques and e-cash. He also proposed "untraceability" and electronic voting schemes. Chaum spent his life asking: encryption guarantees "only I can read" — but how do you guarantee "others know I read it, without knowing it was me"? His blind signature is that answer, and remains the bedrock of anonymous payment and zero-knowledge identity today.
 
 ## 一句话
 
-**中文**：1981 年发表《不可追踪的邮件》开创邮件匿名学；1983 年设计盲签名，直接促成数字货币与匿名投票——他 1995 年的 DigiCash 是第一个尝试。
+**中文**：盲签名让「签名」和「内容」解耦，电子支票、比特币的混合（coinjoin）都站在它上面。
 
-**English**: The 1981 untraceable mail paper founded anonymity research; 1983 blind signatures seeded e-cash and anonymous voting — DigiCash was his 1995 attempt.
+**English**: The blind signature decouples "signing" from "content" — electronic cheques and Bitcoin's mixing (coinjoin) both stand on it.
 
 ## 名言
 

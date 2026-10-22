@@ -16,4 +16,4 @@ era: e03-byzantine-islamic
 ## 关联
 
 - 技术域：见 `../../tech/` 24 域
-- 实体：人物/密件/机器 见 `../people/` `../artifacts/` `../machines/`
+- 实体：人物/密件/机器 见 `../../people/` `../../artifacts/` `../../machines/`

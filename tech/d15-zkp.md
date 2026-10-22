@@ -7,7 +7,7 @@ domain: d15
 
 # 零知识证明（Zero-knowledge Proofs）
 
-> 技术域 d15 ·（Phase 0 占位 · 概念/算法/协议/术语待填充）
+> 技术域 d15
 
 ## 概念
 
@@ -22,7 +22,18 @@ domain: d15
 
 **English**: Prover claims knowledge of a valid 3-coloring without revealing it. Each round: randomly rename the three colors (commit) → verifier picks a random edge → only those two ends are revealed (response). Ends always differ ⇒ pass; renaming every round ⇒ the verifier cannot assemble the full coloring. After n rounds cheating gets exponentially unlikely while zero knowledge leaks.
 ## 术语
-（待填）
 
+（本域在 282 术语表中无独立条目，相关概念见「概念」节与「关联人物」）
 ## 关联时代 / 人物 / 游戏
-（待填）
+
+**关联时代**（轴1 编年叙事）
+- [公钥革命](../02-eras/e13-public-key/README.md)
+
+**关联人物**（人物志）
+- [莎菲耶·戈德瓦瑟](../people/goldwasser.md)
+- [西尔维奥·米卡利](../people/micali.md)
+- [查尔斯·拉科夫](../people/rackoff.md)
+- [大卫·肖姆](../people/chaum.md)
+
+**关联游戏**（站内可玩 · 游戏 ID）
+- （无）

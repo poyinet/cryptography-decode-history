@@ -9,7 +9,29 @@ const fs = require('fs');
 const path = require('path');
 const vm = require('vm');
 
-const POYI = 'C:/Users/chenhua/Desktop/poyi/assets/js';
+/* poyi 站点资源根目录定位（可被环境变量覆盖）
+   优先级：POYI_ROOT 环境变量 → 向上查找同级 poyi-site/assets/js → 上一级 poyi/assets/js → 报错提示 */
+function findPoyiRoot() {
+  const fs = require('fs');
+  const path = require('path');
+  const cands = [];
+  if (process.env.POYI_ROOT) cands.push(process.env.POYI_ROOT);
+  let dir = __dirname;
+  for (let i = 0; i < 6; i++) {
+    dir = path.dirname(dir);
+    cands.push(path.join(dir, 'poyi-site', 'assets', 'js'));
+    cands.push(path.join(dir, 'poyi', 'assets', 'js'));
+    cands.push(path.join(dir, 'assets', 'js'));
+  }
+  for (const c of cands) {
+    try { if (fs.existsSync(path.join(c, 'games.js'))) return c; } catch (e) { /* ignore */ }
+  }
+  console.error('[load-poyi] 找不到 poyi 站点资源目录。已尝试：\n  ' + cands.slice(0, 6).join('\n  '));
+  console.error('[load-poyi] 请设置环境变量 POYI_ROOT 指向 poyi-site/assets/js 后重试。');
+  process.exit(1);
+}
+
+const POYI = findPoyiRoot();
 
 function load(extraFiles) {
   const sandbox = {

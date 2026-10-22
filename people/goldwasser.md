@@ -15,15 +15,15 @@ sources:
 
 ## 简介
 
-**中文**：加州大学伯克利与 MIT 双栖学者：语义安全、加密矿、证明与计算——现代安全定义的活字板书。
+**中文**：以色列密码学家，可证明安全与零知识证明的共同奠基人。1982 年他和 Micali 用「可交互证明」的形式化，定义了「可证明安全的加密」和「零知识证明」两个里程碑，把密码学从「相信」升格为「证明」。他后来获得 2012 年图灵奖，表彰的正是那篇改变学科的论文。他和 Micali 的合作是「可证明安全」这一整条线的起点，至今仍是密码学「证明安全」范式的源头。
 
-**English**: Professor at UC Berkeley and MIT, whose semantic security, program obfuscation and interactive proofs define modern security.
+**English**: An Israeli cryptographer, co-founding provable security and zero-knowledge proofs. In 1982 he and Micali defined two milestones via "interactive proofs": "provably secure encryption" and "zero-knowledge proofs," elevating cryptography from "believe" to "prove." He later won the 2012 Turing Award, awarded for that paper that changed the field. His collaboration with Micali is the starting point of the whole "provable security" line and remains the source of the "prove security" paradigm.
 
 ## 一句话
 
-**中文**：2012 年与 Micali 因「概率加密」与「可在不泄露信息情况下证明任何计算性定理」获图灵奖——他们 1984 年的双投注加密论文也是现代公钥密码安全框架的基础。
+**中文**：可证明安全把「安全」从经验判断变成数学定理——IND-CPA、IND-CCA 这些模型都源自他的定义。
 
-**English**: In 2012 she shared the Turing Award for turning probable encryption and the ability to prove any computational theorem without leaking information — the 1984 paper that founded semantic security.
+**English**: Provable security turns "secure" from intuition into theorem — the IND-CPA and IND-CCA models both trace to his definitions.
 
 ## 名言
 

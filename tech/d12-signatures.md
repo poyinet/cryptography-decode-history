@@ -7,7 +7,7 @@ domain: d12
 
 # 数字签名（Digital Signatures）
 
-> 技术域 d12 ·（Phase 0 占位 · 概念/算法/协议/术语待填充）
+> 技术域 d12
 
 ## 概念
 
@@ -34,31 +34,58 @@ domain: d12
 ### Digital Signature（数字签名）
 - 中文：用私钥签名的数据，公钥可验证来源与完整性。
 - English: Data signed with a private key, verifiable by anyone with the public key.
+- 为什么重要：用私钥签名、公钥验证，证明"我签过"。
+- 现实哪里用：合同、代码、区块链。
+- 怎么被破：私钥泄露可伪造签名。
 - 游戏：`rsa`
 - 章节：modern
 
 ### Digital Signature Algorithm (DSA)（DSA 数字签名算法）
 - 中文：1994 年 NIST 标准化的签名算法，基于离散对数难题、由 ElGamal 签名演化而来；曾是政府与金融系统的标配，如今正被更小更快的 ECDSA 与 EdDSA 取代。
 - English: A US federal signature standard from 1994 built on the discrete logarithm problem and derived from ElGamal signatures. Long a government and finance staple, it is giving way to faster ECDSA and EdDSA.
+- 为什么重要：基于 ElGamal 的签名标准，NIST 指定。
+- 现实哪里用：证书、早期 TLS。
+- 怎么被破：随机数 k 复用即可破（历史上多次事故）。
 - 游戏：`rsa`
 - 章节：modern
 
 ### Schnorr Signature（Schnorr 签名）
 - 中文：1989 年 Claus Schnorr 提出的签名：短、快，还能把多人的签名线性合并成一把；因专利 2008 年才到期而长期被冷落，比特币 2021 年 Taproot 升级后正式采用。
 - English: A signature scheme by Claus Schnorr (1989) that is short, fast, and allows multiple signatures to be linearly combined into one. Blocked by patent until 2008, it was finally adopted by Bitcoin's 2021 Taproot upgrade.
+- 为什么重要：比 DSA 更简洁的签名，可组合多签。
+- 现实哪里用：比特币（SegWit）、ZK。
+- 怎么被破：无已知破法，随机数复用可破。
 - 游戏：`rsa`
 - 章节：modern
 
 ### Hash-Based Signatures（哈希签名（基于哈希的签名））
 - 中文：只用哈希函数就能造的签名：Lamport 1979 年提出，私钥是一串秘密值、公开其哈希作公钥；不依赖数论难题、天然抗量子。SLH-DSA（FIPS 205，原 SPHINCS+）已入 NIST 后量子标准。缺点：签名大、有状态版只能签有限次。
 - English: Signatures built from hash functions alone: Lamport's 1979 scheme publishes hashes of secret values as the public key; no number-theoretic assumptions, naturally quantum-resistant. SLH-DSA (FIPS 205, formerly SPHINCS+) is NIST-standardized for post-quantum use. Drawback: large signatures, and stateful variants sign only a limited number of times.
+- 为什么重要：仅靠哈希的签名，抗量子。
+- 现实哪里用：后量子签名标准（SPHINCS+）。
+- 怎么被破：哈希被破则签名破。
 - 游戏：`pqc-match`
 - 章节：modern
 
 ### Ring Signature（环签名）
 - 中文：一群人里有人签了名，但没人知道具体是谁：签名用「一环」公钥生成，验证者只能确认签名者确实在环内；Monero 用它实现不可追踪的交易。
 - English: A signature generated with a 'ring' of public keys that proves the signer belongs to the set without revealing which one. Monero uses ring signatures to make transactions untraceable.
+- 为什么重要：一组人里某一人签名，无法区分是谁。
+- 现实哪里用：匿名凭证。
+- 怎么被破：匿名性可被元信息破。
 - 游戏：`pqc-match`
 - 章节：modern
 ## 关联时代 / 人物 / 游戏
-（待填）
+
+**关联时代**（轴1 编年叙事）
+- [公钥革命](../02-eras/e13-public-key/README.md)
+
+**关联人物**（人物志）
+- [罗纳德·李维斯特](../people/rivest.md)
+- [阿迪·萨莫尔](../people/shamir.md)
+- [伦纳德·阿德曼](../people/adleman.md)
+- [塔赫尔·埃尔加马尔](../people/elgamal.md)
+
+**关联游戏**（站内可玩 · 游戏 ID）
+- `pqc-match` · 后量子迁移配对
+- `rsa` · RSA 小素数保险柜

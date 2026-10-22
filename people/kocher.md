@@ -14,15 +14,15 @@ sources:
 
 ## 简介
 
-**中文**：日后他还参与早期 SSL 3.0 的设计；他把密码学从「数学证明」拖回「工程实现」的战场。
+**中文**：美国密码学家，时序攻击的发明者。1996 年他发现 RSA 解密时，密钥不同的位会走不同的分支，分支耗时不同——测量一次解密的耗时，就能把私钥的一位位推出来。这是「算法没破、实现泄密」的头号案例。他后来又用「Bleichenbacher 填充预言攻击」证明 RSA 的填充实现（OAEP 之前）可以靠服务器回的错误消息逐位还原私钥。Kocher 的工作让「常数时间、防侧信道」从口号变成了工程规范。
 
-**English**: Later involved in early SSL 3.0; he dragged cryptography back from pure proofs to the battlefield of implementations.
+**English**: An American cryptographer, the inventor of the timing attack. In 1996 he found that RSA decryption takes different times for different key bits — the different bits take different branches, and measuring one decryption's duration can peel out the private key bit by bit. This was the flagship case of "the algorithm is fine, the implementation leaks." He later used the "Bleichenbacher padding-oracle attack" to show pre-OAEP RSA padding implementations can have the private key recovered bit by bit from the error messages a server returns. Kocher's work turned "constant time, side-channel resistance" from a slogan into an engineering norm.
 
 ## 一句话
 
-**中文**：1996 年发表首篇时序攻击论文：仅凭 RSA 解密耗时的差异恢复密钥比特；同年与 Jaffe、Jun 提出差分功耗分析（DPA），并指出无校验的 CRT-RSA 会中故障注入——「恒定时间」从此成为芯片安全铁律。
+**中文**：他的时序攻击 1996 年发表，如今 TLS 服务端的 RSA 实现都要专门写成常数时间以躲开它。
 
-**English**: His 1996 timing-attack paper recovered RSA key bits from decryption time alone; the same year brought DPA with Jaffe and Jun plus the CRT fault-injection flaw — "constant time" became silicon law.
+**English**: His timing attack was published in 1996; today every RSA implementation on a TLS server is written to be constant-time specifically to dodge it.
 
 ## 名言
 

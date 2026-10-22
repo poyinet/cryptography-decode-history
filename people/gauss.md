@@ -12,15 +12,15 @@ sources:
 
 ## 简介
 
-**中文**：undefined
+**中文**：被尊为「数学王子」。同余、原根、二次剩余、模运算——这些他几百年前在数论里随手玩的东西，恰好是今天所有公钥密码的语言。费马小定理、欧拉函数、离散对数，公钥密码的三大难题都踩在他铺好的路上。RSA 解密里那个「中国剩余定理把速度提到 4 倍」的加速，用的也是他同代人的数论。你用的每一把公钥，脚下都是高斯。
 
-**English**: undefined
+**English**: The "Prince of Mathematics". Congruences, primitive roots, quadratic residues, modular arithmetic — things he played with casually in number theory centuries ago are exactly the language of every public-key cipher today. Fermat's little theorem, Euler's φ, discrete log: the three hard problems public-key rests on all stand on paths he paved. RSA's decryption trick that "the Chinese Remainder Theorem speeds up 4x" uses the number theory of his generation. Every public key you use stands on Gauss.
 
 ## 一句话
 
-**中文**：同余理论、二次剩余、二次互反律——RSA 的模运算与离散对数的地基几乎全在他笔下奠基；十九世纪「为数学而数学」的纯粹性，意外成为二十世纪密码学的承重墙。
+**中文**：他在 15 岁就给出了正十七边形可作图的证明，比前人推进了数千年。
 
-**English**: Congruences, quadratic residues, reciprocity: the floors RSA and discrete logarithms stand on were laid by him. His pure mathematics of the 1800s became the load-bearing wall of twentieth-century cryptography.
+**English**: At 15 he proved the constructibility of the regular 17-gon, a leap forward by centuries.
 
 ## 名言
 

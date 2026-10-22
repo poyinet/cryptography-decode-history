@@ -13,15 +13,15 @@ sources:
 
 ## 简介
 
-**中文**：波兰三杰中最年轻的一位；他的「钟法」在雷耶夫斯基的数学重构之外补上了工程化的一环。
+**中文**：波兰密码局数学家，波兰三杰之一。1932–1939 年间他和 Rejewski、Zygalski 在波兰密码局破译德军 Enigma——这是「人类 vs 机器」的第一次胜利，也是密码学史上「数学打败机械」的转折。Różycki 贡献了「环形检查法」，把 Enigma 的插线板设置从天文数字缩小到可以穷举的范围。他和 Rejewski、Zygalski 在二战爆发前把 Enigma 的破译方法交给了英国，为后来的 Bombe 铺好了数学地基。
 
-**English**: The youngest of the Polish trio, he added the engineering piece alongside Rejewski's mathematics.
+**English**: A mathematician at the Polish Cipher Bureau, one of the Polish trio. Between 1932 and 1939, with Rejewski and Zygalski, he broke the German Wehrmacht Enigma at the Polish Cipher Bureau — the first human victory over a machine, and the turning point of "mathematics beating machinery" in cryptology. Różycki contributed the "clock method," shrinking Enigma's plugboard settings from astronomical numbers to a brute-forceable range. He, Rejewski, and Zygalski handed the Enigma-breaking method to Britain before WWII, laying the mathematical foundation for the later Bombe.
 
 ## 一句话
 
-**中文**：1930 年代中期发明的「钟法（clock method）」能从电文首字母推算 Enigma 每日转子设置；1942 年 1 月在地中海客轮「拉姆 II 号」海难中遇难——三杰中唯一没能看到胜利的人。
+**中文**：「环形检查法」（clock method）把 Enigma 的转子环位锁死，破译时间从几周缩到几小时。
 
-**English**: His mid-1930s clock method inferred Enigma's daily rotor settings from message prefixes; in January 1942 he drowned when the passenger ship Lamoricière sank — the only member of the trio not to see victory.
+**English**: The "clock method" locks Enigma's rotor ring positions, shrinking breaking time from weeks to hours.
 
 ## 名言
 

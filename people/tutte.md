@@ -13,15 +13,15 @@ sources:
 
 ## 简介
 
-**中文**：undefined
+**中文**：英国数学家，后成为图论大师。二战中他在布莱切利园干的是「统计破译」——为洛伦兹（Lorenz）电传密码设计差动器，按统计规律消减候选密钥，是 Colossus 之前的那批人。战后他转攻图论，提出「Tutte 矩阵」、Tutte 不变量，成了图论里绕不开的名字。一个人，一边用统计破机器，一边用图论重建数学——两种「结构分析」在他身上是同一件事。
 
-**English**: undefined
+**English**: A British mathematician who became a master of graph theory. In WWII at Bletchley Park he did "statistical cryptanalysis" — designing the differencers for the Lorenz teleprinter cipher, cutting candidate keys by statistical law, part of the pre-Colossus crew. After the war he turned to graph theory, producing the "Tutte matrix" and the Tutte invariant, a name you cannot avoid in the field. One man, using statistics to break machines on one side and graph theory to rebuild mathematics on the other — the same "structural analysis" lived in him.
 
 ## 一句话
 
-**中文**：1942 年凭借两个深度电文对，用纯逻辑推算出德军 Tunny 十二轮结构与轮齿周期——没有截获整机，却造出了整机的逻辑模型；战后成为组合数学领域的世界级学者。
+**中文**：图论里的「Tutte 矩阵」「Tutte 不变量」都姓他；破译圈的差动器设计，也姓他。
 
-**English**: In 1942, from only two depth messages, he deduced by pure logic the twelve-wheel structure and cycle lengths of Tunny — reconstructing a machine he had never seen. Postwar he became a world-class combinatorialist.
+**English**: In graph theory the "Tutte matrix" and "Tutte invariant" carry his name; so does the differencing-machine design in the codebreaking world.
 
 ## 名言
 
