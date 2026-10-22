@@ -45,10 +45,12 @@ run('生成（gen-all）', 'node tools/mdgen/gen-all.js');
 run('parity 源↔产物等价', 'node tools/mdgen/check-mdgen-parity.js');
 run('知识总目录门禁', 'node tools/check/check-inventory.js');
 run('frontmatter 门禁', 'node tools/check/check-frontmatter.js');
-run('别名与交叉引用门禁', 'node/tools/check/check-alias.js'.replace('node/tools', 'node tools'));
+run('别名与交叉引用门禁', 'node tools/check/check-alias.js');
 run('中英同步门禁', 'node tools/check/check-i18n-sync.js');
 run('出处门禁', 'node tools/check/check-sources.js');
 run('覆盖矩阵生成', 'node tools/check/check-coverage.js');
+run('分站构建', 'node tools/site/build.js');
+run('分站门禁（死链/结构/体积）', 'node tools/check/check-site.js');
 
 /* ---------- 2. 幂等性 ---------- */
 console.log('== 2. 幂等性 ==');
@@ -108,7 +110,7 @@ if (fs.existsSync(SITE)) {
 }
 
 /* ---------- 5. 分站仓状态 ---------- */
-console.log('== 5. 分站仓 ==');
+console.log('== 5. 分站仓与线上 ==');
 if (process.env.GITHUB_TOKEN) {
   const T = process.env.GITHUB_TOKEN;
   const api = (m, p) => new Promise((res, rej) => {
@@ -116,12 +118,23 @@ if (process.env.GITHUB_TOKEN) {
       r => { let b = ''; r.on('data', c => b += c); r.on('end', () => { try { res(JSON.parse(b)); } catch (e) { res(null); } }); });
     req.on('error', rej); req.end();
   });
-  api('GET', '/repos/poyinet/crypto/pages').then(p => {
-    const ok = p && p.status === 'built' && p.cname === 'crypto.poyi.net';
-    results.push({ label: '分站 Pages 状态', pass: !!ok, ms: 0, out: p ? p.status + ' / ' + p.cname : '查询失败' });
-    console.log((ok ? '  ✓ ' : '  ✗ ') + '分站 Pages  ' + (p ? p.status + ' / ' + p.cname : '查询失败'));
+  (async function section5() {
+    const p = await api('GET', '/repos/poyinet/crypto/pages');
+  const ok = p && p.status === 'built' && p.cname === 'crypto.poyi.net';
+  results.push({ label: '分站 Pages 状态', pass: !!ok, ms: 0, out: p ? p.status + ' / ' + p.cname : '查询失败' });
+  console.log((ok ? '  ✓ ' : '  ✗ ') + '分站 Pages  ' + (p ? p.status + ' / ' + p.cname : '查询失败'));
+  /* 线上可达性 */
+  for (const u of ['/', '/eras/', '/views/crystal/', '/search/?q=aes']) {
+    const alive = await new Promise(res => {
+      const rq = https.get('https://crypto.poyi.net' + u, { timeout: 20000 }, r => { r.resume(); res(r.statusCode === 200); });
+      rq.on('error', () => res(false));
+      rq.on('timeout', () => { rq.destroy(); res(false); });
+    });
+    results.push({ label: '线上可达 ' + u, pass: alive, ms: 0, out: alive ? '200' : '不可达' });
+    console.log((alive ? '  ✓ ' : '  ✗ ') + '线上可达 ' + u);
+  }
     finish();
-  }).catch(() => { console.log('  · API 查询失败，跳过'); finish(); });
+  })();
 } else {
   console.log('  · 未设 GITHUB_TOKEN，跳过远端校验');
   finish();
@@ -166,9 +179,21 @@ function finish() {
   L.push('');
   L.push('## 三、人工结论');
   L.push('');
-  L.push('（待填：本轮做了什么 / 改了什么 / 发现什么问题 / 下一步）');
+  const outPath = path.join(ROOT, 'docs', 'ROUND-' + ROUND + '-' + DATE + '.md');
+  /* 若已有本轮小结，保留已填的人工结论段（重跑不抹掉） */
+  let human = '';
+  if (fs.existsSync(outPath)) {
+    const prev = fs.readFileSync(outPath, 'utf8');
+    const i = prev.indexOf('## 三、人工结论');
+    if (i >= 0) {
+      const rest = prev.slice(i);
+      const j = rest.indexOf('（待填');
+      human = j >= 0 ? rest.slice(j + 4).trim() : rest.replace(/^## 三、人工结论\s*/, '').trim();
+    }
+  }
+  L.push(human || '（待填：本轮做了什么 / 改了什么 / 发现什么问题 / 下一步）');
   L.push('');
-  const out = path.join(ROOT, 'docs', 'ROUND-' + ROUND + '-' + DATE + '.md');
+  const out = outPath;
   fs.writeFileSync(out, L.join('\n'), 'utf8');
   console.log('\n小结已写入 docs/ROUND-' + ROUND + '-' + DATE + '.md');
   console.log(fails.length ? '❌ ' + fails.length + ' 项失败' : '✅ 全部通过（' + results.length + ' 项）');

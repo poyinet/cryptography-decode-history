@@ -1,10 +1,9 @@
 #!/usr/bin/env node
 /* ============================================================
-   publish-crypto-repo.js —— 把 build/site/ 推送到 poyinet/crypto（分站产物仓）
-   用法：node tools/oneoff/publish-crypto-repo.js
-   环境：PUBLISH_TOKEN（GitHub PAT 或 Deploy Key 对应的 token）
-        —— 建议用 Deploy Key + 专用只读/写权限的 fine-grained PAT
-   策略：整树镜像删除+推送（Contents API 逐文件 PUT/DELETE）
+   publish-crypto-repo.js —— 把 build/site/ 镜像发布到 poyinet/crypto
+   用法：PUBLISH_TOKEN=xxx node tools/oneoff/publish-crypto-repo.js
+   原理：Git Trees API 一次性提交全部文件（树条目内联 content，服务端建 blob）
+        → 一次 commit → 更新 ref。946 个文件只需 3 次 API 调用。
    ============================================================ */
 'use strict';
 const fs = require('fs');
@@ -12,35 +11,30 @@ const path = require('path');
 const https = require('https');
 
 const TOKEN = process.env.PUBLISH_TOKEN || process.env.GITHUB_TOKEN;
+if (!TOKEN) { console.error('缺少 PUBLISH_TOKEN / GITHUB_TOKEN'); process.exit(1); }
 const OWNER = process.env.PUBLISH_OWNER || 'poyinet';
 const REPO = process.env.PUBLISH_REPO || 'crypto';
 const BRANCH = process.env.PUBLISH_BRANCH || 'main';
 const ROOT = path.resolve(__dirname, '..', '..');
 const SRC = path.join(ROOT, 'build', 'site');
-
-if (!TOKEN) { console.error('缺少 PUBLISH_TOKEN / GITHUB_TOKEN 环境变量'); process.exit(1); }
-if (!fs.existsSync(SRC)) { console.error('build/site 不存在，请先运行 node tools/site/build.js'); process.exit(1); }
+const KEEP = new Set(['CNAME']);   // 这些文件保留远端版本，不覆盖
 
 function api(method, p, body) {
   return new Promise((resolve, reject) => {
-    const data = body ? Buffer.from(JSON.stringify(body), 'utf8') : null;
+    const data = body ? Buffer.from(typeof body === 'string' ? body : JSON.stringify(body), 'utf8') : null;
     const req = https.request({
       hostname: 'api.github.com', path: p, method,
       headers: {
-        'Authorization': 'Bearer ' + TOKEN,
-        'Accept': 'application/vnd.github+json',
-        'X-GitHub-Api-Version': '2022-11-28',
-        'User-Agent': 'poyi-publisher',
-        'Content-Type': 'application/json',
-        ...(data ? { 'Content-Length': data.length } : {})
+        'Authorization': 'Bearer ' + TOKEN, 'Accept': 'application/vnd.github+json',
+        'X-GitHub-Api-Version': '2022-11-28', 'User-Agent': 'poyi-publisher',
+        'Content-Type': 'application/json', ...(data ? { 'Content-Length': data.length } : {})
       }
     }, res => {
       let b = '';
       res.on('data', c => b += c);
       res.on('end', () => {
-        let j = null;
-        try { j = b ? JSON.parse(b) : null; } catch (e) { }
-        if (res.statusCode >= 400) reject(new Error(method + ' ' + p + ' → ' + res.statusCode + ' ' + b.slice(0, 200)));
+        let j = null; try { j = b ? JSON.parse(b) : null; } catch (e) { }
+        if (res.statusCode >= 400) reject(new Error(method + ' ' + p + ' → ' + res.statusCode + ' ' + b.slice(0, 260)));
         else resolve(j);
       });
     });
@@ -50,67 +44,57 @@ function api(method, p, body) {
   });
 }
 
-function walk(dir, base = '') {
-  const out = [];
-  for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
-    const rel = base ? base + '/' + e.name : e.name;
-    const abs = path.join(dir, e.name);
-    if (e.isDirectory()) out.push(...walk(abs, rel));
-    else out.push({ path: rel, abs });
-  }
-  return out;
-}
-
 (async function main() {
-  const local = walk(SRC);
-  console.log('== 1. 本地产物 ==');
-  console.log('  build/site 共 ' + local.length + ' 个文件');
+  if (!fs.existsSync(SRC)) { console.error('build/site 不存在——先运行 node tools/site/build.js'); process.exit(1); }
 
-  console.log('== 2. 远端现状 ==');
-  let remote = [];
-  try {
-    const r = await api('GET', '/repos/' + OWNER + '/' + REPO + '/git/trees/' + BRANCH + '?recursive=1');
-    remote = (r.tree || []).filter(x => x.type === 'blob' && x.path !== 'CNAME').map(x => x.path);
-  } catch (e) { console.log('  远端树读取失败（首次发布？）: ' + e.message); }
-  console.log('  远端 ' + remote.length + ' 个文件（CNAME 保留不动）');
-
-  console.log('== 3. 推送 ==');
-  let put = 0, del = 0, skip = 0;
-  const remoteSet = new Set(remote);
-  const localSet = new Set(local.map(f => f.path));
-
-  for (const f of local) {
-    const content = fs.readFileSync(f.abs);
-    const body = {
-      message: 'chore(build): 发布密码学知识站构建产物',
-      content: content.toString('base64'),
-      branch: BRANCH
-    };
-    if (remoteSet.has(f.path)) {
-      // 已存在 → 需比对 sha 决定是否更新
-      let cur = null;
-      try { cur = await api('GET', '/repos/' + OWNER + '/' + REPO + '/contents/' + f.path + '?ref=' + BRANCH); } catch (e) { }
-      if (cur && cur.sha) {
-        const curBuf = Buffer.from(cur.content || '', 'base64');
-        if (curBuf.equals(content)) { skip++; continue; }
-        body.sha = cur.sha;
-      }
+  console.log('== 1. 收集产物 ==');
+  const files = [];
+  (function walk(d, base) {
+    for (const e of fs.readdirSync(d, { withFileTypes: true })) {
+      const abs = path.join(d, e.name);
+      const rel = base ? base + '/' + e.name : e.name;
+      if (e.isDirectory()) walk(abs, rel);
+      else files.push({ path: rel, abs, buf: fs.readFileSync(abs) });
     }
-    await api('PUT', '/repos/' + OWNER + '/' + REPO + '/contents/' + f.path, body);
-    put++;
-  }
+  })(SRC, '');
+  console.log('  ' + files.length + ' 个文件');
 
-  // 删除远端有、本地无的（保留 CNAME）
-  for (const p of remote) {
-    if (localSet.has(p)) continue;
-    try {
-      const cur = await api('GET', '/repos/' + OWNER + '/' + REPO + '/contents/' + p + '?ref=' + BRANCH);
-      if (!cur || !cur.sha) continue;
-      await api('DELETE', '/repos/' + OWNER + '/' + REPO + '/contents/' + p, { message: 'chore(build): 移除已下线页面', sha: cur.sha, branch: BRANCH });
-      del++;
-    } catch (e) { /* 单个失败不阻断 */ }
-  }
+  console.log('== 2. 读远端基线 ==');
+  let baseTree = null, baseCommit = null;
+  try {
+    const ref = await api('GET', '/repos/' + OWNER + '/' + REPO + '/git/ref/heads/' + BRANCH);
+    baseCommit = ref.object.sha;
+    const c = await api('GET', '/repos/' + OWNER + '/' + REPO + '/git/commits/' + baseCommit);
+    baseTree = c.tree.sha;
+    console.log('  HEAD ' + baseCommit.slice(0, 10));
+  } catch (e) { console.log('  远端无分支，将创建'); }
 
-  console.log('  新增/更新 ' + put + ' · 删除 ' + del + ' · 未变 ' + skip);
-  console.log('\n完成 → https://' + OWNER + '.github.io/' + REPO + '/  （自定义域 crypto.poyi.net）');
+  console.log('== 3. 建树（内联 content，服务端建 blob）==');
+  const tree = [];
+  for (const f of files) {
+    if (KEEP.has(f.path)) continue;
+    const isText = /\.(html|css|js|json|xml|txt|md|webmanifest|svg)$/.test(f.path) && !f.buf.includes(0);
+    tree.push({
+      path: f.path, mode: '100644', type: 'blob',
+      content: isText ? f.buf.toString('utf8') : f.buf.toString('base64'),
+      encoding: isText ? 'utf-8' : 'base64',
+    });
+  }
+  const t = await api('POST', '/repos/' + OWNER + '/' + REPO + '/git/trees', {
+    base_tree: baseTree || undefined, tree
+  });
+  console.log('  树就绪');
+
+  console.log('== 4. 提交 ==');
+  const msg = (process.env.PUBLISH_MSG || 'chore(site): 发布密码学知识站构建产物').slice(0, 200);
+  const commit = await api('POST', '/repos/' + OWNER + '/' + REPO + '/git/commits', {
+    message: msg, tree: t.sha, parents: baseCommit ? [baseCommit] : []
+  });
+
+  console.log('== 5. 更新 ref ==');
+  if (baseCommit) await api('PATCH', '/repos/' + OWNER + '/' + REPO + '/git/refs/heads/' + BRANCH, { sha: commit.sha, force: false });
+  else await api('POST', '/repos/' + OWNER + '/' + REPO + '/git/refs', { ref: 'refs/heads/' + BRANCH, sha: commit.sha });
+
+  console.log('\n✓ 发布完成 ' + (baseCommit ? baseCommit.slice(0, 10) : '(new)') + ' → ' + commit.sha.slice(0, 10));
+  console.log('  ' + files.length + ' 个文件 → https://' + OWNER + '.github.io/' + REPO + '/  （自定义域 crypto.poyi.net）');
 })().catch(e => { console.error('失败：' + e.message); process.exit(1); });

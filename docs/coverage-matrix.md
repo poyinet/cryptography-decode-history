@@ -7,7 +7,7 @@
 
 | 维度 | 分布 |
 |---|---|
-| 实体类型 | term 275 · event 144 · algorithm 104 · person 87 · standard 77 · attack 58 · artifact 46 · protocol 40 · theorem 31 · domain 24 · era 19 · machine 7 |
+| 实体类型 | term 275 · algorithm 104 · person 87 · event 83 · standard 77 · cnhistory 61 · attack 58 · artifact 46 · protocol 40 · theorem 31 · domain 24 · era 19 · machine 7 |
 | 状态 | done 907 · exempt 3 · todo 2 |
 | 质量档 | tier2 394 · tier3 420 · tier1 98 |
 | 子主题 | 271（手写 16 · 候选 255） |
