@@ -21,6 +21,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # 知识源的生成依赖主站数据（词汇/章节/实体）
+      # ⚠ 架构债：源 ← 站 存在循环依赖（站本应依赖源）。这里先用一并检出主站的方式保证管线一致，
+      #    彻底解法是把词表/章节/实体数据收归知识源自身，让主站改为消费源产物。
+      - uses: actions/checkout@v4
+        with:
+          repository: poyinet/www
+          ref: main
+          path: poyi-site
+
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
@@ -31,6 +40,8 @@ jobs:
       # ---------- 1. 生成：内容层 + 知识总目录 ----------
       - name: 生成全部内容与知识总目录
         run: node tools/mdgen/gen-all.js
+        env:
+          POYI_ROOT: ${{ github.workspace }}/poyi-site/assets/js
 
       # ---------- 2. 门禁：内容等价 ----------
       - name: parity 门禁（源 ↔ 产物逐字段等价）
@@ -58,6 +69,7 @@ jobs:
 
       # ---------- 5. 发布分站产物 ----------
       - name: 发布到 poyinet/crypto
+        if: ${{ hashFiles('build/site/**') != '' }}
         env:
           PUBLISH_TOKEN: ${{ secrets.CRYPTO_PUBLISH_TOKEN }}
         run: node tools/oneoff/publish-crypto-repo.js
