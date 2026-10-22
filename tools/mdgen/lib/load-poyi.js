@@ -10,12 +10,13 @@ const path = require('path');
 const vm = require('vm');
 
 /* poyi 站点资源根目录定位（可被环境变量覆盖）
-   优先级：POYI_ROOT 环境变量 → 向上查找同级 poyi-site/assets/js → 上一级 poyi/assets/js → 报错提示 */
+   优先级：POYI_ROOT 环境变量 → 仓内 poyi-site/（CI 一并检出）→ 向上查找同级 poyi-site/ 或 poyi/ → 报错提示 */
 function findPoyiRoot() {
   const fs = require('fs');
   const path = require('path');
   const cands = [];
   if (process.env.POYI_ROOT) cands.push(process.env.POYI_ROOT);
+  cands.push(path.join(process.cwd(), 'poyi-site', 'assets', 'js'));
   let dir = __dirname;
   for (let i = 0; i < 6; i++) {
     dir = path.dirname(dir);
@@ -26,12 +27,14 @@ function findPoyiRoot() {
   for (const c of cands) {
     try { if (fs.existsSync(path.join(c, 'games.js'))) return c; } catch (e) { /* ignore */ }
   }
-  console.error('[load-poyi] 找不到 poyi 站点资源目录。已尝试：\n  ' + cands.slice(0, 6).join('\n  '));
+  console.error('[load-poyi] 找不到 poyi 站点资源目录。已尝试：\n  ' + cands.slice(0, 8).join('\n  '));
   console.error('[load-poyi] 请设置环境变量 POYI_ROOT 指向 poyi-site/assets/js 后重试。');
   process.exit(1);
 }
 
 const POYI = findPoyiRoot();
+
+module.exports.POYI_ROOT = POYI;
 
 function load(extraFiles) {
   const sandbox = {
@@ -74,7 +77,7 @@ function load(extraFiles) {
   };
 }
 
-module.exports = { load, POYI };
+module.exports = { load, POYI, POYI_ROOT: POYI };
 
 /* 自测：node load-poyi.js */
 if (require.main === module) {

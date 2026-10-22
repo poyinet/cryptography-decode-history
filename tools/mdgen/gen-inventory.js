@@ -19,6 +19,8 @@ const vm = require('vm');
 
 const ROOT = path.resolve(__dirname, '..', '..');
 process.chdir(ROOT);
+/* 站点资源根（与 load-poyi.js 同一套解析：env → 仓内 poyi-site/ → 向上查找） */
+const SITE_JS = require(path.join(__dirname, 'lib', 'load-poyi.js')).POYI_ROOT;
 
 function main() {
 const OUT_YAML = path.join(ROOT, '_meta', 'inventory');
@@ -63,7 +65,7 @@ function readFM(file) {
 
 /* ---------- 主站 glossary（术语来源） ---------- */
 function loadGlossary() {
-  const site = path.join(ROOT, '..', 'poyi-site', 'assets', 'js', 'glossary-data.js');
+  const site = path.join(SITE_JS, 'glossary-data.js');
   if (!fs.existsSync(site)) return null;
   const sb = { console, localStorage: { getItem: () => null, setItem: () => {}, removeItem: () => {} }, navigator: { language: 'zh' } };
   sb.window = sb; vm.createContext(sb);
@@ -231,7 +233,7 @@ for (const [dir, file, type] of [['people', 'people.yaml', 'person'], ['artifact
   try {
     const sb = { console, localStorage: { getItem: () => null, setItem: () => {}, removeItem: () => {} }, navigator: { language: 'zh' } };
     sb.window = sb; vm.createContext(sb);
-    vm.runInContext(fs.readFileSync(path.join(ROOT, '..', 'poyi-site', 'assets', 'js', 'stories.js'), 'utf8'), sb);
+    vm.runInContext(fs.readFileSync(path.join(SITE_JS, 'stories.js'), 'utf8'), sb);
     for (const c of (sb.STORIES || [])) if (c.era) eraOf[c.id] = c.era;
   } catch (e) { }
   if (g) {
