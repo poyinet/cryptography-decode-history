@@ -1,0 +1,730 @@
+
+entries:
+  - id: shannon-perfect-secrecy
+    title: 香农完美保密定理
+    title_en: Shannon's Perfect Secrecy Theorem
+    domain:
+      - d24-theory
+    era:
+      - e12-cold-war-info-theory
+    level: 3
+    aliases:
+      - 完美保密
+    sources:
+      - kind: primary
+        title: Shannon《Communication Theory of Secrecy Systems》(1949)
+    apps:
+      - academic
+    threats:
+      - statistical
+    type: theorem
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: shannon-key-entropy
+    title: 香农密钥熵下界
+    title_en: Key Entropy Bound
+    domain:
+      - d24-theory
+    era:
+      - e12-cold-war-info-theory
+    level: 4
+    aliases:
+      - 密钥熵
+    sources:
+      - kind: primary
+        title: Shannon《Communication Theory of Secrecy Systems》(1949)
+    apps:
+      - academic
+    threats:
+      - statistical
+    type: theorem
+    prereq:
+      - shannon-perfect-secrecy
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: maurer-bound
+    title: Maurer 界
+    title_en: Maurer's Bound
+    domain:
+      - d24-theory
+    era:
+      - e12-cold-war-info-theory
+    level: 4
+    aliases:
+      - Maurer 定理
+    sources:
+      - kind: primary
+        title: Maurer《Perfect Secrecy in the Subset Cipher Model》(1990)
+    apps:
+      - academic
+    threats:
+      - statistical
+    type: theorem
+    prereq:
+      - shannon-perfect-secrecy
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: shoup-generic-bound
+    title: Shoup 通用界
+    title_en: Shoup's Generic Group Bound
+    domain:
+      - d24-theory
+    era:
+      - e14-standardization
+    level: 4
+    aliases:
+      - Shoup 界
+    sources:
+      - kind: primary
+        title: Shoup《Lower Bounds for Discrete Logarithms and Related Problems》(1997)
+    apps:
+      - academic
+    threats:
+      - quantum
+    type: theorem
+    prereq:
+      - dlp
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: hill-hastad
+    title: Håstad 广播攻击
+    title_en: Håstad's Broadcast Attack
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e13-public-key
+    level: 4
+    aliases:
+      - 广播攻击
+    sources:
+      - kind: primary
+        title: Håstad《Broadcasting Attacks on RSA》(1994)
+    apps:
+      - academic
+    threats:
+      - CPA
+    type: theorem
+    prereq:
+      - rsa
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: miller-bleichenbacher
+    title: Miller 与 Bleichenbacher 攻击
+    title_en: Miller and Bleichenbacher Attacks
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e15-web-protocols
+    level: 4
+    aliases:
+      - RSA 填充攻击
+    sources:
+      - kind: primary
+        title: Miller《RSA Padding Oracle Attacks>>(1998)
+    apps:
+      - academic
+    threats:
+      - CCA
+    type: theorem
+    prereq:
+      - rsa
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: ajtai-reduction
+    title: Ajtai 归约
+    title_en: Ajtai's Reduction
+    domain:
+      - d22-post-quantum
+    era:
+      - e17-post-quantum
+    level: 4
+    aliases:
+      - SIS 归约
+    sources:
+      - kind: primary
+        title: Ajtai《Generating Hard Instances of Lattice Problems》(1996)
+    apps:
+      - academic
+    threats:
+      - quantum
+    type: theorem
+    prereq:
+      - sivp
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: regev-reduction
+    title: Regev 归约
+    title_en: Regev's Reduction
+    domain:
+      - d22-post-quantum
+    era:
+      - e17-post-quantum
+    level: 4
+    aliases:
+      - LWE 归约
+    sources:
+      - kind: primary
+        title: Regev《On Lattices
+      - kind: tertiary
+        title: Learning with Errors
+      - kind: tertiary
+        title: Random Linear Codes
+      - kind: tertiary
+        title: and Cryptography》(2005)
+    apps:
+      - academic
+    threats:
+      - quantum
+    type: theorem
+    prereq:
+      - lwe
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: lpr-reduction
+    title: LPR 归约
+    title_en: Lyubashevsky-Peikert-Regev Reduction
+    domain:
+      - d22-post-quantum
+    era:
+      - e17-post-quantum
+    level: 4
+    aliases:
+      - Ring-LWE 归约
+    sources:
+      - kind: primary
+        title: Lyubashevsky
+      - kind: tertiary
+        title: Peikert
+      - kind: tertiary
+        title: Regev《On Ideal Lattices and Learning with Errors over Rings》(2010)
+    apps:
+      - academic
+    threats:
+      - quantum
+    type: theorem
+    prereq:
+      - regev-reduction
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: goldreich-levin
+    title: Goldreich-Levin 定理
+    title_en: Goldreich-Levin Theorem
+    domain:
+      - d24-theory
+    era:
+      - e13-public-key
+    level: 4
+    aliases:
+      - hardcore bit 提取
+    sources:
+      - kind: primary
+        title: Goldreich & Levin《A Hard-Coin Function from One-Way Functions》(1989)
+    apps:
+      - academic
+    threats:
+      - protocol
+    type: theorem
+    prereq:
+      - prg
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: hill-owf-prg
+    title: HILL 定理
+    title_en: Håstad-Impagliazzo-Levin-Luby Theorem
+    domain:
+      - d24-theory
+    era:
+      - e13-public-key
+    level: 4
+    aliases:
+      - OWF ⇔ PRG
+    sources:
+      - kind: primary
+        title: Håstad
+      - kind: tertiary
+        title: Impagliazzo
+      - kind: tertiary
+        title: Levin
+      - kind: tertiary
+        title: Luby《A Pseudorandom Generator from any One-way Function》(1999)
+    apps:
+      - academic
+    threats:
+      - protocol
+    type: theorem
+    prereq:
+      - owf
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: rompel
+    title: Rompel 定理
+    title_en: OWF Implies Digital Signatures
+    domain:
+      - d24-theory
+    era:
+      - e13-public-key
+    level: 4
+    aliases:
+      - OWF → 签名
+    sources:
+      - kind: primary
+        title: Rompel《On the Existence of Weak One-Way Functions》(1991)
+    apps:
+      - academic
+    threats:
+      - protocol
+    type: theorem
+    prereq:
+      - owf
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: canetti-halevi
+    title: Canetti-Halevi 定理
+    title_en: Encryption Implies Signatures
+    domain:
+      - d24-theory
+    era:
+      - e13-public-key
+    level: 4
+    aliases:
+      - 加密 → 签名
+    sources:
+      - kind: primary
+        title: Canetti & Halevi《Secure Public-Key Encryption》(1999)
+    apps:
+      - academic
+    threats:
+      - protocol
+    type: theorem
+    prereq:
+      - rsa
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: barak-uc
+    title: 可组合安全框架
+    title_en: Universally Composable Security
+    domain:
+      - d24-theory
+    era:
+      - e13-public-key
+    level: 4
+    aliases:
+      - UC 安全
+    sources:
+      - kind: primary
+        title: Barak et al.《Universally Composable Security>>(2004)
+    apps:
+      - academic
+    threats:
+      - protocol
+    type: theorem
+    prereq: []
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: bellare-rogaway
+    title: Bellare-Rogaway 安全定义
+    title_en: Bellare-Rogaway Security Definitions
+    domain:
+      - d24-theory
+    era:
+      - e13-public-key
+    level: 4
+    aliases:
+      - 游戏定义
+    sources:
+      - kind: primary
+        title: Bellare & Rogaway《Code-Based Game-Playing Proofs>>(1996)
+    apps:
+      - academic
+    threats:
+      - protocol
+    type: theorem
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: dwork-cpa
+    title: 语义安全与 CPA 等价
+    title_en: Semantic Security ≡ IND-CPA
+    domain:
+      - d24-theory
+    era:
+      - e13-public-key
+    level: 3
+    aliases:
+      - 语义安全
+    sources:
+      - kind: primary
+        title: Goldwasser
+      - kind: tertiary
+        title: Micali
+      - kind: tertiary
+        title: Rivest《Semantic Security for Encryption Functions》(1984)
+    apps:
+      - academic
+    threats:
+      - CPA
+    type: theorem
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: ind-cca2-equivalence
+    title: IND-CCA 与非可延拓性等价
+    title_en: IND-CCA2 ≡ Non-Malleability
+    domain:
+      - d24-theory
+    era:
+      - e13-public-key
+    level: 4
+    aliases:
+      - 非可延拓性
+    sources:
+      - kind: primary
+        title: Bellare & Neven《A Public-Key Encryption Scheme with Tight Security Reduction》(2006)
+    apps:
+      - academic
+    threats:
+      - adaptive-CCA
+    type: theorem
+    prereq:
+      - dwork-cpa
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: euf-cma
+    title: 存在性不可伪造
+    title_en: EUF-CMA Security
+    domain:
+      - d24-theory
+    era:
+      - e13-public-key
+    level: 3
+    aliases:
+      - 选择消息攻击不可伪造
+    sources:
+      - kind: primary
+        title: Goldwasser
+      - kind: tertiary
+        title: Micali
+      - kind: tertiary
+        title: Rivest《Digital Signatures Based on a Conventional Public-Key Function》(1988)
+    apps:
+      - academic
+    threats:
+      - protocol
+    type: theorem
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: suf-cma
+    title: 强不可伪造
+    title_en: SUF-CMA Security
+    domain:
+      - d24-theory
+    era:
+      - e13-public-key
+    level: 4
+    aliases:
+      - 强不可伪造
+    sources:
+      - kind: tertiary
+        title: SUF-CMA Wikipedia
+    apps:
+      - academic
+    threats:
+      - protocol
+    type: theorem
+    prereq:
+      - euf-cma
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: hybrid-argument
+    title: 混合论证
+    title_en: Hybrid Argument
+    domain:
+      - d24-theory
+    era:
+      - e13-public-key
+    level: 4
+    aliases:
+      - hybrid argument
+    sources:
+      - kind: authoritative
+        title: HAC Ch.3(1997)
+    apps:
+      - academic
+    threats:
+      - protocol
+    type: theorem
+    prereq:
+      - dwork-cpa
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: fiat-shamir-heuristic
+    title: Fiat-Shamir 启发式
+    title_en: Fiat-Shamir Heuristic
+    domain:
+      - d15-zkp
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - FS 启发式
+    sources:
+      - kind: primary
+        title: Fiat & Shamir《Security Proofs for Schnorr Signatures and the DDH Assumption》(1996)
+    apps:
+      - academic
+    threats:
+      - protocol
+      - implementation
+    type: theorem
+    prereq:
+      - sigma-protocol
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: goldwasser-micali
+    title: Goldwasser-Micali 概率加密
+    title_en: Goldwasser-Micali Probabilistic Encryption
+    domain:
+      - d11-asymmetric
+    era:
+      - e13-public-key
+    level: 4
+    aliases:
+      - GM 加密
+    sources:
+      - kind: primary
+        title: Goldwasser & Micali《Probabilistic Encryption》(1982)
+    apps:
+      - academic
+    threats:
+      - CPA
+    type: theorem
+    prereq: []
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: goldwasser-sipser
+    title: Goldwasser-Sipser 层次化方法
+    title_en: Goldwasser-Sipser Ladder
+    domain:
+      - d24-theory
+    era:
+      - e13-public-key
+    level: 4
+    aliases:
+      - 层次化方法
+    sources:
+      - kind: primary
+        title: Goldwasser & Sipser《Private-key Cryptosystems from Public-key Ones》(1986)
+    apps:
+      - academic
+    threats:
+      - protocol
+    type: theorem
+    prereq: []
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: shor-algorithm-theorem
+    title: 肖尔算法
+    title_en: Shor's Algorithm
+    domain:
+      - d21-quantum-crypto
+    era:
+      - e16-quantum-turn
+    level: 4
+    aliases:
+      - Shor
+    sources:
+      - kind: primary
+        title: "Shor《Algorithms for Quantum Computation: Discrete Logarithms and Factoring》(1994)"
+    apps:
+      - academic
+    threats:
+      - quantum
+    type: theorem
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: grover-algorithm-theorem
+    title: 格罗弗算法
+    title_en: Grover's Algorithm
+    domain:
+      - d21-quantum-crypto
+    era:
+      - e16-quantum-turn
+    level: 4
+    aliases:
+      - Grover
+    sources:
+      - kind: primary
+        title: Grover《A Fast Quantum Mechanical Algorithm for Database Search》(1996)
+    apps:
+      - academic
+    threats:
+      - quantum
+    type: theorem
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: gentry-fhe
+    title: Gentry 全同态构造
+    title_en: Gentry's FHE Construction
+    domain:
+      - d16-secret-sharing-mpc
+    era:
+      - e18-frontier
+    level: 4
+    aliases:
+      - 全同态加密
+    sources:
+      - kind: primary
+        title: Gentry《Fully Homomorphic Encryption Using Ideal Lattices》(2009)
+    apps:
+      - academic
+      - finance
+    threats:
+      - protocol
+    type: theorem
+    prereq:
+      - lwe
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: p-vs-np
+    title: P vs NP
+    title_en: P vs NP
+    domain:
+      - d24-theory
+    era:
+      - e19-china
+    level: 4
+    aliases:
+      - P=NP
+      - NP 完全性
+    sources:
+      - kind: tertiary
+        title: P versus NP Wikipedia
+    apps:
+      - academic
+    threats:
+      - quantum
+    type: theorem
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: break-even-np
+    title: 平分问题 NP 完全性
+    title_en: Break-Even NP-Completeness
+    domain:
+      - d24-theory
+    era:
+      - e19-china
+    level: 4
+    aliases:
+      - break-even
+    sources:
+      - kind: tertiary
+        title: Complexity of break-even Wikipedia
+    apps:
+      - academic
+    threats:
+      - theoretical
+    type: theorem
+    prereq:
+      - p-vs-np
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: one-way-implies-p-np
+    title: 单向函数蕴含 P≠NP
+    title_en: One-Way Functions Imply P≠NP
+    domain:
+      - d24-theory
+    era:
+      - e13-public-key
+    level: 4
+    aliases:
+      - OWF ⇒ P≠NP
+    sources:
+      - kind: tertiary
+        title: One-way function Wikipedia
+    apps:
+      - academic
+    threats:
+      - theoretical
+    type: theorem
+    prereq:
+      - owf
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: random-self-reduction
+    title: 随机自归约
+    title_en: Random Self-Reducibility
+    domain:
+      - d24-theory
+    era:
+      - e13-public-key
+    level: 4
+    aliases:
+      - self-reducible
+    sources:
+      - kind: tertiary
+        title: Self-reducibility Wikipedia
+    apps:
+      - academic
+    threats:
+      - protocol
+    type: theorem
+    prereq: []
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: tight-reduction
+    title: 紧致归约
+    title_en: Tight Reduction
+    domain:
+      - d24-theory
+    era:
+      - e13-public-key
+    level: 4
+    aliases:
+      - tight reduction
+    sources:
+      - kind: tertiary
+        title: Security reduction Wikipedia
+    apps:
+      - academic
+    threats:
+      - protocol
+    type: theorem
+    prereq: []
+    status: done
+    quality: tier3
+    subtopic: []

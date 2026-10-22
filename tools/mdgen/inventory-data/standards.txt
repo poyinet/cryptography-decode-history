@@ -1,0 +1,91 @@
+# 标准化文件总目录 · 管道分隔格式
+# id | 中文名 | English Name | 域 | 时代 | 难度 | 别名(;) | 出处 | 应用场景 | 威胁模型 | type | 前置 | status | quality
+
+# ---- NIST FIPS ----
+fips46-3 | 三重数据加密标准 | Triple DES | d14-protocols-pki | e14-standardization | 2 | FIPS 46-3;3DES | primary:FIPS 46-3(1998) | government,finance | protocol | standard | des | done | tier1 |  |  |  | 
+fips81 | DES 工作模式 | DES Modes of Operation | d08-block-cipher | e14-standardization | 2 | FIPS 81 | primary:FIPS 81(1980) | government | protocol | standard | des | done | tier2 |  |  |  | 
+fips140-3 | 密码模块安全要求 | Security Requirements for Cryptographic Modules | d13-key-management | e14-standardization | 2 | FIPS 140-3;CMVP | primary:FIPS 140-3(2019) | government,finance | physical,side-channel | standard |  | done | tier1 |  |  |  | 
+fips180-4 | 安全散列标准 | Secure Hash Standard | d09-hash | e14-standardization | 2 | FIPS 180-4;SHS | primary:FIPS 180-4(2015) | government,finance | collision | standard | sha1 | done | tier1 |  |  |  | 
+fips186-5 | 数字签名标准 | Digital Signature Standard | d12-signature | e14-standardization | 2 | FIPS 186-5;DSS | primary:FIPS 186-5(2023) | government,finance | related-key | standard | dsa | done | tier1 |  |  |  | 
+fips197 | 高级加密标准 | Advanced Encryption Standard | d08-block-cipher | e14-standardization | 2 | FIPS 197;AES | primary:FIPS 197(2001) | government,finance | side-channel | standard | des | done | tier1 |  |  |  | 
+fips198-1 | 键控散列消息认证码 | The Keyed-Hash Message Authentication Code | d10-auth-aead | e14-standardization | 2 | FIPS 198-1;HMAC | primary:FIPS 198-1(2008) | government,finance | side-channel | standard | sha2 | done | tier1 |  |  |  | 
+fips202 | SHA-3 标准 | SHA-3 Standard | d09-hash | e14-standardization | 3 | FIPS 202;Keccak | primary:FIPS 202(2015) | government,finance | collision | standard | sha2 | done | tier1 |  |  |  | 
+fips203 | 模块格基密钥封装机制标准 | ML-KEM Standard | d22-post-quantum | e17-post-quantum | 3 | FIPS 203;Kyber | primary:FIPS 203(2024) | government,finance | quantum | standard | kyber | done | tier1 |  |  |  | 
+fips204 | 模块格基数字签名标准 | ML-DSA Standard | d22-post-quantum | e17-post-quantum | 3 | FIPS 204;Dilithium | primary:FIPS 204(2024) | government,finance | quantum | standard | ml-dsa | done | tier1 |  |  |  | 
+fips205 | 无状态散列基数字签名标准 | SLH-DSA Standard | d22-post-quantum | e17-post-quantum | 3 | FIPS 205;SPHINCS+ | primary:FIPS 205(2024) | government,finance | quantum | standard | slh-dsa | done | tier1 |  |  |  | 
+fips199 | 联邦信息与信息系统安全分类标准 | Standards for Security Categorization of Federal Information | d23-applied-security | e19-china | 3 | FIPS 199 | primary:FIPS 199(2004) | government | implementation | standard |  | done | tier3 |  |  |  | 
+
+# ---- NIST SP 800 ----
+sp800-38a | 分组密码工作模式建议 | Recommendation for Block Cipher Modes of Operation | d08-block-cipher | e14-standardization | 2 | SP 800-38A | primary:NIST SP 800-38A(2001) | government,finance | protocol | standard | des | done | tier1 |  |  |  | 
+sp800-38b | CMAC 认证模式 | The CMAC Mode for Authentication | d10-auth-aead | e14-standardization | 3 | SP 800-38B | primary:NIST SP 800-38B(2005) | government,finance | side-channel | standard | aes | done | tier2 |  |  |  | 
+sp800-38c | CCM 认证与保密模式 | The CCM Mode for Authentication and Confidentiality | d10-auth-aead | e14-standardization | 3 | SP 800-38C | primary:NIST SP 800-38C(2004) | government,finance | CCA | standard | ctr | done | tier2 |  |  |  | 
+sp800-38d | GCM 与 GMAC 模式 | Galois/Counter Mode and GMAC | d10-auth-aead | e14-standardization | 3 | SP 800-38D;GCM | primary:NIST SP 800-38D(2007) | government,finance | CCA | standard | ctr | done | tier1 |  |  |  | 
+sp800-38e | XTS 存储加密模式 | The XTS-AES Mode for Confidentiality on Storage Devices | d08-block-cipher | e14-standardization | 3 | SP 800-38E;XTS | primary:NIST SP 800-38E(2010) | infrastructure | side-channel | standard | ctr | done | tier2 |  |  |  | 
+sp800-38f | 密钥包装方法 | Methods for Key Wrapping | d13-key-management | e15-web-protocols | 3 | SP 800-38F;KW | primary:NIST SP 800-38F(2012) | government,finance | related-key | standard | aes | done | tier2 |  |  |  | 
+sp800-38g | 格式保留加密 | Format-Preserving Encryption | d08-block-cipher | e15-web-protocols | 3 | SP 800-38G;FPE | primary:NIST SP 800-38G(2016) | finance | protocol | standard | ctr | done | tier2 |  |  |  | 
+sp800-56a | 成对密钥协商方案 | Pairwise Key Agreement Schemes | d11-asymmetric | e14-standardization | 3 | SP 800-56A | primary:NIST SP 800-56A Rev.3(2018) | government | protocol | standard | diffie-hellman | done | tier2 |  |  |  | 
+sp800-56c | 密钥派生 | Key Derivation | d13-key-management | e15-web-protocols | 3 | SP 800-56C | primary:NIST SP 800-56C Rev.1(2021) | government | protocol | standard | hkdf | done | tier2 |  |  |  | 
+sp800-57 | 密钥管理 | Key Management | d13-key-management | e14-standardization | 2 | SP 800-57 | primary:NIST SP 800-57 Pt1 Rev.5(2020) | government,finance | implementation | standard |  | done | tier1 |  |  |  | 
+sp800-63 | 数字身份指南 | Digital Identity Guidelines | d23-applied-security | e15-web-protocols | 2 | SP 800-63 | primary:NIST SP 800-63 Rev.4(2025) | government,everyday | social | standard |  | done | tier2 |  |  |  | 
+sp800-90a | 随机数发生器建议 | Recommendation for Random Number Generation | d19-randomness | e14-standardization | 3 | SP 800-90A;DRBG | primary:NIST SP 800-90A Rev.1(2015) | government,finance | implementation | standard | trng | done | tier1 |  |  |  | 
+sp800-90b | 熵源建议 | Entropy Sources | d19-randomness | e14-standardization | 3 | SP 800-90B | primary:NIST SP 800-90B(2007) | government,finance | implementation | standard | trng | done | tier2 |  |  |  | 
+sp800-108 | 基于 PRF 的密钥派生 | Recommendation for Key Derivation Using Pseudorandom Functions | d13-key-management | e15-web-protocols | 3 | SP 800-108 | primary:NIST SP 800-108(2008) | government | protocol | standard | prf | done | tier2 |  |  |  | 
+sp800-131a | 密码算法与密钥长度过渡 | Transitions for Cryptographic Algorithms and Key Lengths | d13-key-management | e18-frontier | 3 | SP 800-131A | primary:NIST SP 800-131A Rev.2(2019) | government,finance | implementation | standard |  | done | tier2 |  |  |  | 
+sp800-160v2 | 后量子密码过渡方法 | Approaches for Transitioning to Post-Quantum Cryptography | d22-post-quantum | e17-post-quantum | 3 | SP 800-160 Vol.2 | primary:NIST SP 800-160 Vol.2(2019) | government,finance | quantum | standard | kyber | done | tier2 |  |  |  | 
+sp800-177 | TLS 使用指南 | Guidelines for Using TLS | d14-protocols-pki | e15-web-protocols | 3 | SP 800-177 | primary:NIST SP 800-177 Rev.1(2020) | government,finance | protocol | standard | tls12 | done | tier2 |  |  |  | 
+sp800-186 | 椭圆曲线域参数建议 | Recommendations for Discrete Logarithm-based Cryptography: Elliptic Curve Domain Parameters | d11-asymmetric | e14-standardization | 3 | SP 800-186 | primary:NIST SP 800-186(2023) | government,finance | related-key | standard | ecdsa | done | tier2 |  |  |  | 
+sp800-208 | 状态散列基签名方案 | Stateful Hash-based Signature Schemes | d22-post-quantum | e17-post-quantum | 4 | SP 800-208;LMS;XMSS | primary:NIST SP 800-208(2020) | government | related-key | standard | slh-dsa | done | tier3 |  |  |  | 
+sp800-1800 | 网络安全实践指南系列 | Cybersecurity Practice Guides | d23-applied-security | e18-frontier | 3 | SP 1800;实践指南 | primary:NIST SP 1800 系列 | government,finance | implementation | standard |  | done | tier2 |  |  |  | 
+
+# ---- ISO/IEC ----
+iso10116 | 分组密码工作模式 | Modes of operation for an n-bit block cipher | d08-block-cipher | e14-standardization | 3 | ISO/IEC 10116 | primary:ISO/IEC 10116:2017 | government | protocol | standard | des | done | tier3 |  |  |  | 
+iso11770-1 | 密钥管理框架 | Key management — Part 1: Framework | d13-key-management | e14-standardization | 3 | ISO/IEC 11770-1 | primary:ISO/IEC 11770-1:2010 | government | implementation | standard |  | done | tier2 |  |  |  | 
+iso11770-2 | 对称技术密钥管理 | Key management — Part 2: Mechanisms using symmetric techniques | d13-key-management | e14-standardization | 3 | ISO/IEC 11770-2 | primary:ISO/IEC 11770-2:2018 | government | implementation | standard | iso11770-1 | done | tier2 |  |  |  | 
+iso11770-3 | 非对称技术密钥管理 | Key management — Part 3: Mechanisms using asymmetric techniques | d13-key-management | e15-web-protocols | 3 | ISO/IEC 11770-3 | primary:ISO/IEC 11770-3:2021 | government | implementation | standard | iso11770-1 | done | tier2 |  |  |  | 
+iso14888-3 | 基于离散对数的数字签名 | Digital signatures with appendix — Part 3: Discrete logarithm based mechanisms | d12-signature | e14-standardization | 4 | ISO/IEC 14888-3 | primary:ISO/IEC 14888-3:2018 | government | related-key | standard |  | done | tier3 |  |  |  | 
+iso18033-3 | 流密码算法标准 | Encryption algorithms — Part 3: Stream cipher algorithms | d06-otp-stream | e14-standardization | 3 | ISO/IEC 18033-3 | primary:ISO/IEC 18033-3:2010 | government | protocol | standard | rc4 | done | tier2 |  |  |  | 
+iso18033-4 | 专用散列函数标准 | Encryption algorithms — Part 4: Dedicated hash functions | d09-hash | e14-standardization | 3 | ISO/IEC 18033-4 | primary:ISO/IEC 18033-4:2011 | government | collision | standard | sha2 | done | tier2 |  |  |  | 
+iso18033-5 | 标识密码标准 | Encryption algorithms — Part 5: Identity-based ciphers | d16-secret-sharing-mpc | e18-frontier | 4 | ISO/IEC 18033-5 | primary:ISO/IEC 18033-5:2015 | government | protocol | standard | ibe | done | tier3 |  |  |  | 
+iso19790 | 密码模块安全要求 | Security requirements for cryptographic modules | d13-key-management | e14-standardization | 3 | ISO/IEC 19790 | primary:ISO/IEC 19790:2025 | government,finance | physical | standard |  | done | tier2 |  |  |  | 
+iso24759 | 密码模块测试要求 | Test requirements for cryptographic modules | d13-key-management | e14-standardization | 3 | ISO/IEC 24759 | primary:ISO/IEC 24759:2025 | government | physical | standard | iso19790 | done | tier3 |  |  |  | 
+iso9797-1 | 块密码 MAC | Message Authentication Codes — Part 1: Block cipher | d10-auth-aead | e14-standardization | 3 | ISO/IEC 9797-1 | primary:ISO/IEC 9797-1:2011 | government | side-channel | standard | cmac | done | tier3 |  |  |  | 
+iso29192 | 轻量级密码 | Lightweight cryptography | d08-block-cipher | e14-standardization | 3 | ISO/IEC 29192 | primary:ISO/IEC 29192 系列 | infrastructure | side-channel | standard | present | done | tier3 |  |  |  | 
+iso15408 | 通用评估准则 | Common Criteria | d23-applied-security | e19-china | 3 | CC;EAL | primary:ISO/IEC 15408 系列 | government,finance | implementation | standard |  | done | tier2 |  |  |  | 
+iso4922 | 安全多方计算 | Secure multiparty computation | d16-secret-sharing-mpc | e18-frontier | 4 | ISO/IEC 4922 | primary:ISO/IEC 4922-1:2023 | finance,privacy | protocol | standard | garbled-circuit | done | tier3 |  |  |  | 
+
+# ---- IEEE ----
+ieee1619 | 块设备数据加密 | Cryptographic Protection of Data on Block-Oriented Storage Devices | d08-block-cipher | e14-standardization | 3 | IEEE 1619;XTS | primary:IEEE 1619-2007(2025) | infrastructure | side-channel | standard | xts | done | tier3 |  |  |  | 
+ieee8021ae | MACsec 链路加密 | Media Access Control Security | d10-auth-aead | e15-web-protocols | 3 | IEEE 802.1AE;MACsec | primary:IEEE 802.1AE-2018 | infrastructure | protocol | standard | gcm | done | tier3 |  |  |  | 
+ieee8021ar | 安全设备标识 | Secure Device Identity | d13-key-management | e15-web-protocols | 3 | IEEE 802.1AR;DevID | primary:IEEE 802.1AR-2018 | infrastructure | physical | standard |  | done | tier3 |  |  |  | 
+ieee8021x | 基于端口的网络访问控制 | Port-Based Network Access Control | d14-protocols-pki | e15-web-protocols | 3 | IEEE 802.1X;802.1X | primary:IEEE 802.1X-2020 | telecom,government | protocol | standard |  | done | tier3 |  |  |  | 
+ieee2883 | 存储净化 | Storage Sanitization | d23-applied-security | e19-china | 3 | IEEE 2883 | primary:IEEE 2883-2022 | government | physical | standard |  | done | tier3 |  |  |  | 
+
+# ---- 中国国标与行标 ----
+gbt32905 | SM3 杂凑算法 | SM3 Cryptographic Hash Algorithm | d20-china-sm | e14-standardization | 2 | GB/T 32905 | primary:GB/T 32905—2016 | government,finance | collision | standard | sha2 | done | tier1 |  |  |  | 
+gbt32907 | SM4 分组密码算法 | SM4 Block Cipher Algorithm | d20-china-sm | e14-standardization | 2 | GB/T 32907 | primary:GB/T 32907—2016 | government,finance | side-channel | standard | des | done | tier1 |  |  |  | 
+gbt32918 | SM2 公钥密码算法 | SM2 Public Key Cryptography Algorithm | d20-china-sm | e14-standardization | 2 | GB/T 32918 | primary:GB/T 32918.1—2016 | government,finance | related-key | standard | ecdsa | done | tier1 |  |  |  | 
+gbt32919 | SM2 数字签名 | SM2 Digital Signature | d20-china-sm | e14-standardization | 3 | GB/T 32919 | primary:GB/T 32919—2016 | government,finance | related-key | standard | sm2 | done | tier2 |  |  |  | 
+gbt32946 | 商用密码应用安全性评估 | Commercial Cryptography Application Security Assessment | d23-applied-security | e19-china | 3 | GB/T 32946;密评 | primary:GB/T 32946—2016 | government,finance | implementation | standard |  | done | tier2 |  |  |  | 
+gbt33133 | ZUC 算法 | ZUC Algorithm | d20-china-sm | e14-standardization | 2 | GB/T 33133 | primary:GB/T 33133.1—2016 | telecom | protocol | standard | rc4 | done | tier1 |  |  |  | 
+gbt38635 | SM9 标识密码算法 | SM9 Identity-Based Cryptography Algorithm | d20-china-sm | e18-frontier | 3 | GB/T 38635 | primary:GB/T 38635.1—2020 | government,finance | protocol | standard | sm2 | done | tier2 |  |  |  | 
+gbt38636 | 传输层密码协议 | TLCP | d20-china-sm | e15-web-protocols | 3 | GB/T 38636 | primary:GB/T 38636—2020 | government,finance | protocol | standard | tls12,sm2 | done | tier2 |  |  |  | 
+gbt39786 | 信息系统密码应用基本要求 | Basic Requirements for Cryptography Application in Information Systems | d23-applied-security | e19-china | 3 | GB/T 39786;密评基线 | primary:GB/T 39786—2021 | government,finance | implementation | standard |  | done | tier2 |  |  |  | 
+gbt43206 | 信息系统密码应用测评要求 | Requirements for Cryptography Application Assessment | d23-applied-security | e19-china | 3 | GB/T 43206 | primary:GB/T 43206—2023 | government,finance | implementation | standard | gbt39786 | done | tier2 |  |  |  | 
+gbt33560 | 密码应用标识规范 | Coding Rules for Cryptography Application Identifiers | d23-applied-security | e19-china | 4 | GB/T 33560 | primary:GB/T 33560—2019 | government | implementation | standard |  | done | tier3 |  |  |  | 
+gbt37092 | 密码模块安全技术要求 | Security Technical Requirements for Cryptographic Modules | d13-key-management | e19-china | 3 | GB/T 37092 | primary:GB/T 37092—2018 | government,finance | physical | standard |  | done | tier3 |  |  |  | 
+gbt29829 | 可信密码模块 | Trusted Cryptography Module | d13-key-management | e19-china | 4 | GB/T 29829;TCM | primary:GB/T 29829—2016 | government,finance | physical | standard | tpm | done | tier3 |  |  |  | 
+gmt0001 | SM1 分组密码 | SM1 | d20-china-sm | e14-standardization | 3 | GM/T 0001;SM1 | primary:GM/T 0001 系列 | government,finance | side-channel | standard | sm4 | done | tier2 |  |  |  | 
+gmt0002 | SM4 分组密码行标 | SM4 Industry Standard | d20-china-sm | e14-standardization | 3 | GM/T 0002 | primary:GM/T 0002 系列 | government,finance | side-channel | standard | gbt32907 | done | tier2 |  |  |  | 
+gmt0003 | SM2 公钥密码行标 | SM2 Industry Standard | d20-china-sm | e14-standardization | 3 | GM/T 0003 | primary:GM/T 0003 系列 | government,finance | related-key | standard | gbt32918 | done | tier2 |  |  |  | 
+gmt0004 | SM3 杂凑行标 | SM3 Industry Standard | d20-china-sm | e14-standardization | 3 | GM/T 0004 | primary:GM/T 0004 系列 | government,finance | collision | standard | gbt32905 | done | tier2 |  |  |  | 
+gmt0028 | 密码模块安全技术要求行标 | Cryptographic Module Security Requirements | d13-key-management | e19-china | 3 | GM/T 0028 | primary:GM/T 0028—2018 | government,finance | physical | standard |  | done | tier3 |  |  |  | 
+gmt0054 | 信息系统密码应用测评要求 | Requirements for Cryptography Application Assessment | d23-applied-security | e19-china | 3 | GM/T 0054 | primary:GM/T 0054—2018 | government,finance | implementation | standard |  | done | tier3 |  |  |  | 
+gmt0115 | 信息系统密码应用测评要求行标 | Cryptography Application Assessment Requirements | d23-applied-security | e19-china | 3 | GM/T 0115 | primary:GM/T 0115—2021 | government,finance | implementation | standard | gbt43206 | done | tier3 |  |  |  | 
+gmt0125 | 国密 JSON Web 语法 | Chinese JSON Object Signing and Encryption | d20-china-sm | e18-frontier | 4 | GM/T 0125;国密 JOSE | primary:GM/T 0125.1—2021 | government,finance | protocol | standard | cose,sm2 | done | tier3 |  |  |  | 
+gmt0128 | TLCP 行标 | TLCP Industry Standard | d20-china-sm | e15-web-protocols | 3 | GM/T 0128 | primary:GM/T 0128—2023 | government,finance | protocol | standard | gbt38636 | done | tier3 |  |  |  | 
+gmt0044 | SM9 标识密码行标 | SM9 Industry Standard | d20-china-sm | e18-frontier | 3 | GM/T 0044 | primary:GM/T 0044.1—2020 | government,finance | protocol | standard | gbt38635 | done | tier3 |  |  |  | 
+gmt0087 | 国密浏览器接口 | Chinese Cryptography Browser Interface | d20-china-sm | e19-china | 4 | GM/T 0087 | primary:GM/T 0087—2020 | government,everyday | protocol | standard |  | done | tier3 |  |  |  | 
+
+# ---- CA/Browser Forum 与 FIPS 通用 ----
+cabf-br | CA/Browser Forum 根证书要求 | CA/Browser Forum Baseline Requirements | d14-protocols-pki | e15-web-protocols | 2 | BR;基线要求 | primary:CA/Browser Forum Baseline Requirements | government,finance | protocol | standard | pkix | done | tier2 |  |  |  | 
+cabf-ev | CA/Browser Forum 扩展指引 | CA/Browser Forum Extended Validation Guidelines | d14-protocols-pki | e15-web-protocols | 3 | EV Guidelines | primary:CA/Browser Forum EV Guidelines | finance | protocol | standard | cabf-br | done | tier3 |  |  |  | 

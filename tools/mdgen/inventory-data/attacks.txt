@@ -1,0 +1,111 @@
+# 攻击总目录 · 管道分隔格式
+# id | 中文名 | English Name | 域 | 时代 | 难度 | 别名(;) | 出处 | 应用场景 | 威胁模型 | type | 前置 | status | quality
+# 威胁模型轴取值：CO/KPA/CPA/CCA/CCA1/CCA2/adaptive-CCA/related-key/known-key/forward/inverse/chosen-target/rogue-key/side-channel/physical/social/implementation/protocol/network/quantum/statistical
+
+# ---- 攻击模型 ----
+ciphertext-only-attack | 唯密文攻击 | Ciphertext-Only Attack | d07-cryptanalysis | e08-codebreakers | 2 | CO;唯密文 | authoritative:HAC Ch.1(1997);authoritative:Kahn《The Codebreakers》(1967) | academic,military | CO | attack |  | done | tier1 |  |  |  | 
+known-plaintext-attack | 已知明文攻击 | Known-Plaintext Attack | d07-cryptanalysis | e09-ww1 | 2 | KPA;已知明文 | authoritative:HAC Ch.1(1997) | academic,military | KPA | attack |  | done | tier1 |  |  |  | 
+chosen-plaintext-attack | 选择明文攻击 | Chosen-Plaintext Attack | d07-cryptanalysis | e09-ww1 | 2 | CPA;选择明文 | authoritative:HAC Ch.1(1997) | academic,military | CPA | attack |  | done | tier1 |  |  |  | 
+chosen-ciphertext-attack | 选择密文攻击 | Chosen-Ciphertext Attack | d07-cryptanalysis | e13-public-key | 3 | CCA;选择密文 | primary:Håstad《Chosen-Ciphertext Attacks》(1998) | academic | CCA | attack |  | done | tier1 |  |  |  | 
+cca2 | 适应性选择密文攻击 | Adaptive Chosen-Ciphertext Attack | d07-cryptanalysis | e13-public-key | 4 | CCA2;adaptive CCA;IND-CCA2 | primary:Håstad《Chosen-Ciphertext Attacks》(1998) | academic | adaptive-CCA | attack | chosen-ciphertext-attack | done | tier1 |  |  |  | 
+related-key-attack | 相关密钥攻击 | Related-Key Attack | d07-cryptanalysis | e14-standardization | 4 | RKA;相关密钥 | primary:Biryukov & Wagner《Related-Key Attacks》(2002) | academic | related-key | attack | chosen-plaintext-attack | done | tier2 |  |  |  | 
+known-key-attack | 已知密钥攻击 | Known-Key Attack | d07-cryptanalysis | e14-standardization | 4 | known-key | authoritative:HAC Ch.1(1997) | academic | known-key | attack |  | done | tier3 |  |  |  | 
+forward-inverse-attack | 正反向攻击 | Forward and Inverse Attacks | d07-cryptanalysis | e14-standardization | 4 | forward attack;inverse attack | authoritative:HAC Ch.1(1997) | academic | forward,inverse | attack |  | done | tier3 |  |  |  | 
+chosen-target-attack | 选择目标攻击 | Chosen-Target Attack | d07-cryptanalysis | e18-frontier | 4 | chosen-target | tertiary:Chosen-target attack Wikipedia | academic | chosen-target | attack |  | todo | tier3 |  | P3 | 2027-Q2 | 
+rogue-key-attack | 流氓密钥攻击 | Rogue Key Attack | d07-cryptanalysis | e18-frontier | 4 | rogue key | tertiary:Rogue key attack Wikipedia | academic | rogue-key | attack |  | todo | tier3 |  | P3 | 2027-Q2 | 
+
+# ---- 经典密码分析手法 ----
+frequency-analysis | 频率分析 | Frequency Analysis | d07-cryptanalysis | e04-arabic-golden-age | 1 | 统计分析;字母频率 | primary:al-Kindi《Risāla fī Istikhrāj》(约850) | academic,military | CO,statistical | attack |  | done | tier1 |  |  |  | 
+index-of-coincidence | 重合指数 | Index of Coincidence | d07-cryptanalysis | e08-codebreakers | 2 | IC;重合率 | authoritative:HAC Ch.1(1997) | academic | CO,statistical | attack | frequency-analysis | done | tier2 |  |  |  | 
+kasiski-test | 卡斯基基检验 | Kasiski Examination | d07-cryptanalysis | e08-codebreakers | 2 | 卡斯基基;重复组距离 | primary:Kasiski《Die Geheimschriften und ihre Deutung》(1863) | academic,military | CO,statistical | attack |  | done | tier1 |  |  |  | 
+crib | 猜测明文 | Crib | d07-cryptanalysis | e08-codebreakers | 1 | crib;填鸭 | authoritative:Kahn《The Codebreakers》(1967) | academic,military | KPA | attack |  | done | tier1 |  |  |  | 
+crib-dragging | 拖crib法 | Crib Dragging | d07-cryptanalysis | e11-ww2 | 3 | crib dragging;试crib | tertiary:Hut 6 crib procedures(UK National Archives) | academic,military | KPA,statistical | attack | crib | done | tier2 |  |  |  | 
+depth | 深度 | Depth | d07-cryptanalysis | e11-ww2 | 2 | depth;加法密钥重用 | authoritative:Kahn《The Codebreakers》(1967) | military | KPA,statistical | attack |  | done | tier1 |  |  |  | 
+one-time-pad-reuse | 一次性密码本重用 | One-Time Pad Reuse | d07-cryptanalysis | e12-cold-war-info-theory | 2 | OTP 重用;密钥重用 | authoritative:Kahn《The Codebreakers》(1967) | military | KPA,statistical | attack | depth | done | tier1 |  |  |  | 
+brute-force | 穷举攻击 | Brute Force Attack | d07-cryptanalysis | e08-codebreakers | 1 | 暴力破解;穷举 | authoritative:HAC Ch.1(1997) | academic,everyday | CO | attack |  | done | tier1 |  |  |  | 
+meet-in-the-middle | 中间相遇攻击 | Meet-in-the-Middle Attack | d07-cryptanalysis | e12-cold-war-info-theory | 2 | 中间相遇 | authoritative:HAC Ch.1(1997) | academic | CO,KPA | attack | brute-force | done | tier1 |  |  |  | 
+birthday-attack | 生日攻击 | Birthday Attack | d07-cryptanalysis | e14-standardization | 2 | 生日悖论;生日碰撞 | authoritative:HAC Ch.1(1997) | academic | CO | attack | brute-force | done | tier1 |  |  |  | 
+dictionary-attack | 字典攻击 | Dictionary Attack | d07-cryptanalysis | e14-standardization | 1 | 字典爆破 | authoritative:HAC Ch.1(1997) | everyday,law-enforcement | CO | attack |  | done | tier2 |  |  |  | 
+rainbow-table | 彩虹表 | Rainbow Table | d07-cryptanalysis | e14-standardization | 2 | 彩虹表;预计算表 | primary:Biryukov, Stoytchev, Shamir《Rainbow Tables》(1999) | law-enforcement | CO | attack | dictionary-attack | done | tier2 |  |  |  | 
+time-memory-tradeoff | 时间-存储权衡 | Time-Memory Trade-Off | d07-cryptanalysis | e14-standardization | 3 | TMTO | primary:Biryukov, Shamir, Wagner《How to Break a (n,m) Threshold Cryptosystem》(1999) | academic,law-enforcement | CO | attack | brute-force,rainbow-table | done | tier2 |  |  |  | 
+unicity-distance | 唯一距离 | Unicity Distance | d07-cryptanalysis | e12-cold-war-info-theory | 3 | 唯一性距离 | primary:Shannon《Communication Theory of Secrecy Systems》(1949) | academic | CO,statistical | attack | frequency-analysis | done | tier2 |  |  |  | 
+probable-plaintext | 概然明文 | Probable Plaintext | d07-cryptanalysis | e08-codebreakers | 2 | 大概明文 | authoritative:HAC Ch.1(1997) | academic | CO,statistical | attack | frequency-analysis | done | tier3 |  |  |  | 
+contact-analysis | 接触分析 | Contact Analysis | d07-cryptanalysis | e08-codebreakers | 2 | 接触分析 | authoritative:HAC Ch.1(1997) | academic | CO,statistical | attack | frequency-analysis | done | tier3 |  |  |  | 
+
+# ---- 现代密码分析 ----
+differential-cryptanalysis | 差分密码分析 | Differential Cryptanalysis | d07-cryptanalysis | e12-cold-war-info-theory | 3 | 差分分析 | primary:Biham & Shamir《Differential Cryptanalysis of DES-like Cryptosystems》(1990) | academic | CPA | attack | s-box | done | tier1 |  |  |  | 
+truncated-differential | 截断差分 | Truncated Differential Attack | d07-cryptanalysis | e14-standardization | 3 | 截断差分 | primary:Knudsen《Truncated and Higher Order Differentials》(1994) | academic | CPA | attack | differential-cryptanalysis | done | tier2 |  |  |  | 
+higher-order-differential | 高阶差分 | Higher-Order Differential Attack | d07-cryptanalysis | e14-standardization | 4 | 高阶差分 | primary:Knudsen《Higher Order Derivatives and the Decryption Algorithm》(1994) | academic | CPA | attack | differential-cryptanalysis | done | tier2 |  |  |  | 
+differential-linear | 差分线性 | Differential-Linear Cryptanalysis | d07-cryptanalysis | e14-standardization | 4 | 差分线性 | primary:Langford & Hellman《The Differential-Linear Weakness of Cryptography》(1994) | academic | CPA | attack | differential-cryptanalysis,linear-cryptanalysis | done | tier2 |  |  |  | 
+integral-attack | 积分攻击 | Integral Attack | d07-cryptanalysis | e14-standardization | 3 | 饱和攻击;square attack | primary:Knudsen《Truncated and Higher Order Differentials》(1994) | academic | CPA | attack | differential-cryptanalysis | done | tier2 |  |  |  | 
+linear-cryptanalysis | 线性密码分析 | Linear Cryptanalysis | d07-cryptanalysis | e12-cold-war-info-theory | 3 | 线性分析;Matsui 攻击 | primary:Matsui《Linear Cryptanalysis Method for DES Cipher》(1993) | academic | KPA | attack | s-box | done | tier1 |  |  |  | 
+linear-hull | 线性壳 | Linear Hull | d07-cryptanalysis | e14-standardization | 4 | 线性壳 | primary:Nyberg《On Linear-Cryptanalysis Using Correlations》(1994) | academic | KPA | attack | linear-cryptanalysis | done | tier2 |  |  |  | 
+multiple-linear | 多重线性 | Multiple Linear Cryptanalysis | d07-cryptanalysis | e14-standardization | 4 | 多重线性 | primary:Biryukov, De Cannière, Piret《A New Attack on the Linear Cryptanalysis》(2003) | academic | KPA | attack | linear-cryptanalysis | done | tier2 |  |  |  | 
+algebraic-attack | 代数攻击 | Algebraic Attack | d07-cryptanalysis | e12-cold-war-info-theory | 3 | 代数密码分析 | authoritative:HAC Ch.1(1997) | academic | CPA | attack |  | done | tier1 |  |  |  | 
+algebraic-degree | 代数次数 | Algebraic Degree | d07-cryptanalysis | e12-cold-war-info-theory | 4 | 代数次数 | authoritative:HAC Ch.1(1997) | academic | CPA | attack | algebraic-attack | done | tier2 |  |  |  | 
+boomerang-attack | 飞梯攻击 | Boomerang Attack | d07-cryptanalysis | e14-standardization | 4 | 飞梯;反弹攻击 | primary:Biham & Shamir《Improvements of the Differential Fault Analysis of DES》(1999) | academic | CPA | attack | differential-cryptanalysis | done | tier2 |  |  |  | 
+impossible-differential | 不可能差分 | Impossible Differential Attack | d07-cryptanalysis | e14-standardization | 4 | 不可能差分 | primary:Biham, Biryukov, Shamir《Impossible Differential Attacks》(1999) | academic | CPA | attack | differential-cryptanalysis | done | tier2 |  |  |  | 
+slide-attack | 滑动攻击 | Slide Attack | d07-cryptanalysis | e14-standardization | 4 | slide 家族 | primary:Biryukov & Wagner《Slide Attacks》(2000) | academic | CPA | attack | differential-cryptanalysis | done | tier2 |  |  |  | 
+rotational-attack | 旋转攻击 | Rotational Attack | d07-cryptanalysis | e14-standardization | 4 | 旋转攻击 | primary:Matsui & Yamagishi《Rotational Cryptanalysis》(1992) | academic | CPA | attack | differential-cryptanalysis | done | tier2 |  |  |  | 
+biclique-attack | 双曲线攻击 | Biclique Attack | d07-cryptanalysis | e14-standardization | 4 | 双曲线 | primary:Jaulmes & Joux《Biclique Cryptanalysis》(2007) | academic | CPA | attack | differential-cryptanalysis | done | tier2 |  |  |  | 
+invariant-subtracting | 不变量相减 | Invariant Subtract Attack | d07-cryptanalysis | e14-standardization | 4 | 不变量攻击 | primary:Biryukov & Wagner《Invariant Subtract Attack》(1999) | academic | CPA | attack | differential-cryptanalysis | done | tier2 |  |  |  | 
+xsl-attack | XSL 攻击 | XSL Attack | d07-cryptanalysis | e14-standardization | 4 | 扩域线性攻击 | primary:Biryukov & Wagner《Cryptanalysis of the Reduced Version of RC5》(1997) | academic | CPA | attack | algebraic-attack | done | tier2 |  |  |  | 
+hash-collision-attack | 哈希碰撞攻击 | Hash Collision Attack | d07-cryptanalysis | e14-standardization | 2 | 碰撞攻击 | primary:Wang, Yin, Yu《Finding Collisions in the Full SHA-1》(2005) | academic,finance | CO | attack | sha1 | done | tier1 |  |  |  | 
+preimage-attack | 原像攻击 | Preimage Attack | d07-cryptanalysis | e14-standardization | 3 | 原像碰撞 | authoritative:HAC Ch.9(1997) | academic | CO | attack | sha2 | done | tier2 |  |  |  | 
+second-preimage-attack | 第二原像攻击 | Second Preimage Attack | d07-cryptanalysis | e14-standardization | 3 | 第二原像 | authoritative:HAC Ch.9(1997) | academic | CO | attack | sha2 | done | tier3 |  |  |  | 
+length-extension | 长度扩展攻击 | Length Extension Attack | d07-cryptanalysis | e14-standardization | 3 | 长度扩展 | primary:Steele, Starin, Tsudik《Fast Hashing and MACs>>(1997) | academic | protocol | attack | sha1 | done | tier2 |  |  |  | 
+multicollision | 多重碰撞 | Multicollision | d07-cryptanalysis | e14-standardization | 4 | 多重碰撞 | primary:Joux《Collisions for Iterated Hash Functions》(2004) | academic | CO | attack | hash-collision-attack | done | tier3 |  |  |  | 
+distinguishing-attack | 区分攻击 | Distinguishing Attack | d07-cryptanalysis | e14-standardization | 3 | 区分器 | authoritative:HAC Ch.1(1997) | academic | CO | attack |  | done | tier2 |  |  |  | 
+padding-oracle-attack | 填充预言攻击 | Padding Oracle Attack | d07-cryptanalysis | e14-standardization | 3 | 填充预言;POODLE | primary:Vaudenay《Decoder Attacks and Countermeasures》(2002) | finance,infrastructure,everyday | CCA,implementation | attack | chosen-ciphertext-attack | done | tier1 |  |  |  | 
+bleichenbacher-attack | Bleichenbacher 攻击 | Bleichenbacher Attack | d07-cryptanalysis | e15-web-protocols | 4 | PKCS#1 v1.5 填充预言 | primary:Bleichenbacher《Chosen Ciphertext Attacks Against Public Key Cryptosystems》(1998) | finance,infrastructure | CCA,implementation | attack | padding-oracle-attack | done | tier2 |  |  |  | 
+manger-attack | Manger 攻击 | Manger's Attack | d07-cryptanalysis | e15-web-protocols | 4 | Manger | primary:Manger《On the Security of the PKCS#1 RSA Encryption Scheme>>(1990) | finance | CCA | attack | bleichenbacher-attack | done | tier3 |  |  |  | 
+franklin-reiter | Franklin-Reiter 相关消息攻击 | Franklin-Reiter Related-Message Attack | d07-cryptanalysis | e15-web-protocols | 4 | Franklin-Reiter | primary:Franklin & Reiter《Known-Plaintext Attacks on a Variant of the Data Encryption Standard》(1993) | academic | related-key | attack |  | done | tier3 |  |  |  | 
+key-confusion | 密钥混淆 | Key Confusion | d07-cryptanalysis | e15-web-protocols | 3 | 域分离;domain separation | authoritative:HAC Ch.13(1997) | infrastructure | implementation,protocol | attack |  | done | tier2 |  |  |  | 
+nonce-reuse | nonce 复用 | Nonce Reuse | d07-cryptanalysis | e15-web-protocols | 2 | IV 复用;初始化向量复用 | authoritative:HAC Ch.13(1997) | finance,infrastructure | implementation,related-key | attack |  | done | tier1 |  |  |  | 
+rng-failure | 随机数失效 | RNG Failure | d07-cryptanalysis | e15-web-protocols | 2 | 随机数缺陷;熵不足 | tertiary:Random number generation Wikipedia | finance,infrastructure | implementation,statistical | attack |  | done | tier2 |  |  |  | 
+backdoor | 后门 | Backdoor | d07-cryptanalysis | e15-web-protocols | 2 | 双椭圆曲线后门;Dual_EC_DRBG | primary:NSA Dual_EC_DRBG;NIST SP 800-90A(2007) | infrastructure,government | implementation,protocol | attack |  | done | tier1 |  |  |  | 
+constant-time | 常量时间实现 | Constant-Time Implementation | d07-cryptanalysis | e14-standardization | 3 | 常量时间;时序安全实现 | authoritative:HAC Ch.14(1997) | finance,infrastructure | side-channel | attack |  | done | tier2 |  |  |  | 
+
+# ---- 侧信道与物理 ----
+side-channel-attack | 侧信道攻击 | Side-Channel Attack | d17-side-channel | e14-standardization | 3 | 旁路攻击 | primary:Kocher《Timing Attacks on Implementations of Diffie-Hellman, RSA, DSS>>(1996) | finance,infrastructure | side-channel | attack |  | done | tier1 |  |  |  | 
+timing-attack | 时间攻击 | Timing Attack | d17-side-channel | e14-standardization | 3 | 计时攻击 | primary:Kocher《Timing Attacks>>(1996) | finance,infrastructure | side-channel | attack | side-channel-attack | done | tier1 |  |  |  | 
+power-analysis | 功耗分析 | Power Analysis | d17-side-channel | e14-standardization | 3 | SPA;DPA;差分功耗分析 | primary:Kocher, Jaffe, Jun《Differential Power Analysis》(1999) | finance,infrastructure | side-channel | attack | side-channel-attack | done | tier1 |  |  |  | 
+em-analysis | 电磁分析 | Electromagnetic Analysis | d17-side-channel | e15-web-protocols | 4 | TEMPEST;电磁旁路 | tertiary:Electromagnetic attack Wikipedia | finance,infrastructure | side-channel | attack | side-channel-attack | done | tier3 |  |  |  | 
+fault-attack | 故障注入攻击 | Fault Attack | d17-side-channel | e14-standardization | 4 | 故障注入;glitch | primary:Boneh, DeMillo, Lipton《A New Method of Fault Attack on the CRT-RSA》(1997) | finance,infrastructure | side-channel,physical | attack | side-channel-attack | done | tier2 |  |  |  | 
+cold-boot-attack | 冷启动攻击 | Cold Boot Attack | d17-side-channel | e14-standardization | 3 | 冷启动 | primary:Halderman et al.《Laptop Full Memory Extraction, DMA Attacks, and Cold Boot Attacks》(2008) | law-enforcement,infrastructure | side-channel,physical | attack | side-channel-attack | done | tier2 |  |  |  | 
+speculative-execution | 推测执行侧信道 | Speculative Execution Side-Channel | d17-side-channel | e15-web-protocols | 3 | Spectre;Meltdown | primary:Kocher et al.《Spectre Attacks》(2019) | infrastructure,everyday | side-channel,implementation | attack | side-channel-attack | done | tier2 |  |  |  | 
+cache-attack | 缓存计时攻击 | Cache Timing Attack | d17-side-channel | e14-standardization | 4 | 缓存攻击;Flush+Reload | tertiary:Cache timing attack Wikipedia | infrastructure | side-channel | attack | side-channel-attack | done | tier3 |  |  |  | 
+glitch-attack | 毛刺攻击 | Glitch Attack | d17-side-channel | e14-standardization | 4 | 毛刺;电压毛刺 | tertiary:Glitch attack Wikipedia | finance | physical,side-channel | attack | fault-attack | done | tier3 |  |  |  | 
+
+# ---- 协议与网络 ----
+man-in-the-middle | 中间人攻击 | Man-in-the-Middle Attack | d14-protocols-pki | e15-web-protocols | 2 | MITM;中间人 | authoritative:HAC Ch.13(1997) | finance,everyday,telecom | protocol,network | attack |  | done | tier1 |  |  |  | 
+replay-attack | 重放攻击 | Replay Attack | d14-protocols-pki | e15-web-protocols | 2 | 重放 | authoritative:HAC Ch.13(1997) | finance,everyday,telecom | protocol | attack |  | done | tier1 |  |  |  | 
+traffic-analysis | 流量分析 | Traffic Analysis | d14-protocols-pki | e09-ww1 | 2 | 通信量分析 | authoritative:Kahn《The Codebreakers》(1967) | military,law-enforcement | protocol,statistical | attack |  | done | tier1 |  |  |  | 
+downgrade-attack | 降级攻击 | Downgrade Attack | d14-protocols-pki | e15-web-protocols | 3 | 版本降级 | tertiary:Downgrade attack Wikipedia | infrastructure | protocol | attack |  | done | tier2 |  |  |  | 
+credential-stuffing | 凭据填充 | Credential Stuffing | d23-applied-security | e15-web-protocols | 2 | 撞库 | tertiary:Credential stuffing Wikipedia | law-enforcement,everyday | social,network | attack | dictionary-attack | done | tier2 |  |  |  | 
+password-spraying | 口令喷洒 | Password Spraying | d23-applied-security | e15-web-protocols | 1 | 口令喷洒 | primary:MITRE ATT&CK T1110.003(2021) | law-enforcement,everyday | social | attack | dictionary-attack | done | tier2 |  |  |  | 
+phishing | 钓鱼 | Phishing | d23-applied-security | e15-web-protocols | 1 | 网络钓鱼 | tertiary:Phishing Wikipedia | everyday,finance,law-enforcement | social | attack |  | done | tier1 |  |  |  | 
+pretexting | 借口欺诈 | Pretexting | d23-applied-security | e19-china | 2 | 伪装 | tertiary:Pretexting Wikipedia | law-enforcement | social | attack |  | done | tier3 |  |  |  | 
+shoulder-surfing | 肩窥 | Shoulder Surfing | d23-applied-security | e19-china | 1 | 窥肩 | tertiary:Shoulder surfing Wikipedia | everyday | social,physical | attack |  | done | tier3 |  |  |  | 
+canary-trap | 金丝雀陷阱 | Canary Trap | d23-applied-security | e11-ww2 | 2 | 诱捕文件 | authoritative:Kahn《The Codebreakers》(1967) | law-enforcement,military | social | attack |  | done | tier2 |  |  |  | 
+acoustics | 声学侧信道 | Acoustic Side Channel | d17-side-channel | e19-china | 3 | 声学泄露 | tertiary:Acoustic cryptanalysis Wikipedia | finance | side-channel,physical | attack | side-channel-attack | done | tier3 |  |  |  | 
+differential-side-channel | 差分侧信道 | Differential Side-Channel | d17-side-channel | e14-standardization | 3 | DPA;差分功耗 | primary:Kocher, Jaffe, Jun《Differential Power Analysis》(1999) | finance | side-channel | attack | power-analysis | done | tier2 |  |  |  | 
+
+# ---- 隐写与隐写分析 ----
+steganalysis | 隐写分析 | Steganalysis | d18-steganography | e15-web-protocols | 3 | 隐写检测 | authoritative:HAC Ch.1(1997) | law-enforcement,academic | statistical,side-channel | attack |  | done | tier1 |  |  |  | 
+chi-square-steganalysis | 卡方隐写分析 | Chi-Square Steganalysis | d18-steganography | e15-web-protocols | 4 | 卡方检验 | tertiary:Chi-square attack Wikipedia | law-enforcement,academic | statistical | attack | steganalysis | done | tier3 |  |  |  | 
+bitplane-analysis | 位平面分析 | Bit-Plane Analysis | d18-steganography | e15-web-protocols | 3 | 位平面 | tertiary:LSB steganography Wikipedia | law-enforcement,academic | statistical | attack | steganalysis | done | tier3 |  |  |  | 
+
+# ---- 量子 ----
+shor-algorithm | 肖尔算法 | Shor's Algorithm | d21-quantum-crypto | e16-quantum-turn | 4 | Shor 算法 | primary:Shor《Algorithms for Quantum Computation: Discrete Logarithms and Factoring》(1994) | academic,infrastructure | quantum | attack |  | done | tier1 |  |  |  | 
+grover-algorithm | 格罗弗算法 | Grover's Algorithm | d21-quantum-crypto | e16-quantum-turn | 4 | 量子搜索 | primary:Grover《A Fast Quantum Mechanical Algorithm for Database Search》(1996) | academic,infrastructure | quantum | attack |  | done | tier1 |  |  |  | 
+quantum-collision | 量子碰撞搜索 | Quantum Collision Search | d22-post-quantum | e17-post-quantum | 4 | 量子碰撞 | primary:Bernstein《Quantum Computing and the Hash Function>>(2005) | academic | quantum | attack | grover-algorithm | done | tier3 |  |  |  | 
+quantum-resource-estimate | 量子资源估算 | Quantum Resource Estimation | d22-post-quantum | e17-post-quantum | 4 | 量子开销估算 | tertiary:Post-quantum cryptography Wikipedia | academic | quantum | attack | shor-algorithm | done | tier3 |  |  |  | 
+
+# ---- 供应链与历史系统 ----
+crypto-ag-backdoor | Crypto AG 后门 | Crypto AG Backdoor | d07-cryptanalysis | e15-web-protocols | 3 | Crypto AG;瑞士密码机 | tertiary:Operation Rubicon(WSJ 2017) | government,finance | implementation,protocol | attack | backdoor | done | tier2 |  |  |  | 
+enigma-cryptanalysis | 恩尼格玛破译 | Enigma Cryptanalysis | d07-cryptanalysis | e11-ww2 | 3 | Enigma 破译 | authoritative:Kahn《The Codebreakers》(1967) | military,academic | CO,statistical | attack |  | done | tier1 |  |  |  | 
+lorenz-cryptanalysis | 洛伦兹破译 | Lorenz Cryptanalysis | d07-cryptanalysis | e11-ww2 | 4 | Tunny 破译 | authoritative:Kahn《The Codebreakers》(1967) | military,academic | CO,statistical | attack |  | done | tier2 |  |  |  | 
+purple-cryptanalysis | 紫密破译 | Purple Cryptanalysis | d07-cryptanalysis | e11-ww2 | 3 | 紫密;MAGIC | authoritative:Kahn《The Codebreakers》(1967) | military,academic | CO,statistical | attack |  | done | tier2 |  |  |  | 
+jn25-cryptanalysis | JN-25 破译 | JN-25 Cryptanalysis | d07-cryptanalysis | e11-ww2 | 4 | Magic 破译 | authoritative:Kahn《The Codebreakers》(1967) | military,academic | KPA,statistical | attack |  | done | tier2 |  |  |  | 
+venona-cryptanalysis | VENONA 破译 | VENONA Cryptanalysis | d07-cryptanalysis | e12-cold-war-info-theory | 3 | VENONA | authoritative:Kahn《The Codebreakers》(1967) | military,academic | KPA,statistical | attack | one-time-pad-reuse | done | tier2 |  |  |  | 

@@ -1,0 +1,159 @@
+# 算法总目录 · 管道分隔格式
+# id | 中文名 | English Name | 域 | 时代 | 难度 | 别名(;) | 出处(kind:标题,;) | 应用场景 | 威胁模型 | type | 前置 | status | quality
+# 出处 kind：primary 一手 / authoritative 权威二手 / tertiary 百科
+# status：done 已有成稿 | draft 已起草待核证 | todo 待写
+# quality：tier1 旗舰 / tier2 标准 / tier3 索引
+
+# ---- 分组密码 ----
+des | DES 数据加密标准 | Data Encryption Standard | d08-block-cipher | e14-standardization | 2 | DES;FIPS 46;数据加密标准 | primary:FIPS 46-3,《Data Encryption Standard》(1977);authoritative:Kahn《The Codebreakers》(1967) | military,finance,government | CPA,CCA | algorithm |  | done | tier1 |  |  |  | 
+3des | 3DES 三重数据加密 | Triple DES | d08-block-cipher | e14-standardization | 3 | 3DES;TDEA;三重DES | primary:FIPS 46-3,《Triple DES》(1998);authoritative:HAC Ch.7(1997) | finance,government | CPA,CCA | algorithm | des | done | tier1 |  |  |  | 
+idea | IDEA 国际数据加密算法 | International Data Encryption Algorithm | d08-block-cipher | e14-standardization | 3 | IDEA | primary:Lai & Massey,《A Proposal for a New Block Encryption Standard》(1991);authoritative:HAC Ch.7(1997) | finance | CPA | algorithm | des | done | tier2 |  |  |  | 
+seed | SEED 韩国内对称加密 | SEED | d08-block-cipher | e14-standardization | 3 | SEED;韩国标准算法 | primary:KISA,《SEED Algorithm Specification》(2005) | finance,government | CPA | algorithm | des | done | tier2 |  |  |  | 
+camellia | Camellia 加密算法 | Camellia | d08-block-cipher | e14-standardization | 3 | Camellia | primary:Japanese,《Camellia Algorithm Specification》(2002) | finance | CPA | algorithm | des | done | tier2 |  |  |  | 
+aria | ARIA 韩国分组密码 | ARIA | d08-block-cipher | e14-standardization | 3 | ARIA | primary:KISA,《ARIA Algorithm Specification》(2003) | finance,government | CPA | algorithm | des | done | tier2 |  |  |  | 
+aes | AES 高级加密标准 | Advanced Encryption Standard | d08-block-cipher | e14-standardization | 2 | AES;Rijndael;FIPS 197 | primary:FIPS 197,《Advanced Encryption Standard》(2001);authoritative:HAC Ch.7(1997) | finance,government,everyday | CPA,CCA | algorithm | des | done | tier1 |  |  |  | 
+twofish | Twofish 分组密码 | Twofish | d08-block-cipher | e14-standardization | 3 | Twofish | primary:Schneier, Ferguson, Kohno《Twofish》(1998) | finance | CPA | algorithm | aes | done | tier2 |  |  |  | 
+serpent | Serpent 分组密码 | Serpent | d08-block-cipher | e14-standardization | 3 | Serpent | primary:Elaine et al.,《Serpent》(1998) | academic | CPA | algorithm | aes | done | tier2 |  |  |  | 
+blowfish | Blowfish 分组密码 | Blowfish | d08-block-cipher | e14-standardization | 3 | Blowfish | primary:Schneier《Description of a New Variable-Length Key, 64-Bit Block Cipher》(1993) | academic | CPA | algorithm | des | done | tier2 |  |  |  | 
+cast128 | CAST-128 分组密码 | CAST-128 | d08-block-cipher | e14-standardization | 3 | CAST-128;CAST5 | primary:Stewart & Vaudenay,《The CAST5 Encryption Algorithm》(1997) | academic | CPA | algorithm | des | done | tier2 |  |  |  | 
+rc5 | RC5 分组密码 | RC5 | d08-block-cipher | e14-standardization | 3 | RC5 | primary:Rivest, Robshaw, Sidney, Yin,《The RC5 Encryption Algorithm》(1997) | academic | CPA | algorithm | des | done | tier2 |  |  |  | 
+rc6 | RC6 分组密码 | RC6 | d08-block-cipher | e14-standardization | 3 | RC6 | primary:Rivest, Robshaw, Sidney, Yin,《The RC6 Encryption Algorithm》(1998) | academic | CPA | algorithm | rc5 | done | tier2 |  |  |  | 
+tea | TEA 微型加密算法 | Tiny Encryption Algorithm | d08-block-cipher | e14-standardization | 3 | TEA | primary:Wheeler & Needham,《TEA, a Tiny Encryption Algorithm》(1994) | infrastructure,everyday | CPA | algorithm | des | done | tier2 |  |  |  | 
+present | PRESENT 轻量级分组密码 | PRESENT | d08-block-cipher | e14-standardization | 3 | PRESENT | primary:Bogdanov et al.,《PRESENT》(2007) | infrastructure,everyday | CPA,side-channel | algorithm | aes | done | tier2 |  |  |  | 
+kiss | KISS 轻量级分组密码 | KISS | d08-block-cipher | e14-standardization | 3 | KISS | primary:Oorschot & Wiener,《Fast Collision Attacks on MACs》(2009) | infrastructure | CPA | algorithm | present | done | tier3 |  |  |  | 
+clefia | CLEFIA 轻量级分组密码 | CLEFIA | d08-block-cipher | e14-standardization | 3 | CLEFIA | primary:Sato et al.,《CLEFIA」(2007) | infrastructure | CPA | algorithm | present | done | tier3 |  |  |  | 
+lea | LEA 轻量级分组密码 | LEA | d08-block-cipher | e14-standardization | 3 | LEA | primary:Kim et al.,《LEA》(2012) | infrastructure | CPA | algorithm | present | done | tier3 |  |  |  | 
+ascon | ASCON 轻量级密码族 | ASCON | d08-block-cipher | e22-post-quantum | 3 | ASCON;Ascon-128 | primary:Dobraud et al.,《Ascon v1.2》(2023) | infrastructure | CPA | algorithm | present | done | tier2 |  |  |  | 
+sm4 | SM4 中国商用分组密码 | SM4 | d20-china-sm | e14-standardization | 2 | SM4;GB/T 32907 | primary:GB/T 32907—2016《信息安全技术 SM4 分组密码算法》;authoritative:国家密码管理局《商用密码标准体系框架》 | finance,government,infrastructure | CPA,CCA | algorithm | des | done | tier1 |  |  |  | 
+feal | FEAL 分组密码 | Fast Data Encipherment Algorithm | d08-block-cipher | e14-standardization | 3 | FEAL | primary:Shimizu, Miyaguchi, Miyaji,«Fast Data Encipherment Algorithm»(1987) | academic | CPA | algorithm | des | done | tier2 |  |  |  | 
+deal | DEAL 分组密码 | Data Encryption Algorithm with Large keys | d08-block-cipher | e14-standardization | 3 | DEAL | primary:Knudsen《Truncated and Higher Order Differentials》(1994) | academic | CPA | algorithm | des | done | tier3 |  |  |  | 
+mars | MARS 分组密码 | MARS | d08-block-cipher | e14-standardization | 3 | MARS | primary:Burrows et al.《MARS》(1997) | academic | CPA | algorithm | des | done | tier3 |  |  |  | 
+xtea | XTEA 扩展 TEA | XTEA | d08-block-cipher | e14-standardization | 3 | XTEA;XXTEA | primary:Teasdale《XTEA>(1997) | infrastructure | CPA | algorithm | tea | done | tier3 |  |  |  | 
+
+# ---- 流密码 ----
+rc4 | RC4 流密码 | RC4 | d06-otp-stream | e14-standardization | 2 | RC4;ARCFOUR | primary:Rivest《The RC4 Algorithm and Its Use in WEP》(1994) | everyday,finance | CPA,implementation | algorithm |  | done | tier1 |  |  |  | 
+salsa20 | Salsa20 流密码 | Salsa20 | d06-otp-stream | e14-standardization | 3 | Salsa20;Salsa20/8 | primary:Bernstein《Salsa20》(2007) | infrastructure,everyday | CPA,side-channel | algorithm | rc4 | done | tier1 |  |  |  | 
+chacha20 | ChaCha20 流密码 | ChaCha20 | d06-otp-stream | e14-standardization | 2 | ChaCha20;ChaCha8 | primary:Bernstein《ChaCha, a family of fast and secure stream ciphers》(2008) | infrastructure,everyday | CPA,side-channel | algorithm | salsa20 | done | tier1 |  |  |  | 
+xsalsa20 | XSalsa20 流密码 | XSalsa20 | d06-otp-stream | e14-standardization | 3 | XSalsa20 | primary:Bernstein《XSalsa20》(2008) | infrastructure | CPA | algorithm | salsa20 | done | tier2 |  |  |  | 
+hc128 | HC-128 流密码 | HC-128 | d06-otp-stream | e14-standardization | 3 | HC-128 | primary:Zhang et al.《HC-128》(2010) | infrastructure | CPA | algorithm | salsa20 | done | tier3 |  |  |  | 
+rabbit | Rabbit 流密码 | Rabbit | d06-otp-stream | e14-standardization | 3 | Rabbit | primary:Ekström《The Rabbit Stream Cipher》(2003) | infrastructure | CPA | algorithm | salsa20 | done | tier3 |  |  |  | 
+grain | GRAIN 流密码 | GRAIN | d06-otp-stream | e14-standardization | 3 | GRAIN | primary:Coron et al.《GRAIN》(2005) | infrastructure | CPA | algorithm | salsa20 | done | tier3 |  |  |  | 
+trivium | Trivium 流密码 | Trivium | d06-otp-stream | e14-standardization | 3 | Trivium | primary:eSTREAM《Trivium》(2006) | infrastructure | CPA | algorithm | salsa20 | done | tier3 |  |  |  | 
+ekiga | Ekiga 流密码 | Ekiga | d06-otp-stream | e14-standardization | 3 | Ekiga | primary:eSTREAM《Ekiga》(2006) | infrastructure | CPA | algorithm | salsa20 | done | tier3 |  |  |  | 
+zuc | ZUC 祖冲之流密码 | ZUC | d20-china-sm | e14-standardization | 2 | ZUC;祖冲之;GB/T 33133 | primary:GB/T 33133.1—2016《信息安全技术 ZUC 算法》;authoritative:3GPP《ZUC Algorithm Specification》 | telecom,infrastructure | CPA | algorithm | rc4 | done | tier1 |  |  |  | 
+
+# ---- 工作模式 ----
+ecb | ECB 电子密码本模式 | Electronic Codebook | d08-block-cipher | e14-standardization | 2 | ECB;电子密码本 | primary:FIPS 81,《DES Modes of Operation》(1980);authoritative:HAC Ch.7(1997) | finance,everyday | CPA,side-channel | algorithm | des | done | tier1 |  |  |  | 
+cbc | CBC 密码块链接模式 | Cipher Block Chaining | d08-block-cipher | e14-standardization | 2 | CBC;密码块链接 | primary:SP 800-38A,《Recommendation for Block Cipher Modes of Operation》(2001) | finance,everyday | CPA,CCA,padding-oracle | algorithm | ecb | done | tier1 |  |  |  | 
+cfb | CFB 密文反馈模式 | Cipher Feedback | d08-block-cipher | e14-standardization | 3 | CFB | primary:SP 800-38A(2001) | finance | CPA | algorithm | cbc | done | tier2 |  |  |  | 
+ofb | OFB 输出反馈模式 | Output Feedback | d08-block-cipher | e14-standardization | 3 | OFB | primary:SP 800-38A(2001) | finance | CPA | algorithm | cbc | done | tier2 |  |  |  | 
+ctr | CTR 计数器模式 | Counter | d08-block-cipher | e14-standardization | 2 | CTR;计数器模式 | primary:SP 800-38A(2001) | finance,everyday,infrastructure | CPA | algorithm | cbc | done | tier1 |  |  |  | 
+gcm | GCM 伽罗瓦计数器模式 | Galois/Counter Mode | d10-auth-aead | e14-standardization | 3 | GCM;GHASH | primary:SP 800-38D,《GCM and GMAC》(2007) | finance,infrastructure | CCA,side-channel,implementation | algorithm | ctr | done | tier1 |  |  |  | 
+ccm | CCM 计数器 CBC 模式 | Counter with CBC-MAC | d10-auth-aead | e14-standardization | 3 | CCM | primary:SP 800-38C(2004) | infrastructure | CCA | algorithm | ctr | done | tier2 |  |  |  | 
+ocb | OCB 偏移密码块模式 | Offset Codebook | d10-auth-aead | e14-standardization | 3 | OCB | primary:Hoang, Krovetz, Rogaway《The OCB Authenticated Encryption Algorithm》(2001) | infrastructure | CCA | algorithm | ctr | done | tier2 |  |  |  | 
+siv | SIV 确定性认证加密 | Synthetic IV | d10-auth-aead | e14-standardization | 3 | SIV;nonce-misuse-resistant | primary:Deterministic Authenticated Encryption(Kohno《Synthetic IV》2011) | infrastructure | CPA | algorithm | gcm | done | tier3 |  |  |  | 
+xts | XTS 磁盘加密模式 | XTS | d08-block-cipher | e14-standardization | 3 | XTS;XTS-AES | primary:SP 800-38E(2010);IEEE 1619-2007 | infrastructure | side-channel | algorithm | ctr | done | tier2 |  |  |  | 
+fpe | FPE 格式保留加密 | Format-Preserving Encryption | d08-block-cipher | e15-web-protocols | 3 | FPE;FF1;FF3 | primary:SP 800-38G(2016) | finance | CPA | algorithm | ctr | done | tier2 |  |  |  | 
+kw | KW 密钥包装 | Key Wrap | d13-key-management | e15-web-protocols | 3 | KW;KWP;TKW;RFC 3394 | primary:SP 800-38F(2012);RFC 3394(2002) | infrastructure | related-key | algorithm | aes | done | tier2 |  |  |  | 
+
+# ---- 认证加密与 MAC ----
+poly1305 | Poly1305 通用 MAC | Poly1305 | d10-auth-aead | e14-standardization | 3 | Poly1305 | primary:Rose《The use of the Poly1305 one-time authenticator》(2008) | infrastructure | side-channel | algorithm | chacha20 | done | tier2 |  |  |  | 
+cmac | CMAC 分组密码 MAC | CMAC | d10-auth-aead | e14-standardization | 3 | CMAC;OMAC;RFC 4493 | primary:SP 800-38B(2005) | infrastructure | side-channel | algorithm | aes | done | tier2 |  |  |  | 
+gmac | GMAC 认证模式 | GMAC | d10-auth-aead | e14-standardization | 3 | GMAC | primary:SP 800-38D(2007) | infrastructure | CCA | algorithm | gcm | done | tier3 |  |  |  | 
+hmac | HMAC 密钥化哈希认证码 | Hash-based Message Authentication Code | d10-auth-aead | e14-standardization | 2 | HMAC;RFC 2104 | primary:FIPS 198-1(2008);RFC 2104(1999) | everyday,finance,infrastructure | side-channel | algorithm | sha2 | done | tier1 |  |  |  | 
+cmc | CMC 带密文 MAC | Ciphertext-MAC | d10-auth-aead | e15-web-protocols | 3 | CMC | primary:Black & Rogaway《CBC-MAC is secure》(2002) | academic | CCA | algorithm | cbc | done | tier3 |  |  |  | 
+eax | EAX 认证加密 | EAX | d10-auth-aead | e14-standardization | 3 | EAX | primary:Bellare, Rogaway, Wagner《EAX>>(2003) | infrastructure | CCA | algorithm | ctr | done | tier3 |  |  |  | 
+cwc | CWC 携带式工作组密码 | CCM with CBC-MAC | d10-auth-aead | e14-standardization | 3 | CWC | primary:IFF / NIST submission(2000) | infrastructure | CCA | algorithm | ctr | done | tier3 |  |  |  | 
+
+# ---- 散列与 KDF ----
+md4 | MD4 散列 | MD4 | d09-hash | e14-standardization | 2 | MD4 | primary:Rivest《The MD4 Message-Digest Algorithm》(1990) | academic | collision,preimage | algorithm |  | done | tier1 |  |  |  | 
+md5 | MD5 散列 | MD5 | d09-hash | e14-standardization | 2 | MD5 | primary:Rivest《The MD5 Message-Digest Algorithm》(1992) | academic,everyday | collision,preimage | algorithm | md4 | done | tier1 |  |  |  | 
+sha1 | SHA-1 散列 | SHA-1 | d09-hash | e14-standardization | 2 | SHA-1;FIPS 180-1 | primary:FIPS 180-1,《Secure Hash Standard》(1993) | academic,everyday | collision | algorithm | md4 | done | tier1 |  |  |  | 
+sha2 | SHA-2 散列家族 | SHA-2 | d09-hash | e14-standardization | 2 | SHA-2;SHA-224;SHA-256;SHA-384;SHA-512 | primary:FIPS 180-4,《Secure Hash Standard》(2015) | academic,everyday,finance | preimage,collision | algorithm | sha1 | done | tier1 |  |  |  | 
+sha3 | SHA-3 与 Keccak | SHA-3 | d09-hash | e14-standardization | 3 | SHA-3;Keccak;SHAKE128;SHAKE256 | primary:FIPS 202,《SHA-3 Standard》(2015) | academic,finance | preimage,collision | algorithm | sha2 | done | tier1 |  |  |  | 
+blake2 | BLAKE2 散列 | BLAKE2 | d09-hash | e14-standardization | 3 | BLAKE2 | primary:Aumasson et al.《BLAKE2》(2013) | academic,finance | preimage,collision | algorithm | blake3 | done | tier2 |  |  |  | 
+blake3 | BLAKE3 散列 | BLAKE3 | d09-hash | e14-standardization | 3 | BLAKE3 | primary:O'Connor et al.《BLAKE3》(2020) | academic,finance,infrastructure | preimage,collision | algorithm | blake2 | done | tier2 |  |  |  | 
+whirlpool | Whirlpool 散列 | Whirlpool | d09-hash | e14-standardization | 3 | Whirlpool | primary:Barreto & Rijmen《The Whirlpool Hash Function》(2006) | academic | preimage,collision | algorithm | sha2 | done | tier2 |  |  |  | 
+sm3 | SM3 国密杂凑 | SM3 | d20-china-sm | e14-standardization | 2 | SM3;GB/T 32905 | primary:GB/T 32905—2016《信息安全技术 SM3 杂凑算法》 | finance,government | preimage,collision | algorithm | sha2 | done | tier1 |  |  |  | 
+ripemd160 | RIPEMD-160 散列 | RIPEMD-160 | d09-hash | e14-standardization | 3 | RIPEMD-160;RIPEMD | primary:Dobbertin, Bosselaers, Preneel《RIPEMD-160》(1996) | academic | collision,preimage | algorithm | md4 | done | tier3 |  |  |  | 
+poly1305-dup | — 占位（不收） | — | d09-hash |  |  |  |  | academic | theoretical | term |  | exempt | tier3 |  |  |  | 该条目是编排占位，实际条目为 poly1305
+hkdf | HKDF 基于 HMAC 的密钥派生 | HMAC-based Extract-and-Expand Key Derivation | d13-key-management | e15-web-protocols | 2 | HKDF;RFC 5869 | primary:RFC 5869(2014) | telecom,infrastructure | protocol | algorithm | hmac | done | tier1 |  |  |  | 
+pbkdf2 | PBKDF2 口令派生 | Password-Based Key Derivation Function 2 | d23-applied-security | e15-web-protocols | 2 | PBKDF2;RFC 8018 | primary:RFC 8018(2016) | everyday,finance | CO,social | algorithm | hmac | done | tier1 |  |  |  | 
+scrypt | scrypt 内存硬口令派生 | scrypt | d23-applied-security | e15-web-protocols | 3 | scrypt;RFC 7914 | primary:Percival & Josefsson《scrypt>>(2010) | everyday,finance | CO | algorithm | pbkdf2 | done | tier1 |  |  |  | 
+argon2 | Argon2 口令派生 | Argon2 | d23-applied-security | e15-web-protocols | 3 | Argon2;Argon2i;Argon2id;RFC 9106 | primary:Aumasson et al.《Argon2》(2019);RFC 9106(2021) | everyday,finance | CO | algorithm | scrypt | done | tier1 |  |  |  | 
+bcrypt | bcrypt 自适应口令散列 | bcrypt | d23-applied-security | e15-web-protocols | 2 | bcrypt | primary:Provos & Mazières《A Future-Adaptable Password Scheme》(1999) | everyday,finance | CO | algorithm | pbkdf2 | done | tier2 |  |  |  | 
+kmac | KMAC 基于散列的 MAC | KMAC | d10-auth-aead | e15-web-protocols | 3 | KMAC;RFC 5869 | primary:NIST SP 800-185(2019) | infrastructure | side-channel | algorithm | sha2 | done | tier3 |  |  |  | 
+
+# ---- 公钥加密 ----
+rsa | RSA 公钥密码 | RSA | d11-asymmetric | e13-public-key | 2 | RSA;Rivest-Shamir-Adleman | primary:Rivest, Shamir, Adleman《A Method for Obtaining Digital Signatures and Public-Key Cryptosystems》(1978) | finance,government,everyday | related-key,CCA | algorithm |  | done | tier1 |  |  |  | 
+rabin | Rabin 陷门公钥密码 | Rabin Cryptosystem | d11-asymmetric | e13-public-key | 3 | Rabin | primary:Rabin《Digitalized Signatures and Public-Key Functions as Intractable as Factorization》(1979) | academic | CCA | algorithm | rsa | done | tier2 |  |  |  | 
+elgamal | ElGamal 公钥密码 | ElGamal | d11-asymmetric | e13-public-key | 3 | ElGamal;EG | primary:ElGamal《Public Key Cryptosystems and Signatures Based Upon Discrete Logarithms》(1985) | academic | CCA | algorithm | dsa | done | tier1 |  |  |  | 
+paillier | Paillier 陷门公钥密码 | Paillier | d11-asymmetric | e15-web-protocols | 3 | Paillier | primary:Paillier《Public-Key Cryptosystems Based on Composite Degree Residuosity Classes》(1999) | finance,privacy | CCA | algorithm | rsa | done | tier2 |  |  |  | 
+ntru-pke | NTRU 公钥加密 | NTRU | d22-post-quantum | e17-post-quantum | 3 | NTRU | primary:Hoffstein, Pipher, Silverman《NTRU: A New Public Key Cryptosystem》(1998) | infrastructure | CCA,quantum | algorithm |  | done | tier2 |  |  |  | 
+kyber | Kyber / ML-KEM 封装机制 | Kyber;Module-Lattice-Based Key-Encapsulation Mechanism | d22-post-quantum | e17-post-quantum | 3 | Kyber;ML-KEM;FIPS 203 | primary:FIPS 203(2024) | infrastructure,finance | CCA,quantum | algorithm | lwe | done | tier1 |  |  |  | 
+mceliece | Classic McEliece 编码型公钥 | Classic McEliece | d22-post-quantum | e17-post-quantum | 3 | McEliece;Classic McEliece | primary:McEliece《A Public Key Cryptosystem Based on Algebraic Geometry Codes》(1998) | infrastructure | CCA,quantum | algorithm |  | done | tier2 |  |  |  | 
+hqc | HQC 备选 KEM | Hamming Quasi-Cyclic | d22-post-quantum | e17-post-quantum | 3 | HQC | primary:ROUND 4 submission(2023) | infrastructure | CCA,quantum | algorithm |  | done | tier3 |  |  |  | 
+bike | BIKE 备选 KEM | BIKE | d22-post-quantum | e17-post-quantum | 3 | BIKE | primary:ROUND 4 submission(2023) | infrastructure | CCA,quantum | algorithm |  | done | tier3 |  |  |  | 
+sike | SIKE 超椭圆同源 KEM | Supersingular Isogeny Key Encapsulation | d22-post-quantum | e17-post-quantum | 3 | SIKE;CSIDH | primary:De Feo et al.《Towards Quantum-Resistant Cryptosystems from Supersingular Elliptic Curve Isogenies》(2011) | infrastructure | CCA,quantum | algorithm |  | done | tier2 |  |  |  | 
+
+# ---- 签名 ----
+dsa | DSA 数字签名算法 | Digital Signature Algorithm | d12-signature | e14-standardization | 2 | DSA;FIPS 186 | primary:FIPS 186-4(2016) | government,finance | related-key,side-channel | algorithm | dsa | done | tier1 |  |  |  | 
+ecdsa | ECDSA 椭圆曲线签名 | Elliptic Curve Digital Signature Algorithm | d12-signature | e14-standardization | 2 | ECDSA;FIPS 186 | primary:FIPS 186-5(2023) | finance,government | related-key,side-channel | algorithm | ecdsa | done | tier1 |  |  |  | 
+rsa-signature | RSA 签名 | RSA Signature | d12-signature | e13-public-key | 2 | RSASSA-PKCS1-v1_5;RSA-PSS;PSS | primary:RFC 8017(2016) | finance,government | related-key,side-channel | algorithm | rsa | done | tier1 |  |  |  | 
+schnorr | Schnorr 签名 | Schnorr Signature | d12-signature | e14-standardization | 3 | Schnorr;EdDSA style | primary:Schnorr《Efficient Signature Generation for Discrete Logarithm Problems》(1990) | finance | related-key,side-channel | algorithm | dsa | done | tier1 |  |  |  | 
+eddsa | EdDSA  Edwards 曲线签名 | Edwards-Curve Digital Signature Algorithm | d12-signature | e15-web-protocols | 2 | EdDSA;Ed25519;RFC 8032 | primary:RFC 8032(2017) | finance,everyday | side-channel | algorithm | ecdsa | done | tier1 |  |  |  | 
+bls | BLS 短签名 | Boneh-Lynn-Shacham Short Signatures | d12-signature | e15-web-protocols | 3 | BLS | primary:Boneh, Lynn, Shacham《Short Signatures from the Weil Pairing》(2001) | finance,infrastructure | related-key | algorithm | ecdsa | done | tier2 |  |  |  | 
+ring-signature | 环签名 | Ring Signature | d12-signature | e15-web-protocols | 3 | ring signature;环签名 | primary:Rivest, Shamir, Ta-Shma《Group Signatures and Ring Signatures》(2001) | privacy,finance | related-key | algorithm | rsa | done | tier2 |  |  |  | 
+group-signature | 组签名 | Group Signature | d12-signature | e15-web-protocols | 3 | group signature;组签名 | primary:Chaum, van Heyst《Group Signatures》(1991) | privacy | related-key | algorithm | rsa | done | tier3 |  |  |  | 
+blind-signature | 盲签名 | Blind Signature | d12-signature | e13-public-key | 3 | blind signature;盲签名 | primary:Chaum《Blind Signatures for Untraceable Payments》(1982) | finance,privacy | related-key | algorithm | rsa | done | tier2 |  |  |  | 
+threshold-signature | 门限签名 | Threshold Signature | d12-signature | e15-web-protocols | 3 | threshold signature;门限签名 | primary:Shoup《Practical Threshold Signatures》(2000) | infrastructure | related-key | algorithm | rsa | done | tier3 |  |  |  | 
+ml-dsa | ML-DSA 格基签名 | Module-Lattice-Based Digital Signature Standard | d22-post-quantum | e17-post-quantum | 3 | ML-DSA;Dilithium;FIPS 204 | primary:FIPS 204(2024) | infrastructure,government | related-key,quantum | algorithm | schnorr | done | tier1 |  |  |  | 
+slh-dsa | SLH-DSA 状态哈希签名 | Stateless Hash-Based Digital Signature Standard | d22-post-quantum | e17-post-quantum | 3 | SLH-DSA;SPHINCS+;FIPS 205 | primary:FIPS 205(2024) | infrastructure,government | related-key,quantum | algorithm | sha2 | done | tier1 |  |  |  | 
+falcon | Falcon 格签名 | Falcon | d22-post-quantum | e17-post-quantum | 3 | Falcon;FN-DSA | primary:Fouque et al.《Falcon Signature Scheme》(2017) | infrastructure | related-key,quantum | algorithm | ml-dsa | done | tier2 |  |  |  | 
+mldsa-hash | HashML-DSA 混合签名 | HashML-DSA | d22-post-quantum | e17-post-quantum | 3 | HashML-DSA;FIPS 204 | primary:FIPS 204(2024) | infrastructure | related-key,quantum | algorithm | ml-dsa | done | tier3 |  |  |  | 
+
+# ---- 密钥协商与 DH ----
+diffie-hellman | Diffie-Hellman 密钥协商 | Diffie-Hellman Key Agreement | d11-asymmetric | e13-public-key | 2 | DH;Diffie-Hellman | primary:Diffie & Hellman《New Directions in Cryptography》(1976) | telecom,finance | related-key,CCA | algorithm | dlp | done | tier1 |  |  |  | 
+ecdh | ECDH 椭圆曲线密钥协商 | Elliptic Curve Diffie-Hellman | d11-asymmetric | e13-public-key | 2 | ECDH;X25519;Curve25519 | primary:Stebila《Elliptic Curve Diffie-Hellman》(1998) | telecom,finance | related-key,CCA | algorithm | diffie-hellman | done | tier1 |  |  |  | 
+ecmqv | ECMQV 椭圆曲线 Menezes-Qu-Vanstone | Elliptic Curve Menezes-Qu-Vanstone | d11-asymmetric | e14-standardization | 4 | ECMQV | primary:Menezes, Qu, Vanstone《Elliptic Curve Menezes-Qu-Vanstone Key Agreement》(1998) | academic | related-key,CCA | algorithm | ecdh | done | tier3 |  |  |  | 
+ffdhe | FFDHE 有限域 DH | Finite Field Diffie-Hellman Ephemeral | d11-asymmetric | e15-web-protocols | 3 | FFDHE | primary:RFC 7919(2016) | telecom | related-key,CCA | algorithm | diffie-hellman | done | tier2 |  |  |  | 
+ml-kem-hybrid | ML-KEM 混合密钥协商 | Hybrid ML-KEM Key Exchange | d22-post-quantum | e17-post-quantum | 3 | hybrid PQ key exchange;X25519MLKEM | primary:RFC 9794(2025);draft-ietf-tls-hybrid-design | telecom | quantum,protocol | algorithm | kyber,ecdh | done | tier2 |  |  |  | 
+
+# ---- 零知识 / MPC / FHE / FE ----
+sigma-protocol | Sigma 协议 | Sigma Protocol | d15-zkp | e13-public-key | 4 | sigma protocol | primary:Schroeppel & Shamir《A Public Key Crypto-System Based on Discrete Logarithms》(1988) | academic | related-key,protocol | algorithm | sigma-protocol | done | tier2 |  |  |  | 
+fiat-shamir | Fiat-Shamir 启发式 | Fiat-Shamir Heuristic | d15-zkp | e14-standardization | 3 | Fiat-Shamir;FS 启发式 | primary:Fiat & Shamir《Security Proofs for Schnorr Signatures and the DDH Assumption》(1996) | academic | protocol,implementation | algorithm | sigma-protocol | done | tier1 |  |  |  | 
+groth16 | Groth16 证明系统 | Groth16 zk-SNARK | d15-zkp | e18-frontier | 4 | Groth16;Pinocchio | primary:Groth《On Linear Combination of Proofs and Knowledge》(2010) | academic,infrastructure | protocol,implementation | algorithm | sigma-protocol | done | tier2 |  |  |  | 
+plonk | PLONK 通用证明系统 | PLONK | d15-zkp | e18-frontier | 4 | PLONK | primary:Gabizon et al.《PLONK>>(2019) | academic,infrastructure | protocol,implementation | algorithm | sigma-protocol | done | tier2 |  |  |  | 
+bulletproofs | Bulletproofs 简洁证明系统 | Bulletproofs | d15-zkp | e18-frontier | 4 | Bulletproofs | primary:Bünz et al.《Bulletproofs>>(2017) | academic,finance | protocol,implementation | algorithm | sigma-protocol | done | tier3 |  |  |  | 
+halo2 | Halo2 证明系统 | Halo2 | d15-zkp | e18-frontier | 4 | Halo2;Halo 2 | primary:Bowman & Grinsztajn《Halo 2>>(2020) | academic,infrastructure | protocol | algorithm | groth16 | done | tier3 |  |  |  | 
+spartan | Spartan 证明系统 | Spartan | d15-zzk | e18-frontier | 4 | Spartan | primary:Spartan(2020) | academic | protocol | algorithm | sigma-protocol | done | tier3 |  |  |  | 
+shamir-secret-sharing | Shamir 门限秘密共享 | Shamir Secret Sharing | d16-secret-sharing-mpc | e13-public-key | 2 | Shamir;门限秘密共享 | primary:Shamir《How to Share a Secret》(1979) | finance,infrastructure | related-key | algorithm | dlp | done | tier1 |  |  |  | 
+feldman-vss | Feldman 可验证秘密共享 | Verifiable Secret Sharing | d16-secret-sharing-mpc | e14-standardization | 4 | VSS;可验证秘密分享 | primary:Feldman《Practical Scheme for Non-Interactive Verifiable Secret Sharing》(1987) | infrastructure | protocol | algorithm | shamir-secret-sharing | done | tier2 |  |  |  | 
+garbled-circuit | 混淆电路 | Garbled Circuit | d16-secret-sharing-mpc | e13-public-key | 4 | garbled circuit;混淆电路 | primary:Yao《How to Generate and Exchange Secrets>>(1986) | academic,infrastructure | protocol | algorithm | shamir-secret-sharing | done | tier2 |  |  |  | 
+ot | 不经意传输 | Oblivious Transfer | d16-secret-sharing-mpc | e13-public-key | 4 | OT;不经意传输 | primary:Rabin《How to Construct a One-Way Function Using Public-Key Cryptography》(1989) | finance,privacy | protocol | algorithm | sigma-protocol | done | tier2 |  |  |  | 
+bfvhe | BFV 全同态加密 | Brakerski-Fan-Vercauteren FHE | d16-secret-sharing-mpc | e18-frontier | 4 | BFV | primary:Brakerski, Fan, Vercauteren《Efficient Fully Homomorphic Encryption for Circuits》(2012) | finance,privacy,health | protocol | algorithm | lwe | done | tier2 |  |  |  | 
+ckks | CKKS 近似同态加密 | Cheon-Kim-Kim-Song FHE | d16-secret-sharing-mpc | e18-frontier | 4 | CKKS | primary:Cheon et al.《Homomorphic Encryption for Arithmetic>>(2017) | finance,privacy,health | protocol | algorithm | bfvhe | done | tier2 |  |  |  | 
+tfhe | TFHE 全同态加密 | Fully Homomorphic Encryption over the Torus | d16-secret-sharing-mpc | e18-frontier | 4 | TFHE;FHEW | primary:Cheng et al.《Programmable Bootstrapping>>(2018) | finance,privacy | protocol | algorithm | bfvhe | done | tier2 |  |  |  | 
+abe | 属性基加密 | Attribute-Based Encryption | d16-secret-sharing-mpc | e18-frontier | 4 | ABE;属性基加密 | primary:Sahai, Waters《Fuzzy Extractors and Attribute-Based Encryption>>(2005) | privacy | protocol | algorithm | bilinear | done | tier2 |  |  |  | 
+ibe | 身份基加密 | Identity-Based Encryption | d16-secret-sharing-mpc | e13-public-key | 4 | IBE;身份基加密 | primary:Shamir《An Identity-Based Public-Key Cryptosystem Using Quadratic Residuosity>>(1984) | privacy,infrastructure | protocol | algorithm | rsa | done | tier2 |  |  |  | 
+searchable-encryption | 可搜索加密 | Searchable Encryption | d16-secret-sharing-mpc | e18-frontier | 4 | searchable encryption;可搜索加密 | primary:Bellare, Caradus, Gentry, Peikert, Sudan《Secure Searchable Encryption》(2004) | privacy,finance | protocol | algorithm | prf | done | tier3 |  |  |  | 
+
+# ---- 随机数与硬件 ----
+trng | 真随机数发生器 | True Random Number Generator | d19-randomness | e19-china | 2 | TRNG;真随机 | primary:NIST SP 800-90B(2007) | infrastructure,finance | implementation | algorithm |  | done | tier1 |  |  |  | 
+csprng | 密码学安全伪随机数发生器 | Cryptographically Secure PRNG | d19-randomness | e14-standardization | 2 | CSPRNG;DRBG | primary:NIST SP 800-90A Rev.1(2015) | infrastructure,finance,everyday | implementation | algorithm | trng | done | tier1 |  |  |  | 
+lcg | 线性同余发生器 | Linear Congruential Generator | d19-randomness | e19-china | 1 | LCG;线性同余 | primary:Lehmer《On Pseudo-Random Sequences>>(1951) | academic,everyday | implementation,statistical | algorithm |  | done | tier1 |  |  |  | 
+puf | 物理不可克隆函数 | Physically Unclonable Function | d19-randomness | e19-china | 4 | PUF;物理不可克隆 | primary:Gassend et al.《Silicon PUFs>>(2002) | infrastructure,finance | physical,implementation | algorithm |  | done | tier3 |  |  |  | 
+hsm | 硬件安全模块 | Hardware Security Module | d13-key-management | e14-standardization | 2 | HSM;密码机 | primary:FIPS 140-3(2019) | finance,government,infrastructure | physical,side-channel | algorithm |  | done | tier2 |  |  |  | 
+tpm | 可信平台模块 | Trusted Platform Module | d13-key-management | e14-standardization | 3 | TPM;可信密码模块 | primary:TCG TPM 2.0 Library Specification | infrastructure | physical,side-channel | algorithm | hsm | done | tier2 |  |  |  | 
+
+# ---- 其他 ----
+bilinear | 双线性配对 | Bilinear Pairing | d11-asymmetric | e13-public-key | 4 | pairing;双线性对 | primary:Joux《The Weil and Tate Pairings as Building Blocks for Public Key Cryptosystems>>(2000) | academic | related-key | algorithm | ecdsa | done | tier3 |  |  |  | 
+lwe | 带误差学习问题 | Learning With Errors | d22-post-quantum | e17-post-quantum | 4 | LWE | primary:Regev《On Lattices, Learning with Errors, Random Linear Codes, and Cryptography》(2005) | academic | quantum | algorithm | sivp | done | tier2 |  |  |  | 
+dlp | 离散对数问题 | Discrete Logarithm Problem | d24-theory | e13-public-key | 3 | DLP;离散对数 | tertiary:Discrete logarithm Wikipedia | academic | quantum | algorithm |  | done | tier1 |  |  |  | 
+dlp-harden | — 占位（不收） | — | d24-theory |  |  |  |  | academic | theoretical | term |  | exempt | tier3 |  |  |  | 该条目是编排占位，实际条目为 dlp
+sivp | 最短独立向量问题 | Shortest Independent Vector Problem | d22-post-quantum | e17-post-quantum | 4 | SIVP | tertiary:Shortest independent vectors problem Wikipedia | academic | quantum | algorithm | lwe | done | tier3 |  |  |  | 
+prf | 伪随机函数 | Pseudorandom Function | d24-theory | e13-public-key | 4 | PRF;伪随机函数 | tertiary:Pseudorandom function Wikipedia | academic | protocol | algorithm |  | done | tier2 |  |  |  | 
+prg | 伪随机生成器 | Pseudorandom Generator | d24-theory | e13-public-key | 4 | PRG;伪随机生成器 | tertiary:Pseudorandom generator Wikipedia | academic | protocol | algorithm |  | done | tier2 |  |  |  | 
+owf | 单向函数 | One-Way Function | d24-theory | e13-public-key | 4 | OWF;单向函数 | tertiary:One-way function Wikipedia | academic | protocol | algorithm |  | done | tier2 |  |  |  | 
+trapdoor | 陷门函数 | Trapdoor Function | d24-theory | e13-public-key | 4 | trapdoor function;陷门函数 | tertiary:Trapdoor function Wikipedia | academic | protocol | algorithm | owf | done | tier3 |  |  |  | 
+sec-idem | — 占位（不收） | — | d24-theory |  |  |  |  | academic | theoretical | term |  | exempt | tier3 |  |  |  | 该条目是编排占位，无对应实体

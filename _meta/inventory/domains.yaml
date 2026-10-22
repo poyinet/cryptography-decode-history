@@ -1,0 +1,1793 @@
+
+domain: "*"
+title: 技术域总目录
+title_en: Domains Inventory
+subtopics:
+  - id: caesar-cipher
+    title: Caesar Cipher
+    title_en: caesar-cipher
+    domain: d02-monoalphabetic
+    summary: ""
+  - id: substitution
+    title: Substitution
+    title_en: substitution
+    domain: d02-monoalphabetic
+    summary: ""
+  - id: affine-cipher
+    title: Affine Cipher
+    title_en: affine-cipher
+    domain: d02-monoalphabetic
+    summary: ""
+  - id: yinfu-tally-codes
+    title: Yinfu Tally Codes
+    title_en: yinfu-tally-codes
+    domain: d02-monoalphabetic
+    summary: ""
+  - id: yinshu-split-letters
+    title: Yinshu Split Letters
+    title_en: yinshu-split-letters
+    domain: d02-monoalphabetic
+    summary: ""
+  - id: ziyan-code
+    title: Ziyan Code
+    title_en: ziyan-code
+    domain: d02-monoalphabetic
+    summary: ""
+  - id: fanqie-code
+    title: Fanqie Code
+    title_en: fanqie-code
+    domain: d02-monoalphabetic
+    summary: ""
+  - id: nomenclator
+    title: Nomenclator
+    title_en: nomenclator
+    domain: d02-monoalphabetic
+    summary: ""
+  - id: great-cipher-of-louis-xiv
+    title: Great Cipher of Louis XIV
+    title_en: great-cipher-of-louis-xiv
+    domain: d02-monoalphabetic
+    summary: ""
+  - id: homophonic-substitution
+    title: Homophonic Substitution
+    title_en: homophonic-substitution
+    domain: d02-monoalphabetic
+    summary: ""
+  - id: book-cipher
+    title: Book Cipher
+    title_en: book-cipher
+    domain: d02-monoalphabetic
+    summary: ""
+  - id: null-cipher
+    title: Null Cipher
+    title_en: null-cipher
+    domain: d02-monoalphabetic
+    summary: ""
+  - id: homophonic-with-nomenclator
+    title: Homophonic with Nomenclator
+    title_en: homophonic-with-nomenclator
+    domain: d02-monoalphabetic
+    summary: ""
+  - id: codebook
+    title: Codebook
+    title_en: codebook
+    domain: d02-monoalphabetic
+    summary: ""
+  - id: navajo-code-talkers
+    title: Navajo Code Talkers
+    title_en: navajo-code-talkers
+    domain: d02-monoalphabetic
+    summary: ""
+  - id: red-army-radio-cipher
+    title: Red Army Radio Cipher
+    title_en: red-army-radio-cipher
+    domain: d02-monoalphabetic
+    summary: ""
+  - id: vigen-re
+    title: Vigenère
+    title_en: vigen-re
+    domain: d03-polyalphabetic
+    summary: ""
+  - id: hill-cipher
+    title: Hill Cipher
+    title_en: hill-cipher
+    domain: d03-polyalphabetic
+    summary: ""
+  - id: nihilist-cipher
+    title: Nihilist Cipher
+    title_en: nihilist-cipher
+    domain: d03-polyalphabetic
+    summary: ""
+  - id: two-square-cipher
+    title: Two-Square Cipher
+    title_en: two-square-cipher
+    domain: d03-polyalphabetic
+    summary: ""
+  - id: gronsfeld-cipher
+    title: Gronsfeld Cipher
+    title_en: gronsfeld-cipher
+    domain: d03-polyalphabetic
+    summary: ""
+  - id: alberti-cipher-disk
+    title: Alberti Cipher Disk
+    title_en: alberti-cipher-disk
+    domain: d03-polyalphabetic
+    summary: ""
+  - id: beaufort-cipher
+    title: Beaufort Cipher
+    title_en: beaufort-cipher
+    domain: d03-polyalphabetic
+    summary: ""
+  - id: tabula-recta
+    title: Tabula Recta
+    title_en: tabula-recta
+    domain: d03-polyalphabetic
+    summary: ""
+  - id: autokey-cipher
+    title: Autokey Cipher
+    title_en: autokey-cipher
+    domain: d03-polyalphabetic
+    summary: ""
+  - id: porta-cipher
+    title: Porta Cipher
+    title_en: porta-cipher
+    domain: d03-polyalphabetic
+    summary: ""
+  - id: four-square-cipher
+    title: Four-Square Cipher
+    title_en: four-square-cipher
+    domain: d03-polyalphabetic
+    summary: ""
+  - id: transposition
+    title: Transposition
+    title_en: transposition
+    domain: d04-transposition
+    summary: ""
+  - id: rail-fence
+    title: Rail Fence
+    title_en: rail-fence
+    domain: d04-transposition
+    summary: ""
+  - id: bifid-cipher
+    title: Bifid Cipher
+    title_en: bifid-cipher
+    domain: d04-transposition
+    summary: ""
+  - id: trifid-cipher
+    title: Trifid Cipher
+    title_en: trifid-cipher
+    domain: d04-transposition
+    summary: ""
+  - id: scytale
+    title: Scytale
+    title_en: scytale
+    domain: d04-transposition
+    summary: ""
+  - id: double-transposition
+    title: Double Transposition
+    title_en: double-transposition
+    domain: d04-transposition
+    summary: ""
+  - id: half-a-radio
+    title: Half-a-Radio
+    title_en: half-a-radio
+    domain: d04-transposition
+    summary: ""
+  - id: enigma
+    title: Enigma
+    title_en: enigma
+    domain: d05-rotor-mechanical
+    summary: ""
+  - id: bombe
+    title: Bombe
+    title_en: bombe
+    domain: d05-rotor-mechanical
+    summary: ""
+  - id: purple
+    title: Purple
+    title_en: purple
+    domain: d05-rotor-mechanical
+    summary: ""
+  - id: typex
+    title: Typex
+    title_en: typex
+    domain: d05-rotor-mechanical
+    summary: ""
+  - id: hagelin-c-38
+    title: Hagelin C-38
+    title_en: hagelin-c-38
+    domain: d05-rotor-mechanical
+    summary: ""
+  - id: rockex-cipher
+    title: Rockex Cipher
+    title_en: rockex-cipher
+    domain: d05-rotor-mechanical
+    summary: ""
+  - id: combined-cipher-machine
+    title: Combined Cipher Machine
+    title_en: combined-cipher-machine
+    domain: d05-rotor-mechanical
+    summary: ""
+  - id: otp
+    title: OTP 与复用灾难
+    title_en: otp
+    domain: d06-otp-stream
+    summary: ""
+  - id: rc4
+    title: RC4
+    title_en: rc4
+    domain: d06-otp-stream
+    summary: ""
+  - id: chacha20
+    title: ChaCha20
+    title_en: chacha20
+    domain: d06-otp-stream
+    summary: ""
+  - id: a5-1
+    title: A5/1 流密码
+    title_en: a5-1
+    domain: d06-otp-stream
+    summary: ""
+  - id: one-time-pad
+    title: One-Time Pad
+    title_en: one-time-pad
+    domain: d06-otp-stream
+    summary: ""
+  - id: xor
+    title: XOR
+    title_en: xor
+    domain: d06-otp-stream
+    summary: ""
+  - id: one-time-pad-history
+    title: One-Time Pad History
+    title_en: one-time-pad-history
+    domain: d06-otp-stream
+    summary: ""
+  - id: pseudorandom-function
+    title: Pseudorandom Function
+    title_en: pseudorandom-function
+    domain: d06-otp-stream
+    summary: ""
+  - id: pseudorandom-generator
+    title: Pseudorandom Generator
+    title_en: pseudorandom-generator
+    domain: d06-otp-stream
+    summary: ""
+  - id: stream-cipher
+    title: Stream Cipher
+    title_en: stream-cipher
+    domain: d06-otp-stream
+    summary: ""
+  - id: frequency-analysis
+    title: Frequency Analysis
+    title_en: frequency-analysis
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: crib
+    title: Crib
+    title_en: crib
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: known-plaintext-attack
+    title: Known-Plaintext Attack
+    title_en: known-plaintext-attack
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: depth
+    title: Depth
+    title_en: depth
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: kasiski-test
+    title: Kasiski Test
+    title_en: kasiski-test
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: brute-force
+    title: Brute Force
+    title_en: brute-force
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: known-plaintext
+    title: Known Plaintext
+    title_en: known-plaintext
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: chosen-plaintext-attack
+    title: Chosen-Plaintext Attack
+    title_en: chosen-plaintext-attack
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: birthday-attack
+    title: Birthday Attack
+    title_en: birthday-attack
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: man-in-the-middle
+    title: Man-in-the-Middle
+    title_en: man-in-the-middle
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: traffic-analysis
+    title: Traffic Analysis
+    title_en: traffic-analysis
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: differential-cryptanalysis
+    title: Differential Cryptanalysis
+    title_en: differential-cryptanalysis
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: linear-cryptanalysis
+    title: Linear Cryptanalysis
+    title_en: linear-cryptanalysis
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: rainbow-table
+    title: Rainbow Table
+    title_en: rainbow-table
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: side-channel-attack
+    title: Side-Channel Attack
+    title_en: side-channel-attack
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: timing-attack
+    title: Timing Attack
+    title_en: timing-attack
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: chosen-ciphertext-attack
+    title: Chosen-Ciphertext Attack
+    title_en: chosen-ciphertext-attack
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: meet-in-the-middle-attack
+    title: Meet-in-the-Middle Attack
+    title_en: meet-in-the-middle-attack
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: ciphertext-only-attack
+    title: Ciphertext-Only Attack
+    title_en: ciphertext-only-attack
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: one-time-pad-reuse
+    title: One-Time Pad Reuse
+    title_en: one-time-pad-reuse
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: cca2
+    title: CCA2
+    title_en: cca2
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: distinguishing-attack
+    title: Distinguishing Attack
+    title_en: distinguishing-attack
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: constant-time-implementation
+    title: Constant-Time Implementation
+    title_en: constant-time-implementation
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: padding-oracle-attack
+    title: Padding Oracle Attack
+    title_en: padding-oracle-attack
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: backdoor
+    title: Backdoor
+    title_en: backdoor
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: phishing
+    title: Phishing
+    title_en: phishing
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: password-spraying
+    title: Password Spraying
+    title_en: password-spraying
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: canary-trap
+    title: Canary Trap
+    title_en: canary-trap
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: steganalysis
+    title: Steganalysis
+    title_en: steganalysis
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: replay-attack
+    title: Replay Attack
+    title_en: replay-attack
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: shor-s-algorithm
+    title: Shor's Algorithm
+    title_en: shor-s-algorithm
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: grover-s-algorithm
+    title: Grover's Algorithm
+    title_en: grover-s-algorithm
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: ninja-secret-codes
+    title: Ninja Secret Codes
+    title_en: ninja-secret-codes
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: variant-kana-steganography
+    title: Variant Kana Steganography
+    title_en: variant-kana-steganography
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: hash-collision-attack
+    title: Hash Collision Attack
+    title_en: hash-collision-attack
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: meet-in-the-middle
+    title: Meet-in-the-Middle
+    title_en: meet-in-the-middle
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: power-analysis
+    title: Power Analysis
+    title_en: power-analysis
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: cardan-grille
+    title: Cardan Grille
+    title_en: cardan-grille
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: s-box
+    title: S-Box
+    title_en: s-box
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: key-derivation-for-storage
+    title: Key Derivation for Storage
+    title_en: key-derivation-for-storage
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: cold-boot
+    title: Cold Boot
+    title_en: cold-boot
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: differential-side-channel
+    title: Differential Side-Channel
+    title_en: differential-side-channel
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: kasiski-vs-index-of-coincidence
+    title: Kasiski vs Index of Coincidence
+    title_en: kasiski-vs-index-of-coincidence
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: banburismus
+    title: Banburismus
+    title_en: banburismus
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: depth
+    title: Depth
+    title_en: depth
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: fault-attack
+    title: Fault Attack
+    title_en: fault-attack
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: replay-attack
+    title: Replay Attack
+    title_en: replay-attack
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: sigint
+    title: SIGINT
+    title_en: sigint
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: key-confusion-attack
+    title: Key Confusion Attack
+    title_en: key-confusion-attack
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: algebraic-attack
+    title: Algebraic Attack
+    title_en: algebraic-attack
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: dictionary-attack
+    title: Dictionary Attack
+    title_en: dictionary-attack
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: speculative-execution-side-channel
+    title: Speculative Execution Side-Channel
+    title_en: speculative-execution-side-channel
+    domain: d07-cryptanalysis
+    summary: ""
+  - id: block-cipher
+    title: Block Cipher
+    title_en: block-cipher
+    domain: d08-block-ciphers
+    summary: ""
+  - id: symmetric-key
+    title: Symmetric Key
+    title_en: symmetric-key
+    domain: d08-block-ciphers
+    summary: ""
+  - id: data-encryption-standard
+    title: Data Encryption Standard
+    title_en: data-encryption-standard
+    domain: d08-block-ciphers
+    summary: ""
+  - id: feistel-network
+    title: Feistel Network
+    title_en: feistel-network
+    domain: d08-block-ciphers
+    summary: ""
+  - id: substitution-permutation-network
+    title: Substitution-Permutation Network
+    title_en: substitution-permutation-network
+    domain: d08-block-ciphers
+    summary: ""
+  - id: symmetric-cryptography
+    title: Symmetric Cryptography
+    title_en: symmetric-cryptography
+    domain: d08-block-ciphers
+    summary: ""
+  - id: block-cipher-mode
+    title: Block Cipher Mode
+    title_en: block-cipher-mode
+    domain: d08-block-ciphers
+    summary: ""
+  - id: cipher-block-chaining
+    title: Cipher Block Chaining
+    title_en: cipher-block-chaining
+    domain: d08-block-ciphers
+    summary: ""
+  - id: counter-mode
+    title: Counter Mode
+    title_en: counter-mode
+    domain: d08-block-ciphers
+    summary: ""
+  - id: galois-counter-mode
+    title: Galois/Counter Mode
+    title_en: galois-counter-mode
+    domain: d08-block-ciphers
+    summary: ""
+  - id: 3des
+    title: 3DES
+    title_en: 3des
+    domain: d08-block-ciphers
+    summary: ""
+  - id: blowfish-twofish
+    title: Blowfish / Twofish
+    title_en: blowfish-twofish
+    domain: d08-block-ciphers
+    summary: ""
+  - id: key-schedule
+    title: Key Schedule
+    title_en: key-schedule
+    domain: d08-block-ciphers
+    summary: ""
+  - id: feistel-vs-spn
+    title: Feistel vs SPN
+    title_en: feistel-vs-spn
+    domain: d08-block-ciphers
+    summary: ""
+  - id: padding
+    title: Padding
+    title_en: padding
+    domain: d08-block-ciphers
+    summary: ""
+  - id: merkle
+    title: Merkle 树
+    title_en: merkle
+    domain: d09-hashes
+    summary: ""
+  - id: cryptographic-hash
+    title: Cryptographic Hash
+    title_en: cryptographic-hash
+    domain: d09-hashes
+    summary: ""
+  - id: salt
+    title: Salt
+    title_en: salt
+    domain: d09-hashes
+    summary: ""
+  - id: merkle-tree
+    title: Merkle Tree
+    title_en: merkle-tree
+    domain: d09-hashes
+    summary: ""
+  - id: proof-of-work
+    title: Proof of Work
+    title_en: proof-of-work
+    domain: d09-hashes
+    summary: ""
+  - id: ripemd-whirlpool
+    title: RIPEMD & Whirlpool
+    title_en: ripemd-whirlpool
+    domain: d09-hashes
+    summary: ""
+  - id: aead
+    title: 认证加密 AEAD
+    title_en: aead
+    domain: d10-auth-aead
+    summary: ""
+  - id: message-authentication-code
+    title: Message Authentication Code
+    title_en: message-authentication-code
+    domain: d10-auth-aead
+    summary: ""
+  - id: diffie-hellman
+    title: Diffie-Hellman 密钥交换
+    title_en: diffie-hellman
+    domain: d11-asymmetric
+    summary: ""
+  - id: elgamal
+    title: ElGamal 加密
+    title_en: elgamal
+    domain: d11-asymmetric
+    summary: ""
+  - id: rsa
+    title: 教科书 RSA 与填充
+    title_en: rsa
+    domain: d11-asymmetric
+    summary: ""
+  - id: rsa
+    title: 真实大数 RSA
+    title_en: rsa
+    domain: d11-asymmetric
+    summary: ""
+  - id: public-key-crypto
+    title: Public-Key Crypto
+    title_en: public-key-crypto
+    domain: d11-asymmetric
+    summary: ""
+  - id: asymmetric-key
+    title: Asymmetric Key
+    title_en: asymmetric-key
+    domain: d11-asymmetric
+    summary: ""
+  - id: elliptic-curve-cryptography
+    title: Elliptic Curve Cryptography
+    title_en: elliptic-curve-cryptography
+    domain: d11-asymmetric
+    summary: ""
+  - id: asymmetric-cryptography
+    title: Asymmetric Cryptography
+    title_en: asymmetric-cryptography
+    domain: d11-asymmetric
+    summary: ""
+  - id: paillier-encryption
+    title: Paillier Encryption
+    title_en: paillier-encryption
+    domain: d11-asymmetric
+    summary: ""
+  - id: rabin-cryptosystem
+    title: Rabin Cryptosystem
+    title_en: rabin-cryptosystem
+    domain: d11-asymmetric
+    summary: ""
+  - id: dh-parameter-validation
+    title: DH Parameter Validation
+    title_en: dh-parameter-validation
+    domain: d11-asymmetric
+    summary: ""
+  - id: nist-p-256
+    title: NIST P-256
+    title_en: nist-p-256
+    domain: d11-asymmetric
+    summary: ""
+  - id: ecdsa
+    title: ECDSA 签名
+    title_en: ecdsa
+    domain: d12-signatures
+    summary: ""
+  - id: rsa
+    title: RSA 数字签名
+    title_en: rsa
+    domain: d12-signatures
+    summary: ""
+  - id: digital-signature
+    title: Digital Signature
+    title_en: digital-signature
+    domain: d12-signatures
+    summary: ""
+  - id: digital-signature-algorithm
+    title: Digital Signature Algorithm
+    title_en: digital-signature-algorithm
+    domain: d12-signatures
+    summary: ""
+  - id: schnorr-signature
+    title: Schnorr Signature
+    title_en: schnorr-signature
+    domain: d12-signatures
+    summary: ""
+  - id: hash-based-signatures
+    title: Hash-Based Signatures
+    title_en: hash-based-signatures
+    domain: d12-signatures
+    summary: ""
+  - id: ring-signature
+    title: Ring Signature
+    title_en: ring-signature
+    domain: d12-signatures
+    summary: ""
+  - id: initialization-vector
+    title: Initialization Vector
+    title_en: initialization-vector
+    domain: d13-key-management
+    summary: ""
+  - id: key-length
+    title: Key Length
+    title_en: key-length
+    domain: d13-key-management
+    summary: ""
+  - id: key-space
+    title: Key Space
+    title_en: key-space
+    domain: d13-key-management
+    summary: ""
+  - id: key-derivation-function
+    title: Key Derivation Function
+    title_en: key-derivation-function
+    domain: d13-key-management
+    summary: ""
+  - id: tls
+    title: TLS 握手
+    title_en: tls
+    domain: d14-protocols-pki
+    summary: ""
+  - id: transport-layer-security
+    title: Transport Layer Security
+    title_en: transport-layer-security
+    domain: d14-protocols-pki
+    summary: ""
+  - id: public-key-infrastructure
+    title: Public Key Infrastructure
+    title_en: public-key-infrastructure
+    domain: d14-protocols-pki
+    summary: ""
+  - id: certificate-authority
+    title: Certificate Authority
+    title_en: certificate-authority
+    domain: d14-protocols-pki
+    summary: ""
+  - id: digital-envelope
+    title: Digital Envelope
+    title_en: digital-envelope
+    domain: d14-protocols-pki
+    summary: ""
+  - id: key-exchange
+    title: Key Exchange
+    title_en: key-exchange
+    domain: d14-protocols-pki
+    summary: ""
+  - id: end-to-end-encryption
+    title: End-to-End Encryption
+    title_en: end-to-end-encryption
+    domain: d14-protocols-pki
+    summary: ""
+  - id: zero-knowledge-proof
+    title: Zero-Knowledge Proof
+    title_en: zero-knowledge-proof
+    domain: d14-protocols-pki
+    summary: ""
+  - id: homomorphic-encryption
+    title: Homomorphic Encryption
+    title_en: homomorphic-encryption
+    domain: d14-protocols-pki
+    summary: ""
+  - id: post-quantum-cryptography
+    title: Post-Quantum Cryptography
+    title_en: post-quantum-cryptography
+    domain: d14-protocols-pki
+    summary: ""
+  - id: kerckhoffs-s-principle
+    title: Kerckhoffs's Principle
+    title_en: kerckhoffs-s-principle
+    domain: d14-protocols-pki
+    summary: ""
+  - id: certificate-transparency
+    title: Certificate Transparency
+    title_en: certificate-transparency
+    domain: d14-protocols-pki
+    summary: ""
+  - id: online-certificate-status-protocol
+    title: Online Certificate Status Protocol
+    title_en: online-certificate-status-protocol
+    domain: d14-protocols-pki
+    summary: ""
+  - id: http-strict-transport-security
+    title: HTTP Strict Transport Security
+    title_en: http-strict-transport-security
+    domain: d14-protocols-pki
+    summary: ""
+  - id: key-confirmation
+    title: Key Confirmation
+    title_en: key-confirmation
+    domain: d14-protocols-pki
+    summary: ""
+  - id: key-rotation
+    title: Key Rotation
+    title_en: key-rotation
+    domain: d14-protocols-pki
+    summary: ""
+  - id: lattice-based-cryptography
+    title: Lattice-based Cryptography
+    title_en: lattice-based-cryptography
+    domain: d14-protocols-pki
+    summary: ""
+  - id: kyber
+    title: Kyber
+    title_en: kyber
+    domain: d14-protocols-pki
+    summary: ""
+  - id: dilithium
+    title: Dilithium
+    title_en: dilithium
+    domain: d14-protocols-pki
+    summary: ""
+  - id: harvest-now-decrypt-later
+    title: Harvest Now, Decrypt Later
+    title_en: harvest-now-decrypt-later
+    domain: d14-protocols-pki
+    summary: ""
+  - id: zuc
+    title: ZUC
+    title_en: zuc
+    domain: d14-protocols-pki
+    summary: ""
+  - id: double-ratchet
+    title: Double Ratchet
+    title_en: double-ratchet
+    domain: d14-protocols-pki
+    summary: ""
+  - id: forward-secrecy
+    title: Forward Secrecy
+    title_en: forward-secrecy
+    domain: d14-protocols-pki
+    summary: ""
+  - id: totp
+    title: TOTP
+    title_en: totp
+    domain: d14-protocols-pki
+    summary: ""
+  - id: passkey
+    title: Passkey
+    title_en: passkey
+    domain: d14-protocols-pki
+    summary: ""
+  - id: s-mime
+    title: S/MIME
+    title_en: s-mime
+    domain: d14-protocols-pki
+    summary: ""
+  - id: pake
+    title: PAKE
+    title_en: pake
+    domain: d14-protocols-pki
+    summary: ""
+  - id: noise-protocol-framework
+    title: Noise Protocol Framework
+    title_en: noise-protocol-framework
+    domain: d14-protocols-pki
+    summary: ""
+  - id: threshold-signature
+    title: Threshold Signature
+    title_en: threshold-signature
+    domain: d14-protocols-pki
+    summary: ""
+  - id: off-the-record
+    title: Off-the-Record
+    title_en: off-the-record
+    domain: d14-protocols-pki
+    summary: ""
+  - id: diffie-hellman-key-exchange
+    title: Diffie-Hellman Key Exchange
+    title_en: diffie-hellman-key-exchange
+    domain: d14-protocols-pki
+    summary: ""
+  - id: pgp
+    title: PGP
+    title_en: pgp
+    domain: d14-protocols-pki
+    summary: ""
+  - id: tor
+    title: Tor
+    title_en: tor
+    domain: d14-protocols-pki
+    summary: ""
+  - id: key-encapsulation-mechanism
+    title: Key Encapsulation Mechanism
+    title_en: key-encapsulation-mechanism
+    domain: d14-protocols-pki
+    summary: ""
+  - id: sm9
+    title: SM9
+    title_en: sm9
+    domain: d14-protocols-pki
+    summary: ""
+  - id: two-factor-authentication
+    title: Two-Factor Authentication
+    title_en: two-factor-authentication
+    domain: d14-protocols-pki
+    summary: ""
+  - id: content-security-policy
+    title: Content Security Policy
+    title_en: content-security-policy
+    domain: d14-protocols-pki
+    summary: ""
+  - id: identity-based-encryption
+    title: Identity-Based Encryption
+    title_en: identity-based-encryption
+    domain: d14-protocols-pki
+    summary: ""
+  - id: zero-trust-architecture
+    title: Zero Trust Architecture
+    title_en: zero-trust-architecture
+    domain: d14-protocols-pki
+    summary: ""
+  - id: ransomware
+    title: Ransomware
+    title_en: ransomware
+    domain: d14-protocols-pki
+    summary: ""
+  - id: captcha
+    title: CAPTCHA
+    title_en: captcha
+    domain: d14-protocols-pki
+    summary: ""
+  - id: rsa-padding
+    title: RSA Padding
+    title_en: rsa-padding
+    domain: d14-protocols-pki
+    summary: ""
+  - id: secure-boot-firmware-signing
+    title: Secure Boot & Firmware Signing
+    title_en: secure-boot-firmware-signing
+    domain: d14-protocols-pki
+    summary: ""
+  - id: fips-140
+    title: FIPS 140
+    title_en: fips-140
+    domain: d14-protocols-pki
+    summary: ""
+  - id: cryptography-law-of-china
+    title: Cryptography Law of China
+    title_en: cryptography-law-of-china
+    domain: d14-protocols-pki
+    summary: ""
+  - id: commercial-cryptography-regulation
+    title: Commercial Cryptography Regulation
+    title_en: commercial-cryptography-regulation
+    domain: d14-protocols-pki
+    summary: ""
+  - id: hmac
+    title: HMAC
+    title_en: hmac
+    domain: d14-protocols-pki
+    summary: ""
+  - id: shamir-s-secret-sharing
+    title: Shamir's Secret Sharing
+    title_en: shamir-s-secret-sharing
+    domain: d16-secret-sharing-mpc
+    summary: ""
+  - id: csprng
+    title: 随机数与 CSPRNG
+    title_en: csprng
+    domain: d19-randomness
+    summary: ""
+  - id: quantum-cryptography
+    title: Quantum Cryptography
+    title_en: quantum-cryptography
+    domain: d21-quantum-crypto
+    summary: ""
+  - id: quantum-key-distribution
+    title: Quantum Key Distribution
+    title_en: quantum-key-distribution
+    domain: d21-quantum-crypto
+    summary: ""
+  - id: learning-with-errors
+    title: Learning With Errors
+    title_en: learning-with-errors
+    domain: d22-post-quantum
+    summary: ""
+  - id: ring-lwe
+    title: Ring-LWE
+    title_en: ring-lwe
+    domain: d22-post-quantum
+    summary: ""
+  - id: post-quantum-hybrids
+    title: Post-Quantum Hybrids
+    title_en: post-quantum-hybrids
+    domain: d22-post-quantum
+    summary: ""
+  - id: slh-dsa
+    title: SLH-DSA
+    title_en: slh-dsa
+    domain: d22-post-quantum
+    summary: ""
+  - id: format-preserving-encryption
+    title: Format-Preserving Encryption
+    title_en: format-preserving-encryption
+    domain: d23-applied-security
+    summary: ""
+  - id: password-manager
+    title: Password Manager
+    title_en: password-manager
+    domain: d23-applied-security
+    summary: ""
+  - id: supply-chain-attack
+    title: Supply Chain Attack
+    title_en: supply-chain-attack
+    domain: d23-applied-security
+    summary: ""
+  - id: zero-day
+    title: Zero-Day
+    title_en: zero-day
+    domain: d23-applied-security
+    summary: ""
+  - id: prism-2013-surveillance-disclosures
+    title: PRISM & 2013 Surveillance Disclosures
+    title_en: prism-2013-surveillance-disclosures
+    domain: d23-applied-security
+    summary: ""
+  - id: cve-vulnerability-management
+    title: CVE & Vulnerability Management
+    title_en: cve-vulnerability-management
+    domain: d23-applied-security
+    summary: ""
+  - id: entropy
+    title: Entropy
+    title_en: entropy
+    domain: d24-theory
+    summary: ""
+  - id: perfect-secrecy
+    title: Perfect Secrecy
+    title_en: perfect-secrecy
+    domain: d24-theory
+    summary: ""
+  - id: random-oracle-model
+    title: Random Oracle Model
+    title_en: random-oracle-model
+    domain: d24-theory
+    summary: ""
+  - id: bilinear-pairing
+    title: Bilinear Pairing
+    title_en: bilinear-pairing
+    domain: d24-theory
+    summary: ""
+  - id: oblivious-transfer
+    title: Oblivious Transfer
+    title_en: oblivious-transfer
+    domain: d24-theory
+    summary: ""
+  - id: merkle-damg-rd-construction
+    title: Merkle–Damgård Construction
+    title_en: merkle-damg-rd-construction
+    domain: d24-theory
+    summary: ""
+  - id: blind-signature
+    title: Blind Signature
+    title_en: blind-signature
+    domain: d24-theory
+    summary: ""
+  - id: simulation-paradigm
+    title: Simulation Paradigm
+    title_en: simulation-paradigm
+    domain: d24-theory
+    summary: ""
+  - id: sponge-construction
+    title: Sponge Construction
+    title_en: sponge-construction
+    domain: d24-theory
+    summary: ""
+  - id: multiparty-computation
+    title: Multiparty Computation
+    title_en: multiparty-computation
+    domain: d24-theory
+    summary: ""
+  - id: zero-knowledge-sudoku
+    title: Zero-Knowledge Sudoku
+    title_en: zero-knowledge-sudoku
+    domain: d24-theory
+    summary: ""
+  - id: zk-three-properties
+    title: ZK Three Properties
+    title_en: zk-three-properties
+    domain: d24-theory
+    summary: ""
+  - id: turing-machine
+    title: Turing Machine
+    title_en: turing-machine
+    domain: d24-theory
+    summary: ""
+  - id: plaintext
+    title: Plaintext
+    title_en: plaintext
+    domain: d01-foundations
+    summary: ""
+  - id: ciphertext
+    title: Ciphertext
+    title_en: ciphertext
+    domain: d01-foundations
+    summary: ""
+  - id: key
+    title: Key
+    title_en: key
+    domain: d01-foundations
+    summary: ""
+  - id: cipher
+    title: Cipher
+    title_en: cipher
+    domain: d01-foundations
+    summary: ""
+  - id: code
+    title: Code
+    title_en: code
+    domain: d01-foundations
+    summary: ""
+  - id: cryptanalysis
+    title: Cryptanalysis
+    title_en: cryptanalysis
+    domain: d01-foundations
+    summary: ""
+  - id: cryptography
+    title: Cryptography
+    title_en: cryptography
+    domain: d01-foundations
+    summary: ""
+  - id: steganography
+    title: Steganography
+    title_en: steganography
+    domain: d01-foundations
+    summary: ""
+  - id: bletchley-park
+    title: Bletchley Park
+    title_en: bletchley-park
+    domain: d01-foundations
+    summary: ""
+  - id: room-40
+    title: Room 40
+    title_en: room-40
+    domain: d01-foundations
+    summary: ""
+  - id: bacon-s-biliteral
+    title: Bacon's Biliteral
+    title_en: bacon-s-biliteral
+    domain: d01-foundations
+    summary: ""
+  - id: morse-code
+    title: Morse Code
+    title_en: morse-code
+    domain: d01-foundations
+    summary: ""
+  - id: baudot-code
+    title: Baudot Code
+    title_en: baudot-code
+    domain: d01-foundations
+    summary: ""
+  - id: polybius-square
+    title: Polybius Square
+    title_en: polybius-square
+    domain: d01-foundations
+    summary: ""
+  - id: decryption
+    title: Decryption
+    title_en: decryption
+    domain: d01-foundations
+    summary: ""
+  - id: encryption
+    title: Encryption
+    title_en: encryption
+    domain: d01-foundations
+    summary: ""
+  - id: steganographic-image
+    title: Steganographic Image
+    title_en: steganographic-image
+    domain: d01-foundations
+    summary: ""
+  - id: caesar-box
+    title: Caesar Box
+    title_en: caesar-box
+    domain: d01-foundations
+    summary: ""
+  - id: authentication
+    title: Authentication
+    title_en: authentication
+    domain: d01-foundations
+    summary: ""
+  - id: integrity
+    title: Integrity
+    title_en: integrity
+    domain: d01-foundations
+    summary: ""
+  - id: non-repudiation
+    title: Non-repudiation
+    title_en: non-repudiation
+    domain: d01-foundations
+    summary: ""
+  - id: confusion
+    title: Confusion
+    title_en: confusion
+    domain: d01-foundations
+    summary: ""
+  - id: diffusion
+    title: Diffusion
+    title_en: diffusion
+    domain: d01-foundations
+    summary: ""
+  - id: nsa
+    title: NSA
+    title_en: nsa
+    domain: d01-foundations
+    summary: ""
+  - id: gchq
+    title: GCHQ
+    title_en: gchq
+    domain: d01-foundations
+    summary: ""
+  - id: nist
+    title: NIST
+    title_en: nist
+    domain: d01-foundations
+    summary: ""
+  - id: venona-project
+    title: VENONA Project
+    title_en: venona-project
+    domain: d01-foundations
+    summary: ""
+  - id: one-way-function
+    title: One-Way Function
+    title_en: one-way-function
+    domain: d01-foundations
+    summary: ""
+  - id: trapdoor-function
+    title: Trapdoor Function
+    title_en: trapdoor-function
+    domain: d01-foundations
+    summary: ""
+  - id: discrete-logarithm
+    title: Discrete Logarithm
+    title_en: discrete-logarithm
+    domain: d01-foundations
+    summary: ""
+  - id: chinese-remainder-theorem
+    title: Chinese Remainder Theorem
+    title_en: chinese-remainder-theorem
+    domain: d01-foundations
+    summary: ""
+  - id: first-computers
+    title: First Computers
+    title_en: first-computers
+    domain: d01-foundations
+    summary: ""
+  - id: crypto-classical-statistics
+    title: 经典统计破译
+    title_en: Classical Statistical Cryptanalysis
+    summary: 以语言的统计规律（频率、重合、周期）为武器的破译方法，古典密码时代的主力。
+    curated: true
+  - id: crypto-crib-known-plaintext
+    title: 已知明文与猜测明文
+    title_en: Cribs and Known-Plaintext
+    summary: 利用已知或可猜的明文片段反推密钥结构。
+    curated: true
+  - id: crypto-differential
+    title: 差分密码分析
+    title_en: Differential Cryptanalysis
+    summary: 追踪输入差分如何穿透密码轮次，用统计偏置逼近密钥。
+    curated: true
+  - id: crypto-linear
+    title: 线性密码分析
+    title_en: Linear Cryptanalysis
+    summary: 寻找明文、密文、密钥比特间的线性近似，累积偏置逐位还原密钥。
+    curated: true
+  - id: crypto-algebraic
+    title: 代数密码分析
+    title_en: Algebraic Cryptanalysis
+    summary: 把密码系统建模为低次多项式方程组并求解。
+    curated: true
+  - id: crypto-integral
+    title: 积分与高阶差分
+    title_en: Integral and Higher-Order Differential Attacks
+    summary: 用和集/积分性质与高阶差分恢复密钥。
+    curated: true
+  - id: crypto-structural
+    title: 结构型攻击
+    title_en: Structural Attacks
+    summary: 攻击算法结构本身的弱点：boomerang、slide、rotational、biclique、invariant、impossible differential、truncated differential。
+    curated: true
+  - id: crypto-generic-composition
+    title: 通用组合与搜索
+    title_en: Generic Composition and Search Attacks
+    summary: 与算法内部结构无关的通用手段：穷举、字典、彩虹表、meet-in-the-middle、生日碰撞、时间-存储权衡。
+    curated: true
+  - id: crypto-attack-models
+    title: 攻击模型
+    title_en: Attack Models
+    summary: 攻击者被允许做什么——决定难度的前提框架。
+    curated: true
+  - id: crypto-machine-cryptanalysis
+    title: 机器密码分析
+    title_en: Machine Cryptanalysis
+    summary: 针对具体密码机的统计与机械分析：Bombe、Banburismus、Zygalski 表、对角板。
+    curated: true
+  - id: crypto-side-channel
+    title: 侧信道
+    title_en: Side-Channel Attacks
+    summary: 不攻数学、攻物理实现：时间、功耗、电磁、故障、冷启动、推测执行。
+    curated: true
+  - id: crypto-implementation
+    title: 实现与实现型攻击
+    title_en: Implementation Attacks
+    summary: 攻实现的用法而非算法本身：填充预言、密钥混淆、nonce 复用、RNG 失效、后门。
+    curated: true
+  - id: crypto-protocol-network
+    title: 协议与网络层攻击
+    title_en: Protocol and Network Attacks
+    summary: 攻协议与链路：中间人、重放、流量分析、降级、撞库。
+    curated: true
+  - id: crypto-social-engineering
+    title: 社会工程
+    title_en: Social Engineering
+    summary: 攻人：钓鱼、喷洒、诱饵、肩窥、声学侧信道。
+    curated: true
+  - id: crypto-steganalysis
+    title: 隐写分析
+    title_en: Steganalysis
+    summary: 检测与提取隐藏在无害载体中的消息。
+    curated: true
+  - id: crypto-quantum-attacks
+    title: 量子攻击
+    title_en: Quantum Attacks
+    summary: Shor 与 Grover 及其对现有体系结构的冲击。
+    curated: true
+entries:
+  - id: d02-monoalphabetic
+    title: 单表替换
+    title_en: Monoalphabetic Substitution
+    status: done
+    quality: tier1
+    type: domain
+    derived: true
+    domain:
+      - d02-monoalphabetic
+    era: []
+    subtopic: []
+    level: 2
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources: []
+    note: 16 个子主题候选
+  - id: d03-polyalphabetic
+    title: 多表替换
+    title_en: Polyalphabetic Substitution
+    status: done
+    quality: tier1
+    type: domain
+    derived: true
+    domain:
+      - d03-polyalphabetic
+    era: []
+    subtopic: []
+    level: 2
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources: []
+    note: 11 个子主题候选
+  - id: d04-transposition
+    title: 换位
+    title_en: Transposition
+    status: done
+    quality: tier1
+    type: domain
+    derived: true
+    domain:
+      - d04-transposition
+    era: []
+    subtopic: []
+    level: 2
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources: []
+    note: 7 个子主题候选
+  - id: d05-rotor-mechanical
+    title: 转子/机械密码
+    title_en: Rotor & Mechanical Ciphers
+    status: done
+    quality: tier1
+    type: domain
+    derived: true
+    domain:
+      - d05-rotor-mechanical
+    era: []
+    subtopic: []
+    level: 2
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources: []
+    note: 7 个子主题候选
+  - id: d06-otp-stream
+    title: OTP 与流密码
+    title_en: OTP & Stream Ciphers
+    status: done
+    quality: tier1
+    type: domain
+    derived: true
+    domain:
+      - d06-otp-stream
+    era: []
+    subtopic: []
+    level: 2
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources: []
+    note: 10 个子主题候选
+  - id: d07-cryptanalysis
+    title: 破译方法
+    title_en: Cryptanalysis
+    status: done
+    quality: tier1
+    type: domain
+    derived: true
+    domain:
+      - d07-cryptanalysis
+    era: []
+    subtopic: []
+    level: 2
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources: []
+    note: 52 个子主题候选
+  - id: d08-block-ciphers
+    title: 对称分组密码
+    title_en: Symmetric Block Ciphers
+    status: done
+    quality: tier1
+    type: domain
+    derived: true
+    domain:
+      - d08-block-ciphers
+    era: []
+    subtopic: []
+    level: 2
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources: []
+    note: 15 个子主题候选
+  - id: d09-hashes
+    title: 哈希
+    title_en: Hash Functions
+    status: done
+    quality: tier1
+    type: domain
+    derived: true
+    domain:
+      - d09-hashes
+    era: []
+    subtopic: []
+    level: 2
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources: []
+    note: 6 个子主题候选
+  - id: d10-auth-aead
+    title: 消息认证与 AEAD
+    title_en: Authentication & AEAD
+    status: done
+    quality: tier1
+    type: domain
+    derived: true
+    domain:
+      - d10-auth-aead
+    era: []
+    subtopic: []
+    level: 2
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources: []
+    note: 2 个子主题候选
+  - id: d11-asymmetric
+    title: 非对称公钥
+    title_en: Asymmetric Public-key
+    status: done
+    quality: tier1
+    type: domain
+    derived: true
+    domain:
+      - d11-asymmetric
+    era: []
+    subtopic: []
+    level: 2
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources: []
+    note: 12 个子主题候选
+  - id: d12-signatures
+    title: 数字签名
+    title_en: Digital Signatures
+    status: done
+    quality: tier1
+    type: domain
+    derived: true
+    domain:
+      - d12-signatures
+    era: []
+    subtopic: []
+    level: 2
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources: []
+    note: 7 个子主题候选
+  - id: d13-key-management
+    title: 密钥管理
+    title_en: Key Management
+    status: done
+    quality: tier1
+    type: domain
+    derived: true
+    domain:
+      - d13-key-management
+    era: []
+    subtopic: []
+    level: 2
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources: []
+    note: 4 个子主题候选
+  - id: d14-protocols-pki
+    title: 协议与 PKI
+    title_en: Protocols & PKI
+    status: done
+    quality: tier1
+    type: domain
+    derived: true
+    domain:
+      - d14-protocols-pki
+    era: []
+    subtopic: []
+    level: 2
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources: []
+    note: 47 个子主题候选
+  - id: d15-zkp
+    title: 零知识证明
+    title_en: Zero-knowledge Proofs
+    status: done
+    quality: tier1
+    type: domain
+    derived: true
+    domain:
+      - d15-zkp
+    era: []
+    subtopic: []
+    level: 2
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources: []
+    note: 0 个子主题候选
+  - id: d16-secret-sharing-mpc
+    title: 秘密共享与 MPC
+    title_en: Secret Sharing & MPC
+    status: done
+    quality: tier1
+    type: domain
+    derived: true
+    domain:
+      - d16-secret-sharing-mpc
+    era: []
+    subtopic: []
+    level: 2
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources: []
+    note: 1 个子主题候选
+  - id: d17-side-channel
+    title: 侧信道与物理攻击
+    title_en: Side-Channel & Physical Attacks
+    status: done
+    quality: tier1
+    type: domain
+    derived: true
+    domain:
+      - d17-side-channel
+    era: []
+    subtopic: []
+    level: 2
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources: []
+    note: 0 个子主题候选
+  - id: d18-steganography
+    title: 隐写与信息隐藏
+    title_en: Steganography & Info Hiding
+    status: done
+    quality: tier1
+    type: domain
+    derived: true
+    domain:
+      - d18-steganography
+    era: []
+    subtopic: []
+    level: 2
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources: []
+    note: 0 个子主题候选
+  - id: d19-randomness
+    title: 随机数与 CSPRNG
+    title_en: Randomness & CSPRNG
+    status: done
+    quality: tier1
+    type: domain
+    derived: true
+    domain:
+      - d19-randomness
+    era: []
+    subtopic: []
+    level: 2
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources: []
+    note: 1 个子主题候选
+  - id: d20-china-sm
+    title: 中国国密
+    title_en: China National Cryptography
+    status: done
+    quality: tier1
+    type: domain
+    derived: true
+    domain:
+      - d20-china-sm
+    era: []
+    subtopic: []
+    level: 2
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources: []
+    note: 0 个子主题候选
+  - id: d21-quantum-crypto
+    title: 量子密码
+    title_en: Quantum Cryptography
+    status: done
+    quality: tier1
+    type: domain
+    derived: true
+    domain:
+      - d21-quantum-crypto
+    era: []
+    subtopic: []
+    level: 2
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources: []
+    note: 2 个子主题候选
+  - id: d22-post-quantum
+    title: 后量子
+    title_en: Post-Quantum
+    status: done
+    quality: tier1
+    type: domain
+    derived: true
+    domain:
+      - d22-post-quantum
+    era: []
+    subtopic: []
+    level: 2
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources: []
+    note: 4 个子主题候选
+  - id: d23-applied-security
+    title: 应用安全工程
+    title_en: Applied Security Engineering
+    status: done
+    quality: tier1
+    type: domain
+    derived: true
+    domain:
+      - d23-applied-security
+    era: []
+    subtopic: []
+    level: 2
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources: []
+    note: 6 个子主题候选
+  - id: d24-theory
+    title: 理论基础
+    title_en: Theoretical Foundations
+    status: done
+    quality: tier1
+    type: domain
+    derived: true
+    domain:
+      - d24-theory
+    era: []
+    subtopic: []
+    level: 2
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources: []
+    note: 13 个子主题候选
+  - id: d01-foundations
+    title: 基础与术语
+    title_en: Foundations & Terminology
+    status: done
+    quality: tier1
+    type: domain
+    derived: true
+    domain:
+      - d01-foundations
+    era: []
+    subtopic: []
+    level: 2
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources: []
+    note: 32 个子主题候选

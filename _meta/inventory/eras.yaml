@@ -1,0 +1,347 @@
+
+domain: "*"
+title: 时代总目录
+title_en: Eras Inventory
+entries:
+  - id: e01-origins
+    title: 古代起源
+    title_en: Ancient Origins
+    status: done
+    quality: tier1
+    type: era
+    derived: true
+    domain: []
+    era:
+      - e01-origins
+    subtopic: []
+    level: 1
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources: []
+    note: ""
+  - id: e02-classical
+    title: 古典希腊罗马
+    title_en: Classical Greece & Rome
+    status: done
+    quality: tier1
+    type: era
+    derived: true
+    domain: []
+    era:
+      - e02-classical
+    subtopic: []
+    level: 1
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources: []
+    note: ""
+  - id: e03-byzantine-islamic
+    title: 拜占庭与早期伊斯兰
+    title_en: Byzantine & Early Islamic
+    status: done
+    quality: tier1
+    type: era
+    derived: true
+    domain: []
+    era:
+      - e03-byzantine-islamic
+    subtopic: []
+    level: 1
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources: []
+    note: ""
+  - id: e04-arabic-golden-age
+    title: 阿拉伯黄金时代
+    title_en: Islamic Golden Age
+    status: done
+    quality: tier1
+    type: era
+    derived: true
+    domain: []
+    era:
+      - e04-arabic-golden-age
+    subtopic: []
+    level: 1
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources: []
+    note: ""
+  - id: e05-medieval-europe
+    title: 中世纪欧洲
+    title_en: Medieval Europe
+    status: done
+    quality: tier1
+    type: era
+    derived: true
+    domain: []
+    era:
+      - e05-medieval-europe
+    subtopic: []
+    level: 1
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources: []
+    note: ""
+  - id: e06-renaissance
+    title: 文艺复兴与宗教改革
+    title_en: Renaissance & Reformation
+    status: done
+    quality: tier1
+    type: era
+    derived: true
+    domain: []
+    era:
+      - e06-renaissance
+    subtopic: []
+    level: 1
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources: []
+    note: ""
+  - id: e07-early-modern-steganography
+    title: 近代早期与隐写
+    title_en: Early Modern & Steganography
+    status: done
+    quality: tier1
+    type: era
+    derived: true
+    domain: []
+    era:
+      - e07-early-modern-steganography
+    subtopic: []
+    level: 1
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources: []
+    note: ""
+  - id: e08-codebreakers
+    title: 破译者时代
+    title_en: Age of Codebreaking
+    status: done
+    quality: tier1
+    type: era
+    derived: true
+    domain: []
+    era:
+      - e08-codebreakers
+    subtopic: []
+    level: 1
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources: []
+    note: ""
+  - id: e09-ww1
+    title: 第一次世界大战
+    title_en: World War I
+    status: done
+    quality: tier1
+    type: era
+    derived: true
+    domain: []
+    era:
+      - e09-ww1
+    subtopic: []
+    level: 1
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources: []
+    note: ""
+  - id: e10-interwar
+    title: 战间期
+    title_en: Interwar Period
+    status: done
+    quality: tier1
+    type: era
+    derived: true
+    domain: []
+    era:
+      - e10-interwar
+    subtopic: []
+    level: 1
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources: []
+    note: ""
+  - id: e11-ww2
+    title: 第二次世界大战
+    title_en: World War II
+    status: done
+    quality: tier1
+    type: era
+    derived: true
+    domain: []
+    era:
+      - e11-ww2
+    subtopic: []
+    level: 1
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources: []
+    note: ""
+  - id: e12-cold-war-info-theory
+    title: 冷战与信息论转折
+    title_en: Cold War & Information Theory
+    status: done
+    quality: tier1
+    type: era
+    derived: true
+    domain: []
+    era:
+      - e12-cold-war-info-theory
+    subtopic: []
+    level: 1
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources: []
+    note: ""
+  - id: e13-public-key
+    title: 公钥革命
+    title_en: Public-key Revolution
+    status: done
+    quality: tier1
+    type: era
+    derived: true
+    domain: []
+    era:
+      - e13-public-key
+    subtopic: []
+    level: 1
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources: []
+    note: ""
+  - id: e14-standardization
+    title: 标准化时代
+    title_en: Age of Standardization
+    status: done
+    quality: tier1
+    type: era
+    derived: true
+    domain: []
+    era:
+      - e14-standardization
+    subtopic: []
+    level: 1
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources: []
+    note: ""
+  - id: e15-web-protocols
+    title: 网络与协议时代
+    title_en: Web & Protocol Era
+    status: done
+    quality: tier1
+    type: era
+    derived: true
+    domain: []
+    era:
+      - e15-web-protocols
+    subtopic: []
+    level: 1
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources: []
+    note: ""
+  - id: e16-quantum-turn
+    title: 量子转折
+    title_en: Quantum Turn
+    status: done
+    quality: tier1
+    type: era
+    derived: true
+    domain: []
+    era:
+      - e16-quantum-turn
+    subtopic: []
+    level: 1
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources: []
+    note: ""
+  - id: e17-post-quantum
+    title: 后量子时代
+    title_en: Post-quantum Era
+    status: done
+    quality: tier1
+    type: era
+    derived: true
+    domain: []
+    era:
+      - e17-post-quantum
+    subtopic: []
+    level: 1
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources: []
+    note: ""
+  - id: e18-frontier
+    title: 前沿
+    title_en: The Frontier
+    status: done
+    quality: tier1
+    type: era
+    derived: true
+    domain: []
+    era:
+      - e18-frontier
+    subtopic: []
+    level: 1
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources: []
+    note: ""
+  - id: e19-china
+    title: 中国平行线
+    title_en: China's Parallel Line
+    status: done
+    quality: tier1
+    type: era
+    derived: true
+    domain: []
+    era:
+      - e19-china
+    subtopic: []
+    level: 1
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources: []
+    note: ""

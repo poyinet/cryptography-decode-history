@@ -1,0 +1,2253 @@
+
+entries:
+  - id: ciphertext-only-attack
+    title: 唯密文攻击
+    title_en: Ciphertext-Only Attack
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e08-codebreakers
+    level: 2
+    aliases:
+      - CO
+      - 唯密文
+    sources:
+      - kind: authoritative
+        title: HAC Ch.1(1997)
+      - kind: authoritative
+        title: Kahn《The Codebreakers》(1967)
+    apps:
+      - academic
+      - military
+    threats:
+      - CO
+    type: attack
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: known-plaintext-attack
+    title: 已知明文攻击
+    title_en: Known-Plaintext Attack
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e09-ww1
+    level: 2
+    aliases:
+      - KPA
+      - 已知明文
+    sources:
+      - kind: authoritative
+        title: HAC Ch.1(1997)
+    apps:
+      - academic
+      - military
+    threats:
+      - KPA
+    type: attack
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: chosen-plaintext-attack
+    title: 选择明文攻击
+    title_en: Chosen-Plaintext Attack
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e09-ww1
+    level: 2
+    aliases:
+      - CPA
+      - 选择明文
+    sources:
+      - kind: authoritative
+        title: HAC Ch.1(1997)
+    apps:
+      - academic
+      - military
+    threats:
+      - CPA
+    type: attack
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: chosen-ciphertext-attack
+    title: 选择密文攻击
+    title_en: Chosen-Ciphertext Attack
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e13-public-key
+    level: 3
+    aliases:
+      - CCA
+      - 选择密文
+    sources:
+      - kind: primary
+        title: Håstad《Chosen-Ciphertext Attacks》(1998)
+    apps:
+      - academic
+    threats:
+      - CCA
+    type: attack
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: cca2
+    title: 适应性选择密文攻击
+    title_en: Adaptive Chosen-Ciphertext Attack
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e13-public-key
+    level: 4
+    aliases:
+      - CCA2
+      - adaptive CCA
+      - IND-CCA2
+    sources:
+      - kind: primary
+        title: Håstad《Chosen-Ciphertext Attacks》(1998)
+    apps:
+      - academic
+    threats:
+      - adaptive-CCA
+    type: attack
+    prereq:
+      - chosen-ciphertext-attack
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: related-key-attack
+    title: 相关密钥攻击
+    title_en: Related-Key Attack
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e14-standardization
+    level: 4
+    aliases:
+      - RKA
+      - 相关密钥
+    sources:
+      - kind: primary
+        title: Biryukov & Wagner《Related-Key Attacks》(2002)
+    apps:
+      - academic
+    threats:
+      - related-key
+    type: attack
+    prereq:
+      - chosen-plaintext-attack
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: known-key-attack
+    title: 已知密钥攻击
+    title_en: Known-Key Attack
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e14-standardization
+    level: 4
+    aliases:
+      - known-key
+    sources:
+      - kind: authoritative
+        title: HAC Ch.1(1997)
+    apps:
+      - academic
+    threats:
+      - known-key
+    type: attack
+    prereq: []
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: forward-inverse-attack
+    title: 正反向攻击
+    title_en: Forward and Inverse Attacks
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e14-standardization
+    level: 4
+    aliases:
+      - forward attack
+      - inverse attack
+    sources:
+      - kind: authoritative
+        title: HAC Ch.1(1997)
+    apps:
+      - academic
+    threats:
+      - forward
+      - inverse
+    type: attack
+    prereq: []
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: chosen-target-attack
+    title: 选择目标攻击
+    title_en: Chosen-Target Attack
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e18-frontier
+    level: 4
+    aliases:
+      - chosen-target
+    sources:
+      - kind: tertiary
+        title: Chosen-target attack Wikipedia
+    apps:
+      - academic
+    threats:
+      - chosen-target
+    type: attack
+    prereq: []
+    status: todo
+    quality: tier3
+    subtopic: []
+    priority: P3
+    target: 2027-Q2
+  - id: rogue-key-attack
+    title: 流氓密钥攻击
+    title_en: Rogue Key Attack
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e18-frontier
+    level: 4
+    aliases:
+      - rogue key
+    sources:
+      - kind: tertiary
+        title: Rogue key attack Wikipedia
+    apps:
+      - academic
+    threats:
+      - rogue-key
+    type: attack
+    prereq: []
+    status: todo
+    quality: tier3
+    subtopic: []
+    priority: P3
+    target: 2027-Q2
+  - id: frequency-analysis
+    title: 频率分析
+    title_en: Frequency Analysis
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e04-arabic-golden-age
+    level: 1
+    aliases:
+      - 统计分析
+      - 字母频率
+    sources:
+      - kind: primary
+        title: al-Kindi《Risāla fī Istikhrāj》(约850)
+    apps:
+      - academic
+      - military
+    threats:
+      - CO
+      - statistical
+    type: attack
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: index-of-coincidence
+    title: 重合指数
+    title_en: Index of Coincidence
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e08-codebreakers
+    level: 2
+    aliases:
+      - IC
+      - 重合率
+    sources:
+      - kind: authoritative
+        title: HAC Ch.1(1997)
+    apps:
+      - academic
+    threats:
+      - CO
+      - statistical
+    type: attack
+    prereq:
+      - frequency-analysis
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: kasiski-test
+    title: 卡斯基基检验
+    title_en: Kasiski Examination
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e08-codebreakers
+    level: 2
+    aliases:
+      - 卡斯基基
+      - 重复组距离
+    sources:
+      - kind: primary
+        title: Kasiski《Die Geheimschriften und ihre Deutung》(1863)
+    apps:
+      - academic
+      - military
+    threats:
+      - CO
+      - statistical
+    type: attack
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: crib
+    title: 猜测明文
+    title_en: Crib
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e08-codebreakers
+    level: 1
+    aliases:
+      - crib
+      - 填鸭
+    sources:
+      - kind: authoritative
+        title: Kahn《The Codebreakers》(1967)
+    apps:
+      - academic
+      - military
+    threats:
+      - KPA
+    type: attack
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: crib-dragging
+    title: 拖crib法
+    title_en: Crib Dragging
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e11-ww2
+    level: 3
+    aliases:
+      - crib dragging
+      - 试crib
+    sources:
+      - kind: tertiary
+        title: Hut 6 crib procedures(UK National Archives)
+    apps:
+      - academic
+      - military
+    threats:
+      - KPA
+      - statistical
+    type: attack
+    prereq:
+      - crib
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: depth
+    title: 深度
+    title_en: Depth
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e11-ww2
+    level: 2
+    aliases:
+      - depth
+      - 加法密钥重用
+    sources:
+      - kind: authoritative
+        title: Kahn《The Codebreakers》(1967)
+    apps:
+      - military
+    threats:
+      - KPA
+      - statistical
+    type: attack
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: one-time-pad-reuse
+    title: 一次性密码本重用
+    title_en: One-Time Pad Reuse
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e12-cold-war-info-theory
+    level: 2
+    aliases:
+      - OTP 重用
+      - 密钥重用
+    sources:
+      - kind: authoritative
+        title: Kahn《The Codebreakers》(1967)
+    apps:
+      - military
+    threats:
+      - KPA
+      - statistical
+    type: attack
+    prereq:
+      - depth
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: brute-force
+    title: 穷举攻击
+    title_en: Brute Force Attack
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e08-codebreakers
+    level: 1
+    aliases:
+      - 暴力破解
+      - 穷举
+    sources:
+      - kind: authoritative
+        title: HAC Ch.1(1997)
+    apps:
+      - academic
+      - everyday
+    threats:
+      - CO
+    type: attack
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: meet-in-the-middle
+    title: 中间相遇攻击
+    title_en: Meet-in-the-Middle Attack
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e12-cold-war-info-theory
+    level: 2
+    aliases:
+      - 中间相遇
+    sources:
+      - kind: authoritative
+        title: HAC Ch.1(1997)
+    apps:
+      - academic
+    threats:
+      - CO
+      - KPA
+    type: attack
+    prereq:
+      - brute-force
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: birthday-attack
+    title: 生日攻击
+    title_en: Birthday Attack
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - 生日悖论
+      - 生日碰撞
+    sources:
+      - kind: authoritative
+        title: HAC Ch.1(1997)
+    apps:
+      - academic
+    threats:
+      - CO
+    type: attack
+    prereq:
+      - brute-force
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: dictionary-attack
+    title: 字典攻击
+    title_en: Dictionary Attack
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e14-standardization
+    level: 1
+    aliases:
+      - 字典爆破
+    sources:
+      - kind: authoritative
+        title: HAC Ch.1(1997)
+    apps:
+      - everyday
+      - law-enforcement
+    threats:
+      - CO
+    type: attack
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: rainbow-table
+    title: 彩虹表
+    title_en: Rainbow Table
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - 彩虹表
+      - 预计算表
+    sources:
+      - kind: primary
+        title: Biryukov
+      - kind: tertiary
+        title: Stoytchev
+      - kind: tertiary
+        title: Shamir《Rainbow Tables》(1999)
+    apps:
+      - law-enforcement
+    threats:
+      - CO
+    type: attack
+    prereq:
+      - dictionary-attack
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: time-memory-tradeoff
+    title: 时间-存储权衡
+    title_en: Time-Memory Trade-Off
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - TMTO
+    sources:
+      - kind: primary
+        title: Biryukov
+      - kind: tertiary
+        title: Shamir
+      - kind: tertiary
+        title: Wagner《How to Break a (n
+      - kind: tertiary
+        title: m) Threshold Cryptosystem》(1999)
+    apps:
+      - academic
+      - law-enforcement
+    threats:
+      - CO
+    type: attack
+    prereq:
+      - brute-force
+      - rainbow-table
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: unicity-distance
+    title: 唯一距离
+    title_en: Unicity Distance
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e12-cold-war-info-theory
+    level: 3
+    aliases:
+      - 唯一性距离
+    sources:
+      - kind: primary
+        title: Shannon《Communication Theory of Secrecy Systems》(1949)
+    apps:
+      - academic
+    threats:
+      - CO
+      - statistical
+    type: attack
+    prereq:
+      - frequency-analysis
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: probable-plaintext
+    title: 概然明文
+    title_en: Probable Plaintext
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e08-codebreakers
+    level: 2
+    aliases:
+      - 大概明文
+    sources:
+      - kind: authoritative
+        title: HAC Ch.1(1997)
+    apps:
+      - academic
+    threats:
+      - CO
+      - statistical
+    type: attack
+    prereq:
+      - frequency-analysis
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: contact-analysis
+    title: 接触分析
+    title_en: Contact Analysis
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e08-codebreakers
+    level: 2
+    aliases:
+      - 接触分析
+    sources:
+      - kind: authoritative
+        title: HAC Ch.1(1997)
+    apps:
+      - academic
+    threats:
+      - CO
+      - statistical
+    type: attack
+    prereq:
+      - frequency-analysis
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: differential-cryptanalysis
+    title: 差分密码分析
+    title_en: Differential Cryptanalysis
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e12-cold-war-info-theory
+    level: 3
+    aliases:
+      - 差分分析
+    sources:
+      - kind: primary
+        title: Biham & Shamir《Differential Cryptanalysis of DES-like Cryptosystems》(1990)
+    apps:
+      - academic
+    threats:
+      - CPA
+    type: attack
+    prereq:
+      - s-box
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: truncated-differential
+    title: 截断差分
+    title_en: Truncated Differential Attack
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - 截断差分
+    sources:
+      - kind: primary
+        title: Knudsen《Truncated and Higher Order Differentials》(1994)
+    apps:
+      - academic
+    threats:
+      - CPA
+    type: attack
+    prereq:
+      - differential-cryptanalysis
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: higher-order-differential
+    title: 高阶差分
+    title_en: Higher-Order Differential Attack
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e14-standardization
+    level: 4
+    aliases:
+      - 高阶差分
+    sources:
+      - kind: primary
+        title: Knudsen《Higher Order Derivatives and the Decryption Algorithm》(1994)
+    apps:
+      - academic
+    threats:
+      - CPA
+    type: attack
+    prereq:
+      - differential-cryptanalysis
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: differential-linear
+    title: 差分线性
+    title_en: Differential-Linear Cryptanalysis
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e14-standardization
+    level: 4
+    aliases:
+      - 差分线性
+    sources:
+      - kind: primary
+        title: Langford & Hellman《The Differential-Linear Weakness of Cryptography》(1994)
+    apps:
+      - academic
+    threats:
+      - CPA
+    type: attack
+    prereq:
+      - differential-cryptanalysis
+      - linear-cryptanalysis
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: integral-attack
+    title: 积分攻击
+    title_en: Integral Attack
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - 饱和攻击
+      - square attack
+    sources:
+      - kind: primary
+        title: Knudsen《Truncated and Higher Order Differentials》(1994)
+    apps:
+      - academic
+    threats:
+      - CPA
+    type: attack
+    prereq:
+      - differential-cryptanalysis
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: linear-cryptanalysis
+    title: 线性密码分析
+    title_en: Linear Cryptanalysis
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e12-cold-war-info-theory
+    level: 3
+    aliases:
+      - 线性分析
+      - Matsui 攻击
+    sources:
+      - kind: primary
+        title: Matsui《Linear Cryptanalysis Method for DES Cipher》(1993)
+    apps:
+      - academic
+    threats:
+      - KPA
+    type: attack
+    prereq:
+      - s-box
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: linear-hull
+    title: 线性壳
+    title_en: Linear Hull
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e14-standardization
+    level: 4
+    aliases:
+      - 线性壳
+    sources:
+      - kind: primary
+        title: Nyberg《On Linear-Cryptanalysis Using Correlations》(1994)
+    apps:
+      - academic
+    threats:
+      - KPA
+    type: attack
+    prereq:
+      - linear-cryptanalysis
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: multiple-linear
+    title: 多重线性
+    title_en: Multiple Linear Cryptanalysis
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e14-standardization
+    level: 4
+    aliases:
+      - 多重线性
+    sources:
+      - kind: primary
+        title: Biryukov
+      - kind: tertiary
+        title: De Cannière
+      - kind: tertiary
+        title: Piret《A New Attack on the Linear Cryptanalysis》(2003)
+    apps:
+      - academic
+    threats:
+      - KPA
+    type: attack
+    prereq:
+      - linear-cryptanalysis
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: algebraic-attack
+    title: 代数攻击
+    title_en: Algebraic Attack
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e12-cold-war-info-theory
+    level: 3
+    aliases:
+      - 代数密码分析
+    sources:
+      - kind: authoritative
+        title: HAC Ch.1(1997)
+    apps:
+      - academic
+    threats:
+      - CPA
+    type: attack
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: algebraic-degree
+    title: 代数次数
+    title_en: Algebraic Degree
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e12-cold-war-info-theory
+    level: 4
+    aliases:
+      - 代数次数
+    sources:
+      - kind: authoritative
+        title: HAC Ch.1(1997)
+    apps:
+      - academic
+    threats:
+      - CPA
+    type: attack
+    prereq:
+      - algebraic-attack
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: boomerang-attack
+    title: 飞梯攻击
+    title_en: Boomerang Attack
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e14-standardization
+    level: 4
+    aliases:
+      - 飞梯
+      - 反弹攻击
+    sources:
+      - kind: primary
+        title: Biham & Shamir《Improvements of the Differential Fault Analysis of DES》(1999)
+    apps:
+      - academic
+    threats:
+      - CPA
+    type: attack
+    prereq:
+      - differential-cryptanalysis
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: impossible-differential
+    title: 不可能差分
+    title_en: Impossible Differential Attack
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e14-standardization
+    level: 4
+    aliases:
+      - 不可能差分
+    sources:
+      - kind: primary
+        title: Biham
+      - kind: tertiary
+        title: Biryukov
+      - kind: tertiary
+        title: Shamir《Impossible Differential Attacks》(1999)
+    apps:
+      - academic
+    threats:
+      - CPA
+    type: attack
+    prereq:
+      - differential-cryptanalysis
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: slide-attack
+    title: 滑动攻击
+    title_en: Slide Attack
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e14-standardization
+    level: 4
+    aliases:
+      - slide 家族
+    sources:
+      - kind: primary
+        title: Biryukov & Wagner《Slide Attacks》(2000)
+    apps:
+      - academic
+    threats:
+      - CPA
+    type: attack
+    prereq:
+      - differential-cryptanalysis
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: rotational-attack
+    title: 旋转攻击
+    title_en: Rotational Attack
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e14-standardization
+    level: 4
+    aliases:
+      - 旋转攻击
+    sources:
+      - kind: primary
+        title: Matsui & Yamagishi《Rotational Cryptanalysis》(1992)
+    apps:
+      - academic
+    threats:
+      - CPA
+    type: attack
+    prereq:
+      - differential-cryptanalysis
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: biclique-attack
+    title: 双曲线攻击
+    title_en: Biclique Attack
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e14-standardization
+    level: 4
+    aliases:
+      - 双曲线
+    sources:
+      - kind: primary
+        title: Jaulmes & Joux《Biclique Cryptanalysis》(2007)
+    apps:
+      - academic
+    threats:
+      - CPA
+    type: attack
+    prereq:
+      - differential-cryptanalysis
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: invariant-subtracting
+    title: 不变量相减
+    title_en: Invariant Subtract Attack
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e14-standardization
+    level: 4
+    aliases:
+      - 不变量攻击
+    sources:
+      - kind: primary
+        title: Biryukov & Wagner《Invariant Subtract Attack》(1999)
+    apps:
+      - academic
+    threats:
+      - CPA
+    type: attack
+    prereq:
+      - differential-cryptanalysis
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: xsl-attack
+    title: XSL 攻击
+    title_en: XSL Attack
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e14-standardization
+    level: 4
+    aliases:
+      - 扩域线性攻击
+    sources:
+      - kind: primary
+        title: Biryukov & Wagner《Cryptanalysis of the Reduced Version of RC5》(1997)
+    apps:
+      - academic
+    threats:
+      - CPA
+    type: attack
+    prereq:
+      - algebraic-attack
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: hash-collision-attack
+    title: 哈希碰撞攻击
+    title_en: Hash Collision Attack
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - 碰撞攻击
+    sources:
+      - kind: primary
+        title: Wang
+      - kind: tertiary
+        title: Yin
+      - kind: tertiary
+        title: Yu《Finding Collisions in the Full SHA-1》(2005)
+    apps:
+      - academic
+      - finance
+    threats:
+      - CO
+    type: attack
+    prereq:
+      - sha1
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: preimage-attack
+    title: 原像攻击
+    title_en: Preimage Attack
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - 原像碰撞
+    sources:
+      - kind: authoritative
+        title: HAC Ch.9(1997)
+    apps:
+      - academic
+    threats:
+      - CO
+    type: attack
+    prereq:
+      - sha2
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: second-preimage-attack
+    title: 第二原像攻击
+    title_en: Second Preimage Attack
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - 第二原像
+    sources:
+      - kind: authoritative
+        title: HAC Ch.9(1997)
+    apps:
+      - academic
+    threats:
+      - CO
+    type: attack
+    prereq:
+      - sha2
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: length-extension
+    title: 长度扩展攻击
+    title_en: Length Extension Attack
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - 长度扩展
+    sources:
+      - kind: primary
+        title: Steele
+      - kind: tertiary
+        title: Starin
+      - kind: tertiary
+        title: Tsudik《Fast Hashing and MACs>>(1997)
+    apps:
+      - academic
+    threats:
+      - protocol
+    type: attack
+    prereq:
+      - sha1
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: multicollision
+    title: 多重碰撞
+    title_en: Multicollision
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e14-standardization
+    level: 4
+    aliases:
+      - 多重碰撞
+    sources:
+      - kind: primary
+        title: Joux《Collisions for Iterated Hash Functions》(2004)
+    apps:
+      - academic
+    threats:
+      - CO
+    type: attack
+    prereq:
+      - hash-collision-attack
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: distinguishing-attack
+    title: 区分攻击
+    title_en: Distinguishing Attack
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - 区分器
+    sources:
+      - kind: authoritative
+        title: HAC Ch.1(1997)
+    apps:
+      - academic
+    threats:
+      - CO
+    type: attack
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: padding-oracle-attack
+    title: 填充预言攻击
+    title_en: Padding Oracle Attack
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - 填充预言
+      - POODLE
+    sources:
+      - kind: primary
+        title: Vaudenay《Decoder Attacks and Countermeasures》(2002)
+    apps:
+      - finance
+      - infrastructure
+      - everyday
+    threats:
+      - CCA
+      - implementation
+    type: attack
+    prereq:
+      - chosen-ciphertext-attack
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: bleichenbacher-attack
+    title: Bleichenbacher 攻击
+    title_en: Bleichenbacher Attack
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e15-web-protocols
+    level: 4
+    aliases:
+      - PKCS#1 v1.5 填充预言
+    sources:
+      - kind: primary
+        title: Bleichenbacher《Chosen Ciphertext Attacks Against Public Key Cryptosystems》(1998)
+    apps:
+      - finance
+      - infrastructure
+    threats:
+      - CCA
+      - implementation
+    type: attack
+    prereq:
+      - padding-oracle-attack
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: manger-attack
+    title: Manger 攻击
+    title_en: Manger's Attack
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e15-web-protocols
+    level: 4
+    aliases:
+      - Manger
+    sources:
+      - kind: primary
+        title: Manger《On the Security of the PKCS#1 RSA Encryption Scheme>>(1990)
+    apps:
+      - finance
+    threats:
+      - CCA
+    type: attack
+    prereq:
+      - bleichenbacher-attack
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: franklin-reiter
+    title: Franklin-Reiter 相关消息攻击
+    title_en: Franklin-Reiter Related-Message Attack
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e15-web-protocols
+    level: 4
+    aliases:
+      - Franklin-Reiter
+    sources:
+      - kind: primary
+        title: Franklin & Reiter《Known-Plaintext Attacks on a Variant of the Data Encryption Standard》(1993)
+    apps:
+      - academic
+    threats:
+      - related-key
+    type: attack
+    prereq: []
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: key-confusion
+    title: 密钥混淆
+    title_en: Key Confusion
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - 域分离
+      - domain separation
+    sources:
+      - kind: authoritative
+        title: HAC Ch.13(1997)
+    apps:
+      - infrastructure
+    threats:
+      - implementation
+      - protocol
+    type: attack
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: nonce-reuse
+    title: nonce 复用
+    title_en: Nonce Reuse
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e15-web-protocols
+    level: 2
+    aliases:
+      - IV 复用
+      - 初始化向量复用
+    sources:
+      - kind: authoritative
+        title: HAC Ch.13(1997)
+    apps:
+      - finance
+      - infrastructure
+    threats:
+      - implementation
+      - related-key
+    type: attack
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: rng-failure
+    title: 随机数失效
+    title_en: RNG Failure
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e15-web-protocols
+    level: 2
+    aliases:
+      - 随机数缺陷
+      - 熵不足
+    sources:
+      - kind: tertiary
+        title: Random number generation Wikipedia
+    apps:
+      - finance
+      - infrastructure
+    threats:
+      - implementation
+      - statistical
+    type: attack
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: backdoor
+    title: 后门
+    title_en: Backdoor
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e15-web-protocols
+    level: 2
+    aliases:
+      - 双椭圆曲线后门
+      - Dual_EC_DRBG
+    sources:
+      - kind: primary
+        title: NSA Dual_EC_DRBG
+      - kind: tertiary
+        title: NIST SP 800-90A(2007)
+    apps:
+      - infrastructure
+      - government
+    threats:
+      - implementation
+      - protocol
+    type: attack
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: constant-time
+    title: 常量时间实现
+    title_en: Constant-Time Implementation
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - 常量时间
+      - 时序安全实现
+    sources:
+      - kind: authoritative
+        title: HAC Ch.14(1997)
+    apps:
+      - finance
+      - infrastructure
+    threats:
+      - side-channel
+    type: attack
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: side-channel-attack
+    title: 侧信道攻击
+    title_en: Side-Channel Attack
+    domain:
+      - d17-side-channel
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - 旁路攻击
+    sources:
+      - kind: primary
+        title: Kocher《Timing Attacks on Implementations of Diffie-Hellman
+      - kind: tertiary
+        title: RSA
+      - kind: tertiary
+        title: DSS>>(1996)
+    apps:
+      - finance
+      - infrastructure
+    threats:
+      - side-channel
+    type: attack
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: timing-attack
+    title: 时间攻击
+    title_en: Timing Attack
+    domain:
+      - d17-side-channel
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - 计时攻击
+    sources:
+      - kind: primary
+        title: Kocher《Timing Attacks>>(1996)
+    apps:
+      - finance
+      - infrastructure
+    threats:
+      - side-channel
+    type: attack
+    prereq:
+      - side-channel-attack
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: power-analysis
+    title: 功耗分析
+    title_en: Power Analysis
+    domain:
+      - d17-side-channel
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - SPA
+      - DPA
+      - 差分功耗分析
+    sources:
+      - kind: primary
+        title: Kocher
+      - kind: tertiary
+        title: Jaffe
+      - kind: tertiary
+        title: Jun《Differential Power Analysis》(1999)
+    apps:
+      - finance
+      - infrastructure
+    threats:
+      - side-channel
+    type: attack
+    prereq:
+      - side-channel-attack
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: em-analysis
+    title: 电磁分析
+    title_en: Electromagnetic Analysis
+    domain:
+      - d17-side-channel
+    era:
+      - e15-web-protocols
+    level: 4
+    aliases:
+      - TEMPEST
+      - 电磁旁路
+    sources:
+      - kind: tertiary
+        title: Electromagnetic attack Wikipedia
+    apps:
+      - finance
+      - infrastructure
+    threats:
+      - side-channel
+    type: attack
+    prereq:
+      - side-channel-attack
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: fault-attack
+    title: 故障注入攻击
+    title_en: Fault Attack
+    domain:
+      - d17-side-channel
+    era:
+      - e14-standardization
+    level: 4
+    aliases:
+      - 故障注入
+      - glitch
+    sources:
+      - kind: primary
+        title: Boneh
+      - kind: tertiary
+        title: DeMillo
+      - kind: tertiary
+        title: Lipton《A New Method of Fault Attack on the CRT-RSA》(1997)
+    apps:
+      - finance
+      - infrastructure
+    threats:
+      - side-channel
+      - physical
+    type: attack
+    prereq:
+      - side-channel-attack
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: cold-boot-attack
+    title: 冷启动攻击
+    title_en: Cold Boot Attack
+    domain:
+      - d17-side-channel
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - 冷启动
+    sources:
+      - kind: primary
+        title: Halderman et al.《Laptop Full Memory Extraction
+      - kind: tertiary
+        title: DMA Attacks
+      - kind: tertiary
+        title: and Cold Boot Attacks》(2008)
+    apps:
+      - law-enforcement
+      - infrastructure
+    threats:
+      - side-channel
+      - physical
+    type: attack
+    prereq:
+      - side-channel-attack
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: speculative-execution
+    title: 推测执行侧信道
+    title_en: Speculative Execution Side-Channel
+    domain:
+      - d17-side-channel
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - Spectre
+      - Meltdown
+    sources:
+      - kind: primary
+        title: Kocher et al.《Spectre Attacks》(2019)
+    apps:
+      - infrastructure
+      - everyday
+    threats:
+      - side-channel
+      - implementation
+    type: attack
+    prereq:
+      - side-channel-attack
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: cache-attack
+    title: 缓存计时攻击
+    title_en: Cache Timing Attack
+    domain:
+      - d17-side-channel
+    era:
+      - e14-standardization
+    level: 4
+    aliases:
+      - 缓存攻击
+      - Flush+Reload
+    sources:
+      - kind: tertiary
+        title: Cache timing attack Wikipedia
+    apps:
+      - infrastructure
+    threats:
+      - side-channel
+    type: attack
+    prereq:
+      - side-channel-attack
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: glitch-attack
+    title: 毛刺攻击
+    title_en: Glitch Attack
+    domain:
+      - d17-side-channel
+    era:
+      - e14-standardization
+    level: 4
+    aliases:
+      - 毛刺
+      - 电压毛刺
+    sources:
+      - kind: tertiary
+        title: Glitch attack Wikipedia
+    apps:
+      - finance
+    threats:
+      - physical
+      - side-channel
+    type: attack
+    prereq:
+      - fault-attack
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: man-in-the-middle
+    title: 中间人攻击
+    title_en: Man-in-the-Middle Attack
+    domain:
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    level: 2
+    aliases:
+      - MITM
+      - 中间人
+    sources:
+      - kind: authoritative
+        title: HAC Ch.13(1997)
+    apps:
+      - finance
+      - everyday
+      - telecom
+    threats:
+      - protocol
+      - network
+    type: attack
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: replay-attack
+    title: 重放攻击
+    title_en: Replay Attack
+    domain:
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    level: 2
+    aliases:
+      - 重放
+    sources:
+      - kind: authoritative
+        title: HAC Ch.13(1997)
+    apps:
+      - finance
+      - everyday
+      - telecom
+    threats:
+      - protocol
+    type: attack
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: traffic-analysis
+    title: 流量分析
+    title_en: Traffic Analysis
+    domain:
+      - d14-protocols-pki
+    era:
+      - e09-ww1
+    level: 2
+    aliases:
+      - 通信量分析
+    sources:
+      - kind: authoritative
+        title: Kahn《The Codebreakers》(1967)
+    apps:
+      - military
+      - law-enforcement
+    threats:
+      - protocol
+      - statistical
+    type: attack
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: downgrade-attack
+    title: 降级攻击
+    title_en: Downgrade Attack
+    domain:
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - 版本降级
+    sources:
+      - kind: tertiary
+        title: Downgrade attack Wikipedia
+    apps:
+      - infrastructure
+    threats:
+      - protocol
+    type: attack
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: credential-stuffing
+    title: 凭据填充
+    title_en: Credential Stuffing
+    domain:
+      - d23-applied-security
+    era:
+      - e15-web-protocols
+    level: 2
+    aliases:
+      - 撞库
+    sources:
+      - kind: tertiary
+        title: Credential stuffing Wikipedia
+    apps:
+      - law-enforcement
+      - everyday
+    threats:
+      - social
+      - network
+    type: attack
+    prereq:
+      - dictionary-attack
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: password-spraying
+    title: 口令喷洒
+    title_en: Password Spraying
+    domain:
+      - d23-applied-security
+    era:
+      - e15-web-protocols
+    level: 1
+    aliases:
+      - 口令喷洒
+    sources:
+      - kind: primary
+        title: MITRE ATT&CK T1110.003(2021)
+    apps:
+      - law-enforcement
+      - everyday
+    threats:
+      - social
+    type: attack
+    prereq:
+      - dictionary-attack
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: phishing
+    title: 钓鱼
+    title_en: Phishing
+    domain:
+      - d23-applied-security
+    era:
+      - e15-web-protocols
+    level: 1
+    aliases:
+      - 网络钓鱼
+    sources:
+      - kind: tertiary
+        title: Phishing Wikipedia
+    apps:
+      - everyday
+      - finance
+      - law-enforcement
+    threats:
+      - social
+    type: attack
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: pretexting
+    title: 借口欺诈
+    title_en: Pretexting
+    domain:
+      - d23-applied-security
+    era:
+      - e19-china
+    level: 2
+    aliases:
+      - 伪装
+    sources:
+      - kind: tertiary
+        title: Pretexting Wikipedia
+    apps:
+      - law-enforcement
+    threats:
+      - social
+    type: attack
+    prereq: []
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: shoulder-surfing
+    title: 肩窥
+    title_en: Shoulder Surfing
+    domain:
+      - d23-applied-security
+    era:
+      - e19-china
+    level: 1
+    aliases:
+      - 窥肩
+    sources:
+      - kind: tertiary
+        title: Shoulder surfing Wikipedia
+    apps:
+      - everyday
+    threats:
+      - social
+      - physical
+    type: attack
+    prereq: []
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: canary-trap
+    title: 金丝雀陷阱
+    title_en: Canary Trap
+    domain:
+      - d23-applied-security
+    era:
+      - e11-ww2
+    level: 2
+    aliases:
+      - 诱捕文件
+    sources:
+      - kind: authoritative
+        title: Kahn《The Codebreakers》(1967)
+    apps:
+      - law-enforcement
+      - military
+    threats:
+      - social
+    type: attack
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: acoustics
+    title: 声学侧信道
+    title_en: Acoustic Side Channel
+    domain:
+      - d17-side-channel
+    era:
+      - e19-china
+    level: 3
+    aliases:
+      - 声学泄露
+    sources:
+      - kind: tertiary
+        title: Acoustic cryptanalysis Wikipedia
+    apps:
+      - finance
+    threats:
+      - side-channel
+      - physical
+    type: attack
+    prereq:
+      - side-channel-attack
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: differential-side-channel
+    title: 差分侧信道
+    title_en: Differential Side-Channel
+    domain:
+      - d17-side-channel
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - DPA
+      - 差分功耗
+    sources:
+      - kind: primary
+        title: Kocher
+      - kind: tertiary
+        title: Jaffe
+      - kind: tertiary
+        title: Jun《Differential Power Analysis》(1999)
+    apps:
+      - finance
+    threats:
+      - side-channel
+    type: attack
+    prereq:
+      - power-analysis
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: steganalysis
+    title: 隐写分析
+    title_en: Steganalysis
+    domain:
+      - d18-steganography
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - 隐写检测
+    sources:
+      - kind: authoritative
+        title: HAC Ch.1(1997)
+    apps:
+      - law-enforcement
+      - academic
+    threats:
+      - statistical
+      - side-channel
+    type: attack
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: chi-square-steganalysis
+    title: 卡方隐写分析
+    title_en: Chi-Square Steganalysis
+    domain:
+      - d18-steganography
+    era:
+      - e15-web-protocols
+    level: 4
+    aliases:
+      - 卡方检验
+    sources:
+      - kind: tertiary
+        title: Chi-square attack Wikipedia
+    apps:
+      - law-enforcement
+      - academic
+    threats:
+      - statistical
+    type: attack
+    prereq:
+      - steganalysis
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: bitplane-analysis
+    title: 位平面分析
+    title_en: Bit-Plane Analysis
+    domain:
+      - d18-steganography
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - 位平面
+    sources:
+      - kind: tertiary
+        title: LSB steganography Wikipedia
+    apps:
+      - law-enforcement
+      - academic
+    threats:
+      - statistical
+    type: attack
+    prereq:
+      - steganalysis
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: shor-algorithm
+    title: 肖尔算法
+    title_en: Shor's Algorithm
+    domain:
+      - d21-quantum-crypto
+    era:
+      - e16-quantum-turn
+    level: 4
+    aliases:
+      - Shor 算法
+    sources:
+      - kind: primary
+        title: "Shor《Algorithms for Quantum Computation: Discrete Logarithms and Factoring》(1994)"
+    apps:
+      - academic
+      - infrastructure
+    threats:
+      - quantum
+    type: attack
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: grover-algorithm
+    title: 格罗弗算法
+    title_en: Grover's Algorithm
+    domain:
+      - d21-quantum-crypto
+    era:
+      - e16-quantum-turn
+    level: 4
+    aliases:
+      - 量子搜索
+    sources:
+      - kind: primary
+        title: Grover《A Fast Quantum Mechanical Algorithm for Database Search》(1996)
+    apps:
+      - academic
+      - infrastructure
+    threats:
+      - quantum
+    type: attack
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: quantum-collision
+    title: 量子碰撞搜索
+    title_en: Quantum Collision Search
+    domain:
+      - d22-post-quantum
+    era:
+      - e17-post-quantum
+    level: 4
+    aliases:
+      - 量子碰撞
+    sources:
+      - kind: primary
+        title: Bernstein《Quantum Computing and the Hash Function>>(2005)
+    apps:
+      - academic
+    threats:
+      - quantum
+    type: attack
+    prereq:
+      - grover-algorithm
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: quantum-resource-estimate
+    title: 量子资源估算
+    title_en: Quantum Resource Estimation
+    domain:
+      - d22-post-quantum
+    era:
+      - e17-post-quantum
+    level: 4
+    aliases:
+      - 量子开销估算
+    sources:
+      - kind: tertiary
+        title: Post-quantum cryptography Wikipedia
+    apps:
+      - academic
+    threats:
+      - quantum
+    type: attack
+    prereq:
+      - shor-algorithm
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: crypto-ag-backdoor
+    title: Crypto AG 后门
+    title_en: Crypto AG Backdoor
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - Crypto AG
+      - 瑞士密码机
+    sources:
+      - kind: tertiary
+        title: Operation Rubicon(WSJ 2017)
+    apps:
+      - government
+      - finance
+    threats:
+      - implementation
+      - protocol
+    type: attack
+    prereq:
+      - backdoor
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: enigma-cryptanalysis
+    title: 恩尼格玛破译
+    title_en: Enigma Cryptanalysis
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e11-ww2
+    level: 3
+    aliases:
+      - Enigma 破译
+    sources:
+      - kind: authoritative
+        title: Kahn《The Codebreakers》(1967)
+    apps:
+      - military
+      - academic
+    threats:
+      - CO
+      - statistical
+    type: attack
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: lorenz-cryptanalysis
+    title: 洛伦兹破译
+    title_en: Lorenz Cryptanalysis
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e11-ww2
+    level: 4
+    aliases:
+      - Tunny 破译
+    sources:
+      - kind: authoritative
+        title: Kahn《The Codebreakers》(1967)
+    apps:
+      - military
+      - academic
+    threats:
+      - CO
+      - statistical
+    type: attack
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: purple-cryptanalysis
+    title: 紫密破译
+    title_en: Purple Cryptanalysis
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e11-ww2
+    level: 3
+    aliases:
+      - 紫密
+      - MAGIC
+    sources:
+      - kind: authoritative
+        title: Kahn《The Codebreakers》(1967)
+    apps:
+      - military
+      - academic
+    threats:
+      - CO
+      - statistical
+    type: attack
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: jn25-cryptanalysis
+    title: JN-25 破译
+    title_en: JN-25 Cryptanalysis
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e11-ww2
+    level: 4
+    aliases:
+      - Magic 破译
+    sources:
+      - kind: authoritative
+        title: Kahn《The Codebreakers》(1967)
+    apps:
+      - military
+      - academic
+    threats:
+      - KPA
+      - statistical
+    type: attack
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: venona-cryptanalysis
+    title: VENONA 破译
+    title_en: VENONA Cryptanalysis
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e12-cold-war-info-theory
+    level: 3
+    aliases:
+      - VENONA
+    sources:
+      - kind: authoritative
+        title: Kahn《The Codebreakers》(1967)
+    apps:
+      - military
+      - academic
+    threats:
+      - KPA
+      - statistical
+    type: attack
+    prereq:
+      - one-time-pad-reuse
+    status: done
+    quality: tier2
+    subtopic: []

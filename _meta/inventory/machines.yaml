@@ -1,0 +1,166 @@
+
+domain: "*"
+title: machines 总目录
+title_en: machines Inventory
+entries:
+  - id: aes
+    title: AES Rijndael
+    title_en: AES (Rijndael)
+    status: done
+    quality: tier2
+    type: machine
+    derived: true
+    domain: []
+    era:
+      - e14-standardization
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: FIPS 197, 《Advanced Encryption Standard》, 2001（NIST 标准化）
+    note: ""
+  - id: bombe
+    title: 炸弹机
+    title_en: Bombe
+    status: todo
+    quality: tier1
+    type: machine
+    derived: true
+    domain:
+      - d07
+      - d05-rotor-mechanical
+    era:
+      - e11-ww2
+    subtopic:
+      - crypto-machine-cryptanalysis
+    level: 3
+    prereq: []
+    aliases:
+      - Bombe
+      - 炸弹
+      - 图灵-韦尔奇曼炸弹
+    apps:
+      - military
+      - academic
+    threats:
+      - CO
+      - statistical
+    sources:
+      - title: The Bombe
+        author: Bletchley Park / The National Archives (Turing correspondence)
+        kind: tertiary
+      - title: The Codebreakers
+        author: David Kahn
+        kind: authoritative
+        year: 1967
+    note: 本应以机器实体进入 machines/，在 d07 侧作为交叉引用。
+    playable: true
+    archetype: menu-search
+    priority: P1
+    target: 2026-Q4
+  - id: des
+    title: DES 数据加密标准
+    title_en: DES (Data Encryption Standard)
+    status: done
+    quality: tier2
+    type: machine
+    derived: true
+    domain: []
+    era:
+      - e14-standardization
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: IBM, 《Data Encryption Standard》, FIPS 46, 1977（NIST 采纳）
+    note: ""
+  - id: enigma
+    title: 恩尼格玛 Enigma
+    title_en: Enigma
+    status: done
+    quality: tier2
+    type: machine
+    derived: true
+    domain: []
+    era:
+      - e11-ww2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: David Kahn, 《The Codebreakers》, 1967
+      - kind: tertiary
+        title: "Brian Welchman, 《The Hut Six Story: Breaking the Enigma Codes》, 1982"
+    note: ""
+  - id: lorenz
+    title: 洛伦兹 SZ40/42（Tunny）
+    title_en: Lorenz SZ40/42 (Tunny)
+    status: done
+    quality: tier2
+    type: machine
+    derived: true
+    domain: []
+    era:
+      - e11-ww2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Lorenz SZ40/42（Tunny）德军电传加密机 — David Kahn, 《The Codebreakers》, 1967
+    note: ""
+  - id: m209
+    title: M-209 转轮密码机
+    title_en: M-209 (Hagelin C-38)
+    status: done
+    quality: tier2
+    type: machine
+    derived: true
+    domain: []
+    era:
+      - e11-ww2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: M-209 手摇密码机（美国陆军，1943）— David Kahn, 《The Codebreakers》, 1967
+    note: ""
+  - id: purple
+    title: 紫密 Purple
+    title_en: Purple (Type B)
+    status: done
+    quality: tier2
+    type: machine
+    derived: true
+    domain: []
+    era:
+      - e11-ww2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: 「紫」（Japanese Purple）军用密码机（1940）— David Kahn, 《The Codebreakers》, 1967
+    note: ""

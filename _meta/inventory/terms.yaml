@@ -1,0 +1,7356 @@
+
+domain: "*"
+title: 术语总目录
+title_en: Terms Inventory
+entries:
+  - id: plaintext
+    title: 明文
+    title_en: Plaintext
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d01
+    era:
+      - era1
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Plaintext
+    apps: []
+    threats: []
+    sources: []
+    note: cat=basic
+  - id: ciphertext
+    title: 密文
+    title_en: Ciphertext
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d01
+    era:
+      - era1
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Ciphertext
+    apps: []
+    threats: []
+    sources: []
+    note: cat=basic
+  - id: key
+    title: 密钥
+    title_en: Key
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d01
+    era:
+      - era1
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Key
+    apps: []
+    threats: []
+    sources: []
+    note: cat=basic
+  - id: cipher
+    title: 密码（算法）
+    title_en: Cipher
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d01
+    era:
+      - era1
+      - era2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Cipher
+    apps: []
+    threats: []
+    sources: []
+    note: cat=basic
+  - id: code
+    title: 编码（表）
+    title_en: Code
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d01
+    era:
+      - era4
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Code
+    apps: []
+    threats: []
+    sources: []
+    note: cat=basic
+  - id: cryptanalysis
+    title: 密码分析
+    title_en: Cryptanalysis
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d01
+    era:
+      - era2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Cryptanalysis
+    apps: []
+    threats: []
+    sources: []
+    note: cat=basic
+  - id: cryptography
+    title: 密码学
+    title_en: Cryptography
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d01
+    era:
+      - era0
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Cryptography
+    apps: []
+    threats: []
+    sources: []
+    note: cat=basic
+  - id: steganography
+    title: 隐写术
+    title_en: Steganography
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d01
+    era:
+      - era3
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Steganography
+    apps: []
+    threats: []
+    sources: []
+    note: cat=basic
+  - id: caesar-cipher
+    title: 凯撒密码
+    title_en: Caesar Cipher
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d02
+    era:
+      - era1
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Caesar Cipher
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: substitution
+    title: 替换密码
+    title_en: Substitution
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d02
+    era:
+      - era1
+      - era2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Substitution
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: transposition
+    title: 换位密码
+    title_en: Transposition
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d04
+    era:
+      - era4
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Transposition
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: rail-fence
+    title: 栅栏密码
+    title_en: Rail Fence
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d04
+    era:
+      - era4
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Rail Fence
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: affine-cipher
+    title: 仿射密码
+    title_en: Affine Cipher
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d02
+    era:
+      - era1
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Affine Cipher
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: vigen-re
+    title: 维吉尼亚密码
+    title_en: Vigenère
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d03
+    era:
+      - era3
+      - era5
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Vigenère
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: playfair
+    title: Playfair 密码
+    title_en: Playfair
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d03
+    era:
+      - era4
+      - era6
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Playfair
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: adfgvx
+    title: ADFGVX 密码
+    title_en: ADFGVX
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d04
+    era:
+      - era4
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - ADFGVX
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: enigma
+    title: 恩尼格玛
+    title_en: Enigma
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d05
+    era:
+      - era5
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Enigma
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: bombe
+    title: 炸弹机（Bombe）
+    title_en: Bombe
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d05
+    era:
+      - era5
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Bombe
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: purple
+    title: 紫密（Purple）
+    title_en: Purple
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d05
+    era:
+      - era7
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Purple
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: jn-25
+    title: JN-25 密码
+    title_en: JN-25
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d05
+    era:
+      - era6
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - JN-25
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: frequency-analysis
+    title: 频率分析
+    title_en: Frequency Analysis
+    status: done
+    quality: tier1
+    type: term
+    derived: true
+    domain:
+      - d07
+    era:
+      - e04-arabic-golden-age
+      - e08-codebreakers
+    subtopic:
+      - crypto-classical-statistics
+    level: 1
+    prereq: []
+    aliases:
+      - 统计分析
+      - 字母频率分析
+      - frequency analysis
+      - chi-square
+    apps:
+      - military
+      - academic
+      - everyday
+    threats:
+      - CO
+      - statistical
+    sources:
+      - title: Risāla fī Istikhrāj al-Muʿammā wa fī Tamyīz al-Asrār
+        author: al-Kindi
+        kind: primary
+        year: 850
+      - title: The Codebreakers
+        author: David Kahn
+        kind: authoritative
+        year: 1967
+    note: cat=methods
+    playable: true
+    archetype: frequency-histogram
+  - id: crib
+    title: 猜测明文
+    title_en: Crib
+    status: done
+    quality: tier1
+    type: term
+    derived: true
+    domain:
+      - d07
+    era:
+      - e08-codebreakers
+      - e11-ww2
+    subtopic:
+      - crypto-crib-known-plaintext
+    level: 1
+    prereq: []
+    aliases:
+      - crib
+      - 已知明文猜测
+      - 填鸭
+    apps:
+      - military
+      - academic
+    threats:
+      - KPA
+    sources:
+      - title: The Turing–Welchman bombe and the Hut 6 crib procedures
+        author: Bletchley Park / GCHQ archives
+        kind: tertiary
+      - title: The Codebreakers
+        author: David Kahn
+        kind: authoritative
+        year: 1967
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    note: cat=methods
+    playable: true
+    archetype: crib-dragging
+  - id: known-plaintext-attack
+    title: 已知明文攻击
+    title_en: Known-Plaintext Attack
+    status: done
+    quality: tier1
+    type: term
+    derived: true
+    domain:
+      - d07
+    era:
+      - e09-ww1
+      - e11-ww2
+    subtopic:
+      - crypto-crib-known-plaintext
+    level: 2
+    prereq: []
+    aliases:
+      - KPA
+      - 已知明文攻击
+      - known-plaintext attack
+    apps:
+      - military
+      - academic
+    threats:
+      - KPA
+    sources:
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+      - title: The Codebreakers
+        author: David Kahn
+        kind: authoritative
+        year: 1967
+    note: "[重复] 域文件中另有「Known Plaintext 已知明文」条目，与本条语义重叠，需合并。"
+    playable: true
+    archetype: crib-dragging
+  - id: depth
+    title: 深度
+    title_en: Depth
+    status: done
+    quality: tier1
+    type: term
+    derived: true
+    domain:
+      - d07
+    era:
+      - e06-middy
+      - e11-ww2
+      - e12-cold-war-info-theory
+    subtopic:
+      - crypto-crib-known-plaintext
+    level: 2
+    prereq: []
+    aliases:
+      - 深度
+      - depth
+      - 加法密钥重用
+      - 深度重用
+    apps:
+      - military
+    threats:
+      - KPA
+      - statistical
+    sources:
+      - title: The Codebreakers
+        author: David Kahn
+        kind: authoritative
+        year: 1967
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    note: "[重复] 域文件中有「Depth」与「深度 密钥重用」两条，需合并为一条。"
+    playable: true
+    archetype: depth-subtract
+  - id: kasiski-test
+    title: 卡斯基基检验
+    title_en: Kasiski Examination
+    status: done
+    quality: tier1
+    type: term
+    derived: true
+    domain:
+      - d07
+    era:
+      - e08-codebreakers
+    subtopic:
+      - crypto-classical-statistics
+    level: 2
+    prereq: []
+    aliases:
+      - 卡斯基基
+      - Kasiski
+      - 重复组距离
+      - repeated-group distance
+    apps:
+      - academic
+      - military
+    threats:
+      - CO
+      - statistical
+    sources:
+      - title: Die Geheimschriften und ihre Deutung
+        author: Friedrich Kasiski
+        kind: primary
+        year: 1863
+      - title: The Codebreakers
+        author: David Kahn
+        kind: authoritative
+        year: 1967
+    note: cat=methods
+    playable: true
+    archetype: frequency-histogram
+  - id: brute-force
+    title: 穷举攻击
+    title_en: Brute Force Attack
+    status: done
+    quality: tier1
+    type: term
+    derived: true
+    domain:
+      - d07
+    era:
+      - e08-codebreakers
+    subtopic:
+      - crypto-generic-composition
+    level: 1
+    prereq: []
+    aliases:
+      - 暴力破解
+      - 穷举
+      - brute force
+      - exhaustive search
+    apps:
+      - academic
+      - everyday
+    threats:
+      - CO
+      - KPA
+    sources:
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+      - title: The Codebreakers
+        author: David Kahn
+        kind: authoritative
+        year: 1967
+    note: cat=methods
+    playable: true
+    archetype: brute-force
+  - id: known-plaintext
+    title: 已知明文
+    title_en: Known Plaintext
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d07
+    era:
+      - era9
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Known Plaintext
+    apps: []
+    threats: []
+    sources: []
+    note: cat=methods
+  - id: one-time-pad
+    title: 一次性密码本
+    title_en: One-Time Pad (OTP)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d06
+    era:
+      - era9
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - One-Time Pad (OTP)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: xor
+    title: 异或
+    title_en: XOR
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d06
+    era:
+      - era8
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - XOR
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: entropy
+    title: 熵
+    title_en: Entropy
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d24
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Entropy
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: perfect-secrecy
+    title: 完美保密
+    title_en: Perfect Secrecy
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d24
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Perfect Secrecy
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: public-key-crypto
+    title: 公钥密码
+    title_en: Public-Key Crypto
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d11
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Public-Key Crypto
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: block-cipher
+    title: 分组密码
+    title_en: Block Cipher
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d08
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Block Cipher
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: https
+    title: HTTPS
+    title_en: HTTPS
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - HTTPS
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: base64
+    title: Base64
+    title_en: Base64
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Base64
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: bletchley-park
+    title: 布莱切利园
+    title_en: Bletchley Park
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d01
+    era:
+      - era5
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Bletchley Park
+    apps: []
+    threats: []
+    sources: []
+    note: cat=people
+  - id: room-40
+    title: 40 号房
+    title_en: Room 40
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d01
+    era:
+      - era4
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Room 40
+    apps: []
+    threats: []
+    sources: []
+    note: cat=people
+  - id: colossus
+    title: Colossus（巨像计算机）
+    title_en: Colossus
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d01
+    era:
+      - era8
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Colossus
+    apps: []
+    threats: []
+    sources: []
+    note: cat=people
+  - id: sis
+    title: SIS（陆军信号情报处）
+    title_en: SIS
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d01
+    era:
+      - era7
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - SIS
+    apps: []
+    threats: []
+    sources: []
+    note: cat=people
+  - id: bacon-s-biliteral
+    title: 培根双字体
+    title_en: Bacon's Biliteral
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d01
+    era:
+      - era3
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Bacon's Biliteral
+    apps: []
+    threats: []
+    sources: []
+    note: cat=encoding
+  - id: morse-code
+    title: 摩斯电码
+    title_en: Morse Code
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d01
+    era:
+      - era3
+      - era4
+      - era6
+      - era7
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Morse Code
+    apps: []
+    threats: []
+    sources: []
+    note: cat=encoding
+  - id: baudot-code
+    title: 博多码
+    title_en: Baudot Code
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d01
+    era:
+      - era8
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Baudot Code
+    apps: []
+    threats: []
+    sources: []
+    note: cat=encoding
+  - id: polybius-square
+    title: 波利比奥斯方阵
+    title_en: Polybius Square
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d01
+    era:
+      - era4
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Polybius Square
+    apps: []
+    threats: []
+    sources: []
+    note: cat=encoding
+  - id: decryption
+    title: 解密
+    title_en: Decryption
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d01
+    era:
+      - era5
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Decryption
+    apps: []
+    threats: []
+    sources: []
+    note: cat=basic
+  - id: encryption
+    title: 加密
+    title_en: Encryption
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d01
+    era:
+      - era5
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Encryption
+    apps: []
+    threats: []
+    sources: []
+    note: cat=basic
+  - id: bifid-cipher
+    title: Bifid 密码
+    title_en: Bifid Cipher
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d04
+    era:
+      - era2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Bifid Cipher
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: trifid-cipher
+    title: Trifid 密码
+    title_en: Trifid Cipher
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d04
+    era:
+      - era2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Trifid Cipher
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: hill-cipher
+    title: 希尔密码
+    title_en: Hill Cipher
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d03
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Hill Cipher
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: nihilist-cipher
+    title: 虚无主义者密码
+    title_en: Nihilist Cipher
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d03
+    era:
+      - era4
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Nihilist Cipher
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: one-time-pad-history
+    title: 一次性密码本（史）
+    title_en: One-Time Pad History
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d06
+    era:
+      - era9
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - One-Time Pad History
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: chosen-plaintext-attack
+    title: 选择明文攻击
+    title_en: Chosen-Plaintext Attack
+    status: done
+    quality: tier1
+    type: term
+    derived: true
+    domain:
+      - d07
+    era:
+      - e09-ww1
+    subtopic:
+      - crypto-attack-models
+    level: 2
+    prereq: []
+    aliases:
+      - CPA
+      - 选择明文攻击
+      - chosen-plaintext
+    apps:
+      - military
+      - academic
+    threats:
+      - CPA
+    sources:
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+      - title: The Codebreakers
+        author: David Kahn
+        kind: authoritative
+        year: 1967
+    note: cat=methods
+    playable: false
+    archetype: ""
+  - id: birthday-attack
+    title: 生日攻击
+    title_en: Birthday Attack
+    status: done
+    quality: tier1
+    type: term
+    derived: true
+    domain:
+      - d07
+      - d09-hashes
+    era:
+      - e14-standardization
+    subtopic:
+      - crypto-generic-composition
+    level: 2
+    prereq: []
+    aliases:
+      - 生日攻击
+      - birthday attack
+      - 生日悖论
+      - birthday paradox
+      - 生日碰撞
+    apps:
+      - academic
+    threats:
+      - CO
+    sources:
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    note: cat=methods
+    playable: true
+    archetype: birthday-collision
+  - id: man-in-the-middle
+    title: 中间人攻击
+    title_en: Man-in-the-Middle Attack
+    status: done
+    quality: tier1
+    type: term
+    derived: true
+    domain:
+      - d07
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    subtopic:
+      - crypto-protocol-network
+    level: 2
+    prereq: []
+    aliases:
+      - 中间人
+      - man-in-the-middle
+      - 中间人攻击
+    apps:
+      - finance
+      - everyday
+      - telecom
+    threats:
+      - protocol
+      - network
+    sources:
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+      - title: The Codebreakers
+        author: David Kahn
+        kind: authoritative
+        year: 1967
+    note: cat=methods
+    playable: true
+    archetype: protocol-trace
+  - id: traffic-analysis
+    title: 流量分析
+    title_en: Traffic Analysis
+    status: done
+    quality: tier1
+    type: term
+    derived: true
+    domain:
+      - d07
+      - d14-protocols-pki
+    era:
+      - e09-ww1
+      - e11-ww2
+    subtopic:
+      - crypto-protocol-network
+    level: 2
+    prereq: []
+    aliases:
+      - 流量分析
+      - traffic analysis
+      - 通信量分析
+    apps:
+      - military
+      - law-enforcement
+    threats:
+      - protocol
+      - statistical
+    sources:
+      - title: The Codebreakers
+        author: David Kahn
+        kind: authoritative
+        year: 1967
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    note: cat=methods
+    playable: true
+    archetype: traffic-graph
+  - id: symmetric-key
+    title: 对称密钥
+    title_en: Symmetric Key
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d08
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Symmetric Key
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: asymmetric-key
+    title: 非对称密钥
+    title_en: Asymmetric Key
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d11
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Asymmetric Key
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: digital-signature
+    title: 数字签名
+    title_en: Digital Signature
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d12
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Digital Signature
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: aes
+    title: AES 加密
+    title_en: AES
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d08
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - AES
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: rsa
+    title: RSA 算法
+    title_en: RSA
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d11
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - RSA
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: steganographic-image
+    title: 图像隐写
+    title_en: Steganographic Image
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d01
+    era:
+      - era3
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Steganographic Image
+    apps: []
+    threats: []
+    sources: []
+    note: cat=encoding
+  - id: caesar-box
+    title: 凯撒方阵
+    title_en: Caesar Box
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d01
+    era:
+      - era1
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Caesar Box
+    apps: []
+    threats: []
+    sources: []
+    note: cat=encoding
+  - id: data-encryption-standard
+    title: 数据加密标准
+    title_en: Data Encryption Standard (DES)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d08
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Data Encryption Standard (DES)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: feistel-network
+    title: 费斯妥网络
+    title_en: Feistel Network
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d08
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Feistel Network
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: substitution-permutation-network
+    title: 代换-置换网络
+    title_en: Substitution-Permutation Network (SPN)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d08
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Substitution-Permutation Network (SPN)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: elliptic-curve-cryptography
+    title: 椭圆曲线密码
+    title_en: Elliptic Curve Cryptography (ECC)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d11
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Elliptic Curve Cryptography (ECC)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: symmetric-cryptography
+    title: 对称密码
+    title_en: Symmetric Cryptography
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d08
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Symmetric Cryptography
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: asymmetric-cryptography
+    title: 非对称密码
+    title_en: Asymmetric Cryptography
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d11
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Asymmetric Cryptography
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: cryptographic-hash
+    title: 密码学哈希
+    title_en: Cryptographic Hash
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d09
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Cryptographic Hash
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: salt
+    title: 盐
+    title_en: Salt (Cryptography)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d09
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Salt (Cryptography)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: initialization-vector
+    title: 初始化向量
+    title_en: Initialization Vector (IV)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d13
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Initialization Vector (IV)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: block-cipher-mode
+    title: 分组密码工作模式
+    title_en: Block Cipher Mode (ECB/CBC/GCM)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d08
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Block Cipher Mode (ECB/CBC/GCM)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: quantum-cryptography
+    title: 量子密码
+    title_en: Quantum Cryptography
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d21
+    era:
+      - era11
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Quantum Cryptography
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: differential-cryptanalysis
+    title: 差分密码分析
+    title_en: Differential Cryptanalysis
+    status: done
+    quality: tier1
+    type: term
+    derived: true
+    domain:
+      - d07
+    era:
+      - e12-cold-war-info-theory
+      - e14-standardization
+    subtopic:
+      - crypto-differential
+    level: 3
+    prereq:
+      - s-box
+    aliases:
+      - 差分分析
+      - differential cryptanalysis
+      - 差分密码分析
+    apps:
+      - academic
+    threats:
+      - CPA
+    sources:
+      - title: Differential Cryptanalysis of DES-like Cryptosystems
+        author: Eli Biham, Adi Shamir
+        kind: primary
+        year: 1990
+    note: cat=methods
+    playable: true
+    archetype: difference-table
+  - id: linear-cryptanalysis
+    title: 线性密码分析
+    title_en: Linear Cryptanalysis
+    status: done
+    quality: tier1
+    type: term
+    derived: true
+    domain:
+      - d07
+    era:
+      - e12-cold-war-info-theory
+      - e14-standardization
+    subtopic:
+      - crypto-linear
+    level: 3
+    prereq:
+      - s-box
+    aliases:
+      - 线性分析
+      - linear cryptanalysis
+      - 线性密码分析
+      - Matsui 攻击
+    apps:
+      - academic
+    threats:
+      - KPA
+    sources:
+      - title: Linear Cryptanalysis Method for DES Cipher
+        author: Mitsuru Matsui
+        kind: primary
+        year: 1993
+    note: cat=methods
+    playable: true
+    archetype: linear-approximation
+  - id: rainbow-table
+    title: 彩虹表
+    title_en: Rainbow Table
+    status: done
+    quality: tier2
+    type: term
+    derived: true
+    domain:
+      - d07
+      - d09-hashes
+    era:
+      - e14-standardization
+    subtopic:
+      - crypto-generic-composition
+    level: 2
+    prereq:
+      - dictionary-attack
+    aliases:
+      - 彩虹表
+      - rainbow table
+      - 预计算表
+    apps:
+      - law-enforcement
+    threats:
+      - CO
+    sources:
+      - title: Rainbow Tables
+        author: Biryukov, Stoytchev, Shamir
+        kind: primary
+        year: 1999
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    note: cat=methods
+    playable: true
+    archetype: password-crack
+  - id: side-channel-attack
+    title: 侧信道攻击
+    title_en: Side-Channel Attack
+    status: done
+    quality: tier1
+    type: term
+    derived: true
+    domain:
+      - d07
+      - d17-side-channel
+    era:
+      - e14-standardization
+    subtopic:
+      - crypto-side-channel
+    level: 3
+    prereq: []
+    aliases:
+      - 侧信道
+      - side channel
+      - 旁路攻击
+    apps:
+      - finance
+      - infrastructure
+      - academic
+    threats:
+      - side-channel
+    sources:
+      - title: Timing Attacks on Implementations of Diffie-Hellman, RSA, DSS, and Other Systems
+        author: Paul C. Kocher
+        kind: primary
+        year: 1996
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    note: "[错位] 主归属在 d17，d07 侧保留为交叉引用（研究底稿显示 d17 已有专门章节）。"
+    playable: true
+    archetype: timing-measure
+  - id: timing-attack
+    title: 时间攻击
+    title_en: Timing Attack
+    status: done
+    quality: tier1
+    type: term
+    derived: true
+    domain:
+      - d07
+      - d17-side-channel
+    era:
+      - e14-standardization
+    subtopic:
+      - crypto-side-channel
+    level: 3
+    prereq:
+      - side-channel-attack
+    aliases:
+      - 计时攻击
+      - timing attack
+      - 时间侧信道
+    apps:
+      - finance
+      - infrastructure
+    threats:
+      - side-channel
+    sources:
+      - title: Timing Attacks on Implementations of Diffie-Hellman, RSA, DSS, and Other Systems
+        author: Paul C. Kocher
+        kind: primary
+        year: 1996
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    note: cat=methods
+    playable: true
+    archetype: timing-measure
+  - id: chosen-ciphertext-attack
+    title: 选择密文攻击
+    title_en: Chosen-Ciphertext Attack
+    status: done
+    quality: tier1
+    type: term
+    derived: true
+    domain:
+      - d07
+      - d24-theory
+    era:
+      - e13-public-key
+    subtopic:
+      - crypto-attack-models
+    level: 3
+    prereq: []
+    aliases:
+      - CCA
+      - 选择密文攻击
+      - chosen-ciphertext
+    apps:
+      - academic
+    threats:
+      - CCA
+    sources:
+      - title: Chosen-Ciphertext Attacks
+        author: Håstad
+        kind: primary
+        year: 1998
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    note: cat=methods
+    playable: false
+    archetype: ""
+  - id: meet-in-the-middle-attack
+    title: 中途相遇攻击
+    title_en: Meet-in-the-Middle Attack
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d07
+    era:
+      - era5
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Meet-in-the-Middle Attack
+    apps: []
+    threats: []
+    sources: []
+    note: cat=methods
+  - id: transport-layer-security
+    title: 传输层安全协议
+    title_en: Transport Layer Security (TLS)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Transport Layer Security (TLS)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: public-key-infrastructure
+    title: 公钥基础设施
+    title_en: Public Key Infrastructure (PKI)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Public Key Infrastructure (PKI)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: certificate-authority
+    title: 证书颁发机构
+    title_en: Certificate Authority (CA)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Certificate Authority (CA)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: digital-envelope
+    title: 数字信封
+    title_en: Digital Envelope
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Digital Envelope
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: key-exchange
+    title: 密钥交换
+    title_en: Key Exchange
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era11
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Key Exchange
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: end-to-end-encryption
+    title: 端到端加密
+    title_en: End-to-End Encryption
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - End-to-End Encryption
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: zero-knowledge-proof
+    title: 零知识证明
+    title_en: Zero-Knowledge Proof
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Zero-Knowledge Proof
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: homomorphic-encryption
+    title: 同态加密
+    title_en: Homomorphic Encryption
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Homomorphic Encryption
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: post-quantum-cryptography
+    title: 后量子密码
+    title_en: Post-Quantum Cryptography
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era11
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Post-Quantum Cryptography
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: kerckhoffs-s-principle
+    title: 柯克霍夫原则
+    title_en: Kerckhoffs's Principle
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era1
+      - era2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Kerckhoffs's Principle
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: authentication
+    title: 认证
+    title_en: Authentication
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d01
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Authentication
+    apps: []
+    threats: []
+    sources: []
+    note: cat=basic
+  - id: integrity
+    title: 完整性
+    title_en: Integrity
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d01
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Integrity
+    apps: []
+    threats: []
+    sources: []
+    note: cat=basic
+  - id: non-repudiation
+    title: 不可否认性
+    title_en: Non-repudiation
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d01
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Non-repudiation
+    apps: []
+    threats: []
+    sources: []
+    note: cat=basic
+  - id: confusion
+    title: 混淆
+    title_en: Confusion
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d01
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Confusion
+    apps: []
+    threats: []
+    sources: []
+    note: cat=basic
+  - id: diffusion
+    title: 扩散
+    title_en: Diffusion
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d01
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Diffusion
+    apps: []
+    threats: []
+    sources: []
+    note: cat=basic
+  - id: two-square-cipher
+    title: 双方形密码
+    title_en: Two-Square Cipher
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d03
+    era:
+      - era4
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Two-Square Cipher
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: gronsfeld-cipher
+    title: 格朗斯费尔德密码
+    title_en: Gronsfeld Cipher
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d03
+    era:
+      - era3
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Gronsfeld Cipher
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: nsa
+    title: 美国国家安全局
+    title_en: NSA
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d01
+    era:
+      - era9
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - NSA
+    apps: []
+    threats: []
+    sources: []
+    note: cat=people
+  - id: gchq
+    title: 英国政府通信总部
+    title_en: GCHQ
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d01
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - GCHQ
+    apps: []
+    threats: []
+    sources: []
+    note: cat=people
+  - id: nist
+    title: 美国国家标准与技术研究院
+    title_en: NIST
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d01
+    era:
+      - era11
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - NIST
+    apps: []
+    threats: []
+    sources: []
+    note: cat=people
+  - id: venona-project
+    title: 维诺纳计划
+    title_en: VENONA Project
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d01
+    era:
+      - era9
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - VENONA Project
+    apps: []
+    threats: []
+    sources: []
+    note: cat=people
+  - id: ciphertext-only-attack
+    title: 唯密文攻击
+    title_en: Ciphertext-Only Attack
+    status: done
+    quality: tier1
+    type: term
+    derived: true
+    domain:
+      - d07
+    era:
+      - e08-codebreakers
+    subtopic:
+      - crypto-attack-models
+    level: 2
+    prereq: []
+    aliases:
+      - CO
+      - 唯密文攻击
+      - ciphertext-only
+      - 唯密文
+    apps:
+      - academic
+    threats:
+      - CO
+    sources:
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+      - title: The Codebreakers
+        author: David Kahn
+        kind: authoritative
+        year: 1967
+    note: cat=methods
+    playable: false
+    archetype: ""
+  - id: one-time-pad-reuse
+    title: 一次性密码本重用
+    title_en: One-Time Pad Reuse
+    status: done
+    quality: tier1
+    type: term
+    derived: true
+    domain:
+      - d07
+      - d06-otp-stream
+    era:
+      - e12-cold-war-info-theory
+    subtopic:
+      - crypto-crib-known-plaintext
+    level: 2
+    prereq:
+      - depth
+    aliases:
+      - OTP 重用
+      - 一次性密码本重用
+      - key reuse
+      - 密钥重用
+    apps:
+      - military
+    threats:
+      - KPA
+      - statistical
+    sources:
+      - title: The Codebreakers
+        author: David Kahn
+        kind: authoritative
+        year: 1967
+    note: VENONA 的核心技术原理；与 d06 的 OTP 条目是「原语 vs 弱点」的关系，需交叉链接。
+    playable: true
+    archetype: depth-subtract
+  - id: key-length
+    title: 密钥长度
+    title_en: Key Length
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d13
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Key Length
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: key-space
+    title: 密钥空间
+    title_en: Key Space
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d13
+    era:
+      - era1
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Key Space
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: rc4
+    title: RC4 流密码
+    title_en: RC4
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d06
+    era:
+      - era8
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - RC4
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: chacha20
+    title: ChaCha20 流密码
+    title_en: ChaCha20
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d06
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - ChaCha20
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: digital-signature-algorithm
+    title: DSA 数字签名算法
+    title_en: Digital Signature Algorithm (DSA)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d12
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Digital Signature Algorithm (DSA)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: elgamal
+    title: ElGamal 算法
+    title_en: ElGamal
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d11
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - ElGamal
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: schnorr-signature
+    title: Schnorr 签名
+    title_en: Schnorr Signature
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d12
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Schnorr Signature
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: cipher-block-chaining
+    title: CBC 分组模式
+    title_en: Cipher Block Chaining (CBC)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d08
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Cipher Block Chaining (CBC)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: counter-mode
+    title: CTR 计数器模式
+    title_en: Counter Mode (CTR)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d08
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Counter Mode (CTR)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: galois-counter-mode
+    title: GCM 认证加密模式
+    title_en: Galois/Counter Mode (GCM)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d08
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Galois/Counter Mode (GCM)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: message-authentication-code
+    title: 消息认证码
+    title_en: Message Authentication Code (MAC)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d10
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Message Authentication Code (MAC)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: hmac
+    title: HMAC 消息认证码
+    title_en: HMAC
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d10
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - HMAC
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: key-derivation-function
+    title: 密钥派生函数
+    title_en: Key Derivation Function (KDF)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d13
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Key Derivation Function (KDF)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: bcrypt
+    title: bcrypt 口令哈希
+    title_en: bcrypt
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d13
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - bcrypt
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: argon2
+    title: Argon2 口令哈希
+    title_en: Argon2
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d13
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Argon2
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: pseudorandom-function
+    title: 伪随机函数
+    title_en: Pseudorandom Function (PRF)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d06
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Pseudorandom Function (PRF)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: pseudorandom-generator
+    title: 伪随机生成器
+    title_en: Pseudorandom Generator (PRG)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d06
+    era:
+      - era9
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Pseudorandom Generator (PRG)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: cca2
+    title: 适应性选择密文攻击
+    title_en: Adaptive Chosen-Ciphertext Attack
+    status: done
+    quality: tier1
+    type: term
+    derived: true
+    domain:
+      - d07
+      - d24-theory
+    era:
+      - e13-public-key
+    subtopic:
+      - crypto-attack-models
+    level: 4
+    prereq:
+      - chosen-ciphertext-attack
+    aliases:
+      - CCA2
+      - 适应性选择密文攻击
+      - adaptive CCA
+      - IND-CCA2
+    apps:
+      - academic
+    threats:
+      - adaptive-CCA
+    sources:
+      - title: Chosen-Ciphertext Attacks
+        author: Håstad
+        kind: primary
+        year: 1998
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    note: cat=methods
+    playable: false
+    archetype: ""
+  - id: distinguishing-attack
+    title: 区分攻击
+    title_en: Distinguishing Attack
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d07
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Distinguishing Attack
+    apps: []
+    threats: []
+    sources: []
+    note: cat=methods
+  - id: constant-time-implementation
+    title: 常量时间实现
+    title_en: Constant-Time Implementation
+    status: done
+    quality: tier2
+    type: term
+    derived: true
+    domain:
+      - d07
+      - d17-side-channel
+      - d23-applied-security
+    era:
+      - e14-standardization
+    subtopic:
+      - crypto-implementation
+    level: 3
+    prereq:
+      - timing-attack
+    aliases:
+      - 常量时间
+      - constant time
+      - 恒定时间
+      - 时序安全实现
+    apps:
+      - infrastructure
+      - finance
+    threats:
+      - side-channel
+    sources:
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    note: 这是**防御**条目而非攻击条目——保留在 d07 体现＂攻与防并列＂，但需在站点上明确标注为防御侧。
+    playable: false
+    archetype: ""
+  - id: padding-oracle-attack
+    title: 填充预言攻击
+    title_en: Padding Oracle Attack
+    status: done
+    quality: tier1
+    type: term
+    derived: true
+    domain:
+      - d07
+      - d10-auth-aead
+    era:
+      - e14-standardization
+      - e15-web-protocols
+    subtopic:
+      - crypto-implementation
+    level: 3
+    prereq:
+      - chosen-ciphertext-attack
+    aliases:
+      - 填充预言
+      - padding oracle
+      - POODLE
+      - Vaudenay 攻击
+    apps:
+      - infrastructure
+      - everyday
+    threats:
+      - CCA
+      - implementation
+    sources:
+      - title: "New Attacks on RSA-Based Padding: Chosen-Ciphertext Attacks against RSA"
+        author: Vaudenay
+        kind: primary
+        year: 2002
+      - title: Padding Oracle Attacks
+        author: Vaudenay
+        kind: primary
+        year: 2002
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    note: cat=methods
+    playable: true
+    archetype: padding-oracle
+  - id: backdoor
+    title: 后门
+    title_en: Backdoor
+    status: done
+    quality: tier1
+    type: term
+    derived: true
+    domain:
+      - d07
+      - d23-applied-security
+    era:
+      - e15-web-protocols
+    subtopic:
+      - crypto-implementation
+    level: 2
+    prereq: []
+    aliases:
+      - 后门
+      - backdoor
+      - Dual_EC_DRBG
+      - 后门算法
+    apps:
+      - infrastructure
+      - law-enforcement
+    threats:
+      - implementation
+      - protocol
+    sources:
+      - title: Dual_EC_DRBG
+        author: NSA / NIST SP 800-90A
+        kind: primary
+        year: 2007
+      - title: The Crypto AG story (The Guardian / Washington Post reporting)
+        author: Gérardyn, Perret
+        kind: tertiary
+        year: 2017
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    note: cat=methods
+    playable: false
+    archetype: ""
+  - id: certificate-transparency
+    title: 证书透明度
+    title_en: Certificate Transparency (CT)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Certificate Transparency (CT)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: online-certificate-status-protocol
+    title: OCSP 证书状态协议
+    title_en: Online Certificate Status Protocol (OCSP)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Online Certificate Status Protocol (OCSP)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: http-strict-transport-security
+    title: HSTS 强制 HTTPS
+    title_en: HTTP Strict Transport Security (HSTS)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - HTTP Strict Transport Security (HSTS)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: merkle-tree
+    title: 默克尔树
+    title_en: Merkle Tree
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d09
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Merkle Tree
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: proof-of-work
+    title: 工作量证明
+    title_en: Proof of Work (PoW)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d09
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Proof of Work (PoW)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: hash-based-signatures
+    title: 哈希签名（基于哈希的签名）
+    title_en: Hash-Based Signatures
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d12
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Hash-Based Signatures
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: learning-with-errors
+    title: 带错误学习问题（LWE）
+    title_en: Learning With Errors (LWE)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d22
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Learning With Errors (LWE)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: ring-lwe
+    title: 环带错误学习（RLWE）
+    title_en: Ring-LWE (RLWE)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d22
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Ring-LWE (RLWE)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: shamir-s-secret-sharing
+    title: Shamir 秘密共享
+    title_en: Shamir's Secret Sharing
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d16
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Shamir's Secret Sharing
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: phishing
+    title: 钓鱼
+    title_en: Phishing
+    status: done
+    quality: tier1
+    type: term
+    derived: true
+    domain:
+      - d07
+      - d23-applied-security
+    era:
+      - e15-web-protocols
+    subtopic:
+      - crypto-social-engineering
+    level: 1
+    prereq: []
+    aliases:
+      - 钓鱼
+      - phishing
+      - 网络钓鱼
+      - 鱼叉式钓鱼
+    apps:
+      - everyday
+      - finance
+      - law-enforcement
+    threats:
+      - social
+    sources:
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    note: "[错位] 主归属 d23。"
+    playable: true
+    archetype: social-engineering
+  - id: ring-signature
+    title: 环签名
+    title_en: Ring Signature
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d12
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Ring Signature
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: sha-3
+    title: SHA-3 哈希
+    title_en: SHA-3
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d09
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - SHA-3
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: key-confirmation
+    title: 密钥确认
+    title_en: Key Confirmation
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Key Confirmation
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: key-rotation
+    title: 密钥轮换
+    title_en: Key Rotation
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Key Rotation
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: webcrypto
+    title: WebCrypto
+    title_en: WebCrypto
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - WebCrypto
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: password-spraying
+    title: 口令喷洒
+    title_en: Password Spraying
+    status: done
+    quality: tier2
+    type: term
+    derived: true
+    domain:
+      - d07
+      - d23-applied-security
+    era:
+      - e15-web-protocols
+    subtopic:
+      - crypto-social-engineering
+    level: 1
+    prereq:
+      - dictionary-attack
+    aliases:
+      - 口令喷洒
+      - password spraying
+      - 凭据填充
+      - credential stuffing
+    apps:
+      - law-enforcement
+      - everyday
+    threats:
+      - social
+    sources:
+      - title: Password Spraying
+        author: MITRE ATT&CK T1110.003
+        kind: primary
+        year: 2021
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    note: "[错位] 主归属 d23；且与＂撞库＂是同义，需统一术语。"
+    playable: true
+    archetype: social-engineering
+  - id: canary-trap
+    title: 金丝雀陷阱
+    title_en: Canary Trap
+    status: done
+    quality: tier2
+    type: term
+    derived: true
+    domain:
+      - d07
+      - d23-applied-security
+    era:
+      - e11-ww2
+    subtopic:
+      - crypto-social-engineering
+    level: 2
+    prereq: []
+    aliases:
+      - 金丝雀陷阱
+      - canary trap
+      - 诱捕文件
+    apps:
+      - law-enforcement
+      - military
+    threats:
+      - social
+    sources:
+      - title: The Codebreakers
+        author: David Kahn
+        kind: authoritative
+        year: 1967
+    note: "[错位] 主归属 d23；本质是反情报技术，不是密码分析。"
+    playable: false
+    archetype: ""
+  - id: steganalysis
+    title: 隐写分析
+    title_en: Steganalysis
+    status: done
+    quality: tier1
+    type: term
+    derived: true
+    domain:
+      - d07
+      - d18-steganography
+    era:
+      - e15-web-protocols
+    subtopic:
+      - crypto-steganalysis
+    level: 3
+    prereq: []
+    aliases:
+      - 隐写分析
+      - steganalysis
+      - 隐写检测
+    apps:
+      - law-enforcement
+      - academic
+    threats:
+      - statistical
+      - side-channel
+    sources:
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    note: "[错位] 主归属 d18。"
+    playable: true
+    archetype: bitplane-inspector
+  - id: replay-attack
+    title: 重放攻击
+    title_en: Replay Attack
+    status: done
+    quality: tier1
+    type: term
+    derived: true
+    domain:
+      - d07
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    subtopic:
+      - crypto-protocol-network
+    level: 2
+    prereq: []
+    aliases:
+      - 重放
+      - replay attack
+      - 重放攻击
+    apps:
+      - finance
+      - everyday
+      - telecom
+    threats:
+      - protocol
+    sources:
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    note: "[重复] 域文件中有「Replay Attack」两条，需合并。"
+    playable: true
+    archetype: protocol-trace
+  - id: format-preserving-encryption
+    title: 格式保留加密
+    title_en: Format-Preserving Encryption (FPE)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d23
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Format-Preserving Encryption (FPE)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: bb84
+    title: BB84 协议
+    title_en: BB84
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d21
+    era:
+      - era11
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - BB84
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: quantum-key-distribution
+    title: 量子密钥分发
+    title_en: Quantum Key Distribution (QKD)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d21
+    era:
+      - era11
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Quantum Key Distribution (QKD)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: shor-s-algorithm
+    title: Shor 算法
+    title_en: Shor's Algorithm
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d07
+    era:
+      - era11
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Shor's Algorithm
+    apps: []
+    threats: []
+    sources: []
+    note: cat=methods
+  - id: grover-s-algorithm
+    title: Grover 算法
+    title_en: Grover's Algorithm
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d07
+    era:
+      - era11
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Grover's Algorithm
+    apps: []
+    threats: []
+    sources: []
+    note: cat=methods
+  - id: lattice-based-cryptography
+    title: 格密码
+    title_en: Lattice-based Cryptography
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era11
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Lattice-based Cryptography
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: kyber
+    title: Kyber（ML-KEM）
+    title_en: Kyber (ML-KEM)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era11
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Kyber (ML-KEM)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: dilithium
+    title: Dilithium（ML-DSA）
+    title_en: Dilithium (ML-DSA)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era11
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Dilithium (ML-DSA)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: harvest-now-decrypt-later
+    title: 先截获、后解密
+    title_en: Harvest Now, Decrypt Later
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era11
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Harvest Now, Decrypt Later
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: yinfu-tally-codes
+    title: 阴符
+    title_en: Yinfu Tally Codes
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d02
+    era:
+      - era1
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Yinfu Tally Codes
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: yinshu-split-letters
+    title: 阴书
+    title_en: Yinshu Split Letters
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d02
+    era:
+      - era1
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Yinshu Split Letters
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: ziyan-code
+    title: 字验
+    title_en: Ziyan Code
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d02
+    era:
+      - era2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Ziyan Code
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: fanqie-code
+    title: 反切码
+    title_en: Fanqie Code
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d02
+    era:
+      - era3
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Fanqie Code
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: ninja-secret-codes
+    title: 忍术隐语与暗号
+    title_en: Ninja Secret Codes
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d07
+    era:
+      - era3
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Ninja Secret Codes
+    apps: []
+    threats: []
+    sources: []
+    note: cat=methods
+  - id: variant-kana-steganography
+    title: 变体假名隐写
+    title_en: Variant Kana Steganography
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d07
+    era:
+      - era2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Variant Kana Steganography
+    apps: []
+    threats: []
+    sources: []
+    note: cat=methods
+  - id: sm4
+    title: SM4 分组密码
+    title_en: SM4
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d20
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - SM4
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: sm2
+    title: SM2 公钥算法
+    title_en: SM2
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - SM2
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: sm3
+    title: SM3 哈希算法
+    title_en: SM3
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d20
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - SM3
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: zuc
+    title: 祖冲之算法（ZUC）
+    title_en: ZUC (Zu Chongzhi)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - ZUC (Zu Chongzhi)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: md5
+    title: MD5 哈希
+    title_en: MD5
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d09
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - MD5
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: sha-1
+    title: SHA-1 哈希
+    title_en: SHA-1
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d09
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - SHA-1
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: hash-collision-attack
+    title: 哈希碰撞攻击
+    title_en: Hash Collision Attack
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d07
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Hash Collision Attack
+    apps: []
+    threats: []
+    sources: []
+    note: cat=methods
+  - id: 3des
+    title: 三重 DES
+    title_en: 3DES (Triple DES)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d08
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - 3DES (Triple DES)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: meet-in-the-middle
+    title: 中间相遇攻击
+    title_en: Meet-in-the-Middle Attack
+    status: done
+    quality: tier1
+    type: term
+    derived: true
+    domain:
+      - d07
+    era:
+      - e12-cold-war-info-theory
+    subtopic:
+      - crypto-generic-composition
+    level: 2
+    prereq:
+      - brute-force
+    aliases:
+      - 中间相遇
+      - meet in the middle
+      - 中间人（勿混）
+      - 中间相遇
+      - meet-in-the-middle
+      - 中间相遇攻击
+    apps:
+      - academic
+    threats:
+      - CO
+      - KPA
+    sources:
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+      - title: The Codebreakers
+        author: David Kahn
+        kind: authoritative
+        year: 1967
+    note: "[重复] 域文件中有「Meet-in-the-Middle Attack」与「Meet-in-the-Middle」两条，需合并。"
+    playable: true
+    archetype: meet-in-the-middle
+  - id: one-way-function
+    title: 单向函数
+    title_en: One-Way Function
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d01
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - One-Way Function
+    apps: []
+    threats: []
+    sources: []
+    note: cat=basic
+  - id: trapdoor-function
+    title: 陷门函数
+    title_en: Trapdoor Function
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d01
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Trapdoor Function
+    apps: []
+    threats: []
+    sources: []
+    note: cat=basic
+  - id: poly1305
+    title: Poly1305 认证码
+    title_en: Poly1305
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d10
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Poly1305
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: double-ratchet
+    title: 双棘轮算法
+    title_en: Double Ratchet
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Double Ratchet
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: kerberos
+    title: Kerberos 认证协议
+    title_en: Kerberos
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Kerberos
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: discrete-logarithm
+    title: 离散对数
+    title_en: Discrete Logarithm
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d01
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Discrete Logarithm
+    apps: []
+    threats: []
+    sources: []
+    note: cat=basic
+  - id: random-oracle-model
+    title: 随机预言机模型
+    title_en: Random Oracle Model
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d24
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Random Oracle Model
+    apps: []
+    threats: []
+    sources: []
+    note: cat=theoretical
+  - id: forward-secrecy
+    title: 前向保密
+    title_en: Forward Secrecy
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Forward Secrecy
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: miller-rabin
+    title: Miller-Rabin 素性测试
+    title_en: Miller-Rabin
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d07
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Miller-Rabin
+    apps: []
+    threats: []
+    sources: []
+    note: cat=methods
+  - id: chinese-remainder-theorem
+    title: 中国剩余定理
+    title_en: Chinese Remainder Theorem
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d01
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Chinese Remainder Theorem
+    apps: []
+    threats: []
+    sources: []
+    note: cat=basic
+  - id: blowfish-twofish
+    title: Blowfish 与 Twofish
+    title_en: Blowfish / Twofish
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d08
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Blowfish / Twofish
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: camellia
+    title: Camellia
+    title_en: Camellia
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d08
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Camellia
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: mceliece
+    title: McEliece 密码
+    title_en: McEliece
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d22
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - McEliece
+    apps: []
+    threats: []
+    sources: []
+    note: cat=postquantum
+  - id: falcon
+    title: Falcon 签名
+    title_en: Falcon
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d22
+    era:
+      - era11
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Falcon
+    apps: []
+    threats: []
+    sources: []
+    note: cat=postquantum
+  - id: power-analysis
+    title: 功耗分析
+    title_en: Power Analysis
+    status: done
+    quality: tier2
+    type: term
+    derived: true
+    domain:
+      - d07
+      - d17-side-channel
+    era:
+      - e14-standardization
+    subtopic:
+      - crypto-side-channel
+    level: 3
+    prereq:
+      - side-channel-attack
+    aliases:
+      - 功耗分析
+      - power analysis
+      - SPA
+      - DPA
+      - 差分功耗分析
+    apps:
+      - finance
+      - infrastructure
+    threats:
+      - side-channel
+    sources:
+      - title: Differential Power Analysis
+        author: Paul C. Kocher, Joshua Jaffe, Junhun Jun
+        kind: primary
+        year: 1999
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    note: "[错位] 主归属 d17；且「Power Analysis」与「Differential Side-Channel」语义重叠，需合并或厘清。"
+    playable: true
+    archetype: timing-measure
+  - id: needham-schroeder
+    title: Needham-Schroeder 协议
+    title_en: Needham-Schroeder
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Needham-Schroeder
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: bilinear-pairing
+    title: 双线性配对
+    title_en: Bilinear Pairing
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d24
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Bilinear Pairing
+    apps: []
+    threats: []
+    sources: []
+    note: cat=theoretical
+  - id: oblivious-transfer
+    title: 不经意传输
+    title_en: Oblivious Transfer
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d24
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Oblivious Transfer
+    apps: []
+    threats: []
+    sources: []
+    note: cat=theoretical
+  - id: scytale
+    title: 斯巴达密码棒
+    title_en: Scytale
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d04
+    era:
+      - era0
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Scytale
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: alberti-cipher-disk
+    title: 阿尔贝蒂密码盘
+    title_en: Alberti Cipher Disk
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d03
+    era:
+      - era3
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Alberti Cipher Disk
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: cardan-grille
+    title: 卡当格栅
+    title_en: Cardan Grille
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d07
+    era:
+      - era3
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Cardan Grille
+    apps: []
+    threats: []
+    sources: []
+    note: cat=methods
+  - id: beaufort-cipher
+    title: 博福特密码
+    title_en: Beaufort Cipher
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d03
+    era:
+      - era4
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Beaufort Cipher
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: password-manager
+    title: 口令管理器
+    title_en: Password Manager
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d23
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Password Manager
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: totp
+    title: 时间型一次性密码
+    title_en: TOTP
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - TOTP
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: passkey
+    title: 通行密钥（Passkey）
+    title_en: Passkey (FIDO2/WebAuthn)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Passkey (FIDO2/WebAuthn)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: s-mime
+    title: 安全邮件标准 S/MIME
+    title_en: S/MIME
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - S/MIME
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: merkle-damg-rd-construction
+    title: 梅克尔–达姆加德结构
+    title_en: Merkle–Damgård Construction
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d24
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Merkle–Damgård Construction
+    apps: []
+    threats: []
+    sources: []
+    note: cat=theoretical
+  - id: blind-signature
+    title: 盲签名
+    title_en: Blind Signature
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d24
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Blind Signature
+    apps: []
+    threats: []
+    sources: []
+    note: cat=theoretical
+  - id: pake
+    title: 口令认证密钥交换（PAKE）
+    title_en: PAKE
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - PAKE
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: noise-protocol-framework
+    title: Noise 协议框架
+    title_en: Noise Protocol Framework
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Noise Protocol Framework
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: tabula-recta
+    title: 维吉尼亚方表
+    title_en: Tabula Recta
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d03
+    era:
+      - era3
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Tabula Recta
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: nomenclator
+    title: 名词码簿
+    title_en: Nomenclator
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d02
+    era:
+      - era3
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Nomenclator
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: great-cipher-of-louis-xiv
+    title: 路易十四大密码
+    title_en: Great Cipher of Louis XIV
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d02
+    era:
+      - era4
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Great Cipher of Louis XIV
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: wireguard
+    title: WireGuard
+    title_en: WireGuard
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - WireGuard
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: threshold-signature
+    title: 门限签名
+    title_en: Threshold Signature
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Threshold Signature
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: s-box
+    title: S 盒（替换盒）
+    title_en: S-Box
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d07
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - S-Box
+    apps: []
+    threats: []
+    sources: []
+    note: cat=methods
+  - id: key-schedule
+    title: 密钥扩展算法
+    title_en: Key Schedule
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d08
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Key Schedule
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: hashcash
+    title: Hashcash
+    title_en: Hashcash
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d09
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Hashcash
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: off-the-record
+    title: 离线记录协议（OTR）
+    title_en: Off-the-Record (OTR)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Off-the-Record (OTR)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: key-derivation-for-storage
+    title: 存储口令派生
+    title_en: Key Derivation for Storage
+    status: done
+    quality: tier2
+    type: term
+    derived: true
+    domain:
+      - d07
+      - d13-key-management
+      - d23-applied-security
+    era:
+      - e14-standardization
+    subtopic:
+      - crypto-implementation
+    level: 2
+    prereq:
+      - dictionary-attack
+    aliases:
+      - 口令派生
+      - 存储密钥派生
+      - KDF for storage
+      - 加盐慢哈希
+    apps:
+      - everyday
+      - infrastructure
+    threats:
+      - CO
+    sources:
+      - title: Password-Based Key Derivation
+        author: "RFC 8018 (PKCS #5 v2.1)"
+        kind: primary
+        year: 2016
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    note: "[错位] 主归属 d13/d23；d07 侧作为＂攻破存储的口令＂的关联条目。"
+    playable: false
+    archetype: ""
+  - id: simulation-paradigm
+    title: 模拟范式
+    title_en: Simulation Paradigm
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d24
+    era:
+      - era11
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Simulation Paradigm
+    apps: []
+    threats: []
+    sources: []
+    note: cat=theoretical
+  - id: autokey-cipher
+    title: 自动密钥加密
+    title_en: Autokey Cipher
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d03
+    era:
+      - era3
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Autokey Cipher
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: homophonic-substitution
+    title: 同音替换
+    title_en: Homophonic Substitution
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d02
+    era:
+      - era2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Homophonic Substitution
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: book-cipher
+    title: 书籍密码
+    title_en: Book Cipher
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d02
+    era:
+      - era2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Book Cipher
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: null-cipher
+    title: 空密码（归零密码）
+    title_en: Null Cipher
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d02
+    era:
+      - era3
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Null Cipher
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: porta-cipher
+    title: 波尔塔密码
+    title_en: Porta Cipher
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d03
+    era:
+      - era3
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Porta Cipher
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: typex
+    title: 迪普克斯
+    title_en: Typex
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d05
+    era:
+      - era5
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Typex
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: hagelin-c-38
+    title: 哈格林 C-38
+    title_en: Hagelin C-38
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d05
+    era:
+      - era4
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Hagelin C-38
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: sha-2
+    title: SHA-256 家族
+    title_en: SHA-2
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d09
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - SHA-2
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: sponge-construction
+    title: 海绵结构
+    title_en: Sponge Construction
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d24
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Sponge Construction
+    apps: []
+    threats: []
+    sources: []
+    note: cat=theoretical
+  - id: diffie-hellman-key-exchange
+    title: 迪菲-赫尔曼密钥交换
+    title_en: Diffie-Hellman Key Exchange
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Diffie-Hellman Key Exchange
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: ntru
+    title: NTRU
+    title_en: NTRU
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d22
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - NTRU
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: paillier-encryption
+    title: Paillier 门限加密
+    title_en: Paillier Encryption
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d11
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Paillier Encryption
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: rabin-cryptosystem
+    title: 拉宾加密
+    title_en: Rabin Cryptosystem
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d11
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Rabin Cryptosystem
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: pgp
+    title: PGP 加密邮件
+    title_en: PGP (Pretty Good Privacy)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - PGP (Pretty Good Privacy)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: ssh
+    title: SSH 安全外壳
+    title_en: SSH
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - SSH
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: tor
+    title: 洋葱路由
+    title_en: Tor
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Tor
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: cold-boot
+    title: 冷启动攻击
+    title_en: Cold Boot
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d07
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Cold Boot
+    apps: []
+    threats: []
+    sources: []
+    note: cat=methods
+  - id: stream-cipher
+    title: 流密码（密钥流）
+    title_en: Stream Cipher (Keystream)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d06
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Stream Cipher (Keystream)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: a5-1
+    title: A5/1 GSM 密码
+    title_en: A5/1
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - A5/1
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: multiparty-computation
+    title: 多方计算
+    title_en: Multiparty Computation (MPC)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d24
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Multiparty Computation (MPC)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=theoretical
+  - id: zero-knowledge-sudoku
+    title: 零知识数独
+    title_en: Zero-Knowledge Sudoku
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d24
+    era:
+      - era11
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Zero-Knowledge Sudoku
+    apps: []
+    threats: []
+    sources: []
+    note: cat=theoretical
+  - id: key-encapsulation-mechanism
+    title: 密钥封装 KEM
+    title_en: Key Encapsulation Mechanism
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Key Encapsulation Mechanism
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: sm9
+    title: 国密 SM9
+    title_en: SM9
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - SM9
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: two-factor-authentication
+    title: 双因素认证（2FA）
+    title_en: Two-Factor Authentication
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Two-Factor Authentication
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: homophonic-with-nomenclator
+    title: 含名词名表的同音密码
+    title_en: Homophonic with Nomenclator
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d02
+    era:
+      - era3
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Homophonic with Nomenclator
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: post-quantum-hybrids
+    title: 后量子混合方案
+    title_en: Post-Quantum Hybrids
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d22
+    era:
+      - era11
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Post-Quantum Hybrids
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: differential-side-channel
+    title: 差分侧信道（DPA）
+    title_en: Differential Side-Channel
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d07
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Differential Side-Channel
+    apps: []
+    threats: []
+    sources: []
+    note: cat=methods
+  - id: feistel-vs-spn
+    title: 混淆 vs 扩散
+    title_en: Feistel vs SPN (Confusion vs Diffusion)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d08
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Feistel vs SPN (Confusion vs Diffusion)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: kasiski-vs-index-of-coincidence
+    title: 卡西斯基检验与重合指数
+    title_en: Kasiski vs Index of Coincidence
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d07
+    era:
+      - era2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Kasiski vs Index of Coincidence
+    apps: []
+    threats: []
+    sources: []
+    note: cat=methods
+  - id: banburismus
+    title: 班布里希马斯统计筛法
+    title_en: Banburismus
+    status: done
+    quality: tier1
+    type: term
+    derived: true
+    domain:
+      - d07
+      - d05-rotor-mechanical
+    era:
+      - e11-ww2
+    subtopic:
+      - crypto-machine-cryptanalysis
+    level: 4
+    prereq: []
+    aliases:
+      - banburismus
+      - 班布里希马斯
+    apps:
+      - military
+      - academic
+    threats:
+      - CO
+      - statistical
+    sources:
+      - title: The Bombe
+        author: Bletchley Park / The National Archives (Turing correspondence)
+        kind: tertiary
+      - title: The Codebreakers
+        author: David Kahn
+        kind: authoritative
+        year: 1967
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    note: cat=methods
+    playable: true
+    archetype: menu-search
+  - id: depth
+    title: 深度（密钥复用深度）
+    title_en: Depth
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d07
+    era:
+      - era6
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Depth
+    apps: []
+    threats: []
+    sources: []
+    note: cat=methods
+  - id: codebook
+    title: 码本（编码簿）
+    title_en: Codebook
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d02
+    era:
+      - era6
+      - era9
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Codebook
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: content-security-policy
+    title: 内容安全策略（CSP）
+    title_en: Content Security Policy (CSP)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Content Security Policy (CSP)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: fault-attack
+    title: 故障注入攻击
+    title_en: Fault Attack
+    status: done
+    quality: tier2
+    type: term
+    derived: true
+    domain:
+      - d07
+      - d17-side-channel
+    era:
+      - e14-standardization
+    subtopic:
+      - crypto-side-channel
+    level: 4
+    prereq:
+      - side-channel-attack
+    aliases:
+      - 故障攻击
+      - fault attack
+      - 故障注入
+      - glitch
+    apps:
+      - finance
+      - infrastructure
+    threats:
+      - side-channel
+      - physical
+    sources:
+      - title: A New Method of Fault Attack on the CRT-RSA
+        author: Boneh, DeMillo, Lipton
+        kind: primary
+        year: 1997
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    note: cat=methods
+    playable: false
+    archetype: ""
+  - id: replay-attack
+    title: 重放攻击
+    title_en: Replay Attack
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d07
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Replay Attack
+    apps: []
+    threats: []
+    sources: []
+    note: cat=methods
+  - id: padding
+    title: 填充（Padding）
+    title_en: Padding
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d08
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Padding
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: slh-dsa
+    title: SLH-DSA（SPHINCS+）
+    title_en: SLH-DSA (SPHINCS+)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d22
+    era:
+      - era11
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - SLH-DSA (SPHINCS+)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=postquantum
+  - id: identity-based-encryption
+    title: 标识加密（IBE）
+    title_en: Identity-Based Encryption (IBE)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Identity-Based Encryption (IBE)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: sigint
+    title: 信号情报
+    title_en: SIGINT
+    status: done
+    quality: tier2
+    type: term
+    derived: true
+    domain:
+      - d07
+      - d14-protocols-pki
+    era:
+      - e09-ww1
+      - e12-cold-war-info-theory
+    subtopic:
+      - crypto-protocol-network
+    level: 1
+    prereq: []
+    aliases:
+      - SIGINT
+      - 信号情报
+      - SIGINT 收集
+    apps:
+      - military
+      - law-enforcement
+    threats:
+      - protocol
+      - statistical
+    sources:
+      - title: The Codebreakers
+        author: David Kahn
+        kind: authoritative
+        year: 1967
+    note: "[错位] 这是情报学科概念，d07 侧仅作＂破译所处的更大体系＂背景。"
+    playable: false
+    archetype: ""
+  - id: zero-trust-architecture
+    title: 零信任架构
+    title_en: Zero Trust Architecture
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Zero Trust Architecture
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: ransomware
+    title: 勒索软件
+    title_en: Ransomware
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Ransomware
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: captcha
+    title: 人机验证（CAPTCHA）
+    title_en: CAPTCHA
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - CAPTCHA
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: navajo-code-talkers
+    title: 纳瓦霍语密码通话员
+    title_en: Navajo Code Talkers
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d02
+    era:
+      - era6
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Navajo Code Talkers
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: rockex-cipher
+    title: 罗克斯密码机
+    title_en: Rockex Cipher
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d05
+    era:
+      - era8
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Rockex Cipher
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: combined-cipher-machine
+    title: 联合密码机（CCM）
+    title_en: Combined Cipher Machine (CCM)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d05
+    era:
+      - era8
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Combined Cipher Machine (CCM)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: double-transposition
+    title: 双重换位密码
+    title_en: Double Transposition
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d04
+    era:
+      - era4
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Double Transposition
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: four-square-cipher
+    title: 四格密码
+    title_en: Four-Square Cipher
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d03
+    era:
+      - era4
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Four-Square Cipher
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: kasumi
+    title: KASUMI（3G 分组密码）
+    title_en: KASUMI
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d08
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - KASUMI
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: rc6
+    title: RC6
+    title_en: RC6
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d08
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - RC6
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: cfb-ofb
+    title: CFB/OFB 模式
+    title_en: CFB/OFB 模式
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d08
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - CFB/OFB 模式
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: rsa-padding
+    title: RSA 填充（PKCS#1）
+    title_en: RSA Padding (PKCS#1)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - RSA Padding (PKCS#1)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: key-confusion-attack
+    title: 密钥混淆攻击
+    title_en: Key Confusion Attack
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d07
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Key Confusion Attack
+    apps: []
+    threats: []
+    sources: []
+    note: cat=methods
+  - id: algebraic-attack
+    title: 代数攻击
+    title_en: Algebraic Attack
+    status: done
+    quality: tier1
+    type: term
+    derived: true
+    domain:
+      - d07
+    era:
+      - e12-cold-war-info-theory
+    subtopic:
+      - crypto-algebraic
+    level: 3
+    prereq: []
+    aliases:
+      - 代数密码分析
+      - algebraic attack
+      - 代数攻击
+    apps:
+      - academic
+    threats:
+      - CPA
+    sources:
+      - title: Cryptanalysis of the Data Encryption Standard (DES)
+        author: Shamir, systems
+        kind: primary
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    note: cat=methods
+    playable: true
+    archetype: ""
+  - id: dictionary-attack
+    title: 字典攻击
+    title_en: Dictionary Attack
+    status: done
+    quality: tier2
+    type: term
+    derived: true
+    domain:
+      - d07
+      - d23-applied-security
+    era:
+      - e14-standardization
+    subtopic:
+      - crypto-generic-composition
+    level: 1
+    prereq: []
+    aliases:
+      - 字典攻击
+      - dictionary attack
+      - 字典爆破
+    apps:
+      - everyday
+      - law-enforcement
+    threats:
+      - CO
+    sources:
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    note: cat=methods
+    playable: true
+    archetype: password-crack
+  - id: speculative-execution-side-channel
+    title: 推测执行侧信道（Spectre/Meltdown）
+    title_en: Speculative Execution Side-Channel
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d07
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Speculative Execution Side-Channel
+    apps: []
+    threats: []
+    sources: []
+    note: cat=methods
+  - id: dh-parameter-validation
+    title: DH 参数安全校验
+    title_en: DH Parameter Validation
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d11
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - DH Parameter Validation
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: nist-p-256
+    title: NIST P-256 曲线
+    title_en: NIST P-256 (secp256r1)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d11
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - NIST P-256 (secp256r1)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: kmac-cshake
+    title: KMAC / cSHAKE 族
+    title_en: KMAC / cSHAKE
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d10
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - KMAC / cSHAKE
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: secure-boot-firmware-signing
+    title: 安全启动与固件签名
+    title_en: Secure Boot & Firmware Signing
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Secure Boot & Firmware Signing
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: fips-140
+    title: 密码模块标准（FIPS 140）
+    title_en: FIPS 140
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - FIPS 140
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: cryptography-law-of-china
+    title: 《密码法》
+    title_en: Cryptography Law of China
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Cryptography Law of China
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: commercial-cryptography-regulation
+    title: 《商用密码管理条例》
+    title_en: Commercial Cryptography Regulation
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Commercial Cryptography Regulation
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: hmac
+    title: HMAC 消息认证码
+    title_en: HMAC (Keyed Hash MAC)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - HMAC (Keyed Hash MAC)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: ripemd-whirlpool
+    title: RIPEMD 与 Whirlpool 哈希
+    title_en: RIPEMD & Whirlpool
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d09
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - RIPEMD & Whirlpool
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: zk-three-properties
+    title: 零知识证明三性：完备/可靠性/零知识
+    title_en: ZK Three Properties (Soundness/Completeness/Zero-Knowledge)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d24
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - ZK Three Properties (Soundness/Completeness/Zero-Knowledge)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=theoretical
+  - id: dnssec
+    title: DNSSEC 域名安全扩展
+    title_en: DNSSEC
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d14
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - DNSSEC
+    apps: []
+    threats: []
+    sources: []
+    note: cat=protocol
+  - id: supply-chain-attack
+    title: 供应链攻击
+    title_en: Supply Chain Attack
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d23
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Supply Chain Attack
+    apps: []
+    threats: []
+    sources: []
+    note: cat=security
+  - id: zero-day
+    title: 零日漏洞
+    title_en: Zero-Day
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d23
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Zero-Day
+    apps: []
+    threats: []
+    sources: []
+    note: cat=security
+  - id: prism-2013-surveillance-disclosures
+    title: 棱镜计划与 2013 年大规模监控披露
+    title_en: PRISM & 2013 Surveillance Disclosures
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d23
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - PRISM & 2013 Surveillance Disclosures
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: cve-vulnerability-management
+    title: CVE 与漏洞管理
+    title_en: CVE & Vulnerability Management
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d23
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - CVE & Vulnerability Management
+    apps: []
+    threats: []
+    sources: []
+    note: cat=security
+  - id: turing-machine
+    title: 图灵机（1936）
+    title_en: Turing Machine (1936)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d24
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Turing Machine (1936)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=theoretical
+  - id: first-computers
+    title: 计算机的诞生（ENIAC/EDSAC）
+    title_en: First Computers (ENIAC/EDSAC)
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d01
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - First Computers (ENIAC/EDSAC)
+    apps: []
+    threats: []
+    sources: []
+    note: cat=modern
+  - id: red-army-radio-cipher
+    title: 红军电报密码
+    title_en: Red Army Radio Cipher
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d02
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Red Army Radio Cipher
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: half-a-radio
+    title: 半部电台
+    title_en: Half-a-Radio
+    status: done
+    quality: tier3
+    type: term
+    derived: true
+    domain:
+      - d04
+    era:
+      - era10
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases:
+      - Half-a-Radio
+    apps: []
+    threats: []
+    sources: []
+    note: cat=classical
+  - id: index-of-coincidence
+    title: 重合指数
+    title_en: Index of Coincidence
+    status: todo
+    quality: tier2
+    domain:
+      - d07
+    subtopic:
+      - crypto-classical-statistics
+    era:
+      - e08-codebreakers
+    level: 2
+    prereq:
+      - frequency-analysis
+    aliases:
+      - IC
+      - 重合率
+      - index of coincidence
+      - IC 值
+    apps:
+      - academic
+    threats:
+      - CO
+      - statistical
+    playable: true
+    archetype: frequency-histogram
+    note: 域文件仅在「Kasiski vs IC」条目中提到，缺独立条目。
+    priority: P1
+    target: 2026-Q4
+    sources:
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+      - title: The Codebreakers
+        author: David Kahn
+        kind: authoritative
+        year: 1967
+    type: term
+  - id: unicity-distance
+    title: 唯一距离
+    title_en: Unicity Distance
+    status: todo
+    quality: tier2
+    domain:
+      - d07
+      - d24-theory
+    subtopic:
+      - crypto-classical-statistics
+    era:
+      - e12-cold-war-info-theory
+    level: 3
+    prereq:
+      - frequency-analysis
+    aliases:
+      - 唯一性距离
+      - unicity distance
+      - UD
+    apps:
+      - academic
+    threats:
+      - CO
+      - statistical
+    playable: false
+    archetype: ""
+    sources:
+      - title: Communication Theory of Secrecy Systems
+        author: Claude Shannon
+        kind: primary
+        year: 1949
+    note: 信息论视角的＂需要多少字符才能唯一确定密钥＂，是 d07 与 d24 的交叉条目。
+    priority: P1
+    target: 2026-Q4
+    type: term
+  - id: probable-plaintext
+    title: 概然明文
+    title_en: Probable Plaintext
+    status: todo
+    quality: tier3
+    domain:
+      - d07
+    subtopic:
+      - crypto-classical-statistics
+    era:
+      - e08-codebreakers
+    level: 2
+    prereq:
+      - frequency-analysis
+    aliases:
+      - 大概明文
+      - probable plaintext
+    apps:
+      - academic
+    threats:
+      - CO
+      - statistical
+    playable: false
+    archetype: ""
+    priority: P1
+    target: 2026-Q4
+    type: term
+  - id: contact-analysis
+    title: 接触分析
+    title_en: Contact Analysis
+    status: todo
+    quality: tier3
+    domain:
+      - d07
+    subtopic:
+      - crypto-classical-statistics
+    era:
+      - e08-codebreakers
+    level: 2
+    prereq:
+      - frequency-analysis
+    aliases:
+      - 接触分析
+      - contact analysis
+    apps:
+      - academic
+    threats:
+      - CO
+      - statistical
+    playable: false
+    archetype: ""
+    note: Wikipedia「Classical cryptanalysis」条目所列，属该家族但本站缺。
+    priority: P1
+    target: 2026-Q4
+    type: term
+  - id: differential-history
+    title: 差分分析史
+    title_en: History of Differential Cryptanalysis
+    status: done
+    quality: tier1
+    domain:
+      - d07
+    subtopic:
+      - crypto-differential
+    era:
+      - e12-cold-war-info-theory
+      - e14-standardization
+    level: 3
+    prereq:
+      - differential-cryptanalysis
+    aliases:
+      - 差分密码分析史
+      - differential history
+    apps:
+      - academic
+    threats:
+      - CPA
+    playable: false
+    archetype: ""
+    note: 域文件中作为独立＂方法/案例＂条目，实际是差分分析的历史叙述——建议并入 d14 的标准化史或保留为独立叙事条目。
+    sources:
+      - title: Differential Cryptanalysis of DES-like Cryptosystems
+        author: Eli Biham, Adi Shamir
+        kind: primary
+        year: 1990
+      - title: The Codebreakers
+        author: David Kahn
+        kind: authoritative
+        year: 1967
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    type: term
+  - id: truncated-differential
+    title: 截断差分
+    title_en: Truncated Differential Attack
+    status: todo
+    quality: tier2
+    domain:
+      - d07
+    subtopic:
+      - crypto-differential
+    era:
+      - e14-standardization
+    level: 3
+    prereq:
+      - differential-cryptanalysis
+    aliases:
+      - 截断差分
+      - truncated differential
+    apps:
+      - academic
+    threats:
+      - CPA
+    playable: false
+    archetype: ""
+    note: 缺。Knudsen 的经典工作。
+    priority: P1
+    target: 2026-Q4
+    sources:
+      - title: Truncated and Higher Order Differentials
+        author: Lars R. Knudsen
+        kind: primary
+        year: 1994
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    type: term
+  - id: higher-order-differential
+    title: 高阶差分
+    title_en: Higher-Order Differential Attack
+    status: todo
+    quality: tier2
+    domain:
+      - d07
+    subtopic:
+      - crypto-integral
+    era:
+      - e14-standardization
+    level: 4
+    prereq:
+      - differential-cryptanalysis
+    aliases:
+      - 高阶差分
+      - higher-order differential
+    apps:
+      - academic
+    threats:
+      - CPA
+    playable: false
+    archetype: ""
+    priority: P2
+    target: 2027-Q1
+    sources:
+      - title: Higher Order Derivatives and the Decryption Algorithm
+        author: Lars R. Knudsen
+        kind: primary
+        year: 1994
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    type: term
+  - id: differential-linear
+    title: 差分线性
+    title_en: Differential-Linear Cryptanalysis
+    status: todo
+    quality: tier2
+    domain:
+      - d07
+    subtopic:
+      - crypto-differential
+      - crypto-linear
+    era:
+      - e14-standardization
+    level: 4
+    prereq:
+      - differential-cryptanalysis
+      - linear-cryptanalysis
+    aliases:
+      - 差分线性
+      - differential-linear
+    apps:
+      - academic
+    threats:
+      - CPA
+    playable: false
+    archetype: ""
+    priority: P1
+    target: 2026-Q4
+    sources:
+      - title: The Differential-Linear Weakness of Cryptography
+        author: Langford, Hellman
+        kind: primary
+        year: 1994
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    type: term
+  - id: linear-hull
+    title: 线性壳
+    title_en: Linear Hull
+    status: todo
+    quality: tier2
+    domain:
+      - d07
+    subtopic:
+      - crypto-linear
+    era:
+      - e14-standardization
+    level: 4
+    prereq:
+      - linear-cryptanalysis
+    aliases:
+      - 线性壳
+      - linear hull
+    apps:
+      - academic
+    threats:
+      - KPA
+    playable: false
+    archetype: ""
+    priority: P1
+    target: 2026-Q4
+    sources:
+      - title: On Linear-Cryptanalysis Using Correlations
+        author: Nyberg
+        kind: primary
+        year: 1994
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    type: term
+  - id: multiple-linear
+    title: 多重线性
+    title_en: Multiple Linear Cryptanalysis
+    status: todo
+    quality: tier2
+    domain:
+      - d07
+    subtopic:
+      - crypto-linear
+    era:
+      - e14-standardization
+    level: 4
+    prereq:
+      - linear-cryptanalysis
+    aliases:
+      - 多重线性
+      - multiple linear
+    apps:
+      - academic
+    threats:
+      - KPA
+    playable: false
+    archetype: ""
+    priority: P1
+    target: 2026-Q4
+    sources:
+      - title: A New Attack on the Linear Cryptanalysis
+        author: Biryukov, De Cannière, Piret
+        kind: primary
+        year: 2003
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    type: term
+  - id: algebraic-degree
+    title: 代数次数
+    title_en: Algebraic Degree
+    status: todo
+    quality: tier2
+    domain:
+      - d07
+      - d24-theory
+    subtopic:
+      - crypto-algebraic
+    era:
+      - e12-cold-war-info-theory
+    level: 4
+    prereq:
+      - algebraic-attack
+    aliases:
+      - 代数次数
+      - algebraic degree
+    apps:
+      - academic
+    threats:
+      - CPA
+    playable: false
+    archetype: ""
+    priority: P2
+    target: 2027-Q1
+    sources:
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    type: term
+  - id: integral-attack
+    title: 积分攻击
+    title_en: Integral Attack
+    status: todo
+    quality: tier2
+    domain:
+      - d07
+    subtopic:
+      - crypto-integral
+    era:
+      - e14-standardization
+    level: 3
+    prereq:
+      - differential-cryptanalysis
+    aliases:
+      - 积分攻击
+      - 饱和攻击
+      - square attack
+      - integral attack
+    apps:
+      - academic
+    threats:
+      - CPA
+    playable: true
+    archetype: difference-table
+    note: 缺。与高阶差分同源，是 PRESENT 等轻量密码的主要威胁。
+    priority: P2
+    target: 2027-Q1
+    sources:
+      - title: Integral Cryptanalysis
+        author: Knudsen, in FSE 2001 / later SAC paper
+        kind: primary
+        year: 2001
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    type: term
+  - id: boomerang-attack
+    title: 飞梯攻击
+    title_en: Boomerang Attack
+    status: todo
+    quality: tier2
+    domain:
+      - d07
+    subtopic:
+      - crypto-structural
+    era:
+      - e14-standardization
+    level: 4
+    prereq:
+      - differential-cryptanalysis
+    aliases:
+      - 飞梯
+      - boomerang
+      - 反弹攻击
+    apps:
+      - academic
+    threats:
+      - CPA
+    playable: false
+    archetype: ""
+    priority: P2
+    target: 2027-Q1
+    sources:
+      - title: Improvements of the Differential Fault Analysis of DES
+        author: Biham, Shamir
+        kind: primary
+        year: 1999
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    type: term
+  - id: impossible-differential
+    title: 不可能差分
+    title_en: Impossible Differential Attack
+    status: todo
+    quality: tier2
+    domain:
+      - d07
+    subtopic:
+      - crypto-structural
+    era:
+      - e14-standardization
+    level: 4
+    prereq:
+      - differential-cryptanalysis
+    aliases:
+      - 不可能差分
+      - impossible differential
+    apps:
+      - academic
+    threats:
+      - CPA
+    playable: false
+    archetype: ""
+    priority: P2
+    target: 2027-Q1
+    sources:
+      - title: Impossible Differential Attacks
+        author: Biham, Biryukov, Shamir
+        kind: primary
+        year: 1999
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    type: term
+  - id: slide-attack
+    title: 滑动攻击
+    title_en: Slide Attack
+    status: todo
+    quality: tier2
+    domain:
+      - d07
+    subtopic:
+      - crypto-structural
+    era:
+      - e14-standardization
+    level: 4
+    prereq:
+      - differential-cryptanalysis
+    aliases:
+      - 滑动攻击
+      - slide attack
+      - slide 家族
+    apps:
+      - academic
+    threats:
+      - CPA
+    playable: false
+    archetype: ""
+    priority: P2
+    target: 2027-Q1
+    sources:
+      - title: Slide Attacks, the Algorithms of the Second Generation and Cryptanalysis of the Third Generation
+        author: Biryukov, Wagner
+        kind: primary
+        year: 2000
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    type: term
+  - id: rotational-attack
+    title: 旋转攻击
+    title_en: Rotational Attack
+    status: todo
+    quality: tier2
+    domain:
+      - d07
+    subtopic:
+      - crypto-structural
+    era:
+      - e14-standardization
+    level: 4
+    prereq:
+      - differential-cryptanalysis
+    aliases:
+      - 旋转攻击
+      - rotational attack
+    apps:
+      - academic
+    threats:
+      - CPA
+    playable: false
+    archetype: ""
+    priority: P2
+    target: 2027-Q1
+    sources:
+      - title: Rotational Cryptanalysis
+        author: Matsui, Yamagishi
+        kind: primary
+        year: 1992
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    type: term
+  - id: biclique-attack
+    title: 双曲线攻击
+    title_en: Biclique Attack
+    status: todo
+    quality: tier2
+    domain:
+      - d07
+    subtopic:
+      - crypto-structural
+    era:
+      - e14-standardization
+    level: 4
+    prereq:
+      - differential-cryptanalysis
+    aliases:
+      - 双曲线
+      - biclique
+    apps:
+      - academic
+    threats:
+      - CPA
+    playable: false
+    archetype: ""
+    priority: P2
+    target: 2027-Q1
+    sources:
+      - title: Biclique Cryptanalysis
+        author: Jaulmes, Joux
+        kind: primary
+        year: 2007
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    type: term
+  - id: invariant-subtracting
+    title: 不变量相减
+    title_en: Invariant Subtract Attack
+    status: todo
+    quality: tier2
+    domain:
+      - d07
+    subtopic:
+      - crypto-structural
+    era:
+      - e14-standardization
+    level: 4
+    prereq:
+      - differential-cryptanalysis
+    aliases:
+      - 不变量攻击
+      - invariant attack
+      - 不变量相减
+    apps:
+      - academic
+    threats:
+      - CPA
+    playable: false
+    archetype: ""
+    priority: P2
+    target: 2027-Q1
+    sources:
+      - title: Invariant Subtract Attack
+        author: Biryukov, Wagner
+        kind: primary
+        year: 1999
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    type: term
+  - id: xsl-attack
+    title: XSL 攻击
+    title_en: XSL Attack
+    status: todo
+    quality: tier2
+    domain:
+      - d07
+    subtopic:
+      - crypto-structural
+    era:
+      - e14-standardization
+    level: 4
+    prereq:
+      - algebraic-attack
+    aliases:
+      - XSL
+      - 扩域线性攻击
+    apps:
+      - academic
+    threats:
+      - CPA
+    playable: false
+    archetype: ""
+    note: "Wikipedia「Modern: Symmetric algorithms」条目所列。"
+    priority: P2
+    target: 2027-Q1
+    sources:
+      - title: Cryptanalysis of the Reduced Version of RC5
+        author: Biryukov, Wagner
+        kind: primary
+        year: 1997
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    type: term
+  - id: time-memory-tradeoff
+    title: 时间-存储权衡
+    title_en: Time-Memory Trade-Off
+    status: todo
+    quality: tier2
+    domain:
+      - d07
+    subtopic:
+      - crypto-generic-composition
+    era:
+      - e14-standardization
+    level: 3
+    prereq:
+      - brute-force
+      - rainbow-table
+    aliases:
+      - 时间-存储权衡
+      - time-memory tradeoff
+      - TMTO
+    apps:
+      - academic
+    threats:
+      - CO
+    playable: false
+    archetype: ""
+    priority: P1
+    target: 2026-Q4
+    sources:
+      - title: How to Break a (n,m) Threshold Cryptosystem
+        author: Biryukov, Shamir, Wagner
+        kind: primary
+        year: 1999
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    type: term
+  - id: related-key-attack
+    title: 相关密钥攻击
+    title_en: Related-Key Attack
+    status: todo
+    quality: tier2
+    domain:
+      - d07
+    subtopic:
+      - crypto-attack-models
+    era:
+      - e14-standardization
+    level: 4
+    prereq:
+      - chosen-plaintext-attack
+    aliases:
+      - 相关密钥攻击
+      - related-key attack
+      - RKA
+    apps:
+      - academic
+    threats:
+      - related-key
+    playable: false
+    archetype: ""
+    note: Biryukov 2002 起；Missing Step 攻击是其著名实例。
+    priority: P1
+    target: 2026-Q4
+    sources:
+      - title: Related-Key Attacks
+        author: Biryukov, Wagner
+        kind: primary
+        year: 2002
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    type: term
+  - id: known-key-attack
+    title: 已知密钥攻击
+    title_en: Known-Key Attack
+    status: todo
+    quality: tier3
+    domain:
+      - d07
+    subtopic:
+      - crypto-attack-models
+    era:
+      - e14-standardization
+    level: 4
+    prereq: []
+    aliases:
+      - 已知密钥攻击
+      - known-key attack
+    apps:
+      - academic
+    threats:
+      - known-key
+    playable: false
+    archetype: ""
+    priority: P1
+    target: 2026-Q4
+    type: term
+  - id: forward-inverse-attack
+    title: 正反向攻击
+    title_en: Forward and Inverse Attacks
+    status: todo
+    quality: tier3
+    domain:
+      - d07
+    subtopic:
+      - crypto-attack-models
+    era:
+      - e14-standardization
+    level: 4
+    prereq: []
+    aliases:
+      - 正向攻击
+      - 逆向攻击
+      - forward attack
+      - inverse attack
+    apps:
+      - academic
+    threats:
+      - forward
+      - inverse
+    playable: false
+    archetype: ""
+    priority: P1
+    target: 2026-Q4
+    type: term
+  - id: zygalski-sheets
+    title: 齐加尔斯基记录表
+    title_en: Zygalski Sheet
+    status: todo
+    quality: tier2
+    domain:
+      - d07
+      - d05-rotor-mechanical
+    subtopic:
+      - crypto-machine-cryptanalysis
+    era:
+      - e10-interwar
+      - e11-ww2
+    level: 4
+    prereq: []
+    aliases:
+      - Zygalski sheet
+      - 齐加尔斯基表
+      - 特性表
+    apps:
+      - military
+      - academic
+    threats:
+      - CO
+      - statistical
+    playable: true
+    archetype: menu-search
+    note: 波兰 Biuro Szyfrów 的核心工具，现址缺。
+    priority: P1
+    target: 2026-Q4
+    sources:
+      - title: The Enigma Breakthrough
+        author: Biuro Szyfrów / Władysław Kozaczuk
+        kind: tertiary
+      - title: The Codebreakers
+        author: David Kahn
+        kind: authoritative
+        year: 1967
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    type: term
+  - id: crib-dragging
+    title: 拖crib法
+    title_en: Crib Dragging
+    status: todo
+    quality: tier2
+    domain:
+      - d07
+    subtopic:
+      - crypto-machine-cryptanalysis
+    era:
+      - e11-ww2
+    level: 3
+    prereq:
+      - crib
+    aliases:
+      - crib dragging
+      - 拖拽明文
+      - 试crib
+    apps:
+      - academic
+    threats:
+      - KPA
+      - statistical
+    playable: true
+    archetype: crib-dragging
+    priority: P1
+    target: 2026-Q4
+    sources:
+      - title: Hut 6 crib procedures
+        author: Bletchley Park / The National Archives
+        kind: tertiary
+      - title: The Codebreakers
+        author: David Kahn
+        kind: authoritative
+        year: 1967
+    type: term
+  - id: diagonal-board
+    title: 对角板
+    title_en: Diagonal Board
+    status: todo
+    quality: tier2
+    domain:
+      - d07
+      - d05-rotor-mechanical
+    subtopic:
+      - crypto-machine-cryptanalysis
+    era:
+      - e11-ww2
+    level: 4
+    prereq: []
+    aliases:
+      - 对角板
+      - diagonal board
+      - Hut 6 板
+    apps:
+      - military
+      - academic
+    threats:
+      - CO
+      - statistical
+    playable: false
+    archetype: ""
+    note: Gordon Welchman 的贡献，现址缺。
+    priority: P1
+    target: 2026-Q4
+    sources:
+      - title: Hut 6 and the diagonal board
+        author: GCHQ / The National Archives
+        kind: tertiary
+      - title: The Codebreakers
+        author: David Kahn
+        kind: authoritative
+        year: 1967
+    type: term
+  - id: cold-boot-attack
+    title: 冷启动攻击
+    title_en: Cold Boot Attack
+    status: done
+    quality: tier2
+    domain:
+      - d07
+      - d17-side-channel
+    subtopic:
+      - crypto-side-channel
+    era:
+      - e14-standardization
+    level: 3
+    prereq:
+      - side-channel-attack
+    aliases:
+      - 冷启动
+      - cold boot
+      - 冷启动攻击
+    apps:
+      - law-enforcement
+      - infrastructure
+    threats:
+      - side-channel
+      - physical
+    playable: false
+    archetype: ""
+    sources:
+      - title: Laptop Full Memory Extraction, DMA Attacks, and Cold Boot Attacks
+        author: Halderman et al.
+        kind: primary
+        year: 2008
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    type: term
+  - id: speculative-execution-attack
+    title: 推测执行侧信道
+    title_en: Speculative Execution Side-Channel
+    status: done
+    quality: tier2
+    domain:
+      - d07
+      - d17-side-channel
+      - d23-applied-security
+    subtopic:
+      - crypto-side-channel
+    era:
+      - e15-web-protocols
+    level: 3
+    prereq:
+      - side-channel-attack
+    aliases:
+      - Spectre
+      - Meltdown
+      - 推测执行
+      - speculative execution
+    apps:
+      - infrastructure
+      - everyday
+    threats:
+      - side-channel
+      - implementation
+    playable: false
+    archetype: ""
+    sources:
+      - title: "Spectre Attacks: Exploiting Speculative Execution"
+        author: Kocher et al.
+        kind: primary
+        year: 2019
+      - title: "Meltdown: Reading Kernel Memory from User Space"
+        author: L adjoint et al.
+        kind: primary
+        year: 2019
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    type: term
+  - id: key-confusion
+    title: 密钥混淆
+    title_en: Key Confusion
+    status: done
+    quality: tier2
+    domain:
+      - d07
+      - d13-key-management
+    subtopic:
+      - crypto-implementation
+    era:
+      - e15-web-protocols
+    level: 3
+    prereq: []
+    aliases:
+      - 密钥混淆
+      - key confusion
+      - 域分离
+      - domain separation
+    apps:
+      - infrastructure
+    threats:
+      - implementation
+      - protocol
+    playable: false
+    archetype: ""
+    sources:
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    type: term
+  - id: shor-algorithm
+    title: 肖尔算法
+    title_en: Shor's Algorithm
+    status: done
+    quality: tier1
+    domain:
+      - d07
+      - d21-quantum-crypto
+      - d22-post-quantum
+    subtopic:
+      - crypto-quantum-attacks
+    era:
+      - e16-quantum-turn
+    level: 4
+    prereq: []
+    aliases:
+      - Shor
+      - 肖尔算法
+      - Shor 算法
+    apps:
+      - academic
+      - infrastructure
+    threats:
+      - quantum
+    playable: true
+    archetype: quantum-sim
+    sources:
+      - title: "Algorithms for Quantum Computation: Discrete Logarithms and Factoring"
+        author: Peter W. Shor
+        kind: primary
+        year: 1994
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    type: term
+  - id: grover-algorithm
+    title: 格罗弗算法
+    title_en: Grover's Algorithm
+    status: done
+    quality: tier1
+    domain:
+      - d07
+      - d21-quantum-crypto
+      - d22-post-quantum
+    subtopic:
+      - crypto-quantum-attacks
+    era:
+      - e16-quantum-turn
+    level: 4
+    prereq: []
+    aliases:
+      - Grover
+      - 格罗弗算法
+      - 量子搜索
+    apps:
+      - academic
+      - infrastructure
+    threats:
+      - quantum
+    playable: true
+    archetype: quantum-sim
+    sources:
+      - title: A Fast Quantum Mechanical Algorithm for Database Search
+        author: Lov K. Grover
+        kind: primary
+        year: 1996
+      - title: Handbook of Applied Cryptography
+        author: Menezes, van Oorschot, Vanstone
+        kind: authoritative
+        year: 1997
+    type: term

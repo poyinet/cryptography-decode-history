@@ -1,0 +1,73 @@
+﻿# 中国密码学史总目录 · 管道分隔格式
+# id | 中文名 | English Name | 域 | 时代 | 难度 | 别名(;) | 出处 | 应用场景 | 威胁模型 | type | 前置 | status | quality
+
+# ---- 古代：符号与信物 ----
+cn-yinfu | 阴符 | Yin Fu (Secret Tally) | d18-steganography | e01-origins | 1 | 阴符;兵符 | tertiary:《六韬·阴符》 | military | social,physical | event |  | done | tier2 |  |  |  | 
+cn-yinshu | 阴书 | Yin Shu | d18-steganography | e01-origins | 2 | 阴书;主将 | tertiary:《阴符》类军事暗语 | military | social | event | cn-yinfu | done | tier2 |  |  |  | 
+cn-ziyan | 字验 | Zi Yan (Character Verification) | d18-steganography | e01-origins | 2 | 字验;密直 | tertiary:宋代《武经总要》 | military | social | event |  | done | tier2 |  |  |  | 
+cn-hufu | 虎符 | Tiger Tally | d13-key-management | e01-origins | 1 | 虎符;兵符 | tertiary:《史记》 | military | physical | event |  | done | tier2 |  |  |  | 
+cn-chengyu | chengyu 拆字谜 | Character-Splitting Word Puzzles | d07-cryptanalysis | e01-origins | 2 | 拆字;离合字 | tertiary:中国 cryptanalysis history | academic | CO,statistical | event |  | done | tier3 |  |  |  | 
+cn-morse-intro | 清末电报码本 | Late-Qing Telegraph Codebook | d14-protocols-pki | e01-origins | 3 | 电报码本;红字密本 | tertiary:Zhang, Kuzuoğlu, Chambers《中国电信密码史研究》 | diplomacy,military | protocol | event |  | done | tier2 |  |  |  | 
+cn-fanqie | 反切码 | Fǎnqiè Cipher | d04-transposition | e05-medieval-europe | 3 | 反切;反切码 | tertiary:《唐韵》反切与密写 | military | CO,statistical | event |  | done | tier2 |  |  |  | 
+cn-cangtou | 藏头诗 | Acrostic Poem | d18-steganography | e01-origins | 1 | 藏头;藏头诗 | tertiary:Chinese literary cryptography Wikipedia | literary | statistical | event |  | done | tier2 |  |  |  | 
+cn-wuhan-dian | 晚清电码加密 | Late-Qing Telegraph Encryption | d14-protocols-pki | e01-origins | 4 | 超等密码;加减法密本 | tertiary:《中国电信密码史研究》 | diplomacy | protocol | event | cn-morse-intro | done | tier3 |  |  |  | 
+
+# ---- 近现代：战争密码 ----
+cn-haomi-1931 | 红军"豪密" | Red Army "Hao Mi" Cipher | d07-cryptanalysis | e19-china | 3 | 豪密;红军密码 | primary:《中国共产党保密工作史》第十八章 | military | KPA,statistical | event |  | done | tier1 |  |  |  | 
+cn-zhangshen-1930 | 中共首套无线电台密码 | First CPC Wireless Cipher | d07-cryptanalysis | e19-china | 3 | 张沈川;黄尚英 | primary:《中国共产党保密工作史》第十八章 | military | CO,statistical | event | cn-haomi-1931 | done | tier2 |  |  |  | 
+cn-anti-japanese-1937 | 抗战时期密码通信 | Wartime Resistance Cryptography | d07-cryptanalysis | e19-china | 3 | 抗战密码;双层码本 | primary:《中国共产党保密工作史》第十八章 | military | KPA | event | cn-haomi-1931 | done | tier2 |  |  |  | 
+cn-liberation-1946 | 解放战争密码体系 | Liberation War Cipher System | d14-protocols-pki | e19-china | 3 | 一报一密;前轻后重;两道防线 | primary:《中国共产党保密工作史》第十八章 | military | protocol | event | cn-anti-japanese-1937 | done | tier1 |  |  |  | 
+cn-xiahe-1947 | 小河村会议 | Xiahe Village Conference | d14-protocols-pki | e19-china | 3 | 小河村会议;周恩来 | primary:《中国共产党保密工作史》第十八章 | military | protocol | event | cn-liberation-1946 | done | tier2 |  |  |  | 
+cn-newchina-1949 | 新中国密码学发展 | Post-1949 Cryptography Development | d24-theory | e19-china | 3 | 军队密码体系;有限域研究 | primary:国家密码管理局《密码发展史之近现代密码》 | government | implementation | event | cn-liberation-1946 | done | tier2 |  |  |  | 
+
+# ---- 学术谱系 ----
+cn-hua-luogeng | 华罗庚学派 | Hua Luogeng's Mathematical School | d24-theory | e19-china | 3 | 华罗庚 | primary:国家密码管理局《密码发展史》 | academic | theoretical | event |  | done | tier2 |  |  |  | 
+cn-wenjun-wu | 吴文俊与密码数学基础 | Wu Wenjun and the Mathematical Basis of Cryptography | d24-theory | e19-china | 4 | 吴文俊;有限域自动机 | primary:国家密码管理局《密码发展史》 | academic | theoretical | event | cn-hua-luogeng | done | tier2 |  |  |  | 
+cn-zengkexian | 曾肯成与编码理论 | Zeng Kencheng and Coding Theory | d24-theory | e19-china | 4 | 曾肯成;CHINACRYPT | primary:国家密码管理局《密码发展史》 | academic | theoretical | event | cn-hua-luogeng | done | tier2 |  |  |  | 
+cn-taorenji | 陶仁骥与有限自动机密码 | Tao Renji and Finite Automata Cryptography | d24-theory | e19-china | 4 | 陶仁骥;FAPKC | primary:国家密码管理局《密码发展史》 | academic | theoretical | event | cn-zengkexian | done | tier3 |  |  |  | 
+cn-zhanghuanguo | 张焕国与演化密码 | Zhang Huanguo and Evolutionary Cryptography | d24-theory | e19-china | 4 | 张焕国;演化密码 | primary:国家密码管理局《密码发展史》 | academic | theoretical | event | cn-zengkexian | done | tier3 |  |  |  | 
+cn-xiaogong | 肖国镇与流密码组合理论 | Xiao Guozhen and Stream Cipher Composition | d06-otp-stream | e19-china | 4 | 肖国镇;流密码组合 | primary:国家密码管理局《密码发展史》 | academic | theoretical | event | cn-zengkexian | done | tier3 |  |  |  | 
+cn-dingcunsheng | 丁存生与流密码 | Ding Cunsheng and Stream Ciphers | d06-otp-stream | e19-china | 4 | 丁存生 | primary:国家密码管理局《密码发展史》 | academic | theoretical | event | cn-xiaogong | done | tier3 |  |  |  | 
+cn-peidingyi | 裴定一与认证码 | Pei Dingyi and Authentication Codes | d24-theory | e19-china | 4 | 裴定一;认证码 | primary:国家密码管理局《密码发展史》 | academic | theoretical | event |  | done | tier2 |  |  |  | 
+cn-fengdengguo | 冯登国与现代密码学 | Feng Dengguo and Modern Cryptography | d24-theory | e19-china | 3 | 冯登国 | primary:国家密码管理局《密码发展史》 | academic,government | theoretical | event | cn-peidingyi | done | tier1 |  |  |  | 
+cn-wangxiaoyun | 王小云与碰撞攻击 | Wang Xiaoyun and Collision Attacks | d09-hash | e19-china | 2 | 王小云;MD5 碰撞;SHA-1 碰撞 | primary:Wang, Yu《How to Break MD5 and Other Hash Functions》(2004) | academic,government | collision | event | cn-fengdengguo | done | tier1 |  |  |  | 
+cn-zhengjianhua | 郑建华与信息安全国家实验室 | Zheng Jianhua and the State Key Laboratory | d24-theory | e19-china | 3 | 郑建华;信安实验室 | primary:国家密码管理局《密码发展史》 | government | theoretical | event | cn-fengdengguo | done | tier2 |  |  |  | 
+cn-jingjiwu | 荆继武与中科院密码学院 | Jing Jiwu and the CAS School of Cryptography | d24-theory | e19-china | 3 | 荆继武;中科院密码学院 | primary:中科院大学密码学院官网 | government,academic | theoretical | event | cn-zhengjianhua | done | tier2 |  |  |  | 
+cn-zhaoyunlei | 赵运磊与后量子密码 | Zhao Yunlei and Post-Quantum Cryptography | d22-post-quantum | e19-china | 3 | 赵运磊;复旦 | tertiary:复旦大学密码学实验室官网 | academic,government | quantum | event | cn-fengdengguo | done | tier2 |  |  |  | 
+cn-yuyun | 郁昱与隐私计算 | Yu Yun and Privacy-Preserving Computation | d16-secret-sharing-mpc | e19-china | 3 | 郁昱 | tertiary:复旦大学密码学实验室官网 | academic,government | protocol | event | cn-zhaoyunlei | done | tier2 |  |  |  | 
+cn-lihongda | 李红达与安全性归约 | Li Hongda and Security Reductions | d24-theory | e19-china | 4 | 李红达 | tertiary:中国科学院信息工程研究所官网 | academic | theoretical | event | cn-fengdengguo | done | tier3 |  |  |  | 
+cn-yedengfeng | 叶顶锋与密码分析 | Ye Dengfeng and Cryptanalysis | d07-cryptanalysis | e19-china | 4 | 叶顶锋 | tertiary:中国科学院数学与系统科学研究院官网 | academic | CO,statistical | event | cn-fengdengguo | done | tier3 |  |  |  | 
+cn-lindongdai | 林东岱与应用密码学 | Lin Dongdai and Applied Cryptography | d23-applied-security | e19-china | 3 | 林东岱 | tertiary:中国科学院信息工程研究所官网 | government,academic | implementation | event | cn-jingjiwu | done | tier2 |  |  |  | 
+cn-xuhaixia | 徐海霞与安全多方计算 | Xu Haixia and Secure Multiparty Computation | d16-secret-sharing-mpc | e19-china | 3 | 徐海霞 | tertiary:中国科学院数学与系统科学研究院官网 | government,academic | protocol | event | cn-lindongdai | done | tier3 |  |  |  | 
+cn-luxianhui | 路献辉与格密码 | Lu Xianhui and Lattice Cryptography | d22-post-quantum | e19-china | 4 | 路献辉 | tertiary:中国科学院数学与系统科学研究院官网 | academic,government | quantum | event | cn-lindongdai | done | tier3 |  |  |  | 
+cn-hulei | 胡磊与序列复杂度 | Hu Lei and Sequence Complexity | d24-theory | e19-china | 4 | 胡磊 | tertiary:中国科学院数学与系统科学研究院官网 | academic | theoretical | event | cn-lindongdai | done | tier3 |  |  |  | 
+cn-zhaoxianfeng | 赵险峰与信息隐藏 | Zhao Xianfeng and Information Hiding | d18-steganography | e19-china | 4 | 赵险峰;数字水印 | tertiary:武汉大学信息隐藏实验室官网 | academic | statistical | event |  | done | tier3 |  |  |  | 
+cn-libao | 李宝与椭圆曲线密码 | Li Bao and Elliptic Curve Cryptography | d11-asymmetric | e19-china | 3 | 李宝 | tertiary:中国科学院数学与系统科学研究院官网 | academic | related-key | event |  | done | tier3 |  |  |  | 
+cn-huangzhenyu | 黄震宇与代数密码分析 | Huang Zhenyu and Algebraic Cryptanalysis | d07-cryptanalysis | e19-china | 4 | 黄震宇 | tertiary:中国科学院数学与系统科学研究院官网 | academic | CO,statistical | event |  | done | tier3 |  |  |  | 
+cn-wangliping | 王丽萍与序列/格密码 | Wang Liping and Sequence and Lattice Cryptography | d24-theory | e19-china | 4 | 王丽萍 | tertiary:中国科学院数学与系统科学研究院官网 | academic | theoretical | event |  | done | tier3 |  |  |  | 
+cn-sunman | 孙瑶与密码散列分析 | Sun Yao and Cryptographic Hash Analysis | d07-cryptanalysis | e19-china | 4 | 孙瑶 | tertiary:中国科学院数学与系统科学研究院官网 | academic | collision | event |  | done | tier3 |  |  |  | 
+cn-wangpeng | 王鹏与密码分析新进展 | Wang Peng and New Advances in Cryptanalysis | d07-cryptanalysis | e19-china | 4 | 王鹏 | tertiary:中国科学院数学与系统科学研究院官网 | academic | CO,statistical | event |  | done | tier3 |  |  |  | 
+cn-zhangwentao | 张文涛与对称密码 | Zhang Wentao and Symmetric Cryptography | d08-block-cipher | e19-china | 4 | 张文涛 | tertiary:中国科学院大学密码学院课程设置 | academic | side-channel | event |  | done | tier3 |  |  |  | 
+cn-majianfeng | 马建峰与西电密码学 | Ma Jianfeng and Xidian Cryptography | d24-theory | e19-china | 3 | 马建峰;西电 | tertiary:西安电子科技大学官网 | academic | theoretical | event |  | done | tier3 |  |  |  | 
+
+# ---- 制度与标准 ----
+cn-1997-commercial | 商用密码管理起步 | Start of Commercial Cryptography Administration | d23-applied-security | e19-china | 2 | 商用密码起步 | primary:国家密码管理局《密码发展史》 | government,finance | implementation | event |  | done | tier1 |  |  |  | 
+cn-2006-sm-publish | 商用密码算法公布 | Commercial Cryptography Algorithms Published | d20-china-sm | e19-china | 2 | 2006 公布 | primary:国家密码管理局《密码发展史》 | government,finance | implementation | event | cn-1997-commercial | done | tier2 |  |  |  | 
+cn-2010-sm23 | SM2/SM3 发布 | SM2 and SM3 Released | d20-china-sm | e14-standardization | 2 | SM2;SM3 | primary:国家密码管理局《密码发展史》 | government,finance | related-key | event | cn-2006-sm-publish | done | tier1 |  |  |  | 
+cn-2012-gmt | GM/T 0001-0010 批量发布 | GM/T 0001-0010 Published | d20-china-sm | e14-standardization | 3 | GM/T 批量发布 | primary:国家密码管理局《密码发展史》 | government,finance | implementation | event | cn-2010-sm23 | done | tier2 |  |  |  | 
+cn-2016-sm9 | SM9 标准发布 | SM9 Standard Published | d20-china-sm | e18-frontier | 3 | SM9 | primary:GB/T 38635.1—2020 | government,finance | protocol | event | cn-2012-gmt | done | tier2 |  |  |  | 
+cn-2019-cryptlaw | 《密码法》通过 | Cryptography Law Passed | d23-applied-security | e19-china | 2 | 密码法 | primary:全国人大常委会《密码法》(2019-10-26 通过,2020-01-01 施行) | government,finance | implementation | event | cn-1997-commercial | done | tier1 |  |  |  | 
+cn-2023-gm-reg | 《商用密码管理条例》修订 | Revised Commercial Cryptography Regulation | d23-applied-security | e19-china | 3 | 商用密码管理条例 2023 | primary:国务院令第760号(2023-07-01 施行) | government,finance | implementation | event | cn-2019-cryptlaw | done | tier2 |  |  |  | 
+cn-2023-miangping | 密评管理办法施行 | Cryptography Assessment Measures in Effect | d23-applied-security | e19-china | 3 | 密评管理办法;每年至少一次 | primary:国家密码管理局令第3号(2023-11-01 施行) | government,finance | implementation | event | cn-2023-gm-reg | done | tier2 |  |  |  | 
+cn-2024-pqc | 后量子标准化推进 | Post-Quantum Standardization Advancing | d22-post-quantum | e17-post-quantum | 2 | 后量子迁移 | primary:FIPS 203/204/205(2024) | government,finance | quantum | event | cn-2019-cryptlaw | done | tier2 |  |  |  | 
+
+# ---- 教育与学科 ----
+cn-1974-major | 中科大开办编码与密码专业 | Coding and Cryptography Program Founded | d24-theory | e19-china | 3 | 编码与密码专业 | primary:国家密码管理局《密码发展史》 | academic | theoretical | event |  | done | tier2 |  |  |  | 
+cn-1989-sklo | 信息安全国家重点实验室成立 | State Key Laboratory of Information Security Founded | d24-theory | e19-china | 3 | 信息安全国家重点实验室 | primary:国家密码管理局《密码发展史》 | government,academic | theoretical | event | cn-1974-major | done | tier2 |  |  |  | 
+cn-1992-chinacrypt | CHINACRYPT 学术会议 | CHINACRYPT Conference | d24-theory | e19-china | 3 | CHINACRYPT;中国密码学会议 | primary:国家密码管理局《密码发展史》 | academic | theoretical | event | cn-1974-major | done | tier2 |  |  |  | 
+cn-2007-society | 中国密码学会成立 | Chinese Cryptographic Society Founded | d24-theory | e19-china | 3 | 中国密码学会 | primary:中国密码学会官网 | academic,government | theoretical | event | cn-1992-chinacrypt | done | tier2 |  |  |  | 
+cn-2021-major | 密码科学与技术专业获批 | Cryptography Science and Technology Major Approved | d24-theory | e19-china | 2 | 密码科学与技术;本科专业 | tertiary:教育部本科专业目录(2021) | academic | theoretical | event | cn-2007-society | done | tier2 |  |  |  | 
+cn-2022-master | 密码硕士专业学位设立 | Professional Master Degree in Cryptography Established | d24-theory | e19-china | 2 | 密码硕士;1452 | tertiary:国务院学位委员会(2022) | academic | theoretical | event | cn-2021-major | done | tier2 |  |  |  | 
+cn-journal | 《密码学报》创刊 | Journal of Cryptologic Research Founded | d24-theory | e19-china | 3 | 密码学报 | tertiary:中国密码学会官网 | academic | theoretical | event | cn-2007-society | done | tier3 |  |  |  | 
+cn-ccf | CCF 推荐目录密码学板块 | CCF Recommended List for Cryptography | d24-theory | e19-china | 2 | CCF 目录;CRYPTO;EUROCRYPT;ASIACRYPT | tertiary:CCF《推荐国际学术会议和期刊目录》第七版(2026) | academic | theoretical | event |  | done | tier2 |  |  |  | 
+cn-competition | 全国密码算法设计竞赛 | National Cryptographic Algorithm Design Competition | d24-theory | e19-china | 3 | 密码算法设计竞赛 | tertiary:中国密码学会官网 | academic | theoretical | event | cn-2007-society | done | tier3 |  |  |  | 

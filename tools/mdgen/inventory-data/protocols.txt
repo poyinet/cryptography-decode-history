@@ -1,0 +1,46 @@
+# 协议总目录 · 管道分隔格式
+# id | 中文名 | English Name | 域 | 时代 | 难度 | 别名(;) | 出处 | 应用场景 | 威胁模型 | type | 前置 | status | quality
+
+tls10 | TLS 1.0 | TLS 1.0 | d14-protocols-pki | e15-web-protocols | 2 | TLSv1.0 | primary:RFC 2246(1999) | telecom,finance | protocol | protocol |  | done | tier2 |  |  |  | 
+tls11 | TLS 1.1 | TLS 1.1 | d14-protocols-pki | e15-web-protocols | 2 | TLSv1.1 | primary:RFC 4346(2006) | telecom,finance | protocol | protocol | tls10 | done | tier2 |  |  |  | 
+tls12 | TLS 1.2 | TLS 1.2 | d14-protocols-pki | e15-web-protocols | 2 | TLSv1.2 | primary:RFC 5246(2008) | telecom,finance | protocol | protocol | tls11 | done | tier1 |  |  |  | 
+tls13 | TLS 1.3 | TLS 1.3 | d14-protocols-pki | e15-web-protocols | 2 | TLSv1.3 | primary:RFC 8446(2018) | telecom,finance,everyday | protocol,implementation | protocol | tls12 | done | tier1 |  |  |  | 
+dtls10 | DTLS 1.0 | DTLS 1.0 | d14-protocols-pki | e15-web-protocols | 3 | DTLSv1.0 | primary:RFC 4347(2006) | telecom | protocol | protocol | tls10 | done | tier3 |  |  |  | 
+dtls12 | DTLS 1.2 | DTLS 1.2 | d14-protocols-pki | e15-web-protocols | 3 | DTLSv1.2 | primary:RFC 9146(2022) | telecom | protocol | protocol | dtls10 | done | tier2 |  |  |  | 
+dtls13 | DTLS 1.3 | DTLS 1.3 | d14-protocols-pki | e15-web-protocols | 3 | DTLSv1.3 | primary:RFC 9147(2022) | telecom | protocol | protocol | dtls12 | done | tier2 |  |  |  | 
+ech | 加密客户端问候 | Encrypted Client Hello | d14-protocols-pki | e18-frontier | 3 | ECH | primary:RFC 9849(2026) | privacy,everyday | protocol,network | protocol | tls13 | done | tier2 |  |  |  | 
+quic | QUIC 传输协议 | QUIC | d14-protocols-pki | e15-web-protocols | 3 | QUIC | primary:RFC 9000(2021) | telecom,everyday | protocol,implementation | protocol | tls13 | done | tier1 |  |  |  | 
+ssh1 | SSH 1.x | Secure Shell Protocol | d14-protocols-pki | e15-web-protocols | 2 | SSH | primary:RFC 4253(2006) | infrastructure,everyday | protocol | protocol |  | done | tier2 |  |  |  | 
+ssh2 | SSH 2.0 | SSH Protocol Architecture | d14-protocols-pki | e15-web-protocols | 2 | SSHv2 | primary:RFC 4251(2006) | infrastructure,everyday | protocol | protocol | ssh1 | done | tier1 |  |  |  | 
+ipsec | IPsec 安全协议族 | Internet Protocol Security | d14-protocols-pki | e15-web-protocols | 3 | IPsec | primary:RFC 4301(2005) | telecom,government | protocol | protocol |  | done | tier2 |  |  |  | 
+esp | ESP 封装安全载荷 | Encapsulating Security Payload | d14-protocols-pki | e15-web-protocols | 3 | ESP | primary:RFC 4303(2005) | telecom,government | protocol | protocol | ipsec | done | tier2 |  |  |  | 
+ah | AH 认证头 | Authentication Header | d14-protocols-pki | e15-web-protocols | 3 | AH | primary:RFC 4302(2005) | telecom,government | protocol | protocol | ipsec | done | tier3 |  |  |  | 
+ikev2 | IKEv2 密钥交换 | Internet Key Exchange v2 | d14-protocols-pki | e15-web-protocols | 3 | IKEv2 | primary:RFC 7296(2014) | telecom,government | protocol,implementation | protocol | ipsec | done | tier2 |  |  |  | 
+dnssec | DNSSEC 域名安全 | DNS Security Extensions | d14-protocols-pki | e15-web-protocols | 3 | DNSSEC | primary:RFC 4033-4035(2007) | telecom,infrastructure | protocol | protocol |  | done | tier2 |  |  |  | 
+dnssec-nsec3 | NSEC3 抗NSEC3 | NSEC3 | d14-protocols-pki | e15-web-protocols | 4 | NSEC3 | primary:RFC 5155(2008) | telecom | protocol,network | protocol | dnssec | done | tier3 |  |  |  | 
+acme | ACME 证书自动管理 | Automatic Certificate Management Environment | d14-protocols-pki | e15-web-protocols | 2 | ACME;Let's Encrypt | primary:RFC 8555(2019) | infrastructure,everyday | protocol | protocol |  | done | tier2 |  |  |  | 
+acme-ari | ACME 续期信息 | ACME Renewal Information | d14-protocols-pki | e18-frontier | 3 | ARI | primary:RFC 9773(2025) | infrastructure | protocol | protocol | acme | done | tier3 |  |  |  | 
+ocsp | 在线证书状态协议 | Online Certificate Status Protocol | d14-protocols-pki | e15-web-protocols | 3 | OCSP | primary:RFC 6960(2013) | finance,everyday | protocol | protocol |  | done | tier2 |  |  |  | 
+ocsp-stapling | OCSP 装订 | OCSP Stapling | d14-protocols-pki | e15-web-protocols | 3 | OCSP Stapling | primary:RFC 7633(2015) | finance | protocol | protocol | ocsp | done | tier3 |  |  |  | 
+crl | 证书吊销列表 | Certificate Revocation List | d14-protocols-pki | e15-web-protocols | 2 | CRL | primary:RFC 5280(2008) | finance,government | protocol | protocol |  | done | tier2 |  |  |  | 
+pkix | PKIX 证书框架 | Internet X.509 Public Key Infrastructure | d14-protocols-pki | e15-web-protocols | 2 | PKIX;X.509 | primary:RFC 5280(2008) | finance,government | protocol,implementation | protocol |  | done | tier1 |  |  |  | 
+certificate-transparency | 证书透明日志 | Certificate Transparency | d14-protocols-pki | e15-web-protocols | 3 | CT;CT Log | primary:RFC 6962(2013) | infrastructure | protocol | protocol | pkix | done | tier2 |  |  |  | 
+radius | RADIUS 认证协议 | Remote Authentication Dial-In User Service | d14-protocols-pki | e15-web-protocols | 2 | RADIUS | primary:RFC 2865(2000) | telecom | protocol | protocol |  | done | tier2 |  |  |  | 
+radius-tls | RADIUS over TLS | RADIUS over TLS | d14-protocols-pki | e15-web-protocols | 3 | radsec;RADIUS/TLS | primary:RFC 6610(2014) | telecom | protocol | protocol | radius | done | tier3 |  |  |  | 
+eap | EAP 认证框架 | Extensible Authentication Protocol | d14-protocols-pki | e15-web-protocols | 2 | EAP | primary:RFC 3748(2004) | telecom | protocol | protocol |  | done | tier2 |  |  |  | 
+eap-tls | EAP-TLS | EAP-TLS | d14-protocols-pki | e15-web-protocols | 3 | EAP-TLS | primary:RFC 5216(2008) | telecom | protocol | protocol | eap,tls12 | done | tier2 |  |  |  | 
+eap-ttls | EAP-TTLS | EAP-TTLS | d14-protocols-pki | e15-web-protocols | 3 | EAP-TTLS | primary:RFC 7174(2014) | telecom | protocol | protocol | eap | done | tier3 |  |  |  | 
+eap-pwd | EAP-PWD | EAP-PWD | d14-protocols-pki | e15-web-protocols | 3 | EAP-PWD | primary:RFC 8116(2017) | telecom | protocol | protocol | eap | done | tier3 |  |  |  | 
+cose | COSE 签名与加密格式 | CBOR Object Signing and Encryption | d14-protocols-pki | e15-web-protocols | 3 | COSE | primary:RFC 8152(2017) | infrastructure,everyday | protocol | protocol | cbor | done | tier3 |  |  |  | 
+cbor | CBOR 二进制编码 | Concise Binary Object Representation | d14-protocols-pki | e15-web-protocols | 2 | CBOR | primary:RFC 8949(2020) | infrastructure | protocol | protocol |  | done | tier2 |  |  |  | 
+hpke | HPKE 混合公钥加密 | Hybrid Public Key Encryption | d14-protocols-pki | e18-frontier | 3 | HPKE;RFC 9180 | primary:RFC 9180(2022) | infrastructure | protocol,implementation | protocol | cose | done | tier2 |  |  |  | 
+masque-connect-udp | MASQUE CONNECT-UDP | MASQUE Proxying UDP over HTTP | d14-protocols-pki | e18-frontier | 3 | CONNECT-UDP | primary:RFC 9298(2022) | infrastructure | protocol,network | protocol | quic | done | tier3 |  |  |  | 
+masque-connect-ip | MASQUE CONNECT-IP | MASQUE Proxying IP over HTTP | d14-protocols-pki | e18-frontier | 3 | CONNECT-IP | primary:RFC 9484(2023) | infrastructure | protocol,network | protocol | masque-connect-udp | done | tier3 |  |  |  | 
+tlsgreasing | TLS GREasing 防降级 | TLS GREasing | d14-protocols-pki | e18-frontier | 3 | GREasing;RFC 8701 | primary:RFC 8701(2020) | infrastructure | protocol,implementation | protocol | tls13 | done | tier3 |  |  |  | 
+tlscp | TLS 连接 ID | TLS Connection ID | d14-protocols-pki | e18-frontier | 3 | Connection ID;RFC 9146 | primary:RFC 9146(2022) | telecom | protocol,implementation | protocol | dtls12 | done | tier3 |  |  |  | 
+tlspq | 后量子 TLS 混合握手 | Post-Quantum TLS Hybrid Handshake | d22-post-quantum | e17-post-quantum | 3 | PQ hybrid TLS;X25519MLKEM768 | primary:RFC 9794(2025) | telecom | protocol,quantum | protocol | tls13,kyber | done | tier2 |  |  |  | 
+srtp | SRTP 安全实时传输 | Secure Real-time Transport Protocol | d14-protocols-pki | e15-web-protocols | 3 | SRTP | primary:RFC 3711(2004) | telecom | protocol | protocol |  | done | tier3 |  |  |  | 
+tlcp | TIPC 轻量级传输 | TIPC | d14-protocols-pki | e19-china | 4 | TIPC | primary:RFC 9383(2023) | telecom,infrastructure | protocol | protocol |  | done | tier3 |  |  |  | 
+sm9 | SM9 标识密码 | SM9 Identity-Based Cryptography | d20-china-sm | e18-frontier | 3 | SM9;GB/T 38635 | primary:GB/T 38635.1—2020《信息安全技术 SM9 标识密码算法》 | government,finance | protocol | protocol | sm2 | done | tier2 |  |  |  | 
+tlcp-cn | TLCP 国密 TLS | TLCP | d20-china-sm | e15-web-protocols | 3 | TLCP;GB/T 38636 | primary:GB/T 38636—2020《信息安全技术 传输层密码协议》 | government,finance | protocol | protocol | tls12,sm2 | done | tier2 |  |  |  | 
+gmssl | GM/T 商用密码套件 | Chinese Commercial Cryptography Suite | d20-china-sm | e14-standardization | 2 | GM/T;国密套件 | primary:国家密码管理局 GM/T 系列标准 | government,finance | protocol | protocol |  | done | tier2 |  |  |  | 

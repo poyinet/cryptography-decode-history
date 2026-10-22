@@ -1,0 +1,1990 @@
+
+entries:
+  - id: event-egyptian-hieroglyphs
+    title: 埃及象形文字中的符号意义
+    title_en: Symbolic Meaning in Egyptian Hieroglyphs
+    domain:
+      - d01-foundations
+    era:
+      - e01-origins
+    level: 1
+    aliases:
+      - 罗塞塔石碑
+      - 符号解读
+    sources:
+      - kind: primary
+        title: Kahn《The Codebreakers》(1967)
+    apps:
+      - academic
+    threats:
+      - CO
+      - statistical
+    type: event
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: event-rosetta-stone
+    title: 罗塞塔石碑被发现
+    title_en: Discovery of the Rosetta Stone
+    domain:
+      - d01-foundations
+    era:
+      - e01-origins
+    level: 1
+    aliases:
+      - Rosetta Stone
+    sources:
+      - kind: primary
+        title: Kahn《The Codebreakers》(1967)
+    apps:
+      - academic
+    threats:
+      - CO
+      - statistical
+    type: event
+    prereq:
+      - event-egyptian-hieroglyphs
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: event-scytale
+    title: 斯巴达密码棒
+    title_en: Spartan Scytale
+    domain:
+      - d04-transposition
+    era:
+      - e01-origins
+    level: 1
+    aliases:
+      - scytale
+      - 密码棒
+    sources:
+      - kind: tertiary
+        title: Scytale Wikipedia
+    apps:
+      - military
+      - academic
+    threats:
+      - CO
+      - statistical
+    type: event
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: event-caesar-cipher
+    title: 凯撒密码用于军令
+    title_en: Caesar's Shift Cipher for Military Orders
+    domain:
+      - d02-monoalphabetic
+    era:
+      - e02-classical
+    level: 1
+    aliases:
+      - 凯撒密码
+    sources:
+      - kind: primary
+        title: Kahn《The Codebreakers》(1967)
+    apps:
+      - military
+    threats:
+      - CO
+      - statistical
+    type: event
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: event-alberti-disk-1467
+    title: 阿尔贝蒂密码盘
+    title_en: Alberti's Cipher Disk
+    domain:
+      - d03-polyalphabetic
+    era:
+      - e06-renaissance
+    level: 2
+    aliases:
+      - Alberti
+      - 错位盘
+    sources:
+      - kind: primary
+        title: Alberti《De cifris》(1467)
+    apps:
+      - academic
+      - military
+    threats:
+      - KPA
+    type: event
+    prereq:
+      - event-caesar-cipher
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: event-trithemius-1518
+    title: 《密码论》出版
+    title_en: Trithemius's Polygraphia
+    domain:
+      - d03-polyalphabetic
+    era:
+      - e06-renaissance
+    level: 2
+    aliases:
+      - Polygraphia
+    sources:
+      - kind: primary
+        title: Trithemius《Polygraphia》(1518)
+    apps:
+      - academic
+    threats:
+      - KPA
+    type: event
+    prereq:
+      - event-alberti-disk-1467
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: event-vigenere-1586
+    title: 维吉尼亚密码表
+    title_en: Vigenère's Tabula Recta
+    domain:
+      - d03-polyalphabetic
+    era:
+      - e06-renaissance
+    level: 2
+    aliases:
+      - 维吉尼亚
+    sources:
+      - kind: primary
+        title: Vigenère《Traicté des chiffres》(1586)
+    apps:
+      - military
+      - academic
+    threats:
+      - KPA
+    type: event
+    prereq:
+      - event-trithemius-1518
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: event-bacon-1605
+    title: 培根双字体隐写
+    title_en: Bacon's Biliteral Steganography
+    domain:
+      - d18-steganography
+    era:
+      - e07-early-modern-steganography
+    level: 2
+    aliases:
+      - 培根密码
+    sources:
+      - kind: primary
+        title: Bacon《The Advancement of Learning》(1605)
+    apps:
+      - academic
+    threats:
+      - statistical
+    type: event
+    prereq:
+      - event-vigenere-1586
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: event-adelberti-1718
+    title: 普莱费尔密码
+    title_en: Playfair Cipher
+    domain:
+      - d02-monoalphabetic
+    era:
+      - e08-codebreakers
+    level: 2
+    aliases:
+      - Playfair
+      - 惠斯通
+    sources:
+      - kind: primary
+        title: Wheatstone(1854)
+    apps:
+      - military
+    threats:
+      - KPA
+    type: event
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: event-kasiski-1863
+    title: 卡斯基基检验发表
+    title_en: Kasiski's Examination Published
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e08-codebreakers
+    level: 2
+    aliases:
+      - Kasiski
+    sources:
+      - kind: primary
+        title: Kasiski《Die Geheimschriften》(1863)
+    apps:
+      - academic
+    threats:
+      - CO
+      - statistical
+    type: event
+    prereq:
+      - event-vigenere-1586
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: event-kerckhoffs-1883
+    title: 凯尔克霍夫斯原则
+    title_en: Kerckhoffs's Principle
+    domain:
+      - d24-theory
+    era:
+      - e08-codebreakers
+    level: 2
+    aliases:
+      - Kerckhoffs
+      - 第三条铁律
+    sources:
+      - kind: primary
+        title: Kerckhoffs《La cryptographie militaire》(1883)
+    apps:
+      - academic
+      - military
+    threats:
+      - protocol
+    type: event
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: event-tunny-1941
+    title: 图灵破译洛伦兹
+    title_en: Turing's Break of Lorenz
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e11-ww2
+    level: 4
+    aliases:
+      - Tunny
+      - 图灵
+    sources:
+      - kind: tertiary
+        title: UK National Archives(Turing correspondence)
+    apps:
+      - military
+      - academic
+    threats:
+      - CO
+      - statistical
+    type: event
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: event-alkindi-850
+    title: 肯迪发明频率分析
+    title_en: Al-Kindi Invented Frequency Analysis
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e04-arabic-golden-age
+    level: 2
+    aliases:
+      - 频率分析
+    sources:
+      - kind: primary
+        title: al-Kindi《Risāla fī Istikhrāj》(约850)
+    apps:
+      - academic
+      - military
+    threats:
+      - CO
+      - statistical
+    type: event
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: event-zimmermann-1917
+    title: 齐默尔曼电报
+    title_en: Zimmermann Telegram
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e09-ww1
+    level: 2
+    aliases:
+      - Zimmermann
+    sources:
+      - kind: primary
+        title: Kahn《The Codebreakers》(1967)
+    apps:
+      - military
+      - diplomacy
+    threats:
+      - CO
+      - statistical
+    type: event
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: event-adfgvx-1918
+    title: ADFGVX 电报体制与被破
+    title_en: ADFGVX Cipher and Its Break
+    domain:
+      - d04-transposition
+    era:
+      - e09-ww1
+    level: 3
+    aliases:
+      - ADFGVX
+      - Painvin
+    sources:
+      - kind: primary
+        title: Kahn《The Codebreakers》(1967)
+    apps:
+      - military
+    threats:
+      - CO
+      - statistical
+    type: event
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: event-tubes-1940
+    title: 图灵-韦尔奇曼炸弹机
+    title_en: Turing-Welchman Bombe
+    domain:
+      - d05-rotor-mechanical
+    era:
+      - e11-ww2
+    level: 3
+    aliases:
+      - Bombe
+      - 炸弹机
+    sources:
+      - kind: tertiary
+        title: UK National Archives(Bletchley Park)
+    apps:
+      - military
+      - academic
+    threats:
+      - CO
+      - statistical
+    type: event
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: event-colossus-1943
+    title: Colossus 建成
+    title_en: Colossus Built
+    domain:
+      - d05-rotor-mechanical
+    era:
+      - e11-ww2
+    level: 3
+    aliases:
+      - Colossus
+    sources:
+      - kind: tertiary
+        title: UK National Archives(Colossus)
+    apps:
+      - military
+      - academic
+    threats:
+      - CO
+      - statistical
+    type: event
+    prereq:
+      - event-tubes-1940
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: event-purple-1940
+    title: 紫密被破
+    title_en: Break of Purple
+    domain:
+      - d05-rotor-mechanical
+    era:
+      - e11-ww2
+    level: 3
+    aliases:
+      - Purple
+      - MAGIC
+    sources:
+      - kind: primary
+        title: Kahn《The Codebreakers》(1967)
+    apps:
+      - military
+      - diplomacy
+    threats:
+      - CO
+      - statistical
+    type: event
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: event-jn25-midway-1942
+    title: 中途岛与 JN-25
+    title_en: Midway and JN-25
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e11-ww2
+    level: 4
+    aliases:
+      - Magic
+      - 中途岛
+    sources:
+      - kind: primary
+        title: Kahn《The Codebreakers》(1967)
+    apps:
+      - military
+    threats:
+      - KPA
+      - statistical
+    type: event
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: event-enigma-1932
+    title: 波兰数学家破恩尼格玛
+    title_en: Polish Break of Enigma
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e10-interwar
+    level: 4
+    aliases:
+      - Rejewski
+      - Różycki
+      - Zygalski
+    sources:
+      - kind: primary
+        title: Rejewski《How We Broke the Enigma Cipher》(1981)
+    apps:
+      - military
+      - academic
+    threats:
+      - CO
+      - statistical
+    type: event
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: event-venona-1947
+    title: VENONA 项目启动
+    title_en: VENONA Project Begins
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e12-cold-war-info-theory
+    level: 3
+    aliases:
+      - VENONA
+      - 一次性密码本重用
+    sources:
+      - kind: primary
+        title: Kahn《The Codebreakers》(1967)
+    apps:
+      - military
+    threats:
+      - KPA
+      - statistical
+    type: event
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: event-redarmy-cipher-1931
+    title: 红军"豪密"启用
+    title_en: Red Army "Hao Mi" Cipher
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e19-china
+    level: 3
+    aliases:
+      - 豪密
+      - 红军密码
+    sources:
+      - kind: primary
+        title: 《中国共产党保密工作史》第十八章
+    apps:
+      - military
+    threats:
+      - KPA
+      - statistical
+    type: event
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: event-xiahe-village-1947
+    title: 小河村会议与通信体系重构
+    title_en: Xiahe Village Conference
+    domain:
+      - d14-protocols-pki
+    era:
+      - e19-china
+    level: 3
+    aliases:
+      - 小河村会议
+      - 周恩来
+    sources:
+      - kind: primary
+        title: 《中国共产党保密工作史》第十八章
+    apps:
+      - military
+    threats:
+      - protocol
+    type: event
+    prereq:
+      - event-redarmy-cipher-1931
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: event-shannon-1949
+    title: 香农《保密系统的通信理论》
+    title_en: Shannon's Communication Theory of Secrecy Systems
+    domain:
+      - d24-theory
+    era:
+      - e12-cold-war-info-theory
+    level: 3
+    aliases:
+      - Shannon 1949
+    sources:
+      - kind: primary
+        title: Shannon《Communication Theory of Secrecy Systems》(1949)
+    apps:
+      - academic
+    threats:
+      - statistical
+    type: event
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: event-des-1977
+    title: DES 公布
+    title_en: DES Published
+    domain:
+      - d08-block-cipher
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - FIPS 46
+    sources:
+      - kind: primary
+        title: FIPS 46-3(1977)
+    apps:
+      - government
+      - finance
+    threats:
+      - CPA
+    type: event
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: event-diffie-hellman-1976
+    title: 公钥密码诞生
+    title_en: Birth of Public-Key Cryptography
+    domain:
+      - d11-asymmetric
+    era:
+      - e13-public-key
+    level: 2
+    aliases:
+      - Diffie-Hellman
+      - 公开钥
+    sources:
+      - kind: primary
+        title: Diffie & Hellman《New Directions in Cryptography》(1976)
+    apps:
+      - academic
+      - finance
+    threats:
+      - related-key
+    type: event
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: event-rsa-1977
+    title: RSA 公布
+    title_en: RSA Published
+    domain:
+      - d11-asymmetric
+    era:
+      - e13-public-key
+    level: 2
+    aliases:
+      - RSA
+    sources:
+      - kind: primary
+        title: Rivest
+      - kind: tertiary
+        title: Shamir
+      - kind: tertiary
+        title: Adleman《A Method for Obtaining Digital Signatures...》(1978)
+    apps:
+      - academic
+      - finance
+    threats:
+      - related-key
+    type: event
+    prereq:
+      - event-diffie-hellman-1976
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: event-cocks-1973
+    title: 英国 GCHQ 秘密发明 RSA
+    title_en: Cocks' Secret Invention of RSA
+    domain:
+      - d11-asymmetric
+    era:
+      - e13-public-key
+    level: 3
+    aliases:
+      - Cocks
+      - Ellis
+      - James Ellis
+    sources:
+      - kind: primary
+        title: "Cocks《Secret Communication: An Exposition of RSA》(2000)"
+    apps:
+      - academic
+    threats:
+      - related-key
+    type: event
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: event-cheshire-willianson-1974
+    title: 非对称密钥的先驱
+    title_en: Non-Symmetric Key Predecessors
+    domain:
+      - d11-asymmetric
+    era:
+      - e13-public-key
+    level: 3
+    aliases:
+      - Williamson
+      - Cheshire
+    sources:
+      - kind: primary
+        title: Kahn《The Codebreakers》(1967)
+    apps:
+      - academic
+    threats:
+      - related-key
+    type: event
+    prereq: []
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: event-aes-2001
+    title: AES 取代 DES
+    title_en: AES Standardized
+    domain:
+      - d08-block-cipher
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - AES
+      - FIPS 197
+    sources:
+      - kind: primary
+        title: FIPS 197(2001)
+    apps:
+      - government
+      - finance
+    threats:
+      - side-channel
+    type: event
+    prereq:
+      - event-des-1977
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: event-rijmenel-1997
+    title: Rijndael 胜出成为 AES
+    title_en: Rijndael Selected for AES
+    domain:
+      - d08-block-cipher
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - Rijndael
+    sources:
+      - kind: primary
+        title: FIPS 197(2001)
+    apps:
+      - government
+    threats:
+      - side-channel
+    type: event
+    prereq:
+      - event-aes-2001
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: event-sha1-collision-2005
+    title: SHA-1 碰撞被公开
+    title_en: SHAttered
+    domain:
+      - d09-hash
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - SHAttered
+      - 王小云
+    sources:
+      - kind: primary
+        title: Wang
+      - kind: tertiary
+        title: Yin
+      - kind: tertiary
+        title: Yu《Finding Collisions in the Full SHA-1》(2005)
+    apps:
+      - academic
+      - finance
+    threats:
+      - CO
+      - statistical
+    type: event
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: event-md5-collision-2004
+    title: MD5 碰撞被公开
+    title_en: MD5 Collision Demonstrated
+    domain:
+      - d09-hash
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - MD5 碰撞
+    sources:
+      - kind: primary
+        title: Wang
+      - kind: tertiary
+        title: Yu《How to Break MD5 and Other Hash Functions》(2004)
+    apps:
+      - academic
+      - finance
+    threats:
+      - CO
+      - statistical
+    type: event
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: event-tls13-2018
+    title: TLS 1.3 发布
+    title_en: TLS 1.3 Published
+    domain:
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    level: 2
+    aliases:
+      - TLS 1.3
+      - RFC 8446
+    sources:
+      - kind: primary
+        title: RFC 8446(2018)
+    apps:
+      - telecom
+      - finance
+    threats:
+      - protocol
+    type: event
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: event-webcrypto-2013
+    title: Web Crypto API 普及
+    title_en: Web Cryptography API
+    domain:
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - WebCrypto
+    sources:
+      - kind: tertiary
+        title: Web Cryptography API Wikipedia
+    apps:
+      - everyday
+      - infrastructure
+    threats:
+      - implementation
+    type: event
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: event-aead-2004
+    title: GCM 成为 TLS 标准
+    title_en: GCM Standardized in TLS
+    domain:
+      - d10-auth-aead
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - GCM
+      - AEAD
+    sources:
+      - kind: primary
+        title: SP 800-38D(2007)
+    apps:
+      - finance
+      - infrastructure
+    threats:
+      - CCA
+    type: event
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: event-bb84-1984
+    title: BB84 量子密钥分发
+    title_en: BB84 Quantum Key Distribution
+    domain:
+      - d21-quantum-crypto
+    era:
+      - e16-quantum-turn
+    level: 3
+    aliases:
+      - BB84
+      - 量子密钥分发
+    sources:
+      - kind: primary
+        title: Bennett
+      - kind: tertiary
+        title: "Brassard《Quantum Cryptography: Public Key Distribution and Coin Tossing>>(1984)"
+    apps:
+      - telecom
+      - government
+    threats:
+      - protocol
+      - quantum
+    type: event
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: event-e91-1991
+    title: E91 量子协议
+    title_en: E91 Quantum Protocol
+    domain:
+      - d21-quantum-crypto
+    era:
+      - e16-quantum-turn
+    level: 4
+    aliases:
+      - E91
+    sources:
+      - kind: primary
+        title: Ekert《Quantum Cryptography Based on Bell's Theorem>>(1991)
+    apps:
+      - telecom
+      - government
+    threats:
+      - protocol
+      - quantum
+    type: event
+    prereq:
+      - event-bb84-1984
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: event-shor-1994
+    title: 肖尔算法提出
+    title_en: Shor's Algorithm
+    domain:
+      - d21-quantum-crypto
+    era:
+      - e16-quantum-turn
+    level: 3
+    aliases:
+      - Shor 1994
+    sources:
+      - kind: primary
+        title: Shor《Algorithms for Quantum Computation...》(1994)
+    apps:
+      - academic
+      - government
+    threats:
+      - quantum
+    type: event
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: event-nist-pqc-2016
+    title: NIST 后量子标准化征集
+    title_en: NIST PQC Standardization Process
+    domain:
+      - d22-post-quantum
+    era:
+      - e17-post-quantum
+    level: 2
+    aliases:
+      - PQC 征集
+    sources:
+      - kind: tertiary
+        title: Post-quantum cryptography Wikipedia
+    apps:
+      - government
+      - finance
+    threats:
+      - quantum
+    type: event
+    prereq:
+      - event-shor-1994
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: event-nist-pqc-2024
+    title: FIPS 203/204/205 发布
+    title_en: FIPS 203-205 Published
+    domain:
+      - d22-post-quantum
+    era:
+      - e17-post-quantum
+    level: 2
+    aliases:
+      - ML-KEM
+      - ML-DSA
+      - SLH-DSA
+    sources:
+      - kind: primary
+        title: FIPS 203/204/205(2024)
+    apps:
+      - government
+      - finance
+    threats:
+      - quantum
+    type: event
+    prereq:
+      - event-nist-pqc-2016
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: event-grover-1996
+    title: 格罗弗算法提出
+    title_en: Grover's Algorithm
+    domain:
+      - d21-quantum-crypto
+    era:
+      - e16-quantum-turn
+    level: 3
+    aliases:
+      - Grover 1996
+    sources:
+      - kind: primary
+        title: Grover《A Fast Quantum Mechanical Algorithm for Database Search》(1996)
+    apps:
+      - academic
+    threats:
+      - quantum
+    type: event
+    prereq:
+      - event-shor-1994
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: event-cryptag-2017
+    title: Crypto AG 后门曝光
+    title_en: Crypto AG Backdoor Revealed
+    domain:
+      - d23-applied-security
+    era:
+      - e15-web-protocols
+    level: 2
+    aliases:
+      - Operation Rubicon
+    sources:
+      - kind: tertiary
+        title: Operation Rubicon(The Washington Post 2017)
+    apps:
+      - government
+      - finance
+    threats:
+      - implementation
+      - protocol
+    type: event
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: event-dualec-2013
+    title: Dual_EC_DRBG 后门曝光
+    title_en: Dual_EC_DRBG Backdoor Revealed
+    domain:
+      - d19-randomness
+    era:
+      - e15-web-protocols
+    level: 2
+    aliases:
+      - Dual_EC_DRBG
+    sources:
+      - kind: tertiary
+        title: NIST SP 800-90A(2007) 与 Snowden 披露(2013)
+    apps:
+      - government
+      - finance
+    threats:
+      - implementation
+    type: event
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: event-heartbleed-2014
+    title: 心Bleed 漏洞
+    title_en: Heartbleed
+    domain:
+      - d23-applied-security
+    era:
+      - e15-web-protocols
+    level: 2
+    aliases:
+      - Heartbleed
+    sources:
+      - kind: tertiary
+        title: Heartbleed Wikipedia
+    apps:
+      - everyday
+      - infrastructure
+    threats:
+      - implementation
+      - protocol
+    type: event
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: event-logjam-2015
+    title: Logjam 攻击
+    title_en: Logjam Attack
+    domain:
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    level: 2
+    aliases:
+      - Logjam
+    sources:
+      - kind: tertiary
+        title: Logjam Wikipedia
+    apps:
+      - telecom
+      - infrastructure
+    threats:
+      - protocol
+    type: event
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: event-luat-2016
+    title: Luật 密码法实施
+    title_en: Vietnam's Law on Cryptography
+    domain:
+      - d23-applied-security
+    era:
+      - e19-china
+    level: 3
+    aliases:
+      - 越南密码法
+    sources:
+      - kind: tertiary
+        title: Luat on Cryptography(2016)
+    apps:
+      - government
+    threats:
+      - implementation
+    type: event
+    prereq: []
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: event-cryptola-2019
+    title: 中国密码法施行
+    title_en: China's Cryptography Law in Effect
+    domain:
+      - d23-applied-security
+    era:
+      - e19-china
+    level: 2
+    aliases:
+      - 密码法
+      - 商用密码三大类
+    sources:
+      - kind: primary
+        title: 全国人大常委会《密码法》(2019 通过
+      - kind: tertiary
+        title: 2020 施行)
+    apps:
+      - government
+      - finance
+    threats:
+      - implementation
+    type: event
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: event-sm-standard-2010
+    title: SM2/SM3 国标发布
+    title_en: SM2/SM3 National Standards Published
+    domain:
+      - d20-china-sm
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - SM2
+      - SM3
+      - GB/T 32918
+      - GB/T 32905
+    sources:
+      - kind: primary
+        title: GB/T 32918.1—2016
+      - kind: tertiary
+        title: GB/T 32905—2016
+    apps:
+      - government
+      - finance
+    threats:
+      - related-key
+    type: event
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: event-zuc-3gpp-2011
+    title: ZUC 成为国际标准
+    title_en: ZUC Accepted by 3GPP
+    domain:
+      - d20-china-sm
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - ZUC
+      - 3GPP EEA3
+    sources:
+      - kind: primary
+        title: 3GPP《ZUC Algorithm Specification》
+    apps:
+      - telecom
+    threats:
+      - protocol
+    type: event
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: event-ibm-705
+    title: IBM 7000 系列密码机
+    title_en: IBM 7000 Cryptographic Machines
+    domain:
+      - d05-rotor-mechanical
+    era:
+      - e12-cold-war-info-theory
+    level: 3
+    aliases:
+      - IBM 7000
+    sources:
+      - kind: tertiary
+        title: IBM Cryptographic Machines Wikipedia
+    apps:
+      - military
+      - government
+    threats:
+      - physical
+    type: event
+    prereq: []
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: event-enigma-1918
+    title: 恩尼格玛专利
+    title_en: Enigma Patent
+    domain:
+      - d05-rotor-mechanical
+    era:
+      - e09-ww1
+    level: 2
+    aliases:
+      - Scherbius
+    sources:
+      - kind: primary
+        title: Scherbius 专利 443101(1918)
+    apps:
+      - military
+    threats:
+      - physical
+    type: event
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: event-lorenz-1941
+    title: 洛伦兹 SZ42 投入使用
+    title_en: Lorenz SZ42 in Service
+    domain:
+      - d05-rotor-mechanical
+    era:
+      - e11-ww2
+    level: 3
+    aliases:
+      - SZ42
+      - Tunny
+    sources:
+      - kind: tertiary
+        title: UK National Archives(Lorenz)
+    apps:
+      - military
+    threats:
+      - physical
+    type: event
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: event-m209-1940
+    title: M-209 密码机
+    title_en: Hagelin C-38 / M-209
+    domain:
+      - d05-rotor-mechanical
+    era:
+      - e11-ww2
+    level: 3
+    aliases:
+      - M-209
+      - C-38
+    sources:
+      - kind: tertiary
+        title: M-209 Wikipedia
+    apps:
+      - military
+    threats:
+      - physical
+    type: event
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: event-sigalba-1943
+    title: SIGSALY 语音加密机
+    title_en: SIGSALY Voice Encryption
+    domain:
+      - d05-rotor-mechanical
+    era:
+      - e11-ww2
+    level: 3
+    aliases:
+      - SIGSALY
+    sources:
+      - kind: tertiary
+        title: SIGSALY Wikipedia
+    apps:
+      - military
+      - diplomacy
+    threats:
+      - physical
+    type: event
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: event-tpm-2000
+    title: 可信平台模块规范
+    title_en: TPM 1.1 Specification
+    domain:
+      - d13-key-management
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - TPM
+      - TCG
+    sources:
+      - kind: primary
+        title: TCG TPM 1.1 Library Specification(2000)
+    apps:
+      - infrastructure
+    threats:
+      - physical
+      - side-channel
+    type: event
+    prereq: []
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: event-elliptic-curve-1985
+    title: 椭圆曲线密码提出
+    title_en: Elliptic Curve Cryptography Proposed
+    domain:
+      - d11-asymmetric
+    era:
+      - e13-public-key
+    level: 3
+    aliases:
+      - ECC
+      - Miller
+      - Koblitz
+    sources:
+      - kind: primary
+        title: Miller《Use of Elliptic Curves in Cryptography》(1985)
+    apps:
+      - academic
+      - finance
+    threats:
+      - related-key
+    type: event
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: event-zeroknowledge-1985
+    title: 零知识证明提出
+    title_en: Zero-Knowledge Proofs
+    domain:
+      - d15-zkp
+    era:
+      - e13-public-key
+    level: 4
+    aliases:
+      - ZK
+      - Goldwasser-Micali-Rackoff
+    sources:
+      - kind: primary
+        title: Goldwasser
+      - kind: tertiary
+        title: Micali
+      - kind: tertiary
+        title: Rackoff《The Knowledge Complexity of Zero-Knowledge Proofs》(1985)
+    apps:
+      - academic
+    threats:
+      - protocol
+    type: event
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: event-1997-china-commercial
+    title: 中国商用密码起步
+    title_en: China's Commercial Cryptography Begins
+    domain:
+      - d20-china-sm
+    era:
+      - e19-china
+    level: 2
+    aliases:
+      - 商用密码起步
+    sources:
+      - kind: primary
+        title: 国家密码管理局《密码发展史》
+    apps:
+      - government
+      - finance
+    threats:
+      - implementation
+    type: event
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: event-gm-1997
+    title: 《商用密码管理条例》前身发布
+    title_en: China's Commercial Cryptography Regulation (predecessor)
+    domain:
+      - d23-applied-security
+    era:
+      - e19-china
+    level: 3
+    aliases:
+      - 商用密码管理条例前身
+    sources:
+      - kind: primary
+        title: 国务院《商用密码管理条例》(1997 公布)
+    apps:
+      - government
+      - finance
+    threats:
+      - implementation
+    type: event
+    prereq:
+      - event-1997-china-commercial
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: event-gm-2023
+    title: 《商用密码管理条例》修订
+    title_en: Revised Commercial Cryptography Regulation
+    domain:
+      - d23-applied-security
+    era:
+      - e19-china
+    level: 3
+    aliases:
+      - 商用密码管理条例 2023
+    sources:
+      - kind: primary
+        title: 国务院令第760号(2023)
+    apps:
+      - government
+      - finance
+    threats:
+      - implementation
+    type: event
+    prereq:
+      - event-gm-1997
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: event-ml-eval-2023
+    title: 密评管理办法施行
+    title_en: Cryptography Assessment Measures in Effect
+    domain:
+      - d23-applied-security
+    era:
+      - e19-china
+    level: 3
+    aliases:
+      - 密评管理办法
+    sources:
+      - kind: primary
+        title: 国家密码管理局令第3号(2023)
+    apps:
+      - government
+      - finance
+    threats:
+      - implementation
+    type: event
+    prereq:
+      - event-gm-2023
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: event-zhu-wei-2016
+    title: 祖冲之密码入选国际标准
+    title_en: ZUC International Standardization
+    domain:
+      - d20-china-sm
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - ZUC 国际标准
+    sources:
+      - kind: primary
+        title: 3GPP《ZUC Algorithm Specification》
+    apps:
+      - telecom
+    threats:
+      - protocol
+    type: event
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: event-ninja-1676
+    title: 《忍法秘传》刊行
+    title_en: Bansenshukai Published
+    domain:
+      - d18-steganography
+    era:
+      - e07-early-modern-steganography
+    level: 3
+    aliases:
+      - 忍法秘传
+      - rappa
+    sources:
+      - kind: tertiary
+        title: Bansenshukai Wikipedia
+    apps:
+      - military
+    threats:
+      - social
+    type: event
+    prereq: []
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: event-sagan-1992
+    title: 《女巫的诅咒》与微软随机数
+    title_en: Anton Stux's Thesis and the Random Number Bug
+    domain:
+      - d19-randomness
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - Anton Stux
+      - 微软 rand 缺陷
+    sources:
+      - kind: tertiary
+        title: Fortuna PRNG Wikipedia
+    apps:
+      - everyday
+    threats:
+      - implementation
+    type: event
+    prereq: []
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: event-netscape-1994
+    title: SSL 1.0 与浏览器密码学
+    title_en: SSL 1.0 and Browser Cryptography
+    domain:
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    level: 2
+    aliases:
+      - SSL
+      - Netscape
+    sources:
+      - kind: tertiary
+        title: Secure Sockets Layer Wikipedia
+    apps:
+      - everyday
+      - finance
+    threats:
+      - protocol
+    type: event
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: event-pkcs-1991
+    title: PKCS 标准体系
+    title_en: PKCS Standards
+    domain:
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    level: 2
+    aliases:
+      - PKCS
+      - RSA 实验室
+    sources:
+      - kind: tertiary
+        title: Public-Key Cryptography Standards Wikipedia
+    apps:
+      - infrastructure
+    threats:
+      - protocol
+    type: event
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: event-dsa-1991
+    title: DSA 数字签名标准
+    title_en: Digital Signature Standard
+    domain:
+      - d12-signature
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - DSS
+      - FIPS 186
+    sources:
+      - kind: primary
+        title: FIPS 186(1991)
+    apps:
+      - government
+      - finance
+    threats:
+      - related-key
+    type: event
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: event-dsa-backdoor-1991
+    title: DSA 可能的 NSA 后门
+    title_en: Possible NSA Backdoor in DSA
+    domain:
+      - d12-signature
+    era:
+      - e14-standardization
+    level: 4
+    aliases:
+      - DSA 后门
+    sources:
+      - kind: tertiary
+        title: Simon《 DSA and the NSA backdoor》(1991)
+    apps:
+      - government
+    threats:
+      - implementation
+      - related-key
+    type: event
+    prereq:
+      - event-dsa-1991
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: event-diffie-hellman-1976-patent
+    title: 公钥专利争议
+    title_en: Public-Key Patent Wars
+    domain:
+      - d11-asymmetric
+    era:
+      - e13-public-key
+    level: 3
+    aliases:
+      - 专利诉讼
+    sources:
+      - kind: tertiary
+        title: Public-key cryptography Wikipedia
+    apps:
+      - academic
+    threats:
+      - protocol
+    type: event
+    prereq:
+      - event-diffie-hellman-1976
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: event-cherry-2000
+    title: DES 糖豆攻击
+    title_en: Sweet32 Attack
+    domain:
+      - d08-block-cipher
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - Sweet32
+      - 生日边界
+    sources:
+      - kind: tertiary
+        title: Sweet32 Wikipedia
+    apps:
+      - finance
+    threats:
+      - CPA
+    type: event
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: event-lucky13-2013
+    title: Lucky Thirteen 攻击
+    title_en: Lucky Thirteen Attack
+    domain:
+      - d10-auth-aead
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - Lucky13
+    sources:
+      - kind: tertiary
+        title: Lucky Thirteen Wikipedia
+    apps:
+      - finance
+    threats:
+      - side-channel
+      - implementation
+    type: event
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: event-poodle-2014
+    title: POODLE 攻击
+    title_en: POODLE Attack
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e15-web-protocols
+    level: 2
+    aliases:
+      - POODLE
+    sources:
+      - kind: tertiary
+        title: POODLE Wikipedia
+    apps:
+      - finance
+      - everyday
+    threats:
+      - implementation
+    type: event
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: event-beast-2011
+    title: BEAST 攻击
+    title_en: BEAST Attack
+    domain:
+      - d08-block-cipher
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - BEAST
+    sources:
+      - kind: tertiary
+        title: BEAST Attack Wikipedia
+    apps:
+      - finance
+    threats:
+      - CPA
+    type: event
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: event-cve-2014-0160
+    title: 心Bleed CVE-2014-0160
+    title_en: Heartbleed CVE-2014-0160
+    domain:
+      - d23-applied-security
+    era:
+      - e15-web-protocols
+    level: 2
+    aliases:
+      - CVE-2014-0160
+    sources:
+      - kind: tertiary
+        title: Heartbleed Wikipedia
+    apps:
+      - everyday
+      - infrastructure
+    threats:
+      - implementation
+    type: event
+    prereq:
+      - event-heartbleed-2014
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: event-rc4-2001
+    title: RC4 在 WEP 中的失效
+    title_en: RC4 Failures in WEP
+    domain:
+      - d06-otp-stream
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - WEP 崩溃
+    sources:
+      - kind: tertiary
+        title: WEP Wikipedia
+    apps:
+      - telecom
+    threats:
+      - CPA
+    type: event
+    prereq:
+      - rc4
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: event-theremin-2007
+    title: THEREMIN 音乐侧信道
+    title_en: THEREMIN Acoustic Side Channel
+    domain:
+      - d17-side-channel
+    era:
+      - e15-web-protocols
+    level: 4
+    aliases:
+      - THEREMIN
+    sources:
+      - kind: tertiary
+        title: THEREMIN Wikipedia
+    apps:
+      - finance
+    threats:
+      - side-channel
+    type: event
+    prereq:
+      - side-channel-attack
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: event-tpm-rollback-2007
+    title: TPM 回滚攻击
+    title_en: TPM Rollback Attack
+    domain:
+      - d13-key-management
+    era:
+      - e15-web-protocols
+    level: 4
+    aliases:
+      - TPM 回滚
+    sources:
+      - kind: tertiary
+        title: TPM Wikipedia
+    apps:
+      - infrastructure
+    threats:
+      - physical
+    type: event
+    prereq:
+      - tpm
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: event-eddsa-2017
+    title: Ed25519 进入 RFC
+    title_en: Ed25519 Published in RFC 8032
+    domain:
+      - d12-signature
+    era:
+      - e15-web-protocols
+    level: 2
+    aliases:
+      - Ed25519
+      - RFC 8032
+    sources:
+      - kind: primary
+        title: RFC 8032(2017)
+    apps:
+      - finance
+      - everyday
+    threats:
+      - side-channel
+    type: event
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: event-kyber-2023
+    title: Kyber 选为后量子标准
+    title_en: Kyber Selected as PQC Standard
+    domain:
+      - d22-post-quantum
+    era:
+      - e17-post-quantum
+    level: 2
+    aliases:
+      - CRYSTALS-Kyber
+    sources:
+      - kind: primary
+        title: FIPS 203(2024)
+    apps:
+      - government
+      - finance
+    threats:
+      - quantum
+    type: event
+    prereq:
+      - event-nist-pqc-2016
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: event-sike-2022
+    title: SIKE 被破
+    title_en: SIKE Broken
+    domain:
+      - d22-post-quantum
+    era:
+      - e17-post-quantum
+    level: 2
+    aliases:
+      - SIKE 破译
+    sources:
+      - kind: tertiary
+        title: Castryck-Decru《An Efficient Attack on SIDH》(2022)
+    apps:
+      - academic
+    threats:
+      - quantum
+    type: event
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: event-hqc-biike-2024
+    title: HQC 与 BIKE 备选
+    title_en: HQC and BIKE as Backup KEMs
+    domain:
+      - d22-post-quantum
+    era:
+      - e17-post-quantum
+    level: 3
+    aliases:
+      - HQC
+      - BIKE
+    sources:
+      - kind: primary
+        title: ROUND 4(2023)
+    apps:
+      - government
+    threats:
+      - quantum
+    type: event
+    prereq:
+      - event-nist-pqc-2024
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: event-kyber-slippage-2023
+    title: Kyber 侧信道泄露
+    title_en: Kyber Mask Decryption Side Channel
+    domain:
+      - d22-post-quantum
+    era:
+      - e17-post-quantum
+    level: 3
+    aliases:
+      - Kyber 掩码泄露
+    sources:
+      - kind: tertiary
+        title: Dong et al.《Masking Might Not Be All You Need》(2023)
+    apps:
+      - infrastructure
+    threats:
+      - side-channel
+      - implementation
+    type: event
+    prereq:
+      - event-kyber-2023
+    status: done
+    quality: tier3
+    subtopic: []

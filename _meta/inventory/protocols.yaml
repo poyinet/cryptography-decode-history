@@ -1,0 +1,1026 @@
+
+entries:
+  - id: tls10
+    title: TLS 1.0
+    title_en: TLS 1.0
+    domain:
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    level: 2
+    aliases:
+      - TLSv1.0
+    sources:
+      - kind: primary
+        title: RFC 2246(1999)
+    apps:
+      - telecom
+      - finance
+    threats:
+      - protocol
+    type: protocol
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: tls11
+    title: TLS 1.1
+    title_en: TLS 1.1
+    domain:
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    level: 2
+    aliases:
+      - TLSv1.1
+    sources:
+      - kind: primary
+        title: RFC 4346(2006)
+    apps:
+      - telecom
+      - finance
+    threats:
+      - protocol
+    type: protocol
+    prereq:
+      - tls10
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: tls12
+    title: TLS 1.2
+    title_en: TLS 1.2
+    domain:
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    level: 2
+    aliases:
+      - TLSv1.2
+    sources:
+      - kind: primary
+        title: RFC 5246(2008)
+    apps:
+      - telecom
+      - finance
+    threats:
+      - protocol
+    type: protocol
+    prereq:
+      - tls11
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: tls13
+    title: TLS 1.3
+    title_en: TLS 1.3
+    domain:
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    level: 2
+    aliases:
+      - TLSv1.3
+    sources:
+      - kind: primary
+        title: RFC 8446(2018)
+    apps:
+      - telecom
+      - finance
+      - everyday
+    threats:
+      - protocol
+      - implementation
+    type: protocol
+    prereq:
+      - tls12
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: dtls10
+    title: DTLS 1.0
+    title_en: DTLS 1.0
+    domain:
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - DTLSv1.0
+    sources:
+      - kind: primary
+        title: RFC 4347(2006)
+    apps:
+      - telecom
+    threats:
+      - protocol
+    type: protocol
+    prereq:
+      - tls10
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: dtls12
+    title: DTLS 1.2
+    title_en: DTLS 1.2
+    domain:
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - DTLSv1.2
+    sources:
+      - kind: primary
+        title: RFC 9146(2022)
+    apps:
+      - telecom
+    threats:
+      - protocol
+    type: protocol
+    prereq:
+      - dtls10
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: dtls13
+    title: DTLS 1.3
+    title_en: DTLS 1.3
+    domain:
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - DTLSv1.3
+    sources:
+      - kind: primary
+        title: RFC 9147(2022)
+    apps:
+      - telecom
+    threats:
+      - protocol
+    type: protocol
+    prereq:
+      - dtls12
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: ech
+    title: 加密客户端问候
+    title_en: Encrypted Client Hello
+    domain:
+      - d14-protocols-pki
+    era:
+      - e18-frontier
+    level: 3
+    aliases:
+      - ECH
+    sources:
+      - kind: primary
+        title: RFC 9849(2026)
+    apps:
+      - privacy
+      - everyday
+    threats:
+      - protocol
+      - network
+    type: protocol
+    prereq:
+      - tls13
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: quic
+    title: QUIC 传输协议
+    title_en: QUIC
+    domain:
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - QUIC
+    sources:
+      - kind: primary
+        title: RFC 9000(2021)
+    apps:
+      - telecom
+      - everyday
+    threats:
+      - protocol
+      - implementation
+    type: protocol
+    prereq:
+      - tls13
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: ssh1
+    title: SSH 1.x
+    title_en: Secure Shell Protocol
+    domain:
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    level: 2
+    aliases:
+      - SSH
+    sources:
+      - kind: primary
+        title: RFC 4253(2006)
+    apps:
+      - infrastructure
+      - everyday
+    threats:
+      - protocol
+    type: protocol
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: ssh2
+    title: SSH 2.0
+    title_en: SSH Protocol Architecture
+    domain:
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    level: 2
+    aliases:
+      - SSHv2
+    sources:
+      - kind: primary
+        title: RFC 4251(2006)
+    apps:
+      - infrastructure
+      - everyday
+    threats:
+      - protocol
+    type: protocol
+    prereq:
+      - ssh1
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: ipsec
+    title: IPsec 安全协议族
+    title_en: Internet Protocol Security
+    domain:
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - IPsec
+    sources:
+      - kind: primary
+        title: RFC 4301(2005)
+    apps:
+      - telecom
+      - government
+    threats:
+      - protocol
+    type: protocol
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: esp
+    title: ESP 封装安全载荷
+    title_en: Encapsulating Security Payload
+    domain:
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - ESP
+    sources:
+      - kind: primary
+        title: RFC 4303(2005)
+    apps:
+      - telecom
+      - government
+    threats:
+      - protocol
+    type: protocol
+    prereq:
+      - ipsec
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: ah
+    title: AH 认证头
+    title_en: Authentication Header
+    domain:
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - AH
+    sources:
+      - kind: primary
+        title: RFC 4302(2005)
+    apps:
+      - telecom
+      - government
+    threats:
+      - protocol
+    type: protocol
+    prereq:
+      - ipsec
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: ikev2
+    title: IKEv2 密钥交换
+    title_en: Internet Key Exchange v2
+    domain:
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - IKEv2
+    sources:
+      - kind: primary
+        title: RFC 7296(2014)
+    apps:
+      - telecom
+      - government
+    threats:
+      - protocol
+      - implementation
+    type: protocol
+    prereq:
+      - ipsec
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: dnssec
+    title: DNSSEC 域名安全
+    title_en: DNS Security Extensions
+    domain:
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - DNSSEC
+    sources:
+      - kind: primary
+        title: RFC 4033-4035(2007)
+    apps:
+      - telecom
+      - infrastructure
+    threats:
+      - protocol
+    type: protocol
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: dnssec-nsec3
+    title: NSEC3 抗NSEC3
+    title_en: NSEC3
+    domain:
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    level: 4
+    aliases:
+      - NSEC3
+    sources:
+      - kind: primary
+        title: RFC 5155(2008)
+    apps:
+      - telecom
+    threats:
+      - protocol
+      - network
+    type: protocol
+    prereq:
+      - dnssec
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: acme
+    title: ACME 证书自动管理
+    title_en: Automatic Certificate Management Environment
+    domain:
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    level: 2
+    aliases:
+      - ACME
+      - Let's Encrypt
+    sources:
+      - kind: primary
+        title: RFC 8555(2019)
+    apps:
+      - infrastructure
+      - everyday
+    threats:
+      - protocol
+    type: protocol
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: acme-ari
+    title: ACME 续期信息
+    title_en: ACME Renewal Information
+    domain:
+      - d14-protocols-pki
+    era:
+      - e18-frontier
+    level: 3
+    aliases:
+      - ARI
+    sources:
+      - kind: primary
+        title: RFC 9773(2025)
+    apps:
+      - infrastructure
+    threats:
+      - protocol
+    type: protocol
+    prereq:
+      - acme
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: ocsp
+    title: 在线证书状态协议
+    title_en: Online Certificate Status Protocol
+    domain:
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - OCSP
+    sources:
+      - kind: primary
+        title: RFC 6960(2013)
+    apps:
+      - finance
+      - everyday
+    threats:
+      - protocol
+    type: protocol
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: ocsp-stapling
+    title: OCSP 装订
+    title_en: OCSP Stapling
+    domain:
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - OCSP Stapling
+    sources:
+      - kind: primary
+        title: RFC 7633(2015)
+    apps:
+      - finance
+    threats:
+      - protocol
+    type: protocol
+    prereq:
+      - ocsp
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: crl
+    title: 证书吊销列表
+    title_en: Certificate Revocation List
+    domain:
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    level: 2
+    aliases:
+      - CRL
+    sources:
+      - kind: primary
+        title: RFC 5280(2008)
+    apps:
+      - finance
+      - government
+    threats:
+      - protocol
+    type: protocol
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: pkix
+    title: PKIX 证书框架
+    title_en: Internet X.509 Public Key Infrastructure
+    domain:
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    level: 2
+    aliases:
+      - PKIX
+      - X.509
+    sources:
+      - kind: primary
+        title: RFC 5280(2008)
+    apps:
+      - finance
+      - government
+    threats:
+      - protocol
+      - implementation
+    type: protocol
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: certificate-transparency
+    title: 证书透明日志
+    title_en: Certificate Transparency
+    domain:
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - CT
+      - CT Log
+    sources:
+      - kind: primary
+        title: RFC 6962(2013)
+    apps:
+      - infrastructure
+    threats:
+      - protocol
+    type: protocol
+    prereq:
+      - pkix
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: radius
+    title: RADIUS 认证协议
+    title_en: Remote Authentication Dial-In User Service
+    domain:
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    level: 2
+    aliases:
+      - RADIUS
+    sources:
+      - kind: primary
+        title: RFC 2865(2000)
+    apps:
+      - telecom
+    threats:
+      - protocol
+    type: protocol
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: radius-tls
+    title: RADIUS over TLS
+    title_en: RADIUS over TLS
+    domain:
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - radsec
+      - RADIUS/TLS
+    sources:
+      - kind: primary
+        title: RFC 6610(2014)
+    apps:
+      - telecom
+    threats:
+      - protocol
+    type: protocol
+    prereq:
+      - radius
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: eap
+    title: EAP 认证框架
+    title_en: Extensible Authentication Protocol
+    domain:
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    level: 2
+    aliases:
+      - EAP
+    sources:
+      - kind: primary
+        title: RFC 3748(2004)
+    apps:
+      - telecom
+    threats:
+      - protocol
+    type: protocol
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: eap-tls
+    title: EAP-TLS
+    title_en: EAP-TLS
+    domain:
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - EAP-TLS
+    sources:
+      - kind: primary
+        title: RFC 5216(2008)
+    apps:
+      - telecom
+    threats:
+      - protocol
+    type: protocol
+    prereq:
+      - eap
+      - tls12
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: eap-ttls
+    title: EAP-TTLS
+    title_en: EAP-TTLS
+    domain:
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - EAP-TTLS
+    sources:
+      - kind: primary
+        title: RFC 7174(2014)
+    apps:
+      - telecom
+    threats:
+      - protocol
+    type: protocol
+    prereq:
+      - eap
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: eap-pwd
+    title: EAP-PWD
+    title_en: EAP-PWD
+    domain:
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - EAP-PWD
+    sources:
+      - kind: primary
+        title: RFC 8116(2017)
+    apps:
+      - telecom
+    threats:
+      - protocol
+    type: protocol
+    prereq:
+      - eap
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: cose
+    title: COSE 签名与加密格式
+    title_en: CBOR Object Signing and Encryption
+    domain:
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - COSE
+    sources:
+      - kind: primary
+        title: RFC 8152(2017)
+    apps:
+      - infrastructure
+      - everyday
+    threats:
+      - protocol
+    type: protocol
+    prereq:
+      - cbor
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: cbor
+    title: CBOR 二进制编码
+    title_en: Concise Binary Object Representation
+    domain:
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    level: 2
+    aliases:
+      - CBOR
+    sources:
+      - kind: primary
+        title: RFC 8949(2020)
+    apps:
+      - infrastructure
+    threats:
+      - protocol
+    type: protocol
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: hpke
+    title: HPKE 混合公钥加密
+    title_en: Hybrid Public Key Encryption
+    domain:
+      - d14-protocols-pki
+    era:
+      - e18-frontier
+    level: 3
+    aliases:
+      - HPKE
+      - RFC 9180
+    sources:
+      - kind: primary
+        title: RFC 9180(2022)
+    apps:
+      - infrastructure
+    threats:
+      - protocol
+      - implementation
+    type: protocol
+    prereq:
+      - cose
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: masque-connect-udp
+    title: MASQUE CONNECT-UDP
+    title_en: MASQUE Proxying UDP over HTTP
+    domain:
+      - d14-protocols-pki
+    era:
+      - e18-frontier
+    level: 3
+    aliases:
+      - CONNECT-UDP
+    sources:
+      - kind: primary
+        title: RFC 9298(2022)
+    apps:
+      - infrastructure
+    threats:
+      - protocol
+      - network
+    type: protocol
+    prereq:
+      - quic
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: masque-connect-ip
+    title: MASQUE CONNECT-IP
+    title_en: MASQUE Proxying IP over HTTP
+    domain:
+      - d14-protocols-pki
+    era:
+      - e18-frontier
+    level: 3
+    aliases:
+      - CONNECT-IP
+    sources:
+      - kind: primary
+        title: RFC 9484(2023)
+    apps:
+      - infrastructure
+    threats:
+      - protocol
+      - network
+    type: protocol
+    prereq:
+      - masque-connect-udp
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: tlsgreasing
+    title: TLS GREasing 防降级
+    title_en: TLS GREasing
+    domain:
+      - d14-protocols-pki
+    era:
+      - e18-frontier
+    level: 3
+    aliases:
+      - GREasing
+      - RFC 8701
+    sources:
+      - kind: primary
+        title: RFC 8701(2020)
+    apps:
+      - infrastructure
+    threats:
+      - protocol
+      - implementation
+    type: protocol
+    prereq:
+      - tls13
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: tlscp
+    title: TLS 连接 ID
+    title_en: TLS Connection ID
+    domain:
+      - d14-protocols-pki
+    era:
+      - e18-frontier
+    level: 3
+    aliases:
+      - Connection ID
+      - RFC 9146
+    sources:
+      - kind: primary
+        title: RFC 9146(2022)
+    apps:
+      - telecom
+    threats:
+      - protocol
+      - implementation
+    type: protocol
+    prereq:
+      - dtls12
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: tlspq
+    title: 后量子 TLS 混合握手
+    title_en: Post-Quantum TLS Hybrid Handshake
+    domain:
+      - d22-post-quantum
+    era:
+      - e17-post-quantum
+    level: 3
+    aliases:
+      - PQ hybrid TLS
+      - X25519MLKEM768
+    sources:
+      - kind: primary
+        title: RFC 9794(2025)
+    apps:
+      - telecom
+    threats:
+      - protocol
+      - quantum
+    type: protocol
+    prereq:
+      - tls13
+      - kyber
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: srtp
+    title: SRTP 安全实时传输
+    title_en: Secure Real-time Transport Protocol
+    domain:
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - SRTP
+    sources:
+      - kind: primary
+        title: RFC 3711(2004)
+    apps:
+      - telecom
+    threats:
+      - protocol
+    type: protocol
+    prereq: []
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: tlcp
+    title: TIPC 轻量级传输
+    title_en: TIPC
+    domain:
+      - d14-protocols-pki
+    era:
+      - e19-china
+    level: 4
+    aliases:
+      - TIPC
+    sources:
+      - kind: primary
+        title: RFC 9383(2023)
+    apps:
+      - telecom
+      - infrastructure
+    threats:
+      - protocol
+    type: protocol
+    prereq: []
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: sm9
+    title: SM9 标识密码
+    title_en: SM9 Identity-Based Cryptography
+    domain:
+      - d20-china-sm
+    era:
+      - e18-frontier
+    level: 3
+    aliases:
+      - SM9
+      - GB/T 38635
+    sources:
+      - kind: primary
+        title: GB/T 38635.1—2020《信息安全技术 SM9 标识密码算法》
+    apps:
+      - government
+      - finance
+    threats:
+      - protocol
+    type: protocol
+    prereq:
+      - sm2
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: tlcp-cn
+    title: TLCP 国密 TLS
+    title_en: TLCP
+    domain:
+      - d20-china-sm
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - TLCP
+      - GB/T 38636
+    sources:
+      - kind: primary
+        title: GB/T 38636—2020《信息安全技术 传输层密码协议》
+    apps:
+      - government
+      - finance
+    threats:
+      - protocol
+    type: protocol
+    prereq:
+      - tls12
+      - sm2
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: gmssl
+    title: GM/T 商用密码套件
+    title_en: Chinese Commercial Cryptography Suite
+    domain:
+      - d20-china-sm
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - GM/T
+      - 国密套件
+    sources:
+      - kind: primary
+        title: 国家密码管理局 GM/T 系列标准
+    apps:
+      - government
+      - finance
+    threats:
+      - protocol
+    type: protocol
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []

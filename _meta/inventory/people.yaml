@@ -1,0 +1,1811 @@
+
+domain: "*"
+title: people 总目录
+title_en: people Inventory
+entries:
+  - id: adleman
+    title: 伦纳德·阿德曼
+    title_en: Leonard Adleman
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e13-public-key
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Rivest, Shamir, Adleman, 《A Method for Obtaining Digital Signatures and Public-Key Cryptosystems》, Communications of the ACM, 1978
+      - kind: tertiary
+        title: Leonard Adleman, RSA 公钥密码合著者 — Wikipedia
+    note: ""
+  - id: alberti
+    title: 莱昂·巴蒂斯塔·阿尔贝蒂
+    title_en: Leon Battista Alberti
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e06-renaissance
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Leon Battista Alberti - 维基百科
+    note: ""
+  - id: alexander
+    title: 休·亚历山大
+    title_en: Conel Hugh O'Donel Alexander
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e11-ww2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Conel Hugh O'Donel Alexander - 维基百科
+    note: ""
+  - id: babbage
+    title: 查尔斯·巴贝奇
+    title_en: Charles Babbage
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e06-renaissance
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Charles Babbage, 《National Arithmetic》, 1839
+      - kind: tertiary
+        title: W. K. Vickery, 《The Babbage Machine》, 1952
+    note: ""
+  - id: back
+    title: 亚当·贝克
+    title_en: Adam Back
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e13-public-key
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Adam Back - 维基百科
+    note: ""
+  - id: bacon
+    title: 培根
+    title_en: Bacon
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e06-renaissance
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Francis Bacon (1561–1626), 双面字母表 (Baconian biliteral cipher) — 归于其名下的密码文献存在争议，无亲笔密码学著作传世
+      - kind: tertiary
+        title: 《The Baconian Ciphers》相关史学考据
+    note: ""
+  - id: bazeries
+    title: 艾蒂安·巴泽里
+    title_en: Étienne Bazeries
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e09-ww1
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Étienne Bazeries - 维基百科
+    note: ""
+  - id: bellaso
+    title: 焦万·巴蒂斯塔·贝拉索
+    title_en: Giovan Battista Bellaso
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e06-renaissance
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Giovan Battista Bellaso
+      - kind: tertiary
+        title: Giovan Battista Bellaso, La cifra del. Sig. Giovan Battista Bellaso (1553)
+    note: ""
+  - id: bennett
+    title: 查尔斯·贝内特
+    title_en: Charles Bennett
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e16-quantum-turn
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Charles H. Bennett (physicist) - 维基百科
+    note: ""
+  - id: bernstein
+    title: 丹尼尔·伯恩斯坦
+    title_en: Daniel J. Bernstein
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e13-public-key
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Wikipedia, 《Daniel J. Bernstein》
+    note: ""
+  - id: biham
+    title: 伊莱·比哈姆
+    title_en: Eli Biham
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e13-public-key
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Wikipedia, 《Eli Biham》
+    note: ""
+  - id: brassard
+    title: 吉尔·布拉萨德
+    title_en: Gilles Brassard
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e16-quantum-turn
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Gilles Brassard - 维基百科
+    note: ""
+  - id: caesar
+    title: 凯撒
+    title_en: Caesar
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e02-classical
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Julius Caesar
+      - kind: tertiary
+        title: Gaius Julius Caesar, Commentarii de Bello Gallico (The Gallic Wars)
+    note: ""
+  - id: cardano
+    title: 吉罗拉莫·卡尔达诺
+    title_en: Girolamo Cardano
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e06-renaissance
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Gerolamo Cardano - 维基百科
+    note: ""
+  - id: champollion
+    title: 商博良
+    title_en: Champollion
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e01-origins
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Jean-François Champollion
+      - kind: tertiary
+        title: "Lesley and Roy Adkins, The Keys of Egypt: The Obsession to Decipher Egyptian Hieroglyphs (2000)"
+    note: ""
+  - id: chaum
+    title: 大卫·肖姆
+    title_en: David Chaum
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e13-public-key
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Wikipedia, 《David Chaum》
+    note: ""
+  - id: clarke
+    title: 琼·克拉克
+    title_en: Joan Clarke
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e11-ww2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Joan Clarke - 维基百科
+    note: ""
+  - id: cocks
+    title: 克利福德·科克斯
+    title_en: Clifford Cocks
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e13-public-key
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: "Clifford Cocks, 《Secret Communication: An Exposition of RSA》, 2000（其 1973 年 GCHQ 备忘录之公开阐述）"
+      - kind: tertiary
+        title: GCHQ 1973 内部备忘录（Cocks 早于 RSA 独立推导）
+    note: ""
+  - id: daemen
+    title: 约安·达门
+    title_en: Joan Daemen
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e13-public-key
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Joan Daemen - 维基百科
+    note: ""
+  - id: davies
+    title: 唐纳德·戴维斯
+    title_en: Donald Davies
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e13-public-key
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Wikipedia, 《Donald Davies》
+    note: ""
+  - id: diffie
+    title: 惠特菲尔德·迪菲
+    title_en: Whitfield Diffie
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e13-public-key
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Whitfield Diffie
+      - kind: tertiary
+        title: Whitfield Diffie and Martin E. Hellman, "New Directions in Cryptography", IEEE Transactions on Information Theory (1976)
+    note: ""
+  - id: driscoll
+    title: 艾格尼丝·德里斯科尔
+    title_en: Agnes Driscoll
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e11-ww2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: William F. Friedman, 《The Story of American Cryptanalysis》, 1956
+      - kind: tertiary
+        title: Agnes Meyer Driscoll 1916 年独立破译维吉尼亚密码（首个美国人）— 史学考据
+    note: ""
+  - id: efriedman
+    title: 伊丽莎白·弗里德曼
+    title_en: Elizebeth Friedman
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e11-ww2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Elizebeth Smith Friedman - 维基百科
+    note: ""
+  - id: ekert
+    title: 阿图尔·埃克特
+    title_en: Artur Ekert
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e16-quantum-turn
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Wikipedia, 《Artur Ekert》
+    note: ""
+  - id: elgamal
+    title: 塔赫尔·埃尔加马尔
+    title_en: Taher ElGamal
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e13-public-key
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Taher Elgamal - 维基百科
+    note: ""
+  - id: ellis
+    title: 詹姆斯·埃利斯
+    title_en: James Ellis
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e13-public-key
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: James H. Ellis
+    note: ""
+  - id: feistel
+    title: 霍斯特·费斯泰尔
+    title_en: Horst Feistel
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e13-public-key
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Horst Feistel, 《Cryptography and Computer Data Networks》, IEEE Proceedings, 1976
+      - kind: tertiary
+        title: IBM, 数据加密标准前身（Feistel 网络结构）— 1970s 内部文献
+    note: ""
+  - id: flowers
+    title: 弗劳尔斯
+    title_en: Flowers
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e11-ww2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Tommy Flowers, Colossus 电子计算机（1943）— David Kahn, 《The Codebreakers》, 1967
+      - kind: tertiary
+        title: Andrew Hodges 等对 Colossus 团队的口述史整理
+    note: ""
+  - id: friedman
+    title: 弗里德曼
+    title_en: Friedman
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e11-ww2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: William F. Friedman
+    note: ""
+  - id: galois
+    title: 埃瓦里斯特·伽罗瓦
+    title_en: Évariste Galois
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era: []
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Wikipedia, 《Évariste Galois》
+    note: ""
+  - id: gardner
+    title: 梅雷迪思·加德纳
+    title_en: Meredith Gardner
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e12-cold-war-info-theory
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Meredith Gardner - 维基百科
+    note: ""
+  - id: gauss
+    title: 卡尔·弗里德里希·高斯
+    title_en: Carl Friedrich Gauss
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era: []
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Wikipedia, 《Carl Friedrich Gauss》
+    note: ""
+  - id: gentry
+    title: 克雷格·金特里
+    title_en: Craig Gentry
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e13-public-key
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Wikipedia, 《Craig Gentry (computer scientist)》
+      - kind: tertiary
+        title: Gentry, C. 《A Fully Homomorphic Encryption Scheme》(博士后论文), Stanford University, 2009
+    note: ""
+  - id: goldwasser
+    title: 莎菲耶·戈德瓦瑟
+    title_en: Shafi Goldwasser
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e13-public-key
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Wikipedia, 《Shafi Goldwasser》
+      - kind: tertiary
+        title: Goldwasser, S., Micali, S., Rackoff, C. 《The Knowledge Complexity of Interactive Proof Systems》, SIAM Journal on Computing, 1989
+      - kind: tertiary
+        title: Goldwasser, S., Micali, S. 《Probabilistic Encryption》, Journal of Computer and System Sciences, 1984
+    note: ""
+  - id: grover
+    title: 洛夫·格罗弗
+    title_en: Lov Grover
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e16-quantum-turn
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Lov Grover - 维基百科
+    note: ""
+  - id: hellman
+    title: 马丁·赫尔曼
+    title_en: Martin Hellman
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e13-public-key
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Martin Hellman - 维基百科
+    note: ""
+  - id: heninger
+    title: 娜迪娅·赫宁格
+    title_en: Nadia Heninger
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e13-public-key
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Wikipedia, 《Nadia Heninger》
+    note: ""
+  - id: jefferson
+    title: 托马斯·杰斐逊
+    title_en: Thomas Jefferson
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e09-ww1
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Thomas Jefferson - 维基百科
+    note: ""
+  - id: kasiski
+    title: 弗里德里希·卡西斯基
+    title_en: Friedrich Kasiski
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e06-renaissance
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Friedrich Kasiski, 《Die Geheimschriften und ihre Deutung》, 1863（Kasiski 加密术）
+      - kind: tertiary
+        title: Kasiski 方法（重复间隔分析）— 密码分析史标准条目
+    note: ""
+  - id: kerckhoffs
+    title: 奥古斯特·克尔克霍夫斯
+    title_en: Auguste Kerckhoffs
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e06-renaissance
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Auguste Kerckhoffs
+      - kind: tertiary
+        title: Auguste Kerckhoffs, "La cryptographie militaire", Journal des Sciences Militaires (1883)
+    note: ""
+  - id: kindi
+    title: 肯迪
+    title_en: Al-Kindi
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e04-arabic-golden-age
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Al-Kindi, 《Risāla fī Istikhrāj al-Muʿammāt》（On Deciphering Cryptographic Messages）, 约 850
+      - kind: tertiary
+        title: Al-Kindi 频率分析开创性手稿 — 阿拉伯黄金时代密码学史料
+    note: ""
+  - id: knox
+    title: 迪利·诺克斯
+    title_en: Alfred Dillwyn "Dilly" Knox
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e11-ww2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Dilly Knox - 维基百科
+    note: ""
+  - id: koblitz
+    title: 尼尔·科比茨
+    title_en: Neal Koblitz
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e13-public-key
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Neal Koblitz - 维基百科
+    note: ""
+  - id: kocher
+    title: 保罗·科赫尔
+    title_en: Paul Kocher
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e13-public-key
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Wikipedia, 《Paul Kocher》
+      - kind: tertiary
+        title: Kocher, P. 《Timing Attacks on Implementations of Diffie-Hellman, RSA, DSS, and Other Systems》, CRYPTO 1996
+    note: ""
+  - id: matsui
+    title: 三宅满
+    title_en: Mitsuru Matsui
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e13-public-key
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Wikipedia, 《Mitsuru Matsui》
+    note: ""
+  - id: mauborgne
+    title: 约瑟夫·毛博涅
+    title_en: Joseph Mauborgne
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e09-ww1
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Joseph O. Mauborgne - 维基百科
+    note: ""
+  - id: merkle
+    title: 拉尔夫·默克尔
+    title_en: Ralph Merkle
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e13-public-key
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Ralph Merkle
+      - kind: tertiary
+        title: Ralph C. Merkle, "Secure Communications over Insecure Channels", Communications of the ACM (1978)
+    note: ""
+  - id: micali
+    title: 西尔维奥·米卡利
+    title_en: Silvio Micali
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e13-public-key
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Wikipedia, 《Silvio Micali》
+    note: ""
+  - id: miller
+    title: 弗兰克·米勒
+    title_en: Frank Miller
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e09-ww1
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Frank Miller (cryptographer) - 维基百科
+    note: ""
+  - id: morse
+    title: 塞缪尔·摩斯
+    title_en: Samuel Morse
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e09-ww1
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Wikipedia, 《Samuel Morse》
+    note: ""
+  - id: newman
+    title: 马克斯·纽曼
+    title_en: Max Newman
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e11-ww2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Wikipedia, 《Max Newman》
+    note: ""
+  - id: payne
+    title: 乔治·佩恩万
+    title_en: Georges Painvin
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e09-ww1
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Georges Painvin, 《Comment j'ai cassé le chiffrement Vigenère》, Bulletin des Sciences Militaires, 1929
+      - kind: tertiary
+        title: Painvin 1893 年破译维吉尼亚（被法国军队雪藏至 1929 才发表）— 史学考据
+    note: ""
+  - id: playfair
+    title: 莱昂·普莱费尔勋爵
+    title_en: Lyon Playfair
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e08-codebreakers
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Wikipedia, 《Lyon Playfair》
+    note: ""
+  - id: pzimmermann
+    title: 菲尔·齐默尔曼
+    title_en: Phil Zimmermann
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e13-public-key
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Phil Zimmermann - 维基百科
+    note: ""
+  - id: rabin
+    title: 迈克尔·拉宾
+    title_en: Michael O. Rabin
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e13-public-key
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Wikipedia, 《Michael O. Rabin》
+    note: ""
+  - id: rackoff
+    title: 查尔斯·拉科夫
+    title_en: Charles Rackoff
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e13-public-key
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Wikipedia, 《Charles Rackoff》
+    note: ""
+  - id: regev
+    title: 奥德·雷格夫
+    title_en: Oded Regev
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e13-public-key
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Wikipedia, 《Oded Regev (computer scientist)》
+      - kind: tertiary
+        title: Regev, O. 《On Lattices, Learning with Errors, Random Linear Codes, and Cryptography》, STOC 2005
+    note: ""
+  - id: rejewski
+    title: 马里安·雷耶夫斯基
+    title_en: Marian Rejewski
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e11-ww2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Marian Rejewski, 《How We Broke the Enigma Cipher》, 1981
+      - kind: tertiary
+        title: Władysław Kozaczuk, 《Marian Rejewski, Codebreaker》, 1994
+    note: ""
+  - id: rijmen
+    title: 文森特·赖伊曼
+    title_en: Vincent Rijmen
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e13-public-key
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Vincent Rijmen - 维基百科
+    note: ""
+  - id: rivest
+    title: 罗纳德·李维斯特
+    title_en: Ronald Rivest
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e13-public-key
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Ronald L. Rivest - 维基百科
+    note: ""
+  - id: roberts
+    title: 杰里·罗伯茨
+    title_en: Jerry Roberts
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e11-ww2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Wikipedia, 《Jerry Roberts (cryptographer)》
+    note: ""
+  - id: rochefort
+    title: 罗奇福特
+    title_en: Rochefort
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e11-ww2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Joseph Rochefort 破译 JN-25（中途岛战役，1942）— David Kahn, 《The Codebreakers》, 1967
+      - kind: tertiary
+        title: 太平洋战史对 Station HYPO 情报战的考据
+    note: ""
+  - id: rosenberg
+    title: 罗森伯格夫妇
+    title_en: The Rosenbergs
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e12-cold-war-info-theory
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Julius 与 Ethel Rosenberg 原子间谍案（1951 判死刑）— 美国司法/档案史料
+      - kind: tertiary
+        title: Rosenberg 案对密码学人才流动的影响 — 冷战情报史文献
+    note: ""
+  - id: rowlett
+    title: 弗兰克·罗利特
+    title_en: Frank Rowlett
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e11-ww2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Wikipedia, 《Frank Rowlett》
+    note: ""
+  - id: rozycki
+    title: 耶日·鲁日茨基
+    title_en: Jerzy Różycki
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e11-ww2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Wikipedia, 《Jerzy Różycki》
+    note: ""
+  - id: safford
+    title: 劳伦斯·萨福德
+    title_en: Laurance Safford
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e11-ww2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Wikipedia, 《Laurance Safford》
+    note: ""
+  - id: scherbius
+    title: 阿图尔·谢尔比乌斯
+    title_en: Arthur Scherbius
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e11-ww2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Arthur Scherbius, Enigma 前身专利（《Verschlüsselungsvorgang》）, 1918
+      - kind: tertiary
+        title: Scherbius 转子机专利史 — David Kahn, 《The Codebreakers》, 1967
+    note: ""
+  - id: schneier
+    title: 布鲁斯·施奈尔
+    title_en: Bruce Schneier
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e13-public-key
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Bruce Schneier - 维基百科
+    note: ""
+  - id: shamir
+    title: 阿迪·萨莫尔
+    title_en: Adi Shamir
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e13-public-key
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Rivest, Shamir, Adleman, 《A Method for Obtaining Digital Signatures and Public-Key Cryptosystems》, 1978
+      - kind: tertiary
+        title: Adi Shamir, RSA 公钥密码合著者 — Wikipedia
+    note: ""
+  - id: shannon
+    title: 香农
+    title_en: Shannon
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e13-public-key
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Claude Shannon
+      - kind: tertiary
+        title: Claude E. Shannon, "Communication Theory of Secrecy Systems", Bell System Technical Journal (1949)
+    note: ""
+  - id: shor
+    title: 彼得·秀尔
+    title_en: Peter Shor
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e16-quantum-turn
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Peter Shor - 维基百科
+      - kind: tertiary
+        title: Shor (1997) 量子算法原始论文, SIAM J. Comput. - doi.org
+    note: ""
+  - id: tiltman
+    title: 约翰·蒂尔特曼
+    title_en: John Tiltman
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e12-cold-war-info-theory
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Wikipedia, 《John Tiltman》
+    note: ""
+  - id: trithemius
+    title: 约翰内斯·特里特米乌斯
+    title_en: Johannes Trithemius
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e06-renaissance
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Johannes Trithemius
+      - kind: tertiary
+        title: Johannes Trithemius, Steganographia (c. 1499)
+    note: ""
+  - id: turing
+    title: 图灵
+    title_en: Turing
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e11-ww2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Alan Turing
+      - kind: tertiary
+        title: "Andrew Hodges, Alan Turing: The Enigma (1983)"
+    note: ""
+  - id: tutte
+    title: 威廉·图特
+    title_en: Bill Tutte
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e11-ww2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Wikipedia, 《W. T. Tutte》
+    note: ""
+  - id: vernam
+    title: 吉尔伯特·弗纳姆
+    title_en: Gilbert Vernam
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e09-ww1
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Gilbert Vernam, 《Cipher Printing Telegraph》, Bell System Technical Journal, 1919
+      - kind: tertiary
+        title: Vernam 流密码（一次性密钥流）— 密码史标准条目
+    note: ""
+  - id: vigenere
+    title: 布莱斯·德·维吉尼亚
+    title_en: Blaise de Vigenère
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e06-renaissance
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Blaise de Vigenère, 《Traicté des Chiffres》, 1586（多表替换密码）
+      - kind: tertiary
+        title: Vigenère 密码 — 古典密码学史标准条目
+    note: ""
+  - id: vonneumann
+    title: 约翰·冯·诺依曼
+    title_en: John von Neumann
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e12-cold-war-info-theory
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Wikipedia, 《John von Neumann》
+    note: ""
+  - id: wangxy
+    title: 王小云
+    title_en: Xiaoyun Wang
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e13-public-key
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Wang Xiaoyun - 维基百科
+    note: ""
+  - id: welchman
+    title: 韦尔奇曼
+    title_en: Welchman
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e11-ww2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Gordon Welchman
+      - kind: tertiary
+        title: "Gordon Welchman, The Hut Six Story: Breaking the Enigma Codes (1982)"
+    note: ""
+  - id: wheatstone
+    title: 查尔斯·惠斯通
+    title_en: Charles Wheatstone
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e09-ww1
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Charles Wheatstone - 维基百科
+    note: ""
+  - id: wiesner
+    title: 斯蒂芬·威斯纳
+    title_en: Stephen Wiesner
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e16-quantum-turn
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Stephen Wiesner - 维基百科
+    note: ""
+  - id: williamson
+    title: 马尔科姆·威廉森
+    title_en: Malcolm Williamson
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e12-cold-war-info-theory
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Wikipedia, 《Malcolm J. Williamson》
+    note: ""
+  - id: yao
+    title: 姚期智
+    title_en: Andrew Chi-Chih Yao
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e13-public-key
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Wikipedia, 《Andrew Yao》
+    note: ""
+  - id: yardley
+    title: 赫伯特·亚德利
+    title_en: Herbert Yardley
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e09-ww1
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Herbert O. Yardley - 维基百科
+    note: ""
+  - id: zengxisheng
+    title: 曾希圣
+    title_en: Zeng Xisheng
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e19-china
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: 《红色密码：红军无线电侦察纪实》等党史文献
+      - kind: tertiary
+        title: 中国网络电视台/中央党史文献 红军无线电通信专题
+    note: ""
+  - id: zygalski
+    title: 亨里克·齐加尔斯基
+    title_en: Henryk Zygalski
+    status: done
+    quality: tier2
+    type: person
+    derived: true
+    domain: []
+    era:
+      - e11-ww2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Wikipedia, 《Henryk Zygalski》
+    note: ""

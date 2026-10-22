@@ -1,0 +1,1841 @@
+
+entries:
+  - id: fips46-3
+    title: 三重数据加密标准
+    title_en: Triple DES
+    domain:
+      - d14-protocols-pki
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - FIPS 46-3
+      - 3DES
+    sources:
+      - kind: primary
+        title: FIPS 46-3(1998)
+    apps:
+      - government
+      - finance
+    threats:
+      - protocol
+    type: standard
+    prereq:
+      - des
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: fips81
+    title: DES 工作模式
+    title_en: DES Modes of Operation
+    domain:
+      - d08-block-cipher
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - FIPS 81
+    sources:
+      - kind: primary
+        title: FIPS 81(1980)
+    apps:
+      - government
+    threats:
+      - protocol
+    type: standard
+    prereq:
+      - des
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: fips140-3
+    title: 密码模块安全要求
+    title_en: Security Requirements for Cryptographic Modules
+    domain:
+      - d13-key-management
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - FIPS 140-3
+      - CMVP
+    sources:
+      - kind: primary
+        title: FIPS 140-3(2019)
+    apps:
+      - government
+      - finance
+    threats:
+      - physical
+      - side-channel
+    type: standard
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: fips180-4
+    title: 安全散列标准
+    title_en: Secure Hash Standard
+    domain:
+      - d09-hash
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - FIPS 180-4
+      - SHS
+    sources:
+      - kind: primary
+        title: FIPS 180-4(2015)
+    apps:
+      - government
+      - finance
+    threats:
+      - protocol
+      - implementation
+    type: standard
+    prereq:
+      - sha1
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: fips186-5
+    title: 数字签名标准
+    title_en: Digital Signature Standard
+    domain:
+      - d12-signature
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - FIPS 186-5
+      - DSS
+    sources:
+      - kind: primary
+        title: FIPS 186-5(2023)
+    apps:
+      - government
+      - finance
+    threats:
+      - related-key
+    type: standard
+    prereq:
+      - dsa
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: fips197
+    title: 高级加密标准
+    title_en: Advanced Encryption Standard
+    domain:
+      - d08-block-cipher
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - FIPS 197
+      - AES
+    sources:
+      - kind: primary
+        title: FIPS 197(2001)
+    apps:
+      - government
+      - finance
+    threats:
+      - side-channel
+    type: standard
+    prereq:
+      - des
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: fips198-1
+    title: 键控散列消息认证码
+    title_en: The Keyed-Hash Message Authentication Code
+    domain:
+      - d10-auth-aead
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - FIPS 198-1
+      - HMAC
+    sources:
+      - kind: primary
+        title: FIPS 198-1(2008)
+    apps:
+      - government
+      - finance
+    threats:
+      - side-channel
+    type: standard
+    prereq:
+      - sha2
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: fips202
+    title: SHA-3 标准
+    title_en: SHA-3 Standard
+    domain:
+      - d09-hash
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - FIPS 202
+      - Keccak
+    sources:
+      - kind: primary
+        title: FIPS 202(2015)
+    apps:
+      - government
+      - finance
+    threats:
+      - protocol
+      - implementation
+    type: standard
+    prereq:
+      - sha2
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: fips203
+    title: 模块格基密钥封装机制标准
+    title_en: ML-KEM Standard
+    domain:
+      - d22-post-quantum
+    era:
+      - e17-post-quantum
+    level: 3
+    aliases:
+      - FIPS 203
+      - Kyber
+    sources:
+      - kind: primary
+        title: FIPS 203(2024)
+    apps:
+      - government
+      - finance
+    threats:
+      - quantum
+    type: standard
+    prereq:
+      - kyber
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: fips204
+    title: 模块格基数字签名标准
+    title_en: ML-DSA Standard
+    domain:
+      - d22-post-quantum
+    era:
+      - e17-post-quantum
+    level: 3
+    aliases:
+      - FIPS 204
+      - Dilithium
+    sources:
+      - kind: primary
+        title: FIPS 204(2024)
+    apps:
+      - government
+      - finance
+    threats:
+      - quantum
+    type: standard
+    prereq:
+      - ml-dsa
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: fips205
+    title: 无状态散列基数字签名标准
+    title_en: SLH-DSA Standard
+    domain:
+      - d22-post-quantum
+    era:
+      - e17-post-quantum
+    level: 3
+    aliases:
+      - FIPS 205
+      - SPHINCS+
+    sources:
+      - kind: primary
+        title: FIPS 205(2024)
+    apps:
+      - government
+      - finance
+    threats:
+      - quantum
+    type: standard
+    prereq:
+      - slh-dsa
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: fips199
+    title: 联邦信息与信息系统安全分类标准
+    title_en: Standards for Security Categorization of Federal Information
+    domain:
+      - d23-applied-security
+    era:
+      - e19-china
+    level: 3
+    aliases:
+      - FIPS 199
+    sources:
+      - kind: primary
+        title: FIPS 199(2004)
+    apps:
+      - government
+    threats:
+      - implementation
+    type: standard
+    prereq: []
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: sp800-38a
+    title: 分组密码工作模式建议
+    title_en: Recommendation for Block Cipher Modes of Operation
+    domain:
+      - d08-block-cipher
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - SP 800-38A
+    sources:
+      - kind: primary
+        title: NIST SP 800-38A(2001)
+    apps:
+      - government
+      - finance
+    threats:
+      - protocol
+    type: standard
+    prereq:
+      - des
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: sp800-38b
+    title: CMAC 认证模式
+    title_en: The CMAC Mode for Authentication
+    domain:
+      - d10-auth-aead
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - SP 800-38B
+    sources:
+      - kind: primary
+        title: NIST SP 800-38B(2005)
+    apps:
+      - government
+      - finance
+    threats:
+      - side-channel
+    type: standard
+    prereq:
+      - aes
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: sp800-38c
+    title: CCM 认证与保密模式
+    title_en: The CCM Mode for Authentication and Confidentiality
+    domain:
+      - d10-auth-aead
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - SP 800-38C
+    sources:
+      - kind: primary
+        title: NIST SP 800-38C(2004)
+    apps:
+      - government
+      - finance
+    threats:
+      - CCA
+    type: standard
+    prereq:
+      - ctr
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: sp800-38d
+    title: GCM 与 GMAC 模式
+    title_en: Galois/Counter Mode and GMAC
+    domain:
+      - d10-auth-aead
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - SP 800-38D
+      - GCM
+    sources:
+      - kind: primary
+        title: NIST SP 800-38D(2007)
+    apps:
+      - government
+      - finance
+    threats:
+      - CCA
+    type: standard
+    prereq:
+      - ctr
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: sp800-38e
+    title: XTS 存储加密模式
+    title_en: The XTS-AES Mode for Confidentiality on Storage Devices
+    domain:
+      - d08-block-cipher
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - SP 800-38E
+      - XTS
+    sources:
+      - kind: primary
+        title: NIST SP 800-38E(2010)
+    apps:
+      - infrastructure
+    threats:
+      - side-channel
+    type: standard
+    prereq:
+      - ctr
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: sp800-38f
+    title: 密钥包装方法
+    title_en: Methods for Key Wrapping
+    domain:
+      - d13-key-management
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - SP 800-38F
+      - KW
+    sources:
+      - kind: primary
+        title: NIST SP 800-38F(2012)
+    apps:
+      - government
+      - finance
+    threats:
+      - related-key
+    type: standard
+    prereq:
+      - aes
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: sp800-38g
+    title: 格式保留加密
+    title_en: Format-Preserving Encryption
+    domain:
+      - d08-block-cipher
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - SP 800-38G
+      - FPE
+    sources:
+      - kind: primary
+        title: NIST SP 800-38G(2016)
+    apps:
+      - finance
+    threats:
+      - protocol
+    type: standard
+    prereq:
+      - ctr
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: sp800-56a
+    title: 成对密钥协商方案
+    title_en: Pairwise Key Agreement Schemes
+    domain:
+      - d11-asymmetric
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - SP 800-56A
+    sources:
+      - kind: primary
+        title: NIST SP 800-56A Rev.3(2018)
+    apps:
+      - government
+    threats:
+      - protocol
+    type: standard
+    prereq:
+      - diffie-hellman
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: sp800-56c
+    title: 密钥派生
+    title_en: Key Derivation
+    domain:
+      - d13-key-management
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - SP 800-56C
+    sources:
+      - kind: primary
+        title: NIST SP 800-56C Rev.1(2021)
+    apps:
+      - government
+    threats:
+      - protocol
+    type: standard
+    prereq:
+      - hkdf
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: sp800-57
+    title: 密钥管理
+    title_en: Key Management
+    domain:
+      - d13-key-management
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - SP 800-57
+    sources:
+      - kind: primary
+        title: NIST SP 800-57 Pt1 Rev.5(2020)
+    apps:
+      - government
+      - finance
+    threats:
+      - implementation
+    type: standard
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: sp800-63
+    title: 数字身份指南
+    title_en: Digital Identity Guidelines
+    domain:
+      - d23-applied-security
+    era:
+      - e15-web-protocols
+    level: 2
+    aliases:
+      - SP 800-63
+    sources:
+      - kind: primary
+        title: NIST SP 800-63 Rev.4(2025)
+    apps:
+      - government
+      - everyday
+    threats:
+      - social
+    type: standard
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: sp800-90a
+    title: 随机数发生器建议
+    title_en: Recommendation for Random Number Generation
+    domain:
+      - d19-randomness
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - SP 800-90A
+      - DRBG
+    sources:
+      - kind: primary
+        title: NIST SP 800-90A Rev.1(2015)
+    apps:
+      - government
+      - finance
+    threats:
+      - implementation
+    type: standard
+    prereq:
+      - trng
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: sp800-90b
+    title: 熵源建议
+    title_en: Entropy Sources
+    domain:
+      - d19-randomness
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - SP 800-90B
+    sources:
+      - kind: primary
+        title: NIST SP 800-90B(2007)
+    apps:
+      - government
+      - finance
+    threats:
+      - implementation
+    type: standard
+    prereq:
+      - trng
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: sp800-108
+    title: 基于 PRF 的密钥派生
+    title_en: Recommendation for Key Derivation Using Pseudorandom Functions
+    domain:
+      - d13-key-management
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - SP 800-108
+    sources:
+      - kind: primary
+        title: NIST SP 800-108(2008)
+    apps:
+      - government
+    threats:
+      - protocol
+    type: standard
+    prereq:
+      - prf
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: sp800-131a
+    title: 密码算法与密钥长度过渡
+    title_en: Transitions for Cryptographic Algorithms and Key Lengths
+    domain:
+      - d13-key-management
+    era:
+      - e18-frontier
+    level: 3
+    aliases:
+      - SP 800-131A
+    sources:
+      - kind: primary
+        title: NIST SP 800-131A Rev.2(2019)
+    apps:
+      - government
+      - finance
+    threats:
+      - implementation
+    type: standard
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: sp800-160v2
+    title: 后量子密码过渡方法
+    title_en: Approaches for Transitioning to Post-Quantum Cryptography
+    domain:
+      - d22-post-quantum
+    era:
+      - e17-post-quantum
+    level: 3
+    aliases:
+      - SP 800-160 Vol.2
+    sources:
+      - kind: primary
+        title: NIST SP 800-160 Vol.2(2019)
+    apps:
+      - government
+      - finance
+    threats:
+      - quantum
+    type: standard
+    prereq:
+      - kyber
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: sp800-177
+    title: TLS 使用指南
+    title_en: Guidelines for Using TLS
+    domain:
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - SP 800-177
+    sources:
+      - kind: primary
+        title: NIST SP 800-177 Rev.1(2020)
+    apps:
+      - government
+      - finance
+    threats:
+      - protocol
+    type: standard
+    prereq:
+      - tls12
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: sp800-186
+    title: 椭圆曲线域参数建议
+    title_en: "Recommendations for Discrete Logarithm-based Cryptography: Elliptic Curve Domain Parameters"
+    domain:
+      - d11-asymmetric
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - SP 800-186
+    sources:
+      - kind: primary
+        title: NIST SP 800-186(2023)
+    apps:
+      - government
+      - finance
+    threats:
+      - related-key
+    type: standard
+    prereq:
+      - ecdsa
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: sp800-208
+    title: 状态散列基签名方案
+    title_en: Stateful Hash-based Signature Schemes
+    domain:
+      - d22-post-quantum
+    era:
+      - e17-post-quantum
+    level: 4
+    aliases:
+      - SP 800-208
+      - LMS
+      - XMSS
+    sources:
+      - kind: primary
+        title: NIST SP 800-208(2020)
+    apps:
+      - government
+    threats:
+      - related-key
+    type: standard
+    prereq:
+      - slh-dsa
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: sp800-1800
+    title: 网络安全实践指南系列
+    title_en: Cybersecurity Practice Guides
+    domain:
+      - d23-applied-security
+    era:
+      - e18-frontier
+    level: 3
+    aliases:
+      - SP 1800
+      - 实践指南
+    sources:
+      - kind: primary
+        title: NIST SP 1800 系列
+    apps:
+      - government
+      - finance
+    threats:
+      - implementation
+    type: standard
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: iso10116
+    title: 分组密码工作模式
+    title_en: Modes of operation for an n-bit block cipher
+    domain:
+      - d08-block-cipher
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - ISO/IEC 10116
+    sources:
+      - kind: primary
+        title: ISO/IEC 10116:2017
+    apps:
+      - government
+    threats:
+      - protocol
+    type: standard
+    prereq:
+      - des
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: iso11770-1
+    title: 密钥管理框架
+    title_en: "Key management — Part 1: Framework"
+    domain:
+      - d13-key-management
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - ISO/IEC 11770-1
+    sources:
+      - kind: primary
+        title: ISO/IEC 11770-1:2010
+    apps:
+      - government
+    threats:
+      - implementation
+    type: standard
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: iso11770-2
+    title: 对称技术密钥管理
+    title_en: "Key management — Part 2: Mechanisms using symmetric techniques"
+    domain:
+      - d13-key-management
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - ISO/IEC 11770-2
+    sources:
+      - kind: primary
+        title: ISO/IEC 11770-2:2018
+    apps:
+      - government
+    threats:
+      - implementation
+    type: standard
+    prereq:
+      - iso11770-1
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: iso11770-3
+    title: 非对称技术密钥管理
+    title_en: "Key management — Part 3: Mechanisms using asymmetric techniques"
+    domain:
+      - d13-key-management
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - ISO/IEC 11770-3
+    sources:
+      - kind: primary
+        title: ISO/IEC 11770-3:2021
+    apps:
+      - government
+    threats:
+      - implementation
+    type: standard
+    prereq:
+      - iso11770-1
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: iso14888-3
+    title: 基于离散对数的数字签名
+    title_en: "Digital signatures with appendix — Part 3: Discrete logarithm based mechanisms"
+    domain:
+      - d12-signature
+    era:
+      - e14-standardization
+    level: 4
+    aliases:
+      - ISO/IEC 14888-3
+    sources:
+      - kind: primary
+        title: ISO/IEC 14888-3:2018
+    apps:
+      - government
+    threats:
+      - related-key
+    type: standard
+    prereq: []
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: iso18033-3
+    title: 流密码算法标准
+    title_en: "Encryption algorithms — Part 3: Stream cipher algorithms"
+    domain:
+      - d06-otp-stream
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - ISO/IEC 18033-3
+    sources:
+      - kind: primary
+        title: ISO/IEC 18033-3:2010
+    apps:
+      - government
+    threats:
+      - protocol
+    type: standard
+    prereq:
+      - rc4
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: iso18033-4
+    title: 专用散列函数标准
+    title_en: "Encryption algorithms — Part 4: Dedicated hash functions"
+    domain:
+      - d09-hash
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - ISO/IEC 18033-4
+    sources:
+      - kind: primary
+        title: ISO/IEC 18033-4:2011
+    apps:
+      - government
+    threats:
+      - protocol
+      - implementation
+    type: standard
+    prereq:
+      - sha2
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: iso18033-5
+    title: 标识密码标准
+    title_en: "Encryption algorithms — Part 5: Identity-based ciphers"
+    domain:
+      - d16-secret-sharing-mpc
+    era:
+      - e18-frontier
+    level: 4
+    aliases:
+      - ISO/IEC 18033-5
+    sources:
+      - kind: primary
+        title: ISO/IEC 18033-5:2015
+    apps:
+      - government
+    threats:
+      - protocol
+    type: standard
+    prereq:
+      - ibe
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: iso19790
+    title: 密码模块安全要求
+    title_en: Security requirements for cryptographic modules
+    domain:
+      - d13-key-management
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - ISO/IEC 19790
+    sources:
+      - kind: primary
+        title: ISO/IEC 19790:2025
+    apps:
+      - government
+      - finance
+    threats:
+      - physical
+    type: standard
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: iso24759
+    title: 密码模块测试要求
+    title_en: Test requirements for cryptographic modules
+    domain:
+      - d13-key-management
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - ISO/IEC 24759
+    sources:
+      - kind: primary
+        title: ISO/IEC 24759:2025
+    apps:
+      - government
+    threats:
+      - physical
+    type: standard
+    prereq:
+      - iso19790
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: iso9797-1
+    title: 块密码 MAC
+    title_en: "Message Authentication Codes — Part 1: Block cipher"
+    domain:
+      - d10-auth-aead
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - ISO/IEC 9797-1
+    sources:
+      - kind: primary
+        title: ISO/IEC 9797-1:2011
+    apps:
+      - government
+    threats:
+      - side-channel
+    type: standard
+    prereq:
+      - cmac
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: iso29192
+    title: 轻量级密码
+    title_en: Lightweight cryptography
+    domain:
+      - d08-block-cipher
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - ISO/IEC 29192
+    sources:
+      - kind: primary
+        title: ISO/IEC 29192 系列
+    apps:
+      - infrastructure
+    threats:
+      - side-channel
+    type: standard
+    prereq:
+      - present
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: iso15408
+    title: 通用评估准则
+    title_en: Common Criteria
+    domain:
+      - d23-applied-security
+    era:
+      - e19-china
+    level: 3
+    aliases:
+      - CC
+      - EAL
+    sources:
+      - kind: primary
+        title: ISO/IEC 15408 系列
+    apps:
+      - government
+      - finance
+    threats:
+      - implementation
+    type: standard
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: iso4922
+    title: 安全多方计算
+    title_en: Secure multiparty computation
+    domain:
+      - d16-secret-sharing-mpc
+    era:
+      - e18-frontier
+    level: 4
+    aliases:
+      - ISO/IEC 4922
+    sources:
+      - kind: primary
+        title: ISO/IEC 4922-1:2023
+    apps:
+      - finance
+      - privacy
+    threats:
+      - protocol
+    type: standard
+    prereq:
+      - garbled-circuit
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: ieee1619
+    title: 块设备数据加密
+    title_en: Cryptographic Protection of Data on Block-Oriented Storage Devices
+    domain:
+      - d08-block-cipher
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - IEEE 1619
+      - XTS
+    sources:
+      - kind: primary
+        title: IEEE 1619-2007(2025)
+    apps:
+      - infrastructure
+    threats:
+      - side-channel
+    type: standard
+    prereq:
+      - xts
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: ieee8021ae
+    title: MACsec 链路加密
+    title_en: Media Access Control Security
+    domain:
+      - d10-auth-aead
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - IEEE 802.1AE
+      - MACsec
+    sources:
+      - kind: primary
+        title: IEEE 802.1AE-2018
+    apps:
+      - infrastructure
+    threats:
+      - protocol
+    type: standard
+    prereq:
+      - gcm
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: ieee8021ar
+    title: 安全设备标识
+    title_en: Secure Device Identity
+    domain:
+      - d13-key-management
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - IEEE 802.1AR
+      - DevID
+    sources:
+      - kind: primary
+        title: IEEE 802.1AR-2018
+    apps:
+      - infrastructure
+    threats:
+      - physical
+    type: standard
+    prereq: []
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: ieee8021x
+    title: 基于端口的网络访问控制
+    title_en: Port-Based Network Access Control
+    domain:
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - IEEE 802.1X
+      - 802.1X
+    sources:
+      - kind: primary
+        title: IEEE 802.1X-2020
+    apps:
+      - telecom
+      - government
+    threats:
+      - protocol
+    type: standard
+    prereq: []
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: ieee2883
+    title: 存储净化
+    title_en: Storage Sanitization
+    domain:
+      - d23-applied-security
+    era:
+      - e19-china
+    level: 3
+    aliases:
+      - IEEE 2883
+    sources:
+      - kind: primary
+        title: IEEE 2883-2022
+    apps:
+      - government
+    threats:
+      - physical
+    type: standard
+    prereq: []
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: gbt32905
+    title: SM3 杂凑算法
+    title_en: SM3 Cryptographic Hash Algorithm
+    domain:
+      - d20-china-sm
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - GB/T 32905
+    sources:
+      - kind: primary
+        title: GB/T 32905—2016
+    apps:
+      - government
+      - finance
+    threats:
+      - protocol
+      - implementation
+    type: standard
+    prereq:
+      - sha2
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: gbt32907
+    title: SM4 分组密码算法
+    title_en: SM4 Block Cipher Algorithm
+    domain:
+      - d20-china-sm
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - GB/T 32907
+    sources:
+      - kind: primary
+        title: GB/T 32907—2016
+    apps:
+      - government
+      - finance
+    threats:
+      - side-channel
+    type: standard
+    prereq:
+      - des
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: gbt32918
+    title: SM2 公钥密码算法
+    title_en: SM2 Public Key Cryptography Algorithm
+    domain:
+      - d20-china-sm
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - GB/T 32918
+    sources:
+      - kind: primary
+        title: GB/T 32918.1—2016
+    apps:
+      - government
+      - finance
+    threats:
+      - related-key
+    type: standard
+    prereq:
+      - ecdsa
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: gbt32919
+    title: SM2 数字签名
+    title_en: SM2 Digital Signature
+    domain:
+      - d20-china-sm
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - GB/T 32919
+    sources:
+      - kind: primary
+        title: GB/T 32919—2016
+    apps:
+      - government
+      - finance
+    threats:
+      - related-key
+    type: standard
+    prereq:
+      - sm2
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: gbt32946
+    title: 商用密码应用安全性评估
+    title_en: Commercial Cryptography Application Security Assessment
+    domain:
+      - d23-applied-security
+    era:
+      - e19-china
+    level: 3
+    aliases:
+      - GB/T 32946
+      - 密评
+    sources:
+      - kind: primary
+        title: GB/T 32946—2016
+    apps:
+      - government
+      - finance
+    threats:
+      - implementation
+    type: standard
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: gbt33133
+    title: ZUC 算法
+    title_en: ZUC Algorithm
+    domain:
+      - d20-china-sm
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - GB/T 33133
+    sources:
+      - kind: primary
+        title: GB/T 33133.1—2016
+    apps:
+      - telecom
+    threats:
+      - protocol
+    type: standard
+    prereq:
+      - rc4
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: gbt38635
+    title: SM9 标识密码算法
+    title_en: SM9 Identity-Based Cryptography Algorithm
+    domain:
+      - d20-china-sm
+    era:
+      - e18-frontier
+    level: 3
+    aliases:
+      - GB/T 38635
+    sources:
+      - kind: primary
+        title: GB/T 38635.1—2020
+    apps:
+      - government
+      - finance
+    threats:
+      - protocol
+    type: standard
+    prereq:
+      - sm2
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: gbt38636
+    title: 传输层密码协议
+    title_en: TLCP
+    domain:
+      - d20-china-sm
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - GB/T 38636
+    sources:
+      - kind: primary
+        title: GB/T 38636—2020
+    apps:
+      - government
+      - finance
+    threats:
+      - protocol
+    type: standard
+    prereq:
+      - tls12
+      - sm2
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: gbt39786
+    title: 信息系统密码应用基本要求
+    title_en: Basic Requirements for Cryptography Application in Information Systems
+    domain:
+      - d23-applied-security
+    era:
+      - e19-china
+    level: 3
+    aliases:
+      - GB/T 39786
+      - 密评基线
+    sources:
+      - kind: primary
+        title: GB/T 39786—2021
+    apps:
+      - government
+      - finance
+    threats:
+      - implementation
+    type: standard
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: gbt43206
+    title: 信息系统密码应用测评要求
+    title_en: Requirements for Cryptography Application Assessment
+    domain:
+      - d23-applied-security
+    era:
+      - e19-china
+    level: 3
+    aliases:
+      - GB/T 43206
+    sources:
+      - kind: primary
+        title: GB/T 43206—2023
+    apps:
+      - government
+      - finance
+    threats:
+      - implementation
+    type: standard
+    prereq:
+      - gbt39786
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: gbt33560
+    title: 密码应用标识规范
+    title_en: Coding Rules for Cryptography Application Identifiers
+    domain:
+      - d23-applied-security
+    era:
+      - e19-china
+    level: 4
+    aliases:
+      - GB/T 33560
+    sources:
+      - kind: primary
+        title: GB/T 33560—2019
+    apps:
+      - government
+    threats:
+      - implementation
+    type: standard
+    prereq: []
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: gbt37092
+    title: 密码模块安全技术要求
+    title_en: Security Technical Requirements for Cryptographic Modules
+    domain:
+      - d13-key-management
+    era:
+      - e19-china
+    level: 3
+    aliases:
+      - GB/T 37092
+    sources:
+      - kind: primary
+        title: GB/T 37092—2018
+    apps:
+      - government
+      - finance
+    threats:
+      - physical
+    type: standard
+    prereq: []
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: gbt29829
+    title: 可信密码模块
+    title_en: Trusted Cryptography Module
+    domain:
+      - d13-key-management
+    era:
+      - e19-china
+    level: 4
+    aliases:
+      - GB/T 29829
+      - TCM
+    sources:
+      - kind: primary
+        title: GB/T 29829—2016
+    apps:
+      - government
+      - finance
+    threats:
+      - physical
+    type: standard
+    prereq:
+      - tpm
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: gmt0001
+    title: SM1 分组密码
+    title_en: SM1
+    domain:
+      - d20-china-sm
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - GM/T 0001
+      - SM1
+    sources:
+      - kind: primary
+        title: GM/T 0001 系列
+    apps:
+      - government
+      - finance
+    threats:
+      - side-channel
+    type: standard
+    prereq:
+      - sm4
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: gmt0002
+    title: SM4 分组密码行标
+    title_en: SM4 Industry Standard
+    domain:
+      - d20-china-sm
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - GM/T 0002
+    sources:
+      - kind: primary
+        title: GM/T 0002 系列
+    apps:
+      - government
+      - finance
+    threats:
+      - side-channel
+    type: standard
+    prereq:
+      - gbt32907
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: gmt0003
+    title: SM2 公钥密码行标
+    title_en: SM2 Industry Standard
+    domain:
+      - d20-china-sm
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - GM/T 0003
+    sources:
+      - kind: primary
+        title: GM/T 0003 系列
+    apps:
+      - government
+      - finance
+    threats:
+      - related-key
+    type: standard
+    prereq:
+      - gbt32918
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: gmt0004
+    title: SM3 杂凑行标
+    title_en: SM3 Industry Standard
+    domain:
+      - d20-china-sm
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - GM/T 0004
+    sources:
+      - kind: primary
+        title: GM/T 0004 系列
+    apps:
+      - government
+      - finance
+    threats:
+      - protocol
+      - implementation
+    type: standard
+    prereq:
+      - gbt32905
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: gmt0028
+    title: 密码模块安全技术要求行标
+    title_en: Cryptographic Module Security Requirements
+    domain:
+      - d13-key-management
+    era:
+      - e19-china
+    level: 3
+    aliases:
+      - GM/T 0028
+    sources:
+      - kind: primary
+        title: GM/T 0028—2018
+    apps:
+      - government
+      - finance
+    threats:
+      - physical
+    type: standard
+    prereq: []
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: gmt0054
+    title: 信息系统密码应用测评要求
+    title_en: Requirements for Cryptography Application Assessment
+    domain:
+      - d23-applied-security
+    era:
+      - e19-china
+    level: 3
+    aliases:
+      - GM/T 0054
+    sources:
+      - kind: primary
+        title: GM/T 0054—2018
+    apps:
+      - government
+      - finance
+    threats:
+      - implementation
+    type: standard
+    prereq: []
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: gmt0115
+    title: 信息系统密码应用测评要求行标
+    title_en: Cryptography Application Assessment Requirements
+    domain:
+      - d23-applied-security
+    era:
+      - e19-china
+    level: 3
+    aliases:
+      - GM/T 0115
+    sources:
+      - kind: primary
+        title: GM/T 0115—2021
+    apps:
+      - government
+      - finance
+    threats:
+      - implementation
+    type: standard
+    prereq:
+      - gbt43206
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: gmt0125
+    title: 国密 JSON Web 语法
+    title_en: Chinese JSON Object Signing and Encryption
+    domain:
+      - d20-china-sm
+    era:
+      - e18-frontier
+    level: 4
+    aliases:
+      - GM/T 0125
+      - 国密 JOSE
+    sources:
+      - kind: primary
+        title: GM/T 0125.1—2021
+    apps:
+      - government
+      - finance
+    threats:
+      - protocol
+    type: standard
+    prereq:
+      - cose
+      - sm2
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: gmt0128
+    title: TLCP 行标
+    title_en: TLCP Industry Standard
+    domain:
+      - d20-china-sm
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - GM/T 0128
+    sources:
+      - kind: primary
+        title: GM/T 0128—2023
+    apps:
+      - government
+      - finance
+    threats:
+      - protocol
+    type: standard
+    prereq:
+      - gbt38636
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: gmt0044
+    title: SM9 标识密码行标
+    title_en: SM9 Industry Standard
+    domain:
+      - d20-china-sm
+    era:
+      - e18-frontier
+    level: 3
+    aliases:
+      - GM/T 0044
+    sources:
+      - kind: primary
+        title: GM/T 0044.1—2020
+    apps:
+      - government
+      - finance
+    threats:
+      - protocol
+    type: standard
+    prereq:
+      - gbt38635
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: gmt0087
+    title: 国密浏览器接口
+    title_en: Chinese Cryptography Browser Interface
+    domain:
+      - d20-china-sm
+    era:
+      - e19-china
+    level: 4
+    aliases:
+      - GM/T 0087
+    sources:
+      - kind: primary
+        title: GM/T 0087—2020
+    apps:
+      - government
+      - everyday
+    threats:
+      - protocol
+    type: standard
+    prereq: []
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: cabf-br
+    title: CA/Browser Forum 根证书要求
+    title_en: CA/Browser Forum Baseline Requirements
+    domain:
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    level: 2
+    aliases:
+      - BR
+      - 基线要求
+    sources:
+      - kind: primary
+        title: CA/Browser Forum Baseline Requirements
+    apps:
+      - government
+      - finance
+    threats:
+      - protocol
+    type: standard
+    prereq:
+      - pkix
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: cabf-ev
+    title: CA/Browser Forum 扩展指引
+    title_en: CA/Browser Forum Extended Validation Guidelines
+    domain:
+      - d14-protocols-pki
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - EV Guidelines
+    sources:
+      - kind: primary
+        title: CA/Browser Forum EV Guidelines
+    apps:
+      - finance
+    threats:
+      - protocol
+    type: standard
+    prereq:
+      - cabf-br
+    status: done
+    quality: tier3
+    subtopic: []

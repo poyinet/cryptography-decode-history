@@ -1,0 +1,3383 @@
+
+entries:
+  - id: des
+    title: DES 数据加密标准
+    title_en: Data Encryption Standard
+    domain:
+      - d08-block-cipher
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - DES
+      - FIPS 46
+      - 数据加密标准
+    sources:
+      - kind: primary
+        title: FIPS 46-3
+      - kind: tertiary
+        title: 《Data Encryption Standard》(1977)
+      - kind: authoritative
+        title: Kahn《The Codebreakers》(1967)
+    apps:
+      - military
+      - finance
+      - government
+    threats:
+      - CPA
+      - CCA
+    type: algorithm
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: 3des
+    title: 3DES 三重数据加密
+    title_en: Triple DES
+    domain:
+      - d08-block-cipher
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - 3DES
+      - TDEA
+      - 三重DES
+    sources:
+      - kind: primary
+        title: FIPS 46-3
+      - kind: tertiary
+        title: 《Triple DES》(1998)
+      - kind: authoritative
+        title: HAC Ch.7(1997)
+    apps:
+      - finance
+      - government
+    threats:
+      - CPA
+      - CCA
+    type: algorithm
+    prereq:
+      - des
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: idea
+    title: IDEA 国际数据加密算法
+    title_en: International Data Encryption Algorithm
+    domain:
+      - d08-block-cipher
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - IDEA
+    sources:
+      - kind: primary
+        title: Lai & Massey
+      - kind: tertiary
+        title: 《A Proposal for a New Block Encryption Standard》(1991)
+      - kind: authoritative
+        title: HAC Ch.7(1997)
+    apps:
+      - finance
+    threats:
+      - CPA
+    type: algorithm
+    prereq:
+      - des
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: seed
+    title: SEED 韩国内对称加密
+    title_en: SEED
+    domain:
+      - d08-block-cipher
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - SEED
+      - 韩国标准算法
+    sources:
+      - kind: primary
+        title: KISA
+      - kind: tertiary
+        title: 《SEED Algorithm Specification》(2005)
+    apps:
+      - finance
+      - government
+    threats:
+      - CPA
+    type: algorithm
+    prereq:
+      - des
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: camellia
+    title: Camellia 加密算法
+    title_en: Camellia
+    domain:
+      - d08-block-cipher
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - Camellia
+    sources:
+      - kind: primary
+        title: Japanese
+      - kind: tertiary
+        title: 《Camellia Algorithm Specification》(2002)
+    apps:
+      - finance
+    threats:
+      - CPA
+    type: algorithm
+    prereq:
+      - des
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: aria
+    title: ARIA 韩国分组密码
+    title_en: ARIA
+    domain:
+      - d08-block-cipher
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - ARIA
+    sources:
+      - kind: primary
+        title: KISA
+      - kind: tertiary
+        title: 《ARIA Algorithm Specification》(2003)
+    apps:
+      - finance
+      - government
+    threats:
+      - CPA
+    type: algorithm
+    prereq:
+      - des
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: aes
+    title: AES 高级加密标准
+    title_en: Advanced Encryption Standard
+    domain:
+      - d08-block-cipher
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - AES
+      - Rijndael
+      - FIPS 197
+    sources:
+      - kind: primary
+        title: FIPS 197
+      - kind: tertiary
+        title: 《Advanced Encryption Standard》(2001)
+      - kind: authoritative
+        title: HAC Ch.7(1997)
+    apps:
+      - finance
+      - government
+      - everyday
+    threats:
+      - CPA
+      - CCA
+    type: algorithm
+    prereq:
+      - des
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: twofish
+    title: Twofish 分组密码
+    title_en: Twofish
+    domain:
+      - d08-block-cipher
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - Twofish
+    sources:
+      - kind: primary
+        title: Schneier
+      - kind: tertiary
+        title: Ferguson
+      - kind: tertiary
+        title: Kohno《Twofish》(1998)
+    apps:
+      - finance
+    threats:
+      - CPA
+    type: algorithm
+    prereq:
+      - aes
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: serpent
+    title: Serpent 分组密码
+    title_en: Serpent
+    domain:
+      - d08-block-cipher
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - Serpent
+    sources:
+      - kind: primary
+        title: Elaine et al.
+      - kind: tertiary
+        title: 《Serpent》(1998)
+    apps:
+      - academic
+    threats:
+      - CPA
+    type: algorithm
+    prereq:
+      - aes
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: blowfish
+    title: Blowfish 分组密码
+    title_en: Blowfish
+    domain:
+      - d08-block-cipher
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - Blowfish
+    sources:
+      - kind: primary
+        title: Schneier《Description of a New Variable-Length Key
+      - kind: tertiary
+        title: 64-Bit Block Cipher》(1993)
+    apps:
+      - academic
+    threats:
+      - CPA
+    type: algorithm
+    prereq:
+      - des
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: cast128
+    title: CAST-128 分组密码
+    title_en: CAST-128
+    domain:
+      - d08-block-cipher
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - CAST-128
+      - CAST5
+    sources:
+      - kind: primary
+        title: Stewart & Vaudenay
+      - kind: tertiary
+        title: 《The CAST5 Encryption Algorithm》(1997)
+    apps:
+      - academic
+    threats:
+      - CPA
+    type: algorithm
+    prereq:
+      - des
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: rc5
+    title: RC5 分组密码
+    title_en: RC5
+    domain:
+      - d08-block-cipher
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - RC5
+    sources:
+      - kind: primary
+        title: Rivest
+      - kind: tertiary
+        title: Robshaw
+      - kind: tertiary
+        title: Sidney
+      - kind: tertiary
+        title: Yin
+      - kind: tertiary
+        title: 《The RC5 Encryption Algorithm》(1997)
+    apps:
+      - academic
+    threats:
+      - CPA
+    type: algorithm
+    prereq:
+      - des
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: rc6
+    title: RC6 分组密码
+    title_en: RC6
+    domain:
+      - d08-block-cipher
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - RC6
+    sources:
+      - kind: primary
+        title: Rivest
+      - kind: tertiary
+        title: Robshaw
+      - kind: tertiary
+        title: Sidney
+      - kind: tertiary
+        title: Yin
+      - kind: tertiary
+        title: 《The RC6 Encryption Algorithm》(1998)
+    apps:
+      - academic
+    threats:
+      - CPA
+    type: algorithm
+    prereq:
+      - rc5
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: tea
+    title: TEA 微型加密算法
+    title_en: Tiny Encryption Algorithm
+    domain:
+      - d08-block-cipher
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - TEA
+    sources:
+      - kind: primary
+        title: Wheeler & Needham
+      - kind: tertiary
+        title: 《TEA
+      - kind: tertiary
+        title: a Tiny Encryption Algorithm》(1994)
+    apps:
+      - infrastructure
+      - everyday
+    threats:
+      - CPA
+    type: algorithm
+    prereq:
+      - des
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: present
+    title: PRESENT 轻量级分组密码
+    title_en: PRESENT
+    domain:
+      - d08-block-cipher
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - PRESENT
+    sources:
+      - kind: primary
+        title: Bogdanov et al.
+      - kind: tertiary
+        title: 《PRESENT》(2007)
+    apps:
+      - infrastructure
+      - everyday
+    threats:
+      - CPA
+      - side-channel
+    type: algorithm
+    prereq:
+      - aes
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: kiss
+    title: KISS 轻量级分组密码
+    title_en: KISS
+    domain:
+      - d08-block-cipher
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - KISS
+    sources:
+      - kind: primary
+        title: Oorschot & Wiener
+      - kind: tertiary
+        title: 《Fast Collision Attacks on MACs》(2009)
+    apps:
+      - infrastructure
+    threats:
+      - CPA
+    type: algorithm
+    prereq:
+      - present
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: clefia
+    title: CLEFIA 轻量级分组密码
+    title_en: CLEFIA
+    domain:
+      - d08-block-cipher
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - CLEFIA
+    sources:
+      - kind: primary
+        title: Sato et al.
+      - kind: tertiary
+        title: 《CLEFIA」(2007)
+    apps:
+      - infrastructure
+    threats:
+      - CPA
+    type: algorithm
+    prereq:
+      - present
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: lea
+    title: LEA 轻量级分组密码
+    title_en: LEA
+    domain:
+      - d08-block-cipher
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - LEA
+    sources:
+      - kind: primary
+        title: Kim et al.
+      - kind: tertiary
+        title: 《LEA》(2012)
+    apps:
+      - infrastructure
+    threats:
+      - CPA
+    type: algorithm
+    prereq:
+      - present
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: ascon
+    title: ASCON 轻量级密码族
+    title_en: ASCON
+    domain:
+      - d08-block-cipher
+    era:
+      - e22-post-quantum
+    level: 3
+    aliases:
+      - ASCON
+      - Ascon-128
+    sources:
+      - kind: primary
+        title: Dobraud et al.
+      - kind: tertiary
+        title: 《Ascon v1.2》(2023)
+    apps:
+      - infrastructure
+    threats:
+      - CPA
+    type: algorithm
+    prereq:
+      - present
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: sm4
+    title: SM4 中国商用分组密码
+    title_en: SM4
+    domain:
+      - d20-china-sm
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - SM4
+      - GB/T 32907
+    sources:
+      - kind: primary
+        title: GB/T 32907—2016《信息安全技术 SM4 分组密码算法》
+      - kind: authoritative
+        title: 国家密码管理局《商用密码标准体系框架》
+    apps:
+      - finance
+      - government
+      - infrastructure
+    threats:
+      - CPA
+      - CCA
+    type: algorithm
+    prereq:
+      - des
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: feal
+    title: FEAL 分组密码
+    title_en: Fast Data Encipherment Algorithm
+    domain:
+      - d08-block-cipher
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - FEAL
+    sources:
+      - kind: primary
+        title: Shimizu
+      - kind: tertiary
+        title: Miyaguchi
+      - kind: tertiary
+        title: Miyaji
+      - kind: tertiary
+        title: «Fast Data Encipherment Algorithm»(1987)
+    apps:
+      - academic
+    threats:
+      - CPA
+    type: algorithm
+    prereq:
+      - des
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: deal
+    title: DEAL 分组密码
+    title_en: Data Encryption Algorithm with Large keys
+    domain:
+      - d08-block-cipher
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - DEAL
+    sources:
+      - kind: primary
+        title: Knudsen《Truncated and Higher Order Differentials》(1994)
+    apps:
+      - academic
+    threats:
+      - CPA
+    type: algorithm
+    prereq:
+      - des
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: mars
+    title: MARS 分组密码
+    title_en: MARS
+    domain:
+      - d08-block-cipher
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - MARS
+    sources:
+      - kind: primary
+        title: Burrows et al.《MARS》(1997)
+    apps:
+      - academic
+    threats:
+      - CPA
+    type: algorithm
+    prereq:
+      - des
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: xtea
+    title: XTEA 扩展 TEA
+    title_en: XTEA
+    domain:
+      - d08-block-cipher
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - XTEA
+      - XXTEA
+    sources:
+      - kind: primary
+        title: Teasdale《XTEA>(1997)
+    apps:
+      - infrastructure
+    threats:
+      - CPA
+    type: algorithm
+    prereq:
+      - tea
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: rc4
+    title: RC4 流密码
+    title_en: RC4
+    domain:
+      - d06-otp-stream
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - RC4
+      - ARCFOUR
+    sources:
+      - kind: primary
+        title: Rivest《The RC4 Algorithm and Its Use in WEP》(1994)
+    apps:
+      - everyday
+      - finance
+    threats:
+      - CPA
+      - implementation
+    type: algorithm
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: salsa20
+    title: Salsa20 流密码
+    title_en: Salsa20
+    domain:
+      - d06-otp-stream
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - Salsa20
+      - Salsa20/8
+    sources:
+      - kind: primary
+        title: Bernstein《Salsa20》(2007)
+    apps:
+      - infrastructure
+      - everyday
+    threats:
+      - CPA
+      - side-channel
+    type: algorithm
+    prereq:
+      - rc4
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: chacha20
+    title: ChaCha20 流密码
+    title_en: ChaCha20
+    domain:
+      - d06-otp-stream
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - ChaCha20
+      - ChaCha8
+    sources:
+      - kind: primary
+        title: Bernstein《ChaCha
+      - kind: tertiary
+        title: a family of fast and secure stream ciphers》(2008)
+    apps:
+      - infrastructure
+      - everyday
+    threats:
+      - CPA
+      - side-channel
+    type: algorithm
+    prereq:
+      - salsa20
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: xsalsa20
+    title: XSalsa20 流密码
+    title_en: XSalsa20
+    domain:
+      - d06-otp-stream
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - XSalsa20
+    sources:
+      - kind: primary
+        title: Bernstein《XSalsa20》(2008)
+    apps:
+      - infrastructure
+    threats:
+      - CPA
+    type: algorithm
+    prereq:
+      - salsa20
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: hc128
+    title: HC-128 流密码
+    title_en: HC-128
+    domain:
+      - d06-otp-stream
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - HC-128
+    sources:
+      - kind: primary
+        title: Zhang et al.《HC-128》(2010)
+    apps:
+      - infrastructure
+    threats:
+      - CPA
+    type: algorithm
+    prereq:
+      - salsa20
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: rabbit
+    title: Rabbit 流密码
+    title_en: Rabbit
+    domain:
+      - d06-otp-stream
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - Rabbit
+    sources:
+      - kind: primary
+        title: Ekström《The Rabbit Stream Cipher》(2003)
+    apps:
+      - infrastructure
+    threats:
+      - CPA
+    type: algorithm
+    prereq:
+      - salsa20
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: grain
+    title: GRAIN 流密码
+    title_en: GRAIN
+    domain:
+      - d06-otp-stream
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - GRAIN
+    sources:
+      - kind: primary
+        title: Coron et al.《GRAIN》(2005)
+    apps:
+      - infrastructure
+    threats:
+      - CPA
+    type: algorithm
+    prereq:
+      - salsa20
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: trivium
+    title: Trivium 流密码
+    title_en: Trivium
+    domain:
+      - d06-otp-stream
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - Trivium
+    sources:
+      - kind: primary
+        title: eSTREAM《Trivium》(2006)
+    apps:
+      - infrastructure
+    threats:
+      - CPA
+    type: algorithm
+    prereq:
+      - salsa20
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: ekiga
+    title: Ekiga 流密码
+    title_en: Ekiga
+    domain:
+      - d06-otp-stream
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - Ekiga
+    sources:
+      - kind: primary
+        title: eSTREAM《Ekiga》(2006)
+    apps:
+      - infrastructure
+    threats:
+      - CPA
+    type: algorithm
+    prereq:
+      - salsa20
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: zuc
+    title: ZUC 祖冲之流密码
+    title_en: ZUC
+    domain:
+      - d20-china-sm
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - ZUC
+      - 祖冲之
+      - GB/T 33133
+    sources:
+      - kind: primary
+        title: GB/T 33133.1—2016《信息安全技术 ZUC 算法》
+      - kind: authoritative
+        title: 3GPP《ZUC Algorithm Specification》
+    apps:
+      - telecom
+      - infrastructure
+    threats:
+      - CPA
+    type: algorithm
+    prereq:
+      - rc4
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: ecb
+    title: ECB 电子密码本模式
+    title_en: Electronic Codebook
+    domain:
+      - d08-block-cipher
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - ECB
+      - 电子密码本
+    sources:
+      - kind: primary
+        title: FIPS 81
+      - kind: tertiary
+        title: 《DES Modes of Operation》(1980)
+      - kind: authoritative
+        title: HAC Ch.7(1997)
+    apps:
+      - finance
+      - everyday
+    threats:
+      - CPA
+      - side-channel
+    type: algorithm
+    prereq:
+      - des
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: cbc
+    title: CBC 密码块链接模式
+    title_en: Cipher Block Chaining
+    domain:
+      - d08-block-cipher
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - CBC
+      - 密码块链接
+    sources:
+      - kind: primary
+        title: SP 800-38A
+      - kind: tertiary
+        title: 《Recommendation for Block Cipher Modes of Operation》(2001)
+    apps:
+      - finance
+      - everyday
+    threats:
+      - CPA
+      - CCA
+    type: algorithm
+    prereq:
+      - ecb
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: cfb
+    title: CFB 密文反馈模式
+    title_en: Cipher Feedback
+    domain:
+      - d08-block-cipher
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - CFB
+    sources:
+      - kind: primary
+        title: SP 800-38A(2001)
+    apps:
+      - finance
+    threats:
+      - CPA
+    type: algorithm
+    prereq:
+      - cbc
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: ofb
+    title: OFB 输出反馈模式
+    title_en: Output Feedback
+    domain:
+      - d08-block-cipher
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - OFB
+    sources:
+      - kind: primary
+        title: SP 800-38A(2001)
+    apps:
+      - finance
+    threats:
+      - CPA
+    type: algorithm
+    prereq:
+      - cbc
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: ctr
+    title: CTR 计数器模式
+    title_en: Counter
+    domain:
+      - d08-block-cipher
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - CTR
+      - 计数器模式
+    sources:
+      - kind: primary
+        title: SP 800-38A(2001)
+    apps:
+      - finance
+      - everyday
+      - infrastructure
+    threats:
+      - CPA
+    type: algorithm
+    prereq:
+      - cbc
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: gcm
+    title: GCM 伽罗瓦计数器模式
+    title_en: Galois/Counter Mode
+    domain:
+      - d10-auth-aead
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - GCM
+      - GHASH
+    sources:
+      - kind: primary
+        title: SP 800-38D
+      - kind: tertiary
+        title: 《GCM and GMAC》(2007)
+    apps:
+      - finance
+      - infrastructure
+    threats:
+      - CCA
+      - side-channel
+      - implementation
+    type: algorithm
+    prereq:
+      - ctr
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: ccm
+    title: CCM 计数器 CBC 模式
+    title_en: Counter with CBC-MAC
+    domain:
+      - d10-auth-aead
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - CCM
+    sources:
+      - kind: primary
+        title: SP 800-38C(2004)
+    apps:
+      - infrastructure
+    threats:
+      - CCA
+    type: algorithm
+    prereq:
+      - ctr
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: ocb
+    title: OCB 偏移密码块模式
+    title_en: Offset Codebook
+    domain:
+      - d10-auth-aead
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - OCB
+    sources:
+      - kind: primary
+        title: Hoang
+      - kind: tertiary
+        title: Krovetz
+      - kind: tertiary
+        title: Rogaway《The OCB Authenticated Encryption Algorithm》(2001)
+    apps:
+      - infrastructure
+    threats:
+      - CCA
+    type: algorithm
+    prereq:
+      - ctr
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: siv
+    title: SIV 确定性认证加密
+    title_en: Synthetic IV
+    domain:
+      - d10-auth-aead
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - SIV
+      - nonce-misuse-resistant
+    sources:
+      - kind: primary
+        title: Deterministic Authenticated Encryption(Kohno《Synthetic IV》2011)
+    apps:
+      - infrastructure
+    threats:
+      - CPA
+    type: algorithm
+    prereq:
+      - gcm
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: xts
+    title: XTS 磁盘加密模式
+    title_en: XTS
+    domain:
+      - d08-block-cipher
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - XTS
+      - XTS-AES
+    sources:
+      - kind: primary
+        title: SP 800-38E(2010)
+      - kind: tertiary
+        title: IEEE 1619-2007
+    apps:
+      - infrastructure
+    threats:
+      - side-channel
+    type: algorithm
+    prereq:
+      - ctr
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: fpe
+    title: FPE 格式保留加密
+    title_en: Format-Preserving Encryption
+    domain:
+      - d08-block-cipher
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - FPE
+      - FF1
+      - FF3
+    sources:
+      - kind: primary
+        title: SP 800-38G(2016)
+    apps:
+      - finance
+    threats:
+      - CPA
+    type: algorithm
+    prereq:
+      - ctr
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: kw
+    title: KW 密钥包装
+    title_en: Key Wrap
+    domain:
+      - d13-key-management
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - KW
+      - KWP
+      - TKW
+      - RFC 3394
+    sources:
+      - kind: primary
+        title: SP 800-38F(2012)
+      - kind: tertiary
+        title: RFC 3394(2002)
+    apps:
+      - infrastructure
+    threats:
+      - related-key
+    type: algorithm
+    prereq:
+      - aes
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: poly1305
+    title: Poly1305 通用 MAC
+    title_en: Poly1305
+    domain:
+      - d10-auth-aead
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - Poly1305
+    sources:
+      - kind: primary
+        title: Rose《The use of the Poly1305 one-time authenticator》(2008)
+    apps:
+      - infrastructure
+    threats:
+      - side-channel
+    type: algorithm
+    prereq:
+      - chacha20
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: cmac
+    title: CMAC 分组密码 MAC
+    title_en: CMAC
+    domain:
+      - d10-auth-aead
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - CMAC
+      - OMAC
+      - RFC 4493
+    sources:
+      - kind: primary
+        title: SP 800-38B(2005)
+    apps:
+      - infrastructure
+    threats:
+      - side-channel
+    type: algorithm
+    prereq:
+      - aes
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: gmac
+    title: GMAC 认证模式
+    title_en: GMAC
+    domain:
+      - d10-auth-aead
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - GMAC
+    sources:
+      - kind: primary
+        title: SP 800-38D(2007)
+    apps:
+      - infrastructure
+    threats:
+      - CCA
+    type: algorithm
+    prereq:
+      - gcm
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: hmac
+    title: HMAC 密钥化哈希认证码
+    title_en: Hash-based Message Authentication Code
+    domain:
+      - d10-auth-aead
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - HMAC
+      - RFC 2104
+    sources:
+      - kind: primary
+        title: FIPS 198-1(2008)
+      - kind: tertiary
+        title: RFC 2104(1999)
+    apps:
+      - everyday
+      - finance
+      - infrastructure
+    threats:
+      - side-channel
+    type: algorithm
+    prereq:
+      - sha2
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: cmc
+    title: CMC 带密文 MAC
+    title_en: Ciphertext-MAC
+    domain:
+      - d10-auth-aead
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - CMC
+    sources:
+      - kind: primary
+        title: Black & Rogaway《CBC-MAC is secure》(2002)
+    apps:
+      - academic
+    threats:
+      - CCA
+    type: algorithm
+    prereq:
+      - cbc
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: eax
+    title: EAX 认证加密
+    title_en: EAX
+    domain:
+      - d10-auth-aead
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - EAX
+    sources:
+      - kind: primary
+        title: Bellare
+      - kind: tertiary
+        title: Rogaway
+      - kind: tertiary
+        title: Wagner《EAX>>(2003)
+    apps:
+      - infrastructure
+    threats:
+      - CCA
+    type: algorithm
+    prereq:
+      - ctr
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: cwc
+    title: CWC 携带式工作组密码
+    title_en: CCM with CBC-MAC
+    domain:
+      - d10-auth-aead
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - CWC
+    sources:
+      - kind: primary
+        title: IFF / NIST submission(2000)
+    apps:
+      - infrastructure
+    threats:
+      - CCA
+    type: algorithm
+    prereq:
+      - ctr
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: md4
+    title: MD4 散列
+    title_en: MD4
+    domain:
+      - d09-hash
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - MD4
+    sources:
+      - kind: primary
+        title: Rivest《The MD4 Message-Digest Algorithm》(1990)
+    apps:
+      - academic
+    threats:
+      - CPA
+      - CCA
+    type: algorithm
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: md5
+    title: MD5 散列
+    title_en: MD5
+    domain:
+      - d09-hash
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - MD5
+    sources:
+      - kind: primary
+        title: Rivest《The MD5 Message-Digest Algorithm》(1992)
+    apps:
+      - academic
+      - everyday
+    threats:
+      - CPA
+      - CCA
+    type: algorithm
+    prereq:
+      - md4
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: sha1
+    title: SHA-1 散列
+    title_en: SHA-1
+    domain:
+      - d09-hash
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - SHA-1
+      - FIPS 180-1
+    sources:
+      - kind: primary
+        title: FIPS 180-1
+      - kind: tertiary
+        title: 《Secure Hash Standard》(1993)
+    apps:
+      - academic
+      - everyday
+    threats:
+      - CPA
+      - CCA
+    type: algorithm
+    prereq:
+      - md4
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: sha2
+    title: SHA-2 散列家族
+    title_en: SHA-2
+    domain:
+      - d09-hash
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - SHA-2
+      - SHA-224
+      - SHA-256
+      - SHA-384
+      - SHA-512
+    sources:
+      - kind: primary
+        title: FIPS 180-4
+      - kind: tertiary
+        title: 《Secure Hash Standard》(2015)
+    apps:
+      - academic
+      - everyday
+      - finance
+    threats:
+      - CPA
+      - CCA
+    type: algorithm
+    prereq:
+      - sha1
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: sha3
+    title: SHA-3 与 Keccak
+    title_en: SHA-3
+    domain:
+      - d09-hash
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - SHA-3
+      - Keccak
+      - SHAKE128
+      - SHAKE256
+    sources:
+      - kind: primary
+        title: FIPS 202
+      - kind: tertiary
+        title: 《SHA-3 Standard》(2015)
+    apps:
+      - academic
+      - finance
+    threats:
+      - CPA
+      - CCA
+    type: algorithm
+    prereq:
+      - sha2
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: blake2
+    title: BLAKE2 散列
+    title_en: BLAKE2
+    domain:
+      - d09-hash
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - BLAKE2
+    sources:
+      - kind: primary
+        title: Aumasson et al.《BLAKE2》(2013)
+    apps:
+      - academic
+      - finance
+    threats:
+      - CPA
+      - CCA
+    type: algorithm
+    prereq:
+      - blake3
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: blake3
+    title: BLAKE3 散列
+    title_en: BLAKE3
+    domain:
+      - d09-hash
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - BLAKE3
+    sources:
+      - kind: primary
+        title: O'Connor et al.《BLAKE3》(2020)
+    apps:
+      - academic
+      - finance
+      - infrastructure
+    threats:
+      - CPA
+      - CCA
+    type: algorithm
+    prereq:
+      - blake2
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: whirlpool
+    title: Whirlpool 散列
+    title_en: Whirlpool
+    domain:
+      - d09-hash
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - Whirlpool
+    sources:
+      - kind: primary
+        title: Barreto & Rijmen《The Whirlpool Hash Function》(2006)
+    apps:
+      - academic
+    threats:
+      - CPA
+      - CCA
+    type: algorithm
+    prereq:
+      - sha2
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: sm3
+    title: SM3 国密杂凑
+    title_en: SM3
+    domain:
+      - d20-china-sm
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - SM3
+      - GB/T 32905
+    sources:
+      - kind: primary
+        title: GB/T 32905—2016《信息安全技术 SM3 杂凑算法》
+    apps:
+      - finance
+      - government
+    threats:
+      - CPA
+      - CCA
+    type: algorithm
+    prereq:
+      - sha2
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: ripemd160
+    title: RIPEMD-160 散列
+    title_en: RIPEMD-160
+    domain:
+      - d09-hash
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - RIPEMD-160
+      - RIPEMD
+    sources:
+      - kind: primary
+        title: Dobbertin
+      - kind: tertiary
+        title: Bosselaers
+      - kind: tertiary
+        title: Preneel《RIPEMD-160》(1996)
+    apps:
+      - academic
+    threats:
+      - CPA
+      - CCA
+    type: algorithm
+    prereq:
+      - md4
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: poly1305-dup
+    title: — 占位（不收）
+    title_en: —
+    domain:
+      - d09-hash
+    era: []
+    level: 2
+    aliases: []
+    sources: []
+    apps:
+      - academic
+    threats:
+      - theoretical
+    type: term
+    prereq: []
+    status: exempt
+    quality: tier3
+    subtopic: []
+    note: 该条目是编排占位，实际条目为 poly1305
+  - id: hkdf
+    title: HKDF 基于 HMAC 的密钥派生
+    title_en: HMAC-based Extract-and-Expand Key Derivation
+    domain:
+      - d13-key-management
+    era:
+      - e15-web-protocols
+    level: 2
+    aliases:
+      - HKDF
+      - RFC 5869
+    sources:
+      - kind: primary
+        title: RFC 5869(2014)
+    apps:
+      - telecom
+      - infrastructure
+    threats:
+      - protocol
+    type: algorithm
+    prereq:
+      - hmac
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: pbkdf2
+    title: PBKDF2 口令派生
+    title_en: Password-Based Key Derivation Function 2
+    domain:
+      - d23-applied-security
+    era:
+      - e15-web-protocols
+    level: 2
+    aliases:
+      - PBKDF2
+      - RFC 8018
+    sources:
+      - kind: primary
+        title: RFC 8018(2016)
+    apps:
+      - everyday
+      - finance
+    threats:
+      - CO
+      - social
+    type: algorithm
+    prereq:
+      - hmac
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: scrypt
+    title: scrypt 内存硬口令派生
+    title_en: scrypt
+    domain:
+      - d23-applied-security
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - scrypt
+      - RFC 7914
+    sources:
+      - kind: primary
+        title: Percival & Josefsson《scrypt>>(2010)
+    apps:
+      - everyday
+      - finance
+    threats:
+      - CO
+    type: algorithm
+    prereq:
+      - pbkdf2
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: argon2
+    title: Argon2 口令派生
+    title_en: Argon2
+    domain:
+      - d23-applied-security
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - Argon2
+      - Argon2i
+      - Argon2id
+      - RFC 9106
+    sources:
+      - kind: primary
+        title: Aumasson et al.《Argon2》(2019)
+      - kind: tertiary
+        title: RFC 9106(2021)
+    apps:
+      - everyday
+      - finance
+    threats:
+      - CO
+    type: algorithm
+    prereq:
+      - scrypt
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: bcrypt
+    title: bcrypt 自适应口令散列
+    title_en: bcrypt
+    domain:
+      - d23-applied-security
+    era:
+      - e15-web-protocols
+    level: 2
+    aliases:
+      - bcrypt
+    sources:
+      - kind: primary
+        title: Provos & Mazières《A Future-Adaptable Password Scheme》(1999)
+    apps:
+      - everyday
+      - finance
+    threats:
+      - CO
+    type: algorithm
+    prereq:
+      - pbkdf2
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: kmac
+    title: KMAC 基于散列的 MAC
+    title_en: KMAC
+    domain:
+      - d10-auth-aead
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - KMAC
+      - RFC 5869
+    sources:
+      - kind: primary
+        title: NIST SP 800-185(2019)
+    apps:
+      - infrastructure
+    threats:
+      - side-channel
+    type: algorithm
+    prereq:
+      - sha2
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: rsa
+    title: RSA 公钥密码
+    title_en: RSA
+    domain:
+      - d11-asymmetric
+    era:
+      - e13-public-key
+    level: 2
+    aliases:
+      - RSA
+      - Rivest-Shamir-Adleman
+    sources:
+      - kind: primary
+        title: Rivest
+      - kind: tertiary
+        title: Shamir
+      - kind: tertiary
+        title: Adleman《A Method for Obtaining Digital Signatures and Public-Key Cryptosystems》(1978)
+    apps:
+      - finance
+      - government
+      - everyday
+    threats:
+      - related-key
+      - CCA
+    type: algorithm
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: rabin
+    title: Rabin 陷门公钥密码
+    title_en: Rabin Cryptosystem
+    domain:
+      - d11-asymmetric
+    era:
+      - e13-public-key
+    level: 3
+    aliases:
+      - Rabin
+    sources:
+      - kind: primary
+        title: Rabin《Digitalized Signatures and Public-Key Functions as Intractable as Factorization》(1979)
+    apps:
+      - academic
+    threats:
+      - CCA
+    type: algorithm
+    prereq:
+      - rsa
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: elgamal
+    title: ElGamal 公钥密码
+    title_en: ElGamal
+    domain:
+      - d11-asymmetric
+    era:
+      - e13-public-key
+    level: 3
+    aliases:
+      - ElGamal
+      - EG
+    sources:
+      - kind: primary
+        title: ElGamal《Public Key Cryptosystems and Signatures Based Upon Discrete Logarithms》(1985)
+    apps:
+      - academic
+    threats:
+      - CCA
+    type: algorithm
+    prereq:
+      - dsa
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: paillier
+    title: Paillier 陷门公钥密码
+    title_en: Paillier
+    domain:
+      - d11-asymmetric
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - Paillier
+    sources:
+      - kind: primary
+        title: Paillier《Public-Key Cryptosystems Based on Composite Degree Residuosity Classes》(1999)
+    apps:
+      - finance
+      - privacy
+    threats:
+      - CCA
+    type: algorithm
+    prereq:
+      - rsa
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: ntru-pke
+    title: NTRU 公钥加密
+    title_en: NTRU
+    domain:
+      - d22-post-quantum
+    era:
+      - e17-post-quantum
+    level: 3
+    aliases:
+      - NTRU
+    sources:
+      - kind: primary
+        title: Hoffstein
+      - kind: tertiary
+        title: Pipher
+      - kind: tertiary
+        title: "Silverman《NTRU: A New Public Key Cryptosystem》(1998)"
+    apps:
+      - infrastructure
+    threats:
+      - CCA
+      - quantum
+    type: algorithm
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: kyber
+    title: Kyber / ML-KEM 封装机制
+    title_en: Kyber;Module-Lattice-Based Key-Encapsulation Mechanism
+    domain:
+      - d22-post-quantum
+    era:
+      - e17-post-quantum
+    level: 3
+    aliases:
+      - Kyber
+      - ML-KEM
+      - FIPS 203
+    sources:
+      - kind: primary
+        title: FIPS 203(2024)
+    apps:
+      - infrastructure
+      - finance
+    threats:
+      - CCA
+      - quantum
+    type: algorithm
+    prereq:
+      - lwe
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: mceliece
+    title: Classic McEliece 编码型公钥
+    title_en: Classic McEliece
+    domain:
+      - d22-post-quantum
+    era:
+      - e17-post-quantum
+    level: 3
+    aliases:
+      - McEliece
+      - Classic McEliece
+    sources:
+      - kind: primary
+        title: McEliece《A Public Key Cryptosystem Based on Algebraic Geometry Codes》(1998)
+    apps:
+      - infrastructure
+    threats:
+      - CCA
+      - quantum
+    type: algorithm
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: hqc
+    title: HQC 备选 KEM
+    title_en: Hamming Quasi-Cyclic
+    domain:
+      - d22-post-quantum
+    era:
+      - e17-post-quantum
+    level: 3
+    aliases:
+      - HQC
+    sources:
+      - kind: primary
+        title: ROUND 4 submission(2023)
+    apps:
+      - infrastructure
+    threats:
+      - CCA
+      - quantum
+    type: algorithm
+    prereq: []
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: bike
+    title: BIKE 备选 KEM
+    title_en: BIKE
+    domain:
+      - d22-post-quantum
+    era:
+      - e17-post-quantum
+    level: 3
+    aliases:
+      - BIKE
+    sources:
+      - kind: primary
+        title: ROUND 4 submission(2023)
+    apps:
+      - infrastructure
+    threats:
+      - CCA
+      - quantum
+    type: algorithm
+    prereq: []
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: sike
+    title: SIKE 超椭圆同源 KEM
+    title_en: Supersingular Isogeny Key Encapsulation
+    domain:
+      - d22-post-quantum
+    era:
+      - e17-post-quantum
+    level: 3
+    aliases:
+      - SIKE
+      - CSIDH
+    sources:
+      - kind: primary
+        title: De Feo et al.《Towards Quantum-Resistant Cryptosystems from Supersingular Elliptic Curve Isogenies》(2011)
+    apps:
+      - infrastructure
+    threats:
+      - CCA
+      - quantum
+    type: algorithm
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: dsa
+    title: DSA 数字签名算法
+    title_en: Digital Signature Algorithm
+    domain:
+      - d12-signature
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - DSA
+      - FIPS 186
+    sources:
+      - kind: primary
+        title: FIPS 186-4(2016)
+    apps:
+      - government
+      - finance
+    threats:
+      - related-key
+      - side-channel
+    type: algorithm
+    prereq:
+      - dsa
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: ecdsa
+    title: ECDSA 椭圆曲线签名
+    title_en: Elliptic Curve Digital Signature Algorithm
+    domain:
+      - d12-signature
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - ECDSA
+      - FIPS 186
+    sources:
+      - kind: primary
+        title: FIPS 186-5(2023)
+    apps:
+      - finance
+      - government
+    threats:
+      - related-key
+      - side-channel
+    type: algorithm
+    prereq:
+      - ecdsa
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: rsa-signature
+    title: RSA 签名
+    title_en: RSA Signature
+    domain:
+      - d12-signature
+    era:
+      - e13-public-key
+    level: 2
+    aliases:
+      - RSASSA-PKCS1-v1_5
+      - RSA-PSS
+      - PSS
+    sources:
+      - kind: primary
+        title: RFC 8017(2016)
+    apps:
+      - finance
+      - government
+    threats:
+      - related-key
+      - side-channel
+    type: algorithm
+    prereq:
+      - rsa
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: schnorr
+    title: Schnorr 签名
+    title_en: Schnorr Signature
+    domain:
+      - d12-signature
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - Schnorr
+      - EdDSA style
+    sources:
+      - kind: primary
+        title: Schnorr《Efficient Signature Generation for Discrete Logarithm Problems》(1990)
+    apps:
+      - finance
+    threats:
+      - related-key
+      - side-channel
+    type: algorithm
+    prereq:
+      - dsa
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: eddsa
+    title: EdDSA  Edwards 曲线签名
+    title_en: Edwards-Curve Digital Signature Algorithm
+    domain:
+      - d12-signature
+    era:
+      - e15-web-protocols
+    level: 2
+    aliases:
+      - EdDSA
+      - Ed25519
+      - RFC 8032
+    sources:
+      - kind: primary
+        title: RFC 8032(2017)
+    apps:
+      - finance
+      - everyday
+    threats:
+      - side-channel
+    type: algorithm
+    prereq:
+      - ecdsa
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: bls
+    title: BLS 短签名
+    title_en: Boneh-Lynn-Shacham Short Signatures
+    domain:
+      - d12-signature
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - BLS
+    sources:
+      - kind: primary
+        title: Boneh
+      - kind: tertiary
+        title: Lynn
+      - kind: tertiary
+        title: Shacham《Short Signatures from the Weil Pairing》(2001)
+    apps:
+      - finance
+      - infrastructure
+    threats:
+      - related-key
+    type: algorithm
+    prereq:
+      - ecdsa
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: ring-signature
+    title: 环签名
+    title_en: Ring Signature
+    domain:
+      - d12-signature
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - ring signature
+      - 环签名
+    sources:
+      - kind: primary
+        title: Rivest
+      - kind: tertiary
+        title: Shamir
+      - kind: tertiary
+        title: Ta-Shma《Group Signatures and Ring Signatures》(2001)
+    apps:
+      - privacy
+      - finance
+    threats:
+      - related-key
+    type: algorithm
+    prereq:
+      - rsa
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: group-signature
+    title: 组签名
+    title_en: Group Signature
+    domain:
+      - d12-signature
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - group signature
+      - 组签名
+    sources:
+      - kind: primary
+        title: Chaum
+      - kind: tertiary
+        title: van Heyst《Group Signatures》(1991)
+    apps:
+      - privacy
+    threats:
+      - related-key
+    type: algorithm
+    prereq:
+      - rsa
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: blind-signature
+    title: 盲签名
+    title_en: Blind Signature
+    domain:
+      - d12-signature
+    era:
+      - e13-public-key
+    level: 3
+    aliases:
+      - blind signature
+      - 盲签名
+    sources:
+      - kind: primary
+        title: Chaum《Blind Signatures for Untraceable Payments》(1982)
+    apps:
+      - finance
+      - privacy
+    threats:
+      - related-key
+    type: algorithm
+    prereq:
+      - rsa
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: threshold-signature
+    title: 门限签名
+    title_en: Threshold Signature
+    domain:
+      - d12-signature
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - threshold signature
+      - 门限签名
+    sources:
+      - kind: primary
+        title: Shoup《Practical Threshold Signatures》(2000)
+    apps:
+      - infrastructure
+    threats:
+      - related-key
+    type: algorithm
+    prereq:
+      - rsa
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: ml-dsa
+    title: ML-DSA 格基签名
+    title_en: Module-Lattice-Based Digital Signature Standard
+    domain:
+      - d22-post-quantum
+    era:
+      - e17-post-quantum
+    level: 3
+    aliases:
+      - ML-DSA
+      - Dilithium
+      - FIPS 204
+    sources:
+      - kind: primary
+        title: FIPS 204(2024)
+    apps:
+      - infrastructure
+      - government
+    threats:
+      - related-key
+      - quantum
+    type: algorithm
+    prereq:
+      - schnorr
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: slh-dsa
+    title: SLH-DSA 状态哈希签名
+    title_en: Stateless Hash-Based Digital Signature Standard
+    domain:
+      - d22-post-quantum
+    era:
+      - e17-post-quantum
+    level: 3
+    aliases:
+      - SLH-DSA
+      - SPHINCS+
+      - FIPS 205
+    sources:
+      - kind: primary
+        title: FIPS 205(2024)
+    apps:
+      - infrastructure
+      - government
+    threats:
+      - related-key
+      - quantum
+    type: algorithm
+    prereq:
+      - sha2
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: falcon
+    title: Falcon 格签名
+    title_en: Falcon
+    domain:
+      - d22-post-quantum
+    era:
+      - e17-post-quantum
+    level: 3
+    aliases:
+      - Falcon
+      - FN-DSA
+    sources:
+      - kind: primary
+        title: Fouque et al.《Falcon Signature Scheme》(2017)
+    apps:
+      - infrastructure
+    threats:
+      - related-key
+      - quantum
+    type: algorithm
+    prereq:
+      - ml-dsa
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: mldsa-hash
+    title: HashML-DSA 混合签名
+    title_en: HashML-DSA
+    domain:
+      - d22-post-quantum
+    era:
+      - e17-post-quantum
+    level: 3
+    aliases:
+      - HashML-DSA
+      - FIPS 204
+    sources:
+      - kind: primary
+        title: FIPS 204(2024)
+    apps:
+      - infrastructure
+    threats:
+      - related-key
+      - quantum
+    type: algorithm
+    prereq:
+      - ml-dsa
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: diffie-hellman
+    title: Diffie-Hellman 密钥协商
+    title_en: Diffie-Hellman Key Agreement
+    domain:
+      - d11-asymmetric
+    era:
+      - e13-public-key
+    level: 2
+    aliases:
+      - DH
+      - Diffie-Hellman
+    sources:
+      - kind: primary
+        title: Diffie & Hellman《New Directions in Cryptography》(1976)
+    apps:
+      - telecom
+      - finance
+    threats:
+      - related-key
+      - CCA
+    type: algorithm
+    prereq:
+      - dlp
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: ecdh
+    title: ECDH 椭圆曲线密钥协商
+    title_en: Elliptic Curve Diffie-Hellman
+    domain:
+      - d11-asymmetric
+    era:
+      - e13-public-key
+    level: 2
+    aliases:
+      - ECDH
+      - X25519
+      - Curve25519
+    sources:
+      - kind: primary
+        title: Stebila《Elliptic Curve Diffie-Hellman》(1998)
+    apps:
+      - telecom
+      - finance
+    threats:
+      - related-key
+      - CCA
+    type: algorithm
+    prereq:
+      - diffie-hellman
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: ecmqv
+    title: ECMQV 椭圆曲线 Menezes-Qu-Vanstone
+    title_en: Elliptic Curve Menezes-Qu-Vanstone
+    domain:
+      - d11-asymmetric
+    era:
+      - e14-standardization
+    level: 4
+    aliases:
+      - ECMQV
+    sources:
+      - kind: primary
+        title: Menezes
+      - kind: tertiary
+        title: Qu
+      - kind: tertiary
+        title: Vanstone《Elliptic Curve Menezes-Qu-Vanstone Key Agreement》(1998)
+    apps:
+      - academic
+    threats:
+      - related-key
+      - CCA
+    type: algorithm
+    prereq:
+      - ecdh
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: ffdhe
+    title: FFDHE 有限域 DH
+    title_en: Finite Field Diffie-Hellman Ephemeral
+    domain:
+      - d11-asymmetric
+    era:
+      - e15-web-protocols
+    level: 3
+    aliases:
+      - FFDHE
+    sources:
+      - kind: primary
+        title: RFC 7919(2016)
+    apps:
+      - telecom
+    threats:
+      - related-key
+      - CCA
+    type: algorithm
+    prereq:
+      - diffie-hellman
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: ml-kem-hybrid
+    title: ML-KEM 混合密钥协商
+    title_en: Hybrid ML-KEM Key Exchange
+    domain:
+      - d22-post-quantum
+    era:
+      - e17-post-quantum
+    level: 3
+    aliases:
+      - hybrid PQ key exchange
+      - X25519MLKEM
+    sources:
+      - kind: primary
+        title: RFC 9794(2025)
+      - kind: tertiary
+        title: draft-ietf-tls-hybrid-design
+    apps:
+      - telecom
+    threats:
+      - quantum
+      - protocol
+    type: algorithm
+    prereq:
+      - kyber
+      - ecdh
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: sigma-protocol
+    title: Sigma 协议
+    title_en: Sigma Protocol
+    domain:
+      - d15-zkp
+    era:
+      - e13-public-key
+    level: 4
+    aliases:
+      - sigma protocol
+    sources:
+      - kind: primary
+        title: Schroeppel & Shamir《A Public Key Crypto-System Based on Discrete Logarithms》(1988)
+    apps:
+      - academic
+    threats:
+      - related-key
+      - protocol
+    type: algorithm
+    prereq:
+      - sigma-protocol
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: fiat-shamir
+    title: Fiat-Shamir 启发式
+    title_en: Fiat-Shamir Heuristic
+    domain:
+      - d15-zkp
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - Fiat-Shamir
+      - FS 启发式
+    sources:
+      - kind: primary
+        title: Fiat & Shamir《Security Proofs for Schnorr Signatures and the DDH Assumption》(1996)
+    apps:
+      - academic
+    threats:
+      - protocol
+      - implementation
+    type: algorithm
+    prereq:
+      - sigma-protocol
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: groth16
+    title: Groth16 证明系统
+    title_en: Groth16 zk-SNARK
+    domain:
+      - d15-zkp
+    era:
+      - e18-frontier
+    level: 4
+    aliases:
+      - Groth16
+      - Pinocchio
+    sources:
+      - kind: primary
+        title: Groth《On Linear Combination of Proofs and Knowledge》(2010)
+    apps:
+      - academic
+      - infrastructure
+    threats:
+      - protocol
+      - implementation
+    type: algorithm
+    prereq:
+      - sigma-protocol
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: plonk
+    title: PLONK 通用证明系统
+    title_en: PLONK
+    domain:
+      - d15-zkp
+    era:
+      - e18-frontier
+    level: 4
+    aliases:
+      - PLONK
+    sources:
+      - kind: primary
+        title: Gabizon et al.《PLONK>>(2019)
+    apps:
+      - academic
+      - infrastructure
+    threats:
+      - protocol
+      - implementation
+    type: algorithm
+    prereq:
+      - sigma-protocol
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: bulletproofs
+    title: Bulletproofs 简洁证明系统
+    title_en: Bulletproofs
+    domain:
+      - d15-zkp
+    era:
+      - e18-frontier
+    level: 4
+    aliases:
+      - Bulletproofs
+    sources:
+      - kind: primary
+        title: Bünz et al.《Bulletproofs>>(2017)
+    apps:
+      - academic
+      - finance
+    threats:
+      - protocol
+      - implementation
+    type: algorithm
+    prereq:
+      - sigma-protocol
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: halo2
+    title: Halo2 证明系统
+    title_en: Halo2
+    domain:
+      - d15-zkp
+    era:
+      - e18-frontier
+    level: 4
+    aliases:
+      - Halo2
+      - Halo 2
+    sources:
+      - kind: primary
+        title: Bowman & Grinsztajn《Halo 2>>(2020)
+    apps:
+      - academic
+      - infrastructure
+    threats:
+      - protocol
+    type: algorithm
+    prereq:
+      - groth16
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: spartan
+    title: Spartan 证明系统
+    title_en: Spartan
+    domain:
+      - d15-zzk
+    era:
+      - e18-frontier
+    level: 4
+    aliases:
+      - Spartan
+    sources:
+      - kind: primary
+        title: Spartan(2020)
+    apps:
+      - academic
+    threats:
+      - protocol
+    type: algorithm
+    prereq:
+      - sigma-protocol
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: shamir-secret-sharing
+    title: Shamir 门限秘密共享
+    title_en: Shamir Secret Sharing
+    domain:
+      - d16-secret-sharing-mpc
+    era:
+      - e13-public-key
+    level: 2
+    aliases:
+      - Shamir
+      - 门限秘密共享
+    sources:
+      - kind: primary
+        title: Shamir《How to Share a Secret》(1979)
+    apps:
+      - finance
+      - infrastructure
+    threats:
+      - related-key
+    type: algorithm
+    prereq:
+      - dlp
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: feldman-vss
+    title: Feldman 可验证秘密共享
+    title_en: Verifiable Secret Sharing
+    domain:
+      - d16-secret-sharing-mpc
+    era:
+      - e14-standardization
+    level: 4
+    aliases:
+      - VSS
+      - 可验证秘密分享
+    sources:
+      - kind: primary
+        title: Feldman《Practical Scheme for Non-Interactive Verifiable Secret Sharing》(1987)
+    apps:
+      - infrastructure
+    threats:
+      - protocol
+    type: algorithm
+    prereq:
+      - shamir-secret-sharing
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: garbled-circuit
+    title: 混淆电路
+    title_en: Garbled Circuit
+    domain:
+      - d16-secret-sharing-mpc
+    era:
+      - e13-public-key
+    level: 4
+    aliases:
+      - garbled circuit
+      - 混淆电路
+    sources:
+      - kind: primary
+        title: Yao《How to Generate and Exchange Secrets>>(1986)
+    apps:
+      - academic
+      - infrastructure
+    threats:
+      - protocol
+    type: algorithm
+    prereq:
+      - shamir-secret-sharing
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: ot
+    title: 不经意传输
+    title_en: Oblivious Transfer
+    domain:
+      - d16-secret-sharing-mpc
+    era:
+      - e13-public-key
+    level: 4
+    aliases:
+      - OT
+      - 不经意传输
+    sources:
+      - kind: primary
+        title: Rabin《How to Construct a One-Way Function Using Public-Key Cryptography》(1989)
+    apps:
+      - finance
+      - privacy
+    threats:
+      - protocol
+    type: algorithm
+    prereq:
+      - sigma-protocol
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: bfvhe
+    title: BFV 全同态加密
+    title_en: Brakerski-Fan-Vercauteren FHE
+    domain:
+      - d16-secret-sharing-mpc
+    era:
+      - e18-frontier
+    level: 4
+    aliases:
+      - BFV
+    sources:
+      - kind: primary
+        title: Brakerski
+      - kind: tertiary
+        title: Fan
+      - kind: tertiary
+        title: Vercauteren《Efficient Fully Homomorphic Encryption for Circuits》(2012)
+    apps:
+      - finance
+      - privacy
+      - health
+    threats:
+      - protocol
+    type: algorithm
+    prereq:
+      - lwe
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: ckks
+    title: CKKS 近似同态加密
+    title_en: Cheon-Kim-Kim-Song FHE
+    domain:
+      - d16-secret-sharing-mpc
+    era:
+      - e18-frontier
+    level: 4
+    aliases:
+      - CKKS
+    sources:
+      - kind: primary
+        title: Cheon et al.《Homomorphic Encryption for Arithmetic>>(2017)
+    apps:
+      - finance
+      - privacy
+      - health
+    threats:
+      - protocol
+    type: algorithm
+    prereq:
+      - bfvhe
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: tfhe
+    title: TFHE 全同态加密
+    title_en: Fully Homomorphic Encryption over the Torus
+    domain:
+      - d16-secret-sharing-mpc
+    era:
+      - e18-frontier
+    level: 4
+    aliases:
+      - TFHE
+      - FHEW
+    sources:
+      - kind: primary
+        title: Cheng et al.《Programmable Bootstrapping>>(2018)
+    apps:
+      - finance
+      - privacy
+    threats:
+      - protocol
+    type: algorithm
+    prereq:
+      - bfvhe
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: abe
+    title: 属性基加密
+    title_en: Attribute-Based Encryption
+    domain:
+      - d16-secret-sharing-mpc
+    era:
+      - e18-frontier
+    level: 4
+    aliases:
+      - ABE
+      - 属性基加密
+    sources:
+      - kind: primary
+        title: Sahai
+      - kind: tertiary
+        title: Waters《Fuzzy Extractors and Attribute-Based Encryption>>(2005)
+    apps:
+      - privacy
+    threats:
+      - protocol
+    type: algorithm
+    prereq:
+      - bilinear
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: ibe
+    title: 身份基加密
+    title_en: Identity-Based Encryption
+    domain:
+      - d16-secret-sharing-mpc
+    era:
+      - e13-public-key
+    level: 4
+    aliases:
+      - IBE
+      - 身份基加密
+    sources:
+      - kind: primary
+        title: Shamir《An Identity-Based Public-Key Cryptosystem Using Quadratic Residuosity>>(1984)
+    apps:
+      - privacy
+      - infrastructure
+    threats:
+      - protocol
+    type: algorithm
+    prereq:
+      - rsa
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: searchable-encryption
+    title: 可搜索加密
+    title_en: Searchable Encryption
+    domain:
+      - d16-secret-sharing-mpc
+    era:
+      - e18-frontier
+    level: 4
+    aliases:
+      - searchable encryption
+      - 可搜索加密
+    sources:
+      - kind: primary
+        title: Bellare
+      - kind: tertiary
+        title: Caradus
+      - kind: tertiary
+        title: Gentry
+      - kind: tertiary
+        title: Peikert
+      - kind: tertiary
+        title: Sudan《Secure Searchable Encryption》(2004)
+    apps:
+      - privacy
+      - finance
+    threats:
+      - protocol
+    type: algorithm
+    prereq:
+      - prf
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: trng
+    title: 真随机数发生器
+    title_en: True Random Number Generator
+    domain:
+      - d19-randomness
+    era:
+      - e19-china
+    level: 2
+    aliases:
+      - TRNG
+      - 真随机
+    sources:
+      - kind: primary
+        title: NIST SP 800-90B(2007)
+    apps:
+      - infrastructure
+      - finance
+    threats:
+      - implementation
+    type: algorithm
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: csprng
+    title: 密码学安全伪随机数发生器
+    title_en: Cryptographically Secure PRNG
+    domain:
+      - d19-randomness
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - CSPRNG
+      - DRBG
+    sources:
+      - kind: primary
+        title: NIST SP 800-90A Rev.1(2015)
+    apps:
+      - infrastructure
+      - finance
+      - everyday
+    threats:
+      - implementation
+    type: algorithm
+    prereq:
+      - trng
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: lcg
+    title: 线性同余发生器
+    title_en: Linear Congruential Generator
+    domain:
+      - d19-randomness
+    era:
+      - e19-china
+    level: 1
+    aliases:
+      - LCG
+      - 线性同余
+    sources:
+      - kind: primary
+        title: Lehmer《On Pseudo-Random Sequences>>(1951)
+    apps:
+      - academic
+      - everyday
+    threats:
+      - implementation
+      - statistical
+    type: algorithm
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: puf
+    title: 物理不可克隆函数
+    title_en: Physically Unclonable Function
+    domain:
+      - d19-randomness
+    era:
+      - e19-china
+    level: 4
+    aliases:
+      - PUF
+      - 物理不可克隆
+    sources:
+      - kind: primary
+        title: Gassend et al.《Silicon PUFs>>(2002)
+    apps:
+      - infrastructure
+      - finance
+    threats:
+      - physical
+      - implementation
+    type: algorithm
+    prereq: []
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: hsm
+    title: 硬件安全模块
+    title_en: Hardware Security Module
+    domain:
+      - d13-key-management
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - HSM
+      - 密码机
+    sources:
+      - kind: primary
+        title: FIPS 140-3(2019)
+    apps:
+      - finance
+      - government
+      - infrastructure
+    threats:
+      - physical
+      - side-channel
+    type: algorithm
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: tpm
+    title: 可信平台模块
+    title_en: Trusted Platform Module
+    domain:
+      - d13-key-management
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - TPM
+      - 可信密码模块
+    sources:
+      - kind: primary
+        title: TCG TPM 2.0 Library Specification
+    apps:
+      - infrastructure
+    threats:
+      - physical
+      - side-channel
+    type: algorithm
+    prereq:
+      - hsm
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: bilinear
+    title: 双线性配对
+    title_en: Bilinear Pairing
+    domain:
+      - d11-asymmetric
+    era:
+      - e13-public-key
+    level: 4
+    aliases:
+      - pairing
+      - 双线性对
+    sources:
+      - kind: primary
+        title: Joux《The Weil and Tate Pairings as Building Blocks for Public Key Cryptosystems>>(2000)
+    apps:
+      - academic
+    threats:
+      - related-key
+    type: algorithm
+    prereq:
+      - ecdsa
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: lwe
+    title: 带误差学习问题
+    title_en: Learning With Errors
+    domain:
+      - d22-post-quantum
+    era:
+      - e17-post-quantum
+    level: 4
+    aliases:
+      - LWE
+    sources:
+      - kind: primary
+        title: Regev《On Lattices
+      - kind: tertiary
+        title: Learning with Errors
+      - kind: tertiary
+        title: Random Linear Codes
+      - kind: tertiary
+        title: and Cryptography》(2005)
+    apps:
+      - academic
+    threats:
+      - quantum
+    type: algorithm
+    prereq:
+      - sivp
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: dlp
+    title: 离散对数问题
+    title_en: Discrete Logarithm Problem
+    domain:
+      - d24-theory
+    era:
+      - e13-public-key
+    level: 3
+    aliases:
+      - DLP
+      - 离散对数
+    sources:
+      - kind: tertiary
+        title: Discrete logarithm Wikipedia
+    apps:
+      - academic
+    threats:
+      - quantum
+    type: algorithm
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: dlp-harden
+    title: — 占位（不收）
+    title_en: —
+    domain:
+      - d24-theory
+    era: []
+    level: 2
+    aliases: []
+    sources: []
+    apps:
+      - academic
+    threats:
+      - theoretical
+    type: term
+    prereq: []
+    status: exempt
+    quality: tier3
+    subtopic: []
+    note: 该条目是编排占位，实际条目为 dlp
+  - id: sivp
+    title: 最短独立向量问题
+    title_en: Shortest Independent Vector Problem
+    domain:
+      - d22-post-quantum
+    era:
+      - e17-post-quantum
+    level: 4
+    aliases:
+      - SIVP
+    sources:
+      - kind: tertiary
+        title: Shortest independent vectors problem Wikipedia
+    apps:
+      - academic
+    threats:
+      - quantum
+    type: algorithm
+    prereq:
+      - lwe
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: prf
+    title: 伪随机函数
+    title_en: Pseudorandom Function
+    domain:
+      - d24-theory
+    era:
+      - e13-public-key
+    level: 4
+    aliases:
+      - PRF
+      - 伪随机函数
+    sources:
+      - kind: tertiary
+        title: Pseudorandom function Wikipedia
+    apps:
+      - academic
+    threats:
+      - protocol
+    type: algorithm
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: prg
+    title: 伪随机生成器
+    title_en: Pseudorandom Generator
+    domain:
+      - d24-theory
+    era:
+      - e13-public-key
+    level: 4
+    aliases:
+      - PRG
+      - 伪随机生成器
+    sources:
+      - kind: tertiary
+        title: Pseudorandom generator Wikipedia
+    apps:
+      - academic
+    threats:
+      - protocol
+    type: algorithm
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: owf
+    title: 单向函数
+    title_en: One-Way Function
+    domain:
+      - d24-theory
+    era:
+      - e13-public-key
+    level: 4
+    aliases:
+      - OWF
+      - 单向函数
+    sources:
+      - kind: tertiary
+        title: One-way function Wikipedia
+    apps:
+      - academic
+    threats:
+      - protocol
+    type: algorithm
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: trapdoor
+    title: 陷门函数
+    title_en: Trapdoor Function
+    domain:
+      - d24-theory
+    era:
+      - e13-public-key
+    level: 4
+    aliases:
+      - trapdoor function
+      - 陷门函数
+    sources:
+      - kind: tertiary
+        title: Trapdoor function Wikipedia
+    apps:
+      - academic
+    threats:
+      - protocol
+    type: algorithm
+    prereq:
+      - owf
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: sec-idem
+    title: — 占位（不收）
+    title_en: —
+    domain:
+      - d24-theory
+    era: []
+    level: 2
+    aliases: []
+    sources: []
+    apps:
+      - academic
+    threats:
+      - theoretical
+    type: term
+    prereq: []
+    status: exempt
+    quality: tier3
+    subtopic: []
+    note: 该条目是编排占位，无对应实体

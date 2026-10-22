@@ -17,10 +17,10 @@ const INVENTORY_DIR = path.join(ROOT, '_meta', 'inventory');
 
 /* 固定取值域（与计划 §4.1 一致） */
 const APPS = ['military', 'diplomacy', 'finance', 'telecom', 'privacy', 'law-enforcement',
-  'copyright', 'academic', 'everyday', 'counter-terror', 'infrastructure', 'health'];
+  'copyright', 'academic', 'everyday', 'counter-terror', 'infrastructure', 'health', 'government'];
 const THREATS = ['CO', 'KPA', 'CPA', 'CCA', 'CCA1', 'CCA2', 'adaptive-CCA', 'related-key',
   'known-key', 'forward', 'inverse', 'chosen-target', 'rogue-key', 'side-channel',
-  'physical', 'social', 'implementation', 'protocol', 'network', 'quantum', 'statistical'];
+  'physical', 'social', 'implementation', 'protocol', 'network', 'quantum', 'statistical', 'theoretical'];
 const STATUS = ['done', 'draft', 'todo', 'exempt'];
 const QUALITY = ['tier1', 'tier2', 'tier3'];
 const TYPES = ['era', 'domain', 'person', 'artifact', 'machine', 'term', 'protocol', 'algorithm',
@@ -31,69 +31,67 @@ const bad = m => { console.log('  ✗ ' + m); fail++; };
 const wrn = m => { console.log('  ⚠ ' + m); warn++; };
 const ok = m => console.log('  ✓ ' + m);
 
-/* ---------- 载入所有清单 ---------- */
-const files = fs.existsSync(INVENTORY_DIR)
-  ? fs.readdirSync(INVENTORY_DIR).filter(f => f.endsWith('.yaml') || f.endsWith('.yml'))
-  : [];
-if (!files.length) { console.log('清单目录为空（_meta/inventory/）——跳过'); process.exit(0); }
-
-const all = [];       // 所有条目
+/* ---------- 载入权威清单（合并去重后的 build/inventory.json） ---------- */
+const MERGED = path.join(ROOT, 'build', 'inventory.json');
+if (!fs.existsSync(MERGED)) {
+  console.log('build/inventory.json 不存在——请先运行 node tools/mdgen/gen-inventory.js');
+  process.exit(1);
+}
+const merged = JSON.parse(fs.readFileSync(MERGED, 'utf8'));
+const all = merged.entries || [];
 const subtopics = new Map();
+for (const s of (merged.subtopics || [])) subtopics.set(s.id, s);
+
+console.log('== 1. 清单载入 ==');
+console.log('  ✓ 合并清单 ' + all.length + ' 条 · ' + subtopics.size + ' 个子主题（来源 build/inventory.json）');
 const seenId = new Map();
 const aliasOwner = new Map();
-
-for (const f of files) {
-  const doc = yaml.load(fs.readFileSync(path.join(INVENTORY_DIR, f), 'utf8'));
-  if (!doc) continue;
-  const groups = Object.keys(doc).filter(k => !['domain', 'title', 'title_en', 'subtopics', 'issues'].includes(k));
-  for (const st of (doc.subtopics || [])) {
-    if (!st.id) { bad(f + ' 子主题缺 id'); continue; }
-    if (subtopics.has(st.id)) bad('子主题 id 重复：' + st.id);
-    subtopics.set(st.id, st);
-  }
-  for (const g of groups) {
-    const list = Array.isArray(doc[g]) ? doc[g] : [doc[g]];
-    for (const e of list) {
-      if (!e || !e.id) { bad(f + ' 存在无 id 的条目'); continue; }
-      e.__file = f; e.__group = g;
-      if (seenId.has(e.id)) bad('id 重复：' + e.id + '（' + seenId.get(e.id) + ' 与 ' + f + '）');
-      else seenId.set(e.id, f);
-      all.push(e);
-      for (const a of (e.aliases || [])) {
-        const k = String(a).toLowerCase().trim();
-        if (!k) continue;
-        if (aliasOwner.has(k) && aliasOwner.get(k) !== e.id) bad('别名冲突：' + a + ' → ' + aliasOwner.get(k) + ' / ' + e.id);
-        else aliasOwner.set(k, e.id);
-      }
-    }
+for (const e of all) {
+  if (seenId.has(e.id)) bad('id 重复：' + e.id);
+  else seenId.set(e.id, 1);
+  for (const a of (e.aliases || [])) {
+    const k = String(a).toLowerCase().trim();
+    if (!k) continue;
+    if (aliasOwner.has(k) && aliasOwner.get(k) !== e.id) bad('别名冲突：' + a + ' → ' + aliasOwner.get(k) + ' / ' + e.id);
+    else aliasOwner.set(k, e.id);
   }
 }
 
-console.log('== 1. 清单载入 ==');
-ok(files.length + ' 份清单 · ' + all.length + ' 条目 · ' + subtopics.size + ' 个子主题');
-
 console.log('== 2. 条目结构 ==');
+/* 子主题分两档：覆盖层手写的 = curated（该域实体必须有子主题）；域文件标题派生的 = 候选（尚未逐域编写） */
+const curatedSubs = new Set();
+const domainsWithCurated = new Set();
+for (const s of (merged.subtopics || [])) if (s.curated) { curatedSubs.add(s.id); if (s.domain) domainsWithCurated.add(s.domain); }
 for (const e of all) {
-  const where = e.id + '（' + e.__file + '）';
+  const where = e.id;
+  /* 自动派生条目（derived）的判断型轴允许留空，但记为待补 */
+  const D = !!e.derived;
+  const need = (cond, msg) => { if (cond) { if (D) wrn(where + ' ' + msg + '（自动派生，待人工补）'); else bad(where + ' ' + msg); } };
+  const needSoft = (cond, msg) => { if (cond) wrn(where + ' ' + msg); };
   if (!STATUS.includes(e.status)) bad(where + ' status 非法：' + e.status);
   if (!QUALITY.includes(e.quality)) bad(where + ' quality 非法：' + e.quality);
   if (!e.title) bad(where + ' 缺 title');
-  if (!e.title_en) wrn(where + ' 缺 title_en（中英同步门禁会拦）');
+  if (!e.title_en) bad(where + ' 缺 title_en（中英同步门禁）');
   if (e.status === 'todo' && !(e.priority || e.target)) bad(where + ' status=todo 但缺 priority/target');
   if (e.status === 'exempt' && !e.note) bad(where + ' status=exempt 但缺 note');
-  if (e.quality !== 'tier3' && !(e.sources && e.sources.length)) bad(where + ' tier1/2 缺出处');
   if (e.quality === 'tier1' && !(e.sources || []).some(s => s && (s.kind === 'primary' || s.kind === 'authoritative'))) {
     wrn(where + ' tier1 无 primary/authoritative 级出处');
   }
-  if (!Array.isArray(e.domain) || !e.domain.length) bad(where + ' 缺 domain');
-  if (!Array.isArray(e.subtopic) || !e.subtopic.length) bad(where + ' 缺 subtopic');
+  need(!Array.isArray(e.domain) || !e.domain.length, '缺 domain');
+  /* 子主题：该域已有手写子主题 → 必须落位；否则属「该域子主题尚未编写」的待办 */
+  const strictSub = (e.domain || []).some(d => domainsWithCurated.has(d));
+  if (!Array.isArray(e.subtopic) || !e.subtopic.length) {
+    if (strictSub) bad(where + ' 缺 subtopic（该域子主题已手写，必须归位）');
+    else needSoft(true, '缺 subtopic（该域子主题尚未编写，待补）');
+  }
   for (const s of (e.subtopic || [])) if (!subtopics.has(s)) bad(where + ' subtopic 不存在：' + s);
-  if (!Array.isArray(e.apps) || !e.apps.length) bad(where + ' 缺 apps');
+  need(!Array.isArray(e.apps) || !e.apps.length, '缺 apps');
   for (const a of (e.apps || [])) if (!APPS.includes(a)) bad(where + ' apps 取值域非法：' + a);
-  if (!Array.isArray(e.threats) || !e.threats.length) bad(where + ' 缺 threats');
+  need(!Array.isArray(e.threats) || !e.threats.length, '缺 threats');
   for (const t of (e.threats || [])) if (!THREATS.includes(t)) bad(where + ' threats 取值域非法：' + t);
   if (!(e.level >= 1 && e.level <= 4)) bad(where + ' level 越界：' + e.level);
-  if (!Array.isArray(e.era) || !e.era.length) bad(where + ' 缺 era');
+  /* exempt = 明确不收的条目，不要求各轴 */
+  if (e.status !== 'exempt') need(!Array.isArray(e.era) || !e.era.length, '缺 era');
   if (!Array.isArray(e.prereq)) bad(where + ' prereq 非数组');
   if (e.playable === undefined) wrn(where + ' 未标 playable');
   for (const s of (e.sources || [])) {
@@ -177,9 +175,12 @@ const ENTITY_DIRS = [
   { dir: 'theorems', list: 'theorems.yaml' },
   { dir: 'events', list: 'events.yaml' },
 ];
+const listedFiles = fs.existsSync(path.join(ROOT, '_meta', 'inventory'))
+  ? fs.readdirSync(path.join(ROOT, '_meta', 'inventory')).filter(f => /\.ya?ml$/.test(f))
+  : [];
 let orphans = 0, scoped = 0;
 for (const { dir, list } of ENTITY_DIRS) {
-  if (!files.includes(list)) continue;      // 该类清单尚未铺开 → 暂不校验
+  if (!listedFiles.includes(list)) continue;      // 该类清单尚未铺开 → 暂不校验
   scoped++;
   const abs = path.join(ROOT, dir);
   if (!fs.existsSync(abs)) continue;

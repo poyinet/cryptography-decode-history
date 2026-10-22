@@ -1,0 +1,1460 @@
+
+entries:
+  - id: cn-yinfu
+    title: 阴符
+    title_en: Yin Fu (Secret Tally)
+    domain:
+      - d18-steganography
+    era:
+      - e01-origins
+    level: 1
+    aliases:
+      - 阴符
+      - 兵符
+    sources:
+      - kind: tertiary
+        title: 《六韬·阴符》
+    apps:
+      - military
+    threats:
+      - social
+      - physical
+    type: event
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: cn-yinshu
+    title: 阴书
+    title_en: Yin Shu
+    domain:
+      - d18-steganography
+    era:
+      - e01-origins
+    level: 2
+    aliases:
+      - 阴书
+      - 主将
+    sources:
+      - kind: tertiary
+        title: 《阴符》类军事暗语
+    apps:
+      - military
+    threats:
+      - social
+    type: event
+    prereq:
+      - cn-yinfu
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: cn-ziyan
+    title: 字验
+    title_en: Zi Yan (Character Verification)
+    domain:
+      - d18-steganography
+    era:
+      - e01-origins
+    level: 2
+    aliases:
+      - 字验
+      - 密直
+    sources:
+      - kind: tertiary
+        title: 宋代《武经总要》
+    apps:
+      - military
+    threats:
+      - social
+    type: event
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: cn-hufu
+    title: 虎符
+    title_en: Tiger Tally
+    domain:
+      - d13-key-management
+    era:
+      - e01-origins
+    level: 1
+    aliases:
+      - 虎符
+      - 兵符
+    sources:
+      - kind: tertiary
+        title: 《史记》
+    apps:
+      - military
+    threats:
+      - physical
+    type: event
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: cn-chengyu
+    title: chengyu 拆字谜
+    title_en: Character-Splitting Word Puzzles
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e01-origins
+    level: 2
+    aliases:
+      - 拆字
+      - 离合字
+    sources:
+      - kind: tertiary
+        title: 中国 cryptanalysis history
+    apps:
+      - academic
+    threats:
+      - CO
+      - statistical
+    type: event
+    prereq: []
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: cn-morse-intro
+    title: 清末电报码本
+    title_en: Late-Qing Telegraph Codebook
+    domain:
+      - d14-protocols-pki
+    era:
+      - e01-origins
+    level: 3
+    aliases:
+      - 电报码本
+      - 红字密本
+    sources:
+      - kind: tertiary
+        title: Zhang
+      - kind: tertiary
+        title: Kuzuoğlu
+      - kind: tertiary
+        title: Chambers《中国电信密码史研究》
+    apps:
+      - diplomacy
+      - military
+    threats:
+      - protocol
+    type: event
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: cn-fanqie
+    title: 反切码
+    title_en: Fǎnqiè Cipher
+    domain:
+      - d04-transposition
+    era:
+      - e05-medieval-europe
+    level: 3
+    aliases:
+      - 反切
+      - 反切码
+    sources:
+      - kind: tertiary
+        title: 《唐韵》反切与密写
+    apps:
+      - military
+    threats:
+      - CO
+      - statistical
+    type: event
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: cn-cangtou
+    title: 藏头诗
+    title_en: Acrostic Poem
+    domain:
+      - d18-steganography
+    era:
+      - e01-origins
+    level: 1
+    aliases:
+      - 藏头
+      - 藏头诗
+    sources:
+      - kind: tertiary
+        title: Chinese literary cryptography Wikipedia
+    apps:
+      - military
+      - government
+    threats:
+      - statistical
+    type: event
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: cn-wuhan-dian
+    title: 晚清电码加密
+    title_en: Late-Qing Telegraph Encryption
+    domain:
+      - d14-protocols-pki
+    era:
+      - e01-origins
+    level: 4
+    aliases:
+      - 超等密码
+      - 加减法密本
+    sources:
+      - kind: tertiary
+        title: 《中国电信密码史研究》
+    apps:
+      - diplomacy
+    threats:
+      - protocol
+    type: event
+    prereq:
+      - cn-morse-intro
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: cn-haomi-1931
+    title: 红军"豪密"
+    title_en: Red Army "Hao Mi" Cipher
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e19-china
+    level: 3
+    aliases:
+      - 豪密
+      - 红军密码
+    sources:
+      - kind: primary
+        title: 《中国共产党保密工作史》第十八章
+    apps:
+      - military
+    threats:
+      - KPA
+      - statistical
+    type: event
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: cn-zhangshen-1930
+    title: 中共首套无线电台密码
+    title_en: First CPC Wireless Cipher
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e19-china
+    level: 3
+    aliases:
+      - 张沈川
+      - 黄尚英
+    sources:
+      - kind: primary
+        title: 《中国共产党保密工作史》第十八章
+    apps:
+      - military
+    threats:
+      - CO
+      - statistical
+    type: event
+    prereq:
+      - cn-haomi-1931
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: cn-anti-japanese-1937
+    title: 抗战时期密码通信
+    title_en: Wartime Resistance Cryptography
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e19-china
+    level: 3
+    aliases:
+      - 抗战密码
+      - 双层码本
+    sources:
+      - kind: primary
+        title: 《中国共产党保密工作史》第十八章
+    apps:
+      - military
+    threats:
+      - KPA
+    type: event
+    prereq:
+      - cn-haomi-1931
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: cn-liberation-1946
+    title: 解放战争密码体系
+    title_en: Liberation War Cipher System
+    domain:
+      - d14-protocols-pki
+    era:
+      - e19-china
+    level: 3
+    aliases:
+      - 一报一密
+      - 前轻后重
+      - 两道防线
+    sources:
+      - kind: primary
+        title: 《中国共产党保密工作史》第十八章
+    apps:
+      - military
+    threats:
+      - protocol
+    type: event
+    prereq:
+      - cn-anti-japanese-1937
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: cn-xiahe-1947
+    title: 小河村会议
+    title_en: Xiahe Village Conference
+    domain:
+      - d14-protocols-pki
+    era:
+      - e19-china
+    level: 3
+    aliases:
+      - 小河村会议
+      - 周恩来
+    sources:
+      - kind: primary
+        title: 《中国共产党保密工作史》第十八章
+    apps:
+      - military
+    threats:
+      - protocol
+    type: event
+    prereq:
+      - cn-liberation-1946
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: cn-newchina-1949
+    title: 新中国密码学发展
+    title_en: Post-1949 Cryptography Development
+    domain:
+      - d24-theory
+    era:
+      - e19-china
+    level: 3
+    aliases:
+      - 军队密码体系
+      - 有限域研究
+    sources:
+      - kind: primary
+        title: 国家密码管理局《密码发展史之近现代密码》
+    apps:
+      - government
+    threats:
+      - implementation
+    type: event
+    prereq:
+      - cn-liberation-1946
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: cn-hua-luogeng
+    title: 华罗庚学派
+    title_en: Hua Luogeng's Mathematical School
+    domain:
+      - d24-theory
+    era:
+      - e19-china
+    level: 3
+    aliases:
+      - 华罗庚
+    sources:
+      - kind: primary
+        title: 国家密码管理局《密码发展史》
+    apps:
+      - academic
+    threats:
+      - theoretical
+    type: event
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: cn-wenjun-wu
+    title: 吴文俊与密码数学基础
+    title_en: Wu Wenjun and the Mathematical Basis of Cryptography
+    domain:
+      - d24-theory
+    era:
+      - e19-china
+    level: 4
+    aliases:
+      - 吴文俊
+      - 有限域自动机
+    sources:
+      - kind: primary
+        title: 国家密码管理局《密码发展史》
+    apps:
+      - academic
+    threats:
+      - theoretical
+    type: event
+    prereq:
+      - cn-hua-luogeng
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: cn-zengkexian
+    title: 曾肯成与编码理论
+    title_en: Zeng Kencheng and Coding Theory
+    domain:
+      - d24-theory
+    era:
+      - e19-china
+    level: 4
+    aliases:
+      - 曾肯成
+      - CHINACRYPT
+    sources:
+      - kind: primary
+        title: 国家密码管理局《密码发展史》
+    apps:
+      - academic
+    threats:
+      - theoretical
+    type: event
+    prereq:
+      - cn-hua-luogeng
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: cn-taorenji
+    title: 陶仁骥与有限自动机密码
+    title_en: Tao Renji and Finite Automata Cryptography
+    domain:
+      - d24-theory
+    era:
+      - e19-china
+    level: 4
+    aliases:
+      - 陶仁骥
+      - FAPKC
+    sources:
+      - kind: primary
+        title: 国家密码管理局《密码发展史》
+    apps:
+      - academic
+    threats:
+      - theoretical
+    type: event
+    prereq:
+      - cn-zengkexian
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: cn-zhanghuanguo
+    title: 张焕国与演化密码
+    title_en: Zhang Huanguo and Evolutionary Cryptography
+    domain:
+      - d24-theory
+    era:
+      - e19-china
+    level: 4
+    aliases:
+      - 张焕国
+      - 演化密码
+    sources:
+      - kind: primary
+        title: 国家密码管理局《密码发展史》
+    apps:
+      - academic
+    threats:
+      - theoretical
+    type: event
+    prereq:
+      - cn-zengkexian
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: cn-xiaogong
+    title: 肖国镇与流密码组合理论
+    title_en: Xiao Guozhen and Stream Cipher Composition
+    domain:
+      - d06-otp-stream
+    era:
+      - e19-china
+    level: 4
+    aliases:
+      - 肖国镇
+      - 流密码组合
+    sources:
+      - kind: primary
+        title: 国家密码管理局《密码发展史》
+    apps:
+      - academic
+    threats:
+      - theoretical
+    type: event
+    prereq:
+      - cn-zengkexian
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: cn-dingcunsheng
+    title: 丁存生与流密码
+    title_en: Ding Cunsheng and Stream Ciphers
+    domain:
+      - d06-otp-stream
+    era:
+      - e19-china
+    level: 4
+    aliases:
+      - 丁存生
+    sources:
+      - kind: primary
+        title: 国家密码管理局《密码发展史》
+    apps:
+      - academic
+    threats:
+      - theoretical
+    type: event
+    prereq:
+      - cn-xiaogong
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: cn-peidingyi
+    title: 裴定一与认证码
+    title_en: Pei Dingyi and Authentication Codes
+    domain:
+      - d24-theory
+    era:
+      - e19-china
+    level: 4
+    aliases:
+      - 裴定一
+      - 认证码
+    sources:
+      - kind: primary
+        title: 国家密码管理局《密码发展史》
+    apps:
+      - academic
+    threats:
+      - theoretical
+    type: event
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: cn-fengdengguo
+    title: 冯登国与现代密码学
+    title_en: Feng Dengguo and Modern Cryptography
+    domain:
+      - d24-theory
+    era:
+      - e19-china
+    level: 3
+    aliases:
+      - 冯登国
+    sources:
+      - kind: primary
+        title: 国家密码管理局《密码发展史》
+    apps:
+      - academic
+      - government
+    threats:
+      - theoretical
+    type: event
+    prereq:
+      - cn-peidingyi
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: cn-wangxiaoyun
+    title: 王小云与碰撞攻击
+    title_en: Wang Xiaoyun and Collision Attacks
+    domain:
+      - d09-hash
+    era:
+      - e19-china
+    level: 2
+    aliases:
+      - 王小云
+      - MD5 碰撞
+      - SHA-1 碰撞
+    sources:
+      - kind: primary
+        title: Wang
+      - kind: tertiary
+        title: Yu《How to Break MD5 and Other Hash Functions》(2004)
+    apps:
+      - academic
+      - government
+    threats:
+      - KPA
+      - protocol
+    type: event
+    prereq:
+      - cn-fengdengguo
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: cn-zhengjianhua
+    title: 郑建华与信息安全国家实验室
+    title_en: Zheng Jianhua and the State Key Laboratory
+    domain:
+      - d24-theory
+    era:
+      - e19-china
+    level: 3
+    aliases:
+      - 郑建华
+      - 信安实验室
+    sources:
+      - kind: primary
+        title: 国家密码管理局《密码发展史》
+    apps:
+      - government
+    threats:
+      - theoretical
+    type: event
+    prereq:
+      - cn-fengdengguo
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: cn-jingjiwu
+    title: 荆继武与中科院密码学院
+    title_en: Jing Jiwu and the CAS School of Cryptography
+    domain:
+      - d24-theory
+    era:
+      - e19-china
+    level: 3
+    aliases:
+      - 荆继武
+      - 中科院密码学院
+    sources:
+      - kind: primary
+        title: 中科院大学密码学院官网
+    apps:
+      - government
+      - academic
+    threats:
+      - theoretical
+    type: event
+    prereq:
+      - cn-zhengjianhua
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: cn-zhaoyunlei
+    title: 赵运磊与后量子密码
+    title_en: Zhao Yunlei and Post-Quantum Cryptography
+    domain:
+      - d22-post-quantum
+    era:
+      - e19-china
+    level: 3
+    aliases:
+      - 赵运磊
+      - 复旦
+    sources:
+      - kind: tertiary
+        title: 复旦大学密码学实验室官网
+    apps:
+      - academic
+      - government
+    threats:
+      - quantum
+    type: event
+    prereq:
+      - cn-fengdengguo
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: cn-yuyun
+    title: 郁昱与隐私计算
+    title_en: Yu Yun and Privacy-Preserving Computation
+    domain:
+      - d16-secret-sharing-mpc
+    era:
+      - e19-china
+    level: 3
+    aliases:
+      - 郁昱
+    sources:
+      - kind: tertiary
+        title: 复旦大学密码学实验室官网
+    apps:
+      - academic
+      - government
+    threats:
+      - protocol
+    type: event
+    prereq:
+      - cn-zhaoyunlei
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: cn-lihongda
+    title: 李红达与安全性归约
+    title_en: Li Hongda and Security Reductions
+    domain:
+      - d24-theory
+    era:
+      - e19-china
+    level: 4
+    aliases:
+      - 李红达
+    sources:
+      - kind: tertiary
+        title: 中国科学院信息工程研究所官网
+    apps:
+      - academic
+    threats:
+      - theoretical
+    type: event
+    prereq:
+      - cn-fengdengguo
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: cn-yedengfeng
+    title: 叶顶锋与密码分析
+    title_en: Ye Dengfeng and Cryptanalysis
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e19-china
+    level: 4
+    aliases:
+      - 叶顶锋
+    sources:
+      - kind: tertiary
+        title: 中国科学院数学与系统科学研究院官网
+    apps:
+      - academic
+    threats:
+      - CO
+      - statistical
+    type: event
+    prereq:
+      - cn-fengdengguo
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: cn-lindongdai
+    title: 林东岱与应用密码学
+    title_en: Lin Dongdai and Applied Cryptography
+    domain:
+      - d23-applied-security
+    era:
+      - e19-china
+    level: 3
+    aliases:
+      - 林东岱
+    sources:
+      - kind: tertiary
+        title: 中国科学院信息工程研究所官网
+    apps:
+      - government
+      - academic
+    threats:
+      - implementation
+    type: event
+    prereq:
+      - cn-jingjiwu
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: cn-xuhaixia
+    title: 徐海霞与安全多方计算
+    title_en: Xu Haixia and Secure Multiparty Computation
+    domain:
+      - d16-secret-sharing-mpc
+    era:
+      - e19-china
+    level: 3
+    aliases:
+      - 徐海霞
+    sources:
+      - kind: tertiary
+        title: 中国科学院数学与系统科学研究院官网
+    apps:
+      - government
+      - academic
+    threats:
+      - protocol
+    type: event
+    prereq:
+      - cn-lindongdai
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: cn-luxianhui
+    title: 路献辉与格密码
+    title_en: Lu Xianhui and Lattice Cryptography
+    domain:
+      - d22-post-quantum
+    era:
+      - e19-china
+    level: 4
+    aliases:
+      - 路献辉
+    sources:
+      - kind: tertiary
+        title: 中国科学院数学与系统科学研究院官网
+    apps:
+      - academic
+      - government
+    threats:
+      - quantum
+    type: event
+    prereq:
+      - cn-lindongdai
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: cn-hulei
+    title: 胡磊与序列复杂度
+    title_en: Hu Lei and Sequence Complexity
+    domain:
+      - d24-theory
+    era:
+      - e19-china
+    level: 4
+    aliases:
+      - 胡磊
+    sources:
+      - kind: tertiary
+        title: 中国科学院数学与系统科学研究院官网
+    apps:
+      - academic
+    threats:
+      - theoretical
+    type: event
+    prereq:
+      - cn-lindongdai
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: cn-zhaoxianfeng
+    title: 赵险峰与信息隐藏
+    title_en: Zhao Xianfeng and Information Hiding
+    domain:
+      - d18-steganography
+    era:
+      - e19-china
+    level: 4
+    aliases:
+      - 赵险峰
+      - 数字水印
+    sources:
+      - kind: tertiary
+        title: 武汉大学信息隐藏实验室官网
+    apps:
+      - academic
+    threats:
+      - statistical
+    type: event
+    prereq: []
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: cn-libao
+    title: 李宝与椭圆曲线密码
+    title_en: Li Bao and Elliptic Curve Cryptography
+    domain:
+      - d11-asymmetric
+    era:
+      - e19-china
+    level: 3
+    aliases:
+      - 李宝
+    sources:
+      - kind: tertiary
+        title: 中国科学院数学与系统科学研究院官网
+    apps:
+      - academic
+    threats:
+      - related-key
+    type: event
+    prereq: []
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: cn-huangzhenyu
+    title: 黄震宇与代数密码分析
+    title_en: Huang Zhenyu and Algebraic Cryptanalysis
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e19-china
+    level: 4
+    aliases:
+      - 黄震宇
+    sources:
+      - kind: tertiary
+        title: 中国科学院数学与系统科学研究院官网
+    apps:
+      - academic
+    threats:
+      - CO
+      - statistical
+    type: event
+    prereq: []
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: cn-wangliping
+    title: 王丽萍与序列/格密码
+    title_en: Wang Liping and Sequence and Lattice Cryptography
+    domain:
+      - d24-theory
+    era:
+      - e19-china
+    level: 4
+    aliases:
+      - 王丽萍
+    sources:
+      - kind: tertiary
+        title: 中国科学院数学与系统科学研究院官网
+    apps:
+      - academic
+    threats:
+      - theoretical
+    type: event
+    prereq: []
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: cn-sunman
+    title: 孙瑶与密码散列分析
+    title_en: Sun Yao and Cryptographic Hash Analysis
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e19-china
+    level: 4
+    aliases:
+      - 孙瑶
+    sources:
+      - kind: tertiary
+        title: 中国科学院数学与系统科学研究院官网
+    apps:
+      - academic
+    threats:
+      - KPA
+      - protocol
+    type: event
+    prereq: []
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: cn-wangpeng
+    title: 王鹏与密码分析新进展
+    title_en: Wang Peng and New Advances in Cryptanalysis
+    domain:
+      - d07-cryptanalysis
+    era:
+      - e19-china
+    level: 4
+    aliases:
+      - 王鹏
+    sources:
+      - kind: tertiary
+        title: 中国科学院数学与系统科学研究院官网
+    apps:
+      - academic
+    threats:
+      - CO
+      - statistical
+    type: event
+    prereq: []
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: cn-zhangwentao
+    title: 张文涛与对称密码
+    title_en: Zhang Wentao and Symmetric Cryptography
+    domain:
+      - d08-block-cipher
+    era:
+      - e19-china
+    level: 4
+    aliases:
+      - 张文涛
+    sources:
+      - kind: tertiary
+        title: 中国科学院大学密码学院课程设置
+    apps:
+      - academic
+    threats:
+      - side-channel
+    type: event
+    prereq: []
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: cn-majianfeng
+    title: 马建峰与西电密码学
+    title_en: Ma Jianfeng and Xidian Cryptography
+    domain:
+      - d24-theory
+    era:
+      - e19-china
+    level: 3
+    aliases:
+      - 马建峰
+      - 西电
+    sources:
+      - kind: tertiary
+        title: 西安电子科技大学官网
+    apps:
+      - academic
+    threats:
+      - theoretical
+    type: event
+    prereq: []
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: cn-1997-commercial
+    title: 商用密码管理起步
+    title_en: Start of Commercial Cryptography Administration
+    domain:
+      - d23-applied-security
+    era:
+      - e19-china
+    level: 2
+    aliases:
+      - 商用密码起步
+    sources:
+      - kind: primary
+        title: 国家密码管理局《密码发展史》
+    apps:
+      - government
+      - finance
+    threats:
+      - implementation
+    type: event
+    prereq: []
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: cn-2006-sm-publish
+    title: 商用密码算法公布
+    title_en: Commercial Cryptography Algorithms Published
+    domain:
+      - d20-china-sm
+    era:
+      - e19-china
+    level: 2
+    aliases:
+      - 2006 公布
+    sources:
+      - kind: primary
+        title: 国家密码管理局《密码发展史》
+    apps:
+      - government
+      - finance
+    threats:
+      - implementation
+    type: event
+    prereq:
+      - cn-1997-commercial
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: cn-2010-sm23
+    title: SM2/SM3 发布
+    title_en: SM2 and SM3 Released
+    domain:
+      - d20-china-sm
+    era:
+      - e14-standardization
+    level: 2
+    aliases:
+      - SM2
+      - SM3
+    sources:
+      - kind: primary
+        title: 国家密码管理局《密码发展史》
+    apps:
+      - government
+      - finance
+    threats:
+      - related-key
+    type: event
+    prereq:
+      - cn-2006-sm-publish
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: cn-2012-gmt
+    title: GM/T 0001-0010 批量发布
+    title_en: GM/T 0001-0010 Published
+    domain:
+      - d20-china-sm
+    era:
+      - e14-standardization
+    level: 3
+    aliases:
+      - GM/T 批量发布
+    sources:
+      - kind: primary
+        title: 国家密码管理局《密码发展史》
+    apps:
+      - government
+      - finance
+    threats:
+      - implementation
+    type: event
+    prereq:
+      - cn-2010-sm23
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: cn-2016-sm9
+    title: SM9 标准发布
+    title_en: SM9 Standard Published
+    domain:
+      - d20-china-sm
+    era:
+      - e18-frontier
+    level: 3
+    aliases:
+      - SM9
+    sources:
+      - kind: primary
+        title: GB/T 38635.1—2020
+    apps:
+      - government
+      - finance
+    threats:
+      - protocol
+    type: event
+    prereq:
+      - cn-2012-gmt
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: cn-2019-cryptlaw
+    title: 《密码法》通过
+    title_en: Cryptography Law Passed
+    domain:
+      - d23-applied-security
+    era:
+      - e19-china
+    level: 2
+    aliases:
+      - 密码法
+    sources:
+      - kind: primary
+        title: 全国人大常委会《密码法》(2019-10-26 通过
+      - kind: tertiary
+        title: 2020-01-01 施行)
+    apps:
+      - government
+      - finance
+    threats:
+      - implementation
+    type: event
+    prereq:
+      - cn-1997-commercial
+    status: done
+    quality: tier1
+    subtopic: []
+  - id: cn-2023-gm-reg
+    title: 《商用密码管理条例》修订
+    title_en: Revised Commercial Cryptography Regulation
+    domain:
+      - d23-applied-security
+    era:
+      - e19-china
+    level: 3
+    aliases:
+      - 商用密码管理条例 2023
+    sources:
+      - kind: primary
+        title: 国务院令第760号(2023-07-01 施行)
+    apps:
+      - government
+      - finance
+    threats:
+      - implementation
+    type: event
+    prereq:
+      - cn-2019-cryptlaw
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: cn-2023-miangping
+    title: 密评管理办法施行
+    title_en: Cryptography Assessment Measures in Effect
+    domain:
+      - d23-applied-security
+    era:
+      - e19-china
+    level: 3
+    aliases:
+      - 密评管理办法
+      - 每年至少一次
+    sources:
+      - kind: primary
+        title: 国家密码管理局令第3号(2023-11-01 施行)
+    apps:
+      - government
+      - finance
+    threats:
+      - implementation
+    type: event
+    prereq:
+      - cn-2023-gm-reg
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: cn-2024-pqc
+    title: 后量子标准化推进
+    title_en: Post-Quantum Standardization Advancing
+    domain:
+      - d22-post-quantum
+    era:
+      - e17-post-quantum
+    level: 2
+    aliases:
+      - 后量子迁移
+    sources:
+      - kind: primary
+        title: FIPS 203/204/205(2024)
+    apps:
+      - government
+      - finance
+    threats:
+      - quantum
+    type: event
+    prereq:
+      - cn-2019-cryptlaw
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: cn-1974-major
+    title: 中科大开办编码与密码专业
+    title_en: Coding and Cryptography Program Founded
+    domain:
+      - d24-theory
+    era:
+      - e19-china
+    level: 3
+    aliases:
+      - 编码与密码专业
+    sources:
+      - kind: primary
+        title: 国家密码管理局《密码发展史》
+    apps:
+      - academic
+    threats:
+      - theoretical
+    type: event
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: cn-1989-sklo
+    title: 信息安全国家重点实验室成立
+    title_en: State Key Laboratory of Information Security Founded
+    domain:
+      - d24-theory
+    era:
+      - e19-china
+    level: 3
+    aliases:
+      - 信息安全国家重点实验室
+    sources:
+      - kind: primary
+        title: 国家密码管理局《密码发展史》
+    apps:
+      - government
+      - academic
+    threats:
+      - theoretical
+    type: event
+    prereq:
+      - cn-1974-major
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: cn-1992-chinacrypt
+    title: CHINACRYPT 学术会议
+    title_en: CHINACRYPT Conference
+    domain:
+      - d24-theory
+    era:
+      - e19-china
+    level: 3
+    aliases:
+      - CHINACRYPT
+      - 中国密码学会议
+    sources:
+      - kind: primary
+        title: 国家密码管理局《密码发展史》
+    apps:
+      - academic
+    threats:
+      - theoretical
+    type: event
+    prereq:
+      - cn-1974-major
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: cn-2007-society
+    title: 中国密码学会成立
+    title_en: Chinese Cryptographic Society Founded
+    domain:
+      - d24-theory
+    era:
+      - e19-china
+    level: 3
+    aliases:
+      - 中国密码学会
+    sources:
+      - kind: primary
+        title: 中国密码学会官网
+    apps:
+      - academic
+      - government
+    threats:
+      - theoretical
+    type: event
+    prereq:
+      - cn-1992-chinacrypt
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: cn-2021-major
+    title: 密码科学与技术专业获批
+    title_en: Cryptography Science and Technology Major Approved
+    domain:
+      - d24-theory
+    era:
+      - e19-china
+    level: 2
+    aliases:
+      - 密码科学与技术
+      - 本科专业
+    sources:
+      - kind: tertiary
+        title: 教育部本科专业目录(2021)
+    apps:
+      - academic
+    threats:
+      - theoretical
+    type: event
+    prereq:
+      - cn-2007-society
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: cn-2022-master
+    title: 密码硕士专业学位设立
+    title_en: Professional Master Degree in Cryptography Established
+    domain:
+      - d24-theory
+    era:
+      - e19-china
+    level: 2
+    aliases:
+      - 密码硕士
+      - "1452"
+    sources:
+      - kind: tertiary
+        title: 国务院学位委员会(2022)
+    apps:
+      - academic
+    threats:
+      - theoretical
+    type: event
+    prereq:
+      - cn-2021-major
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: cn-journal
+    title: 《密码学报》创刊
+    title_en: Journal of Cryptologic Research Founded
+    domain:
+      - d24-theory
+    era:
+      - e19-china
+    level: 3
+    aliases:
+      - 密码学报
+    sources:
+      - kind: tertiary
+        title: 中国密码学会官网
+    apps:
+      - academic
+    threats:
+      - theoretical
+    type: event
+    prereq:
+      - cn-2007-society
+    status: done
+    quality: tier3
+    subtopic: []
+  - id: cn-ccf
+    title: CCF 推荐目录密码学板块
+    title_en: CCF Recommended List for Cryptography
+    domain:
+      - d24-theory
+    era:
+      - e19-china
+    level: 2
+    aliases:
+      - CCF 目录
+      - CRYPTO
+      - EUROCRYPT
+      - ASIACRYPT
+    sources:
+      - kind: tertiary
+        title: CCF《推荐国际学术会议和期刊目录》第七版(2026)
+    apps:
+      - academic
+    threats:
+      - theoretical
+    type: event
+    prereq: []
+    status: done
+    quality: tier2
+    subtopic: []
+  - id: cn-competition
+    title: 全国密码算法设计竞赛
+    title_en: National Cryptographic Algorithm Design Competition
+    domain:
+      - d24-theory
+    era:
+      - e19-china
+    level: 3
+    aliases:
+      - 密码算法设计竞赛
+    sources:
+      - kind: tertiary
+        title: 中国密码学会官网
+    apps:
+      - academic
+    threats:
+      - theoretical
+    type: event
+    prereq:
+      - cn-2007-society
+    status: done
+    quality: tier3
+    subtopic: []

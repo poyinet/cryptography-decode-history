@@ -1,0 +1,1011 @@
+
+domain: "*"
+title: artifacts 总目录
+title_en: artifacts Inventory
+entries:
+  - id: adfgvx-break
+    title: ADFGVX 破译（佩恩万）
+    title_en: Breaking ADFGVX (Painvin)
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e09-ww1
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: ADFGVX 密码与佩恩万（Painvin）的破译 — Wikipedia
+    note: ""
+  - id: af
+    title: AF 电文
+    title_en: The AF Telegram
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e11-ww2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: 中途岛海战与「AF」密语 — Wikipedia
+      - kind: tertiary
+        title: Kahn《The Codebreakers》关于 JN-25 /「AF」的章节（专著）
+    note: ""
+  - id: bacon-book
+    title: 培根书页
+    title_en: Bacon's Page
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e06-renaissance
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: 培根密码（Bacon's cipher）— Wikipedia
+    note: ""
+  - id: baconcase
+    title: 培根-莎士比亚密信案
+    title_en: The Bacon-Shakespeare Cipher Controversy
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e06-renaissance
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: 培根-莎士比亚作者身份假说（Baconian theory）— Wikipedia
+    note: ""
+  - id: bazeries-cylinder
+    title: 巴泽里密码圆筒
+    title_en: Bazeries Cylinder
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e09-ww1
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: 巴泽里密码圆筒（Bazeries cylinder）— Wikipedia
+      - kind: tertiary
+        title: 轮式密码 / 杰斐逊圆盘（Wheel cipher / Jefferson disk）— Wikipedia
+    note: ""
+  - id: bb84paper
+    title: BB84 会议摘要
+    title_en: The BB84 Abstract
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e16-quantum-turn
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: BB84 量子密钥分发协议 — Wikipedia
+    note: ""
+  - id: beale
+    title: 比尔密码
+    title_en: The Beale Papers
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e13-public-key
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: 比尔密码（Beale ciphers）— Wikipedia
+    note: ""
+  - id: caesar-report
+    title: 凯撒战报
+    title_en: Caesar's Dispatch
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e02-classical
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: 凯撒《高卢战记》（Commentarii de Bello Gallico）— Wikipedia
+      - kind: tertiary
+        title: 《高卢战记》拉丁原文与英译（archive.org 影本）
+    note: ""
+  - id: chaocipher
+    title: 混沌密码
+    title_en: Chaocipher
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e13-public-key
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: 混沌密码（Chaocipher）— Wikipedia
+    note: ""
+  - id: cillies
+    title: Enigma「Cillies」操作员惰性密钥
+    title_en: The Enigma "Cillies
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e11-ww2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Enigma「Cillies」操作员惰性密钥 — Wikipedia（Enigma machine 密码分析）
+      - kind: tertiary
+        title: Bletchley Park 官方博物馆（Bombe/Enigma 破译）
+    note: ""
+  - id: civilwar-disk
+    title: 美国内战密码盘
+    title_en: Civil War Cipher Disk
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e09-ww1
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: 密码圆盘（Cipher disk）— Wikipedia
+      - kind: tertiary
+        title: Friedman《Codes and Ciphers of the Civil War》（专著）
+    note: ""
+  - id: colossus
+    title: Colossus 照片卡
+    title_en: Colossus Photo Card
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e11-ww2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Colossus（计算机）— Wikipedia
+      - kind: tertiary
+        title: The National Museum of Computing（TNMOC）官方
+    note: ""
+  - id: commercial-enigma
+    title: 商业恩尼格玛（D 型）
+    title_en: Commercial Enigma (Model D)
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e11-ww2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: 恩尼格玛密码机（含商用 D 型）— Wikipedia
+    note: ""
+  - id: cryptolaw
+    title: 《密码法》公布稿
+    title_en: Cryptography Law Text
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e13-public-key
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: 《中华人民共和国密码法》— 国家密码管理局（官方公布）
+    note: ""
+  - id: culper-ring
+    title: 库尔珀间谍圈密信
+    title_en: Culper Ring Cipher Letters
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e01-origins
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: 库尔珀间谍圈（Culper Ring）— Wikipedia
+    note: ""
+  - id: dorabella
+    title: 多拉贝拉密信
+    title_en: Dorabella Cipher
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e06-renaissance
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: 多拉贝拉密信（Dorabella cipher）— Wikipedia
+    note: ""
+  - id: eastwind
+    title: 东风雨电报
+    title_en: The East Wind Broadcast
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e11-ww2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: 「东风」暗号（Winds Code）— Wikipedia
+      - kind: tertiary
+        title: Kahn《The Codebreakers》关于日本外交密码的章节（专著）
+    note: ""
+  - id: enigma-codebook
+    title: Enigma 密钥本
+    title_en: The Enigma Codebook
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e11-ww2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: 恩尼格玛密码机与密钥管理（Enigma machine）— Wikipedia
+      - kind: tertiary
+        title: Bletchley Park 官方博物馆（Enigma 破译展览）
+    note: ""
+  - id: enigma-m4
+    title: Enigma M4 海军四转子密码机
+    title_en: The Enigma M4 (Naval)
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e11-ww2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: 恩尼格玛 M4 海军四转子密码机 — Wikipedia（Enigma machine）
+      - kind: tertiary
+        title: Bletchley Park 官方博物馆（海军 Enigma 破译）
+    note: ""
+  - id: fanqie
+    title: 反切码注本
+    title_en: Fanqie Code Notebook
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e04-arabic-golden-age
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: 反切（Fanqie）— Wikipedia
+    note: ""
+  - id: half-radio
+    title: 半部电台——红军第一部电台
+    title_en: The Half Radio — the Red Army’s First Set
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e04-arabic-golden-age
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: 「半部电台起家」— 红军无线电通信发展史（回忆录与苏区档案史料）
+      - kind: tertiary
+        title: 王诤（吴人鉴）— 红军无线电通信与侦听创始人
+      - kind: tertiary
+        title: 1931 年红军无线电训练班 — 苏区报刊与电讯史料
+    note: ""
+  - id: kindi
+    title: 肯迪手稿页
+    title_en: Al-Kindi's Manuscript
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e04-arabic-golden-age
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Al-Kindi（肯迪）与密码分析起源 — Wikipedia
+      - kind: tertiary
+        title: 肯迪《论破解加密信息》手稿（archive.org 影本）
+    note: ""
+  - id: kryptos
+    title: 克里普托斯
+    title_en: Kryptos
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e13-public-key
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Kryptos（CIA 雕塑密码）— Wikipedia
+      - kind: tertiary
+        title: CIA 官方 Kryptos 页面
+    note: ""
+  - id: letsencrypt
+    title: Let’s Encrypt 首张证书
+    title_en: First Let’s Encrypt Certificate
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e13-public-key
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Let's Encrypt — Wikipedia
+    note: ""
+  - id: lineara
+    title: 线形文字 A
+    title_en: Linear A
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e01-origins
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: 线形文字 A（Linear A）— Wikipedia
+    note: ""
+  - id: maryqueen
+    title: 苏格兰玛丽女王密信
+    title_en: Mary Queen of Scots' Cipher Letters
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e06-renaissance
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: 苏格兰玛丽女王密信与巴宾顿阴谋（Babington Plot）— Wikipedia
+      - kind: tertiary
+        title: Mary, Queen of Scots — Wikipedia
+    note: ""
+  - id: monastic-cipher
+    title: 中世纪修道院密写字母
+    title_en: Medieval Monastic Cipher Alphabets
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e01-origins
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: 修道士密码/中世纪数字记号「The Ciphers of the Monks」— Wikipedia
+    note: ""
+  - id: navajo-code
+    title: 纳瓦霍密码
+    title_en: Navajo Code Talkers
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e11-ww2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: 纳瓦霍密码通讯员（Navajo Code Talkers / Code talker）— Wikipedia
+    note: ""
+  - id: phaistos
+    title: 费斯托斯圆盘
+    title_en: Phaistos Disc
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e01-origins
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: 费斯托斯圆盘（Phaistos Disc）— Wikipedia
+    note: ""
+  - id: pqc2024
+    title: FIPS 203 标准公告
+    title_en: FIPS 203 Announcement
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e16-quantum-turn
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: ML-KEM（FIPS 203）— Wikipedia
+      - kind: tertiary
+        title: NIST FIPS 203 官方公告
+    note: ""
+  - id: qmoney
+    title: 量子钞票备忘
+    title_en: Quantum Money Memo
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e16-quantum-turn
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: 量子货币（Quantum money）— Wikipedia
+    note: ""
+  - id: redarmy-cipher
+    title: 红军无线电密码
+    title_en: Red Army Radio Ciphers
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e04-arabic-golden-age
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: 红军无线电侦察（「千里眼」「顺风耳」）— 中央苏区通信史文献
+      - kind: tertiary
+        title: 军委二局与红军破译工作 — 相关回忆与组织史料
+    note: ""
+  - id: rockex-msg
+    title: Rockex 密电
+    title_en: A Rockex Dispatch
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e11-ww2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Rockex 密码机（英国）— Wikipedia
+      - kind: tertiary
+        title: Bletchley Park 官方博物馆（战后密码机）
+    note: ""
+  - id: rongorongo
+    title: 朗格朗格
+    title_en: Rongorongo
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e01-origins
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: 朗格朗格（Rongorongo）— Wikipedia
+    note: ""
+  - id: rosetta
+    title: 罗塞塔石碑
+    title_en: The Rosetta Stone
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e01-origins
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: 罗塞塔石碑（Rosetta Stone）— Wikipedia
+      - kind: tertiary
+        title: 大英博物馆藏罗塞塔石碑（馆藏编号 EA 24）；影本见 Wikimedia Commons
+    note: ""
+  - id: shannon
+    title: 香农论文页
+    title_en: Shannon's Paper
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e13-public-key
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: 香农《A Mathematical Theory of Communication》— Wikipedia
+      - kind: tertiary
+        title: 论文原文 DOI（Bell System Technical Journal）
+    note: ""
+  - id: shugborough
+    title: 舒格伯勒碑文
+    title_en: Shugborough Inscription
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e02-classical
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: 舒格伯勒碑文（Shugborough inscription）— Wikipedia
+    note: ""
+  - id: spectre-paper
+    title: Spectre/Meltdown 论文页
+    title_en: Spectre/Meltdown Paper Page
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e13-public-key
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Spectre 漏洞 — Wikipedia
+      - kind: tertiary
+        title: Meltdown 漏洞 — Wikipedia
+    note: ""
+  - id: tamamshud
+    title: 萨默顿人案
+    title_en: Tamam Shud / Somerton Man
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e13-public-key
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: 萨默顿人案（Taman Shud case）— Wikipedia
+    note: ""
+  - id: turing1936
+    title: 图灵 1936 年论文页
+    title_en: Turing 1936 Paper Page
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e11-ww2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: 图灵《On Computable Numbers, with an Application to the Entscheidungsproblem》— Wikipedia
+    note: ""
+  - id: ultra
+    title: Ultra 战报
+    title_en: Ultra Briefing
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e11-ww2
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: Ultra（布莱切利园破译）— Wikipedia
+      - kind: tertiary
+        title: Bletchley Park 官方博物馆（Ultra/Enigma 展览）
+    note: ""
+  - id: venona
+    title: VENONA 片段
+    title_en: VENONA Fragment
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e12-cold-war-info-theory
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: VENONA 项目 — Wikipedia
+      - kind: tertiary
+        title: NSA 官方（VENONA 解密档案）
+    note: ""
+  - id: voynich
+    title: 伏尼契手稿
+    title_en: Voynich Manuscript
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e01-origins
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: 伏尼契手稿（Voynich Manuscript）— Wikipedia
+      - kind: tertiary
+        title: Beinecke 图书馆伏尼契手稿数位影本（archive.org 收藏）
+    note: ""
+  - id: z340
+    title: 黄道杀手 340 密文
+    title_en: Zodiac 340 Cipher
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e13-public-key
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: 黄道杀手 340 密文的破译 — Wikipedia（Zodiac Killer）
+    note: ""
+  - id: zimmermann
+    title: 齐默尔曼电报
+    title_en: The Zimmermann Telegram
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e09-ww1
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: 齐默尔曼电报（Zimmermann Telegram）— Wikipedia
+    note: ""
+  - id: ziyan
+    title: 字验军符册
+    title_en: Ziyan Field Manual
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e04-arabic-golden-age
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: 《武经总要》与「字验」军符（Wujing Zongyao）— Wikipedia
+    note: ""
+  - id: zodiac
+    title: 黄道十二宫杀手密码
+    title_en: Zodiac Killer Cipher
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e13-public-key
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: 黄道十二宫杀手（Zodiac Killer）及其密文 — Wikipedia
+    note: ""
+  - id: zodiac13
+    title: 黄道十二宫杀手「我的名字是」13 字符密文
+    title_en: The Zodiac "My Name Is" 13-Character Cipher
+    status: done
+    quality: tier2
+    type: artifact
+    derived: true
+    domain: []
+    era:
+      - e13-public-key
+    subtopic: []
+    level: 3
+    prereq: []
+    aliases: []
+    apps: []
+    threats: []
+    sources:
+      - kind: tertiary
+        title: 黄道十二宫杀手「我的名字是」13 字符密文 — Wikipedia（Zodiac Killer）
+    note: ""

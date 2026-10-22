@@ -9,6 +9,7 @@ const ORDER = [
   'gen-protocols', 'gen-workshop', 'gen-eras', 'gen-extras',
   'gen-quiz', 'gen-zh-crypto', 'gen-toolkit',
   'gen-domains', 'gen-eras-fill', 'gen-links', 'gen-index', 'gen-site-bundle',
+  'gen-inventory',
 ];
 
 function main() {
