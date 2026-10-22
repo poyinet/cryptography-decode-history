@@ -67,7 +67,14 @@ jobs:
       - name: 生成覆盖矩阵
         run: node tools/check/check-coverage.js
 
-      # ---------- 5. 发布分站产物 ----------
+      # ---------- 5. 构建分站 + 分站门禁 ----------
+      - name: 构建分站
+        run: node tools/site/build.js
+
+      - name: 分站门禁（死链 / 结构 / 体积 / sitemap）
+        run: node tools/check/check-site.js
+
+      # ---------- 6. 发布分站产物 ----------
       - name: 发布到 poyinet/crypto
         if: ${{ hashFiles('build/site/**') != '' }}
         env:

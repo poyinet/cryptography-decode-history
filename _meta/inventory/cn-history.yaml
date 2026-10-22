@@ -19,7 +19,7 @@ entries:
     threats:
       - social
       - physical
-    type: event
+    type: cnhistory
     prereq: []
     status: done
     quality: tier2
@@ -42,7 +42,7 @@ entries:
       - military
     threats:
       - social
-    type: event
+    type: cnhistory
     prereq:
       - cn-yinfu
     status: done
@@ -66,7 +66,7 @@ entries:
       - military
     threats:
       - social
-    type: event
+    type: cnhistory
     prereq: []
     status: done
     quality: tier2
@@ -89,7 +89,7 @@ entries:
       - military
     threats:
       - physical
-    type: event
+    type: cnhistory
     prereq: []
     status: done
     quality: tier2
@@ -113,7 +113,7 @@ entries:
     threats:
       - CO
       - statistical
-    type: event
+    type: cnhistory
     prereq: []
     status: done
     quality: tier3
@@ -141,7 +141,7 @@ entries:
       - military
     threats:
       - protocol
-    type: event
+    type: cnhistory
     prereq: []
     status: done
     quality: tier2
@@ -165,7 +165,7 @@ entries:
     threats:
       - CO
       - statistical
-    type: event
+    type: cnhistory
     prereq: []
     status: done
     quality: tier2
@@ -189,7 +189,7 @@ entries:
       - government
     threats:
       - statistical
-    type: event
+    type: cnhistory
     prereq: []
     status: done
     quality: tier2
@@ -212,7 +212,7 @@ entries:
       - diplomacy
     threats:
       - protocol
-    type: event
+    type: cnhistory
     prereq:
       - cn-morse-intro
     status: done
@@ -237,7 +237,7 @@ entries:
     threats:
       - KPA
       - statistical
-    type: event
+    type: cnhistory
     prereq: []
     status: done
     quality: tier1
@@ -261,7 +261,7 @@ entries:
     threats:
       - CO
       - statistical
-    type: event
+    type: cnhistory
     prereq:
       - cn-haomi-1931
     status: done
@@ -285,7 +285,7 @@ entries:
       - military
     threats:
       - KPA
-    type: event
+    type: cnhistory
     prereq:
       - cn-haomi-1931
     status: done
@@ -310,7 +310,7 @@ entries:
       - military
     threats:
       - protocol
-    type: event
+    type: cnhistory
     prereq:
       - cn-anti-japanese-1937
     status: done
@@ -334,7 +334,7 @@ entries:
       - military
     threats:
       - protocol
-    type: event
+    type: cnhistory
     prereq:
       - cn-liberation-1946
     status: done
@@ -358,7 +358,7 @@ entries:
       - government
     threats:
       - implementation
-    type: event
+    type: cnhistory
     prereq:
       - cn-liberation-1946
     status: done
@@ -381,7 +381,7 @@ entries:
       - academic
     threats:
       - theoretical
-    type: event
+    type: cnhistory
     prereq: []
     status: done
     quality: tier2
@@ -404,7 +404,7 @@ entries:
       - academic
     threats:
       - theoretical
-    type: event
+    type: cnhistory
     prereq:
       - cn-hua-luogeng
     status: done
@@ -428,7 +428,7 @@ entries:
       - academic
     threats:
       - theoretical
-    type: event
+    type: cnhistory
     prereq:
       - cn-hua-luogeng
     status: done
@@ -452,7 +452,7 @@ entries:
       - academic
     threats:
       - theoretical
-    type: event
+    type: cnhistory
     prereq:
       - cn-zengkexian
     status: done
@@ -476,7 +476,7 @@ entries:
       - academic
     threats:
       - theoretical
-    type: event
+    type: cnhistory
     prereq:
       - cn-zengkexian
     status: done
@@ -500,7 +500,7 @@ entries:
       - academic
     threats:
       - theoretical
-    type: event
+    type: cnhistory
     prereq:
       - cn-zengkexian
     status: done
@@ -523,7 +523,7 @@ entries:
       - academic
     threats:
       - theoretical
-    type: event
+    type: cnhistory
     prereq:
       - cn-xiaogong
     status: done
@@ -547,7 +547,7 @@ entries:
       - academic
     threats:
       - theoretical
-    type: event
+    type: cnhistory
     prereq: []
     status: done
     quality: tier2
@@ -570,7 +570,7 @@ entries:
       - government
     threats:
       - theoretical
-    type: event
+    type: cnhistory
     prereq:
       - cn-peidingyi
     status: done
@@ -599,7 +599,7 @@ entries:
     threats:
       - KPA
       - protocol
-    type: event
+    type: cnhistory
     prereq:
       - cn-fengdengguo
     status: done
@@ -623,7 +623,7 @@ entries:
       - government
     threats:
       - theoretical
-    type: event
+    type: cnhistory
     prereq:
       - cn-fengdengguo
     status: done
@@ -648,7 +648,7 @@ entries:
       - academic
     threats:
       - theoretical
-    type: event
+    type: cnhistory
     prereq:
       - cn-zhengjianhua
     status: done
@@ -673,7 +673,7 @@ entries:
       - government
     threats:
       - quantum
-    type: event
+    type: cnhistory
     prereq:
       - cn-fengdengguo
     status: done
@@ -697,7 +697,7 @@ entries:
       - government
     threats:
       - protocol
-    type: event
+    type: cnhistory
     prereq:
       - cn-zhaoyunlei
     status: done
@@ -720,7 +720,7 @@ entries:
       - academic
     threats:
       - theoretical
-    type: event
+    type: cnhistory
     prereq:
       - cn-fengdengguo
     status: done
@@ -744,7 +744,7 @@ entries:
     threats:
       - CO
       - statistical
-    type: event
+    type: cnhistory
     prereq:
       - cn-fengdengguo
     status: done
@@ -768,7 +768,7 @@ entries:
       - academic
     threats:
       - implementation
-    type: event
+    type: cnhistory
     prereq:
       - cn-jingjiwu
     status: done
@@ -792,7 +792,7 @@ entries:
       - academic
     threats:
       - protocol
-    type: event
+    type: cnhistory
     prereq:
       - cn-lindongdai
     status: done
@@ -816,7 +816,7 @@ entries:
       - government
     threats:
       - quantum
-    type: event
+    type: cnhistory
     prereq:
       - cn-lindongdai
     status: done
@@ -839,7 +839,7 @@ entries:
       - academic
     threats:
       - theoretical
-    type: event
+    type: cnhistory
     prereq:
       - cn-lindongdai
     status: done
@@ -863,7 +863,7 @@ entries:
       - academic
     threats:
       - statistical
-    type: event
+    type: cnhistory
     prereq: []
     status: done
     quality: tier3
@@ -885,7 +885,7 @@ entries:
       - academic
     threats:
       - related-key
-    type: event
+    type: cnhistory
     prereq: []
     status: done
     quality: tier3
@@ -908,7 +908,7 @@ entries:
     threats:
       - CO
       - statistical
-    type: event
+    type: cnhistory
     prereq: []
     status: done
     quality: tier3
@@ -930,7 +930,7 @@ entries:
       - academic
     threats:
       - theoretical
-    type: event
+    type: cnhistory
     prereq: []
     status: done
     quality: tier3
@@ -953,7 +953,7 @@ entries:
     threats:
       - KPA
       - protocol
-    type: event
+    type: cnhistory
     prereq: []
     status: done
     quality: tier3
@@ -976,7 +976,7 @@ entries:
     threats:
       - CO
       - statistical
-    type: event
+    type: cnhistory
     prereq: []
     status: done
     quality: tier3
@@ -998,7 +998,7 @@ entries:
       - academic
     threats:
       - side-channel
-    type: event
+    type: cnhistory
     prereq: []
     status: done
     quality: tier3
@@ -1021,7 +1021,7 @@ entries:
       - academic
     threats:
       - theoretical
-    type: event
+    type: cnhistory
     prereq: []
     status: done
     quality: tier3
@@ -1044,7 +1044,7 @@ entries:
       - finance
     threats:
       - implementation
-    type: event
+    type: cnhistory
     prereq: []
     status: done
     quality: tier1
@@ -1067,7 +1067,7 @@ entries:
       - finance
     threats:
       - implementation
-    type: event
+    type: cnhistory
     prereq:
       - cn-1997-commercial
     status: done
@@ -1092,7 +1092,7 @@ entries:
       - finance
     threats:
       - related-key
-    type: event
+    type: cnhistory
     prereq:
       - cn-2006-sm-publish
     status: done
@@ -1116,7 +1116,7 @@ entries:
       - finance
     threats:
       - implementation
-    type: event
+    type: cnhistory
     prereq:
       - cn-2010-sm23
     status: done
@@ -1140,7 +1140,7 @@ entries:
       - finance
     threats:
       - protocol
-    type: event
+    type: cnhistory
     prereq:
       - cn-2012-gmt
     status: done
@@ -1166,7 +1166,7 @@ entries:
       - finance
     threats:
       - implementation
-    type: event
+    type: cnhistory
     prereq:
       - cn-1997-commercial
     status: done
@@ -1190,7 +1190,7 @@ entries:
       - finance
     threats:
       - implementation
-    type: event
+    type: cnhistory
     prereq:
       - cn-2019-cryptlaw
     status: done
@@ -1215,7 +1215,7 @@ entries:
       - finance
     threats:
       - implementation
-    type: event
+    type: cnhistory
     prereq:
       - cn-2023-gm-reg
     status: done
@@ -1239,7 +1239,7 @@ entries:
       - finance
     threats:
       - quantum
-    type: event
+    type: cnhistory
     prereq:
       - cn-2019-cryptlaw
     status: done
@@ -1262,7 +1262,7 @@ entries:
       - academic
     threats:
       - theoretical
-    type: event
+    type: cnhistory
     prereq: []
     status: done
     quality: tier2
@@ -1285,7 +1285,7 @@ entries:
       - academic
     threats:
       - theoretical
-    type: event
+    type: cnhistory
     prereq:
       - cn-1974-major
     status: done
@@ -1309,7 +1309,7 @@ entries:
       - academic
     threats:
       - theoretical
-    type: event
+    type: cnhistory
     prereq:
       - cn-1974-major
     status: done
@@ -1333,7 +1333,7 @@ entries:
       - government
     threats:
       - theoretical
-    type: event
+    type: cnhistory
     prereq:
       - cn-1992-chinacrypt
     status: done
@@ -1357,7 +1357,7 @@ entries:
       - academic
     threats:
       - theoretical
-    type: event
+    type: cnhistory
     prereq:
       - cn-2007-society
     status: done
@@ -1381,7 +1381,7 @@ entries:
       - academic
     threats:
       - theoretical
-    type: event
+    type: cnhistory
     prereq:
       - cn-2021-major
     status: done
@@ -1404,7 +1404,7 @@ entries:
       - academic
     threats:
       - theoretical
-    type: event
+    type: cnhistory
     prereq:
       - cn-2007-society
     status: done
@@ -1430,7 +1430,7 @@ entries:
       - academic
     threats:
       - theoretical
-    type: event
+    type: cnhistory
     prereq: []
     status: done
     quality: tier2
@@ -1452,7 +1452,7 @@ entries:
       - academic
     threats:
       - theoretical
-    type: event
+    type: cnhistory
     prereq:
       - cn-2007-society
     status: done
